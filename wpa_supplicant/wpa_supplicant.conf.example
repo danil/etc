@@ -1,0 +1,151 @@
+# This is Danil Kutkevich configuration file <http://danil.kutkevich.org>.
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4#doc_chap2_pre3>.
+
+# The below line not be changed otherwise we refuse to work.
+ctrl_interface=/var/run/wpa_supplicant
+
+# Ensure that only root can read the WPA configuration.
+ctrl_interface_group=0
+
+# Let wpa_supplicant take care of scanning and AP selection.
+ap_scan=1
+
+network={
+  disabled=0
+  ssid="tatyana"
+  # Request SSID-specific scanning (for APs that reject broadcast
+  # SSID).
+  scan_ssid=0
+  # The higher the priority the sooner we are matched.
+  priority=5
+  # Shared WEP key connection (no WPA, no IEEE 802.1X).
+  key_mgmt=NONE
+  # Keys in quotes are ASCII keys.
+  #wep_key0="foobar"
+  # Keys specified without quotes are hex keys.
+  wep_key0=password
+  wep_tx_keyidx=0
+}
+
+# yurij.
+network={
+  disabled=0
+  ssid="yurij"
+  scan_ssid=1
+  priority=5
+  key_mgmt=NONE
+  wep_key1=password
+  wep_tx_keyidx=1
+}
+
+# kuzmin.
+network={
+  disabled=0
+  ssid="kuzmin"
+  scan_ssid=1
+  priority=5
+  key_mgmt=NONE
+  wep_key0=password
+  wep_tx_keyidx=0
+}
+
+# johnstudio.
+network={
+  disabled=0
+  ssid="JohnWiFi"
+  priority=5
+  key_mgmt=NONE
+  wep_key0="password"
+  wep_tx_keyidx=0
+}
+
+# dudanov.
+network={
+  disabled=0
+  ssid="linksys"
+  priority=5
+  key_mgmt=NONE
+  wep_key0=password
+  wep_tx_keyidx=0
+}
+
+# rudakov.
+network={
+  disabled=0
+  ssid="AP_Gunner_SES"
+  priority=5
+  #key_mgmt=WPA-PSK
+  #proto=WPA
+  #pairwise=TKIP
+  #group=TKIP
+  # WPA-PSK, PSK as an ASCII passphrase, allow all valid ciphers.
+  psk="password"
+}
+
+# bolobova.
+network={
+  disabled=0
+  ssid="30/5-407"
+  priority=5
+  #scan_ssid=1
+  #key_mgmt=WPA-PSK
+  #proto=WPA
+  #pairwise=CCMP
+  #group=CCMP
+  psk="password"
+}
+
+# avers.
+network={
+  ssid="GDESLON"
+  priority=5
+  scan_ssid=0
+  proto=WPA RSN
+  key_mgmt=WPA-PSK
+  pairwise=CCMP TKIP
+  group=CCMP TKIP
+  psk="password"
+  #psk=password
+}
+
+# iclub.
+network={
+  disabled=0
+  ssid="iClubPublic"
+  priority=5
+  #key_mgmt=WPA-PSK
+  #proto=WPA
+  #pairwise=TKIP
+  #group=TKIP
+  psk="password"
+}
+
+# igor Peredovikov.
+network={
+  disabled=0
+  ssid="igor"
+  priority=1
+  key_mgmt=NONE
+}
+
+# Plaintext connection (no WPA, no IEEE 802.1X).
+# This is a catch-all that will associate with any open access point
+# within range.
+network={
+  disabled=0
+  priority=1
+  key_mgmt=NONE
+}
+
+# IBSS/ad-hoc network with WPA-None/TKIP
+# network={
+#   disabled=0
+#   ssid="test adhoc"
+#   priority=5
+#   mode=1
+#   proto=WPA
+#   key_mgmt=WPA-NONE
+#   pairwise=NONE
+#   group=TKIP
+#   psk="secret passphrase"
+# }

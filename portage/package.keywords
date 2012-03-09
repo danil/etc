@@ -1,0 +1,104 @@
+# */*::kutkevich
+
+=app-mobilephone/dfu-util-0.1 ~amd64
+=app-office/openoffice-bin-3.2.0 ~amd64
+=dev-lang/io-2009.01.02-r1 ~amd64
+=games-strategy/freeciv-2.2.5 ~amd64
+=gnome-extra/nautilus-dropbox-0.6.7 ~amd64
+=media-radio/radiotray-0.6.1 ~amd64
+=net-libs/nodejs-0.4.11 ~amd64
+=net-mail/offlineimap-6.3.4 ~amd64
+=sci-mathematics/genius-1.0.11 ~amd64
+=www-cliemedia-sound/listen ~amd64
+media-sound/volumeicon ~amd64
+www-client/google-chrome:stable ~amd64
+x11-base/xorg-server::kutkevich ~amd64
+
+# Tmp.
+app-backup/dvcs-autosync ~amd64
+
+# Rhythmbox.
+=media-sound/rhythmbox-0.13.3 ~amd64
+=app-misc/media-player-info-14 ~amd64
+
+# Compiz.
+dev-python/compizconfig-python ~amd64
+x11-apps/ccsm ~amd64
+x11-libs/libcompizconfig ~amd64
+x11-plugins/compiz-plugins-extra ~amd64
+x11-wm/compiz-fusion ~amd64
+x11-plugins/screenlets ~amd64
+x11-wm/emerald ~amd64
+x11-themes/emerald-themes ~amd64
+# Compiz 0.8.
+=x11-libs/compiz-bcop-0.8.8::stuff ~amd64
+=x11-libs/libcompizconfig-0.8.8::stuff ~amd64
+=x11-plugins/compiz-plugins-extra-0.8.8::stuff ~amd64
+=x11-wm/compiz-fusion-0.8.8::stuff ~amd64
+=x11-wm/emerald-0.8.8::stuff ~amd64
+x11-plugins/compiz-plugins-main::kutkevich ~amd64
+x11-wm/compiz::kutkevich ~amd64
+=x11-apps/fusion-icon-0.1-r2::stuff ~amd64
+# # Compiz 0.9.
+# =x11-wm/compiz-0.9.2 ~amd64
+# =x11-plugins/compiz-plugins-main-0.9.2 ~amd64
+
+# FBReader.
+# =app-text/fbreader-0.12.2 ~amd64
+# =dev-libs/liblinebreak-1.0 ~amd64
+
+# Clean out your world file
+# <http://forums.gentoo.org/viewtopic-t-142475.html>.
+#=app-portage/udept-0.5.99.0.2.95-r1 ~amd64
+
+# Kutkevich overlay.
+
+# Configuration files.
+=kutkevich/danil-etc-9999 ~amd64
+=kutkevich/danil-home-9999 ~amd64
+
+# msort 8.53 depend on tre 0.8.0 (incompatible with tre 0.7.5).
+=app-text/msort-8.53 ~amd64
+=dev-libs/tre-0.8.0 ~amd64
+
+# MadWifi.
+#milhouse: =net-wireless/madwifi-hal-0.10.5.6.9999 ~amd64
+#milhouse: =net-wireless/madwifi-hal-tools-0.10.5.6.9999 ~amd64
+
+# Lua.
+=dev-lua/luarocks-2.0.1 ~amd64
+=dev-lua/orbit-daemon-9999 ~amd64
+
+# Lisp/Scheme overlay.
+
+# StumpWM.
+#=x11-wm/stumpwm-0.9.6-r3 ~amd64
+=x11-wm/stumpwm-0.9.7 ~amd64
+#=dev-lisp/cl-launch-2.36 ~amd64
+#=dev-lisp/sbcl-1.0.38-r1 ~amd64
+=dev-lisp/sbcl-1.0.36-r1 ~amd64
+=dev-lisp/clx-0.7.4 ~amd64
+=dev-lisp/cl-ppcre-1.2.16 ~amd64
+
+# Ubuntu overlay.
+# Ubuntu One.
+=dev-libs/protobuf-2.3.0-r1 ~amd64
+=dev-python/configglue-0.2 ~amd64
+=dev-python/oauth-1.0.1 ~amd64
+=dev-python/ubuntuone-storage-protocol-1.2.0 ~amd64
+=gnome-extra/ubuntuone-client-1.2.1 ~amd64
+
+# xmonad.
+=x11-misc/xmobar-0.13 ~amd64
+=dev-haskell/alsa-mixer-0.1.2 ~amd64
+=dev-haskell/alsa-core-0.5 ~amd64
+=dev-haskell/x11-xft-0.3 ~amd64
+
+# Virtualbox.
+=app-emulation/virtualbox-4.1.8 ~amd64
+=app-emulation/virtualbox-modules-4.1.8 ~amd64
+
+# Avant Window Navigator
+=x11-libs/libdesktop-agnostic-0.3.92 ~amd64
+gnome-extra/avant-window-navigator-extras ~amd64
+gnome-extra/avant-window-navigator ~amd64

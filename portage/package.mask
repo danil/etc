@@ -1,0 +1,8 @@
+# Wireless do not get IP from DHCP. Try to downgrade.
+# #frink: =net-wireless/iwl5000-ucode-8.24.2.12
+
+# Emacs daemon crashes.
+#=app-emacs/emacs-daemon-0.17
+
+# Epiphany slow.
+#=www-client/epiphany-2.26.3-r4

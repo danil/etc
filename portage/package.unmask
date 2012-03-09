@@ -1,0 +1,31 @@
+# Clean out your world file
+# <http://forums.gentoo.org/viewtopic-t-142475.html>.
+#=app-portage/udept-0.5.99.0.2.95-r1
+
+# Ruby 1.9
+# <http://gentoo.org/proj/en/prog_lang/ruby/index.xml?style=printable>,
+# <http://subforge.org/blogs/show/3>.
+#=dev-lang/ruby-1.9.1_p429
+
+# Kutkevich overlay.
+# Unmasking these versions because is a live ebuilds clone/checkout.
+=kutkevich/danil-etc-9999
+=kutkevich/danil-home-9999
+#=www-servers/fcgiwrap-9999
+#milhouse: =net-wireless/madwifi-hal-0.10.5.6.9999
+#milhouse: =net-wireless/madwifi-hal-tools-0.10.5.6.9999
+
+# StumpWM.
+=dev-lisp/cl-launch-2.36
+
+# Compiz.
+=dev-python/compizconfig-python-0.8.4-r3
+=x11-apps/ccsm-0.8.4-r1
+=x11-libs/compiz-bcop-0.8.4
+=x11-libs/libcompizconfig-0.8.4-r2
+=x11-plugins/compiz-plugins-extra-0.8.6-r1
+=x11-themes/emerald-themes-0.5.2
+=x11-wm/compiz-fusion-0.8.6
+=x11-wm/emerald-0.8.4-r2
+x11-plugins/compiz-plugins-main::kutkevich
+x11-wm/compiz::kutkevich

@@ -1,0 +1,10 @@
+# /etc/conf.d/local.start
+
+# This is a good place to load any misc programs
+# on startup (use &>/dev/null to hide output)
+
+# Danil.
+# Power Management
+# <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_pre11>.
+# Fake acpi event to switch runlevel if running on batteries.
+#milhouse: /etc/acpi/actions/pmg_switch_runlevel.sh "battery/battery"

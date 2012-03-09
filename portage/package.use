@@ -1,0 +1,124 @@
+# media-sound/volumeicon libnotify
+# sys-devel/gcc go
+app-admin/conky lua lua-cairo iostats
+app-cdr/gnomebaker dvdr
+app-crypt/pinentry gtk
+app-editors/emacs -X
+app-emulation/virtualbox -additions
+app-office/openoffice-bin java
+app-text/fbreader -qt4 gtk
+dev-db/sqlite extensions
+dev-libs/libxml2 python
+dev-libs/pwlib ldap
+games-strategy/freeciv sdl -gtk
+gnome-base/gnome-session branding
+gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
+gnome-extra/avant-window-navigator vala
+media-libs/gd fontconfig truetype
+media-libs/libpng apng
+media-sound/moc curl
+media-video/mplayer ftp
+net-libs/libsoup gnome
+net-misc/wicd libnotify
+net-p2p/transmission gtk
+net-print/cups gnutls
+sys-auth/consolekit policykit
+sys-auth/pambase consolekit
+sys-fs/udev extras
+x11-libs/qt-gui dbus
+x11-misc/shutter drawing
+x11-misc/tint2 battery
+x11-terms/rxvt-unicode -iso14755 256-color
+x11-wm/compiz-fusion emerald
+x11-wm/xmonad doc
+
+x11-apps/fusion-icon gtk
+
+# Gajim.
+dev-lang/python:2.7 sqlite
+net-libs/farsight2 python
+net-im/gajim gmail jingle
+
+# Inkscape.
+media-libs/lcms:0 python
+
+# thunderbird-bin.
+net-misc/curl nss
+
+# media-sound/listen.
+media-sound/listen gnome
+media-libs/libgpod python
+
+# Linphone.
+media-libs/mediastreamer video
+net-voip/linphone video
+
+# Git.
+# Enable CVS integration `man gitcvs-migration `.
+dev-vcs/git cvs
+# Enable subversion (version control system) support.
+dev-vcs/git subversion
+dev-vcs/git tk
+dev-vcs/subversion -dso
+dev-vcs/subversion perl
+# Gitk: Error in startup script: expected integer but got "Sans"
+dev-lang/tk -truetype
+
+# Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>.
+#dev-vcs/git cgi
+
+# docbook2pdf <http://bugs.gentoo.org/61938#c0> used for
+# <http://habrahabr.ru/blogs/Git/80909/>.
+#app-text/docbook-sgml-utils jadetex
+
+# Sphinx.
+app-misc/sphinx mysql postgres
+
+# Mutt.
+# `man muttrc`
+mail-client/mutt doc imap
+
+# Bridging TAP OpenVPN
+# <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
+net-misc/openvpn iproute2
+
+# Chromium.
+dev-libs/libxml2 icu
+media-video/ffmpeg threads
+virtual/ffmpeg encode threads
+# Enable h264 encoding
+# <http://bugs.gentoo.org/show_bug.cgi?id=333547>,
+# <http://forums.gentoo.org/viewtopic-t-707495-postdays-0-postorder-asc-start-325.html>.
+#media-video/ffmpeg x264
+
+# nginx.
+www-servers/nginx -nginx_modules_http_geo
+#www-servers/nginx nginx_modules_http_passenger
+
+# Layman Sunrise <http://overlays.gentoo.org/proj/sunrise>.
+#app-portage/layman git subversion
+
+# NTP <http://en.gentoo-wiki.com/wiki/NTP#Installation>.
+net-misc/ntp caps
+
+# Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>,
+# <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>.
+net-dialup/ppp dhcp #mppe-mppc
+
+# Lisp/Scheme overlay.
+x11-wm/stumpwm sbcl
+
+# Empathy.
+net-im/telepathy-connection-managers jabber irc sip icq
+
+# Linphone.
+net-voip/linphone video
+#net-voip/linphone gtk
+media-libs/mediastreamer video
+
+# # Gnome 2.
+# gnome-base/gnome-menus python
+
+# Ekiga.
+net-libs/opal sip
+net-libs/ptlib wav

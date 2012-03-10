@@ -29,17 +29,17 @@ modules="wpa_supplicant"
 # It's important that we tell wpa_supplicant which driver we should be
 # using as it's not very good at guessing yet
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap2_pre2>.
-#frink:    wpa_supplicant_wlan0="-Dwext"
+wpa_supplicant_wlan0="-Dwext"
 # <http://old.nabble.com/ath5k-and-wpa_supplicant-td23816188.html#a23818570>.
 #milhouse: wpa_supplicant_ath0="-Dwext"
 
 # DHCP
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
-#frink:    config_wlan0="dhcp"
+config_wlan0="dhcp"
 #milhouse: config_ath0="dhcp"
 # <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
-#frink:    dhcp_wlan0="nontp"
+dhcp_wlan0="nontp"
 #milhouse: dhcp_ath0="nontp"
 # <http://en.gentoo-wiki.com/wiki/Wireless/Configuration#Configuring_.2Fetc.2Fconf.d.2Fnet>.
 # #frink:    dhcpcd_wlan0="-t 30" # Timeout after 30 seconds

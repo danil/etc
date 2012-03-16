@@ -30,15 +30,18 @@ x11-wm/compiz-fusion ~amd64
 x11-plugins/screenlets ~amd64
 x11-wm/emerald ~amd64
 x11-themes/emerald-themes ~amd64
+# Compiz 0.8. WTF?
+x11-libs/compiz-bcop ~amd64
+=x11-wm/compiz-0.8.6-r3::kutkevich ~amd64
+=x11-plugins/compiz-plugins-main-0.8.6-r1::kutkevich ~amd64
 # Compiz 0.8.
-=x11-libs/compiz-bcop-0.8.8::stuff ~amd64
-=x11-wm/compiz-0.8.8::kutkevich ~amd64
-=x11-plugins/compiz-plugins-main-0.8.8::kutkevich ~amd64
-=x11-libs/libcompizconfig-0.8.8::stuff ~amd64
-=x11-plugins/compiz-plugins-extra-0.8.8::stuff ~amd64
-=x11-wm/emerald-0.8.8::stuff ~amd64
-=x11-wm/compiz-fusion-0.8.8::stuff ~amd64
-=x11-apps/fusion-icon-0.1-r2::stuff ~amd64
+=x11-libs/compiz-bcop-0.8.8::stuff
+=x11-libs/libcompizconfig-0.8.8::stuff
+=x11-plugins/compiz-plugins-extra-0.8.8::stuff
+=x11-wm/compiz-fusion-0.8.8::stuff
+=x11-wm/emerald-0.8.8::stuff
+x11-plugins/compiz-plugins-main::kutkevich
+x11-wm/compiz::kutkevich
 # # Compiz 0.9.
 # =x11-wm/compiz-0.9.2 ~amd64
 # =x11-plugins/compiz-plugins-main-0.9.2 ~amd64

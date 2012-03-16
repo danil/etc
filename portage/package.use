@@ -32,7 +32,9 @@ x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/compiz-fusion emerald
 x11-wm/xmonad doc
 
-x11-apps/fusion-icon gtk
+# Blender.
+virtual/ffmpeg theora
+media-video/ffmpeg theora
 
 # Gajim.
 dev-lang/python:2.7 sqlite

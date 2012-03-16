@@ -1,5 +1,4 @@
 # */*::kutkevich
-
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/io-2009.01.02-r1 ~amd64
@@ -102,3 +101,7 @@ x11-themes/emerald-themes ~amd64
 =x11-libs/libdesktop-agnostic-0.3.92 ~amd64
 gnome-extra/avant-window-navigator-extras ~amd64
 gnome-extra/avant-window-navigator ~amd64
+
+# PiTiVi.
+=media-libs/gnonlin-0.10.17 ~amd64
+=media-video/pitivi-0.14.1 ~amd64

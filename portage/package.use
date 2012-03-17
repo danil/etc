@@ -32,10 +32,6 @@ x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/compiz-fusion emerald
 x11-wm/xmonad doc
 
-# Blender.
-virtual/ffmpeg theora
-media-video/ffmpeg theora
-
 # Gajim.
 dev-lang/python:2.7 sqlite
 net-libs/farsight2 python
@@ -124,3 +120,7 @@ media-libs/mediastreamer video
 # Ekiga.
 net-libs/opal sip
 net-libs/ptlib wav
+
+# Blender.
+media-video/ffmpeg theora x264
+virtual/ffmpeg theora x264

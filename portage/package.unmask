@@ -1,3 +1,6 @@
+# Unmasking these versions because is a live ebuilds (svn) checkout.
+=www-servers/fcgiwrap-9999
+
 # Clean out your world file
 # <http://forums.gentoo.org/viewtopic-t-142475.html>.
 #=app-portage/udept-0.5.99.0.2.95-r1
@@ -9,11 +12,7 @@
 
 # Kutkevich overlay.
 # Unmasking these versions because is a live ebuilds clone/checkout.
-=kutkevich/danil-etc-9999
-=kutkevich/danil-home-9999
 #=www-servers/fcgiwrap-9999
-#milhouse: =net-wireless/madwifi-hal-0.10.5.6.9999
-#milhouse: =net-wireless/madwifi-hal-tools-0.10.5.6.9999
 
 # StumpWM.
 =dev-lisp/cl-launch-2.36

@@ -18,20 +18,18 @@
 # /dev/ROOT		/		ext3		noatime		0 1
 # /dev/SWAP		none		swap		sw		0 0
 # /dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
-#/dev/fd0		/mnt/floppy	auto		noauto		0 0
+# /dev/fd0		/mnt/floppy	auto		noauto		0 0
 
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect12>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap1_sect2>.
 # Note: all /dev/hd*s will appear as /dev/sd*s
 # <http://linuxquestions.org/questions/arch-29/why-sda-and-not-hda-552872/>.
-/dev/sda1               /boot           ext2            noauto,noatime  1 2
-/dev/sda2               /               ext4            defaults        0 1
-/dev/sda3               none            swap            sw              0 0
-#milhouse: /dev/sda1               /               ext3            defaults        0 1
-#milhouse: /dev/sda5               none            swap            sw              0 0
-#milhouse: /dev/sdb1               /usr            ext3            defaults        0 2
-#milhouse: /dev/sdb5               /home           ext3            defaults        0 2
+/dev/sda1               /               ext3            defaults        0 1
+/dev/sda5               /usr            ext3            defaults        0 2
+/dev/sda6               none            swap            sw              0 0
+/dev/sda7               /var            ext3            defaults        0 2
+/dev/sda8               /home           ext3            defaults        0 2
 
 # glibc 2.2 and above expects tmpfs to be mounted at /dev/shm for
 # POSIX shared memory (shm_open, shm_unlink).

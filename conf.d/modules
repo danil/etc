@@ -22,21 +22,8 @@
 # You should consult your kernel documentation and configuration
 # for a list of modules and their options.
 
-# Danil.
-# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=7#kernel_modules>,
-# <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml#doc_chap2_pre21>.
-modules="${modules_2_6} fuse"
-module_fuse_args=""
-
-# Power Management
-# <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_sect4>.
-#milhouse: modules_2_6="${modules_2_6} fan"
-#milhouse: module_fan_args_2_6=""
-
-# VirtualBox <http://en.gentoo-wiki.com/wiki/VirtualBox#Run>
-# (and emerge messages for package
-#  app-emulation/virtualbox-modules-3.1.8).
-modules="${modules_2_6} vboxdrv vboxnetflt vboxnetadp"
-
-# <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Kernel_Module_Configuration>.
-#milhouse: modules_2_6="${modules_2_6} intel-agp drm i915"
+# # Danil.
+# # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=7#kernel_modules>,
+# # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml#doc_chap2_pre21>.
+# modules="${modules_2_6} fuse"
+# module_fuse_args=""

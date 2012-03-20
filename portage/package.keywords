@@ -106,3 +106,9 @@ gnome-extra/avant-window-navigator ~amd64
 # PiTiVi.
 =media-libs/gnonlin-0.10.17 ~amd64
 =media-video/pitivi-0.14.1 ~amd64
+
+# Notify OSD.
+=x11-libs/libwnck-3.2.1 ~amd64
+=x11-misc/notify-osd-0.9.33 ~amd64
+=x11-themes/notify-osd-icons-0.7 ~amd64
+

@@ -1,10 +1,9 @@
 # */*::kutkevich
-
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/io-2009.01.02-r1 ~amd64
 =games-strategy/freeciv-2.2.5 ~amd64
-=gnome-extra/nautilus-dropbox-0.6.7 ~amd64
+=media-gfx/blender-2.60a ~amd64
 =media-radio/radiotray-0.6.1 ~amd64
 =net-libs/nodejs-0.4.11 ~amd64
 =net-mail/offlineimap-6.3.4 ~amd64
@@ -105,3 +104,8 @@ x11-wm/compiz::kutkevich
 =x11-libs/libdesktop-agnostic-0.3.92 ~amd64
 gnome-extra/avant-window-navigator-extras ~amd64
 gnome-extra/avant-window-navigator ~amd64
+
+# Notify OSD.
+=x11-libs/libwnck-3.2.1 ~amd64
+=x11-misc/notify-osd-0.9.33 ~amd64
+=x11-themes/notify-osd-icons-0.7 ~amd64

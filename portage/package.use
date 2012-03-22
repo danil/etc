@@ -121,3 +121,7 @@ media-libs/mediastreamer video
 # Ekiga.
 net-libs/opal sip
 net-libs/ptlib wav
+
+# Blender.
+media-video/ffmpeg theora x264
+virtual/ffmpeg theora x264

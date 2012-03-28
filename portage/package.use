@@ -17,6 +17,7 @@ gnome-extra/avant-window-navigator vala
 media-libs/gd fontconfig truetype
 media-libs/libpng apng
 media-sound/moc curl
+media-sound/rhythmbox libnotify
 media-sound/volti libnotify
 media-video/mplayer ftp
 net-libs/libsoup gnome
@@ -32,7 +33,6 @@ x11-misc/tint2 battery
 x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/compiz-fusion emerald
 x11-wm/xmonad doc
-media-sound/rhythmbox libnotify
 
 # Gajim.
 dev-lang/python:2.7 sqlite

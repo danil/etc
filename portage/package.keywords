@@ -18,8 +18,8 @@ x11-base/xorg-server::kutkevich ~amd64
 app-backup/dvcs-autosync ~amd64
 
 # Rhythmbox.
-=media-sound/rhythmbox-0.13.3 ~amd64
-=app-misc/media-player-info-14 ~amd64
+=dev-libs/libpeas-1.2.0-r1 ~amd64
+=media-sound/rhythmbox-2.95 ~amd64
 
 # Compiz.
 dev-python/compizconfig-python ~amd64

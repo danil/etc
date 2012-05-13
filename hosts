@@ -8,12 +8,11 @@
 #
 
 # IPv4 and IPv6 localhost aliases
-127.0.0.1	localhost
-::1		localhost
-
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
-127.0.0.1 homer.kutkevich.org homer localhost
+#127.0.0.1  localhost
+127.0.0.1 lisa.kutkevich.org lisa localhost
+::1       localhost
 
 #
 # Imaginary network.

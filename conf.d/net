@@ -1,6 +1,6 @@
 # This blank configuration will automatically use DHCP for any net.*
 # scripts in /etc/init.d.  To create a more complete configuration,
-# please review /etc/conf.d/net.example and save your configuration
+# please review /usr/share/doc/openrc*/net.example* and save your configuration
 # in /etc/conf.d/net (this file :]!).
 
 # Danil.
@@ -56,6 +56,14 @@ dhcp_wlan0="nontp"
 # # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4_pre1>.
 # dns_servers_tatyana="192.168.9.1"
 # dns_search_domains_tatyana="tat"
+
+# Domainname
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre2>.
+dns_domain_lo="leela.kutkevich.org"
+
+# NIS domainname
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre3>.
+# nis_domain_lo="my-nisdomain"
 
 # duddanov.
 config_linksys="192.168.2.150/24"

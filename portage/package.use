@@ -27,6 +27,8 @@ net-print/cups gnutls
 sys-auth/consolekit policykit
 sys-auth/pambase consolekit
 sys-fs/udev extras
+sys-fs/udev gudev #gnome-extra/gnome-power-manager
+sys-libs/zlib minizip #media-video/vlc
 x11-libs/qt-gui dbus
 x11-misc/shutter drawing
 x11-misc/tint2 battery

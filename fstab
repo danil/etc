@@ -30,9 +30,10 @@
 /dev/sda3               none            swap            sw              0 0
 
 # USB flash drive.
-/dev/sdb1               /var/git        ext4            defaults        0 2
-/dev/sdb2               /var/www        ext4            defaults        0 2
-/dev/sdb3               /var/ftp        ext4            defaults        0 2
+/dev/sdb1               /usr/portage    ext4            defaults        0 2
+/dev/sdb2               /var/tmp/portage ext4           defaults        0 2
+/dev/sdb3               /var/git        ext4            defaults        0 2
+/dev/sdb4               /var/ftp        ext4            defaults        0 2
 
 #milhouse: /dev/sda1               /               ext3            defaults        0 1
 #milhouse: /dev/sda5               none            swap            sw              0 0

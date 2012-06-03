@@ -1,7 +1,7 @@
 # */*::kutkevich
 =app-mobilephone/dfu-util-0.1 ~x86
 =app-office/openoffice-bin-3.2.0 ~x86
-=dev-lang/io-2009.01.02-r1 ~x86
+=dev-lang/io-2011.09.12-r1 ~x86
 =games-strategy/freeciv-2.2.5 ~x86
 =gnome-extra/nautilus-dropbox-0.6.7 ~x86
 =media-gfx/blender-2.60a ~x86
@@ -9,7 +9,8 @@
 =net-libs/nodejs-0.4.11 ~x86
 =net-mail/offlineimap-6.3.4 ~x86
 =sci-mathematics/genius-1.0.11 ~x86
-=www-apps/cgit-0.8.3.1-r1 ~x86
+=www-apps/cgit-0.9.0.2-r1 ~x86
+=www-client/w3m-0.5.3-r2 ~x86 #due to compilation bug in stable version
 media-sound/listen ~x86
 media-sound/volumeicon ~x86
 www-client/google-chrome:stable ~x86

@@ -1,4 +1,5 @@
 # */*::kutkevich
+# x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/io-2009.01.02-r1 ~amd64
@@ -8,10 +9,10 @@
 =net-libs/nodejs-0.4.11 ~amd64
 =net-mail/offlineimap-6.3.4 ~amd64
 =sci-mathematics/genius-1.0.11 ~amd64
+=sys-apps/etckeeper-0.63 ~amd64
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
-x11-base/xorg-server::kutkevich ~amd64
 
 # Tmp.
 app-backup/dvcs-autosync ~amd64
@@ -104,6 +105,10 @@ x11-wm/compiz::kutkevich
 =x11-libs/libdesktop-agnostic-0.3.92 ~amd64
 gnome-extra/avant-window-navigator-extras ~amd64
 gnome-extra/avant-window-navigator ~amd64
+
+# PiTiVi.
+=media-libs/gnonlin-0.10.17 ~amd64
+=media-video/pitivi-0.14.1 ~amd64
 
 # Notify OSD.
 =x11-libs/libwnck-3.2.1 ~amd64

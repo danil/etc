@@ -1,0 +1,15 @@
+# With OpenRC, /etc/conf.d/local.start and local.stop are
+# deprecated. During the migration to OpenRC, the files are moved to
+# /etc/local.d and gain the suffix .start or .stop. OpenRC then
+# executes those in alphabetic order
+# <http://gentoo.org/doc/en/openrc-migration.xml?style=printable#rc_local>,
+# <http://en.gentoo-wiki.com/wiki/Run_a_command_on_boot>.
+
+# This is a good place to load any misc programs
+# on startup (use &>/dev/null to hide output)
+
+# Danil.
+# Power Management
+# <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_pre11>.
+# Fake acpi event to switch runlevel if running on batteries.
+#milhouse: /etc/acpi/actions/pmg_switch_runlevel.sh "battery/battery"

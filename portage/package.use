@@ -27,6 +27,9 @@ net-print/cups gnutls
 sys-auth/consolekit policykit
 sys-auth/pambase consolekit
 sys-fs/udev extras
+sys-fs/udev gudev #gnome-extra/gnome-power-manager
+sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-base/gvfs, gnome-base/libgnome, gnome-base/libbonoboui, dev-perl/gnome2-perl, x11-misc/shutter
+sys-libs/zlib minizip #media-video/vlc
 x11-libs/qt-gui dbus
 x11-misc/shutter drawing
 x11-misc/tint2 battery
@@ -37,7 +40,7 @@ x11-wm/xmonad doc
 # Gajim.
 dev-lang/python:2.7 sqlite
 net-libs/farsight2 python
-net-im/gajim gmail jingle
+net-im/gajim gmail jingle libnotify
 
 # Inkscape.
 media-libs/lcms:0 python

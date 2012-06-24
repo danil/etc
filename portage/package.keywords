@@ -1,4 +1,5 @@
 # */*::kutkevich
+# x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/io-2009.01.02-r1 ~amd64
@@ -13,7 +14,6 @@
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
-x11-base/xorg-server::kutkevich ~amd64
 
 # Tmp.
 app-backup/dvcs-autosync ~amd64

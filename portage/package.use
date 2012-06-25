@@ -40,7 +40,7 @@ x11-wm/xmonad doc
 # Gajim.
 dev-lang/python:2.7 sqlite
 net-libs/farsight2 python
-net-im/gajim gmail jingle
+net-im/gajim gmail jingle libnotify
 
 # Inkscape.
 media-libs/lcms:0 python

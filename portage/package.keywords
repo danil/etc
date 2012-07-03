@@ -20,7 +20,7 @@ app-backup/dvcs-autosync ~amd64
 
 # Rhythmbox.
 =dev-libs/libpeas-1.2.0-r1 ~amd64
-=media-sound/rhythmbox-2.95 ~amd64
+=media-sound/rhythmbox-2.97 ~amd64
 
 # Compiz.
 dev-python/compizconfig-python ~amd64

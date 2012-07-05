@@ -8,6 +8,7 @@ app-emulation/virtualbox -additions
 app-office/openoffice-bin java
 app-text/fbreader -qt4 gtk
 dev-db/sqlite extensions
+dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 dev-libs/libxml2 python
 dev-libs/pwlib ldap
 games-strategy/freeciv sdl -gtk
@@ -86,13 +87,10 @@ mail-client/mutt doc imap
 net-misc/openvpn iproute2
 
 # Chromium.
-dev-libs/libxml2 icu
+# dev-libs/libxml2 icu
+# media-video/ffmpeg x264 #enable h264 encoding <http://bugs.gentoo.org/show_bug.cgi?id=333547>, <http://forums.gentoo.org/viewtopic-t-707495-postdays-0-postorder-asc-start-325.html>
 media-video/ffmpeg threads
 virtual/ffmpeg encode threads
-# Enable h264 encoding
-# <http://bugs.gentoo.org/show_bug.cgi?id=333547>,
-# <http://forums.gentoo.org/viewtopic-t-707495-postdays-0-postorder-asc-start-325.html>.
-#media-video/ffmpeg x264
 
 # nginx.
 www-servers/nginx -nginx_modules_http_geo

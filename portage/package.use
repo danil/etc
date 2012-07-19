@@ -8,6 +8,7 @@ app-emulation/virtualbox -additions
 app-office/openoffice-bin java
 app-text/fbreader -qt4 gtk
 dev-db/sqlite extensions
+dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 dev-libs/libxml2 python
 dev-libs/pwlib ldap
 games-strategy/freeciv sdl -gtk
@@ -86,7 +87,7 @@ mail-client/mutt doc imap
 net-misc/openvpn iproute2
 
 # Chromium.
-dev-libs/libxml2 icu
+# dev-libs/libxml2 icu
 media-video/ffmpeg threads
 virtual/ffmpeg encode threads
 # Enable h264 encoding

@@ -38,6 +38,22 @@ x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/compiz-fusion emerald
 x11-wm/xmonad doc
 
+# Unity <http://github.com/shiznix/unity-gentoo>.
+app-admin/packagekit qt4 gtk #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+app-admin/packagekit-base networkmanager #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+dev-libs/libdbusmenu gtk #required by unity-base/indicator-application-0.5.0 unity-base/unity-meta-5.12.0 unity-base/unity-meta
+dev-libs/protobuf python #required by unity-base/ubuntuone-storage-protocol-3.0.0, unity-base/ubuntuone-control-panel-3.0.1, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+dev-libs/xapian-bindings python #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+gnome-base/gnome-settings-daemon policykit #required by gnome-base/gnome-control-center-99.3.4.2, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+gnome-extra/zeitgeist passiv extensions plugins #required by dev-libs/libappindicator, unity-base/indicator-appmenu, x11-misc/appmenu-gtk, unity-base/unity, unity-base/unity-scope-video-remote, unity-base/unity-meta,unity-base/unity-meta
+gnome-extra/zeitgeist-datasources telepathy #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+gnome-extra/zeitgeist-extensions geolocation #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1[alsa], gnome-base/gnome-control-center-99.3.4.2, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+
+# NetworkManager.
+gnome-extra/nm-applet bluetooth
+net-misc/networkmanager bluetooth modemmanager
+
 # Gajim.
 dev-lang/python:2.7 sqlite
 net-libs/farsight2 python
@@ -117,8 +133,45 @@ net-voip/linphone video
 #net-voip/linphone gtk
 media-libs/mediastreamer video
 
-# # Gnome 2.
-# gnome-base/gnome-menus python
+# Gtk.
+app-misc/geoclue gtk
+app-mobilephone/obex-data-server gtk
+app-text/ghostscript-gpl gtk
+dev-python/twisted gtk
+dev-vcs/git gtk
+gnome-extra/libgsf gtk
+media-gfx/graphviz gtk
+media-libs/libcanberra gtk gtk3
+media-sound/pulseaudio gtk
+net-analyzer/nmap gtk
+net-dialup/ppp gtk
+net-dns/avahi gtk
+sys-auth/polkit gtk
+sys-devel/gcc gtk
+www-client/opera gtk
+www-client/w3m gtk
+x11-misc/xdg-user-dirs gtk
+
+# Gnome.
+app-office/abiword gnome
+app-office/libreoffice-bin gnome
+app-text/stardict gnome
+dev-libs/libgdata gnome
+dev-util/meld gnome
+gnome-base/nautilus gnome
+media-gfx/gimp gnome
+media-gfx/inkscape gnome
+media-libs/libcanberra gnome
+media-sound/pulseaudio gnome
+media-video/vlc gnome
+net-im/gajim gnome
+net-libs/gnome-online-accounts gnome
+net-libs/libproxy gnome
+net-voip/ekiga gnome
+sci-mathematics/genius gnome
+virtual/notification-daemon gnome
+www-client/midori gnome
+x11-libs/goffice gnome
 
 # Ekiga.
 net-libs/opal sip

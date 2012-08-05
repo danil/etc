@@ -15,9 +15,13 @@ CHECKVT=7
 # - Else, if you are using KDE 4 enter "kdm" without a version
 
 # Danil
-# <http://en.gentoo-wiki.com/wiki/SLiM#Start_on_boot>.
-#DISPLAYMANAGER="xdm"
-DISPLAYMANAGER="slim"
+# DISPLAYMANAGER="xdm"
+# # <http://en.gentoo-wiki.com/wiki/SLiM#Start_on_boot>.
+# DISPLAYMANAGER="slim"
+# # <http://wiki.gentoo.org/wiki/LightDM#Boot_service>.
+# DISPLAYMANAGER="lightdm"
+# <http://en.gentoo-wiki.com/wiki/GDM#Configuration>.
+DISPLAYMANAGER="gdm"
 
 # Set whether xorg should depend on hald or not. If set to 'auto' then the init
 # script tries to determine the dependency on hald automatically, by examining

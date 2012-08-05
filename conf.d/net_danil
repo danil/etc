@@ -1,0 +1,113 @@
+# This blank configuration will automatically use DHCP for any net.*
+# scripts in /etc/init.d.  To create a more complete configuration,
+# please review /usr/share/doc/openrc*/net.example* and save your configuration
+# in /etc/conf.d/net (this file :]!).
+
+# Danil.
+# Wired
+# <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_pre21>,
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap2_sect2>.
+config_eth0="dhcp"
+# <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
+dhcp_eth0="nontp"
+# #frink:    config_eth0="192.168.8.15/24"
+# #milhouse: config_eth0="192.168.8.13/24"
+# routes_eth0="default via 192.168.8.1"
+
+# Wireless.
+# WPA Supplicant
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap2_pre2>.
+# Prefer wpa_supplicant over wireless-tools.
+modules="wpa_supplicant"
+#modules="iwconfig"
+
+# <http://en.gentoo-wiki.com/wiki/Wireless_Networking#Needed_software>.
+# #frink:    wpa_timeout_wlan0=15
+# #milhouse: wpa_timeout_ath0=15
+
+# It's important that we tell wpa_supplicant which driver we should be
+# using as it's not very good at guessing yet
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap2_pre2>.
+wpa_supplicant_wlan0="-Dwext"
+# <http://old.nabble.com/ath5k-and-wpa_supplicant-td23816188.html#a23818570>.
+#milhouse: wpa_supplicant_ath0="-Dwext"
+
+# DHCP
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
+config_wlan0="dhcp"
+#milhouse: config_ath0="dhcp"
+# <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
+dhcp_wlan0="nontp"
+#milhouse: dhcp_ath0="nontp"
+# <http://en.gentoo-wiki.com/wiki/Wireless/Configuration#Configuring_.2Fetc.2Fconf.d.2Fnet>.
+# #frink:    dhcpcd_wlan0="-t 30" # Timeout after 30 seconds
+
+# Defining network configuration per ESSID
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4>,
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=2&style=printable#variable_name>.
+
+# tatyana.
+#config_tatyana="dhcp"
+# #frink:    config_tatyana="192.168.9.15/24"
+# #milhouse: config_tatyana="192.168.9.13/24"
+# routes_tatyana="default via 192.168.9.1"
+# # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4_pre1>.
+# dns_servers_tatyana="192.168.9.1"
+# dns_search_domains_tatyana="tat"
+
+# Domainname
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre2>.
+dns_domain_lo="leela.kutkevich.org"
+
+# NIS domainname
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre3>.
+# nis_domain_lo="my-nisdomain"
+
+# duddanov.
+config_linksys="192.168.2.150/24"
+routes_linksys="default via 192.168.2.1"
+dns_servers_linksys="192.168.2.1"
+
+# Wireless Tools
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap3_pre2>.
+# Configure WEP keys for Access Points called ESSID1 and ESSID2
+# You may configure up to 4 WEP keys, but only 1 can be active at
+# any time so we supply a default index of [1] to set key [1] and then
+# again afterwards to change the active key to [1]
+# We do this incase you define other ESSID's to use WEP keys other than 1
+#
+# Prefixing the key with s: means it's an ASCII key, otherwise a HEX key
+#
+# enc open specified open security (most secure)
+# enc restricted specified restricted security (least secure)
+#key_ESSID1="[1] s:yourkeyhere key [1] enc open"
+#key_ESSID2="[1] aaaa-bbbb-cccc-dd key [1] enc restricted"
+
+# The below only work when we scan for available Access Points
+
+# Sometimes more than one Access Point is visible so we need to
+# define a preferred order to connect in
+# preferred_aps="ESSID1
+# ESSID2"
+
+# PPP
+# For PPP support, emerge net-dialup/ppp
+# PPP is used for most dialup connections, including ADSL.
+# The older ADSL module is documented below, but you are encouraged to try
+# this module first.
+#
+# You need to create the PPP net script yourself. Make it like so
+#ln -s net.lo /etc/init.d/net.ppp0
+modules_ppp0="dhcpcd"
+# We have to instruct ppp0 to actually use ppp
+config_ppp0="ppp"
+# Each PPP interface requires an interface to use as a "Link"
+link_ppp0="/dev/ttyUSB0"
+dhcpcd_ppp0="-t 10"
+dhcp_ppp0="release nodns nontp nonis"
+# <http://forums.gentoo.org/viewtopic-t-847989.html?sid=8a6c694158f33bb0b8761c6072c805bb>,
+# <http://www.gentoo.ru/content/3g-huawei-e1750>,
+# <http://ru.gentoo-wiki.com/wiki/Huawei_GPRS/3G_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC>,
+# <http://en.gentoo-wiki.com/wiki/Huawei_E160>.

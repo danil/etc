@@ -3,10 +3,10 @@
 # <http://forums.gentoo.org/viewtopic-t-916378-start-0.html#6984764>.
 =x11-libs/libXft-2.3.1
 
-# Unity <http://forums.gentoo.org/viewtopic-p-7100326.html#7100326>,
-# <http://github.com/shiznix/unity-gentoo>.
->=dev-libs/dbus-glib-0.100
->=sys-apps/dbus-1.6.0
+# # Unity <http://forums.gentoo.org/viewtopic-p-7100326.html#7100326>,
+# # <http://github.com/shiznix/unity-gentoo>.
+# >=dev-libs/dbus-glib-0.100
+# >=sys-apps/dbus-1.6.0
 
 # Wireless do not get IP from DHCP. Try to downgrade.
 # #frink: =net-wireless/iwl5000-ucode-8.24.2.12

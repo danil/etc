@@ -16,12 +16,12 @@ CHECKVT=7
 
 # Danil
 # DISPLAYMANAGER="xdm"
-# # <http://en.gentoo-wiki.com/wiki/SLiM#Start_on_boot>.
-# DISPLAYMANAGER="slim"
+# <http://en.gentoo-wiki.com/wiki/SLiM#Start_on_boot>.
+DISPLAYMANAGER="slim"
 # # <http://wiki.gentoo.org/wiki/LightDM#Boot_service>.
 # DISPLAYMANAGER="lightdm"
-# <http://en.gentoo-wiki.com/wiki/GDM#Configuration>.
-DISPLAYMANAGER="gdm"
+# # <http://en.gentoo-wiki.com/wiki/GDM#Configuration>.
+# DISPLAYMANAGER="gdm"
 
 # Set whether xorg should depend on hald or not. If set to 'auto' then the init
 # script tries to determine the dependency on hald automatically, by examining

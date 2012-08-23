@@ -1,42 +1,37 @@
-# Unity <http://github.com/shiznix/unity-gentoo>.
-*/*::unity-gentoo
-=app-accessibility/at-spi2-core-2.4.2 #required by app-accessibility/at-spi2-atk-2.5.3, required by x11-libs/gtk+-99.3.4.2, required by app-accessibility/caribou-0.4.2, required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-=gnome-base/gnome-desktop-3.4.2 #required by gnome-base/gnome-panel-3.4.1, required by unity-base/indicator-applet-0.5.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-=gnome-base/gnome-panel-3.4.1 #required by unity-base/indicator-applet-0.5.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-=media-video/cheese-3.4.2 #required by gnome-base/gnome-control-center-99.3.4.2[cheese], required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-=sys-libs/db-5.1.29 #required by unity-base/unity-lens-applications-5.12.0, required by unity-base/unity-lens-files-5.10.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-
 # Clean out your world file
 # <http://forums.gentoo.org/viewtopic-t-142475.html>.
 #=app-portage/udept-0.5.99.0.2.95-r1
+
+# Compiz 0.8.
+=dev-python/compizconfig-python-0.8.4-r3
+=x11-apps/ccsm-0.8.4-r1
+=x11-libs/compiz-bcop-0.8.8
+=x11-libs/libcompizconfig-0.8.8
+=x11-themes/emerald-themes-0.5.2
+x11-plugins/compiz-plugins-extra::kutkevich
+x11-plugins/compiz-plugins-main::kutkevich
+x11-wm/compiz-fusion::kutkevich
+x11-wm/compiz::kutkevich
+x11-wm/emerald::kutkevich
+
+# # Compiz 0.9.
+# =x11-wm/emerald-0.9.5::fm
+
+# # Unity <http://github.com/shiznix/unity-gentoo>.
+# */*::unity-gentoo
+# # Main tree:
+# =app-accessibility/at-spi2-core-2.4.2 #required by app-accessibility/at-spi2-atk-2.5.3, required by x11-libs/gtk+-99.3.4.2, required by app-accessibility/caribou-0.4.2, required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
+# =dev-libs/libindicate-12.10.0
+# =gnome-base/gnome-desktop-3.4.2 #required by gnome-base/gnome-panel-3.4.1, required by unity-base/indicator-applet-0.5.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
+# =gnome-base/gnome-panel-3.4.1 #required by unity-base/indicator-applet-0.5.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
+# =media-video/cheese-3.4.2 #required by gnome-base/gnome-control-center-99.3.4.2[cheese], required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
+# =sys-libs/db-5.1.29 #required by unity-base/unity-lens-applications-5.12.0, required by unity-base/unity-lens-files-5.10.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
+
+# # Kutkevich overlay.
+# # Unmasking these versions because is a live ebuilds clone/checkout.
+# #=www-servers/fcgiwrap-9999
 
 # Ruby 1.9
 # <http://gentoo.org/proj/en/prog_lang/ruby/index.xml?style=printable>,
 # <http://subforge.org/blogs/show/3>.
 #=dev-lang/ruby-1.9.1_p429
-
-# # Kutkevich overlay.
-# # Unmasking these versions because is a live ebuilds clone/checkout.
-# =kutkevich/danil-etc-9999
-# =kutkevich/danil-home-9999
-# #=www-servers/fcgiwrap-9999
-# #milhouse: =net-wireless/madwifi-hal-0.10.5.6.9999
-# #milhouse: =net-wireless/madwifi-hal-tools-0.10.5.6.9999
-
-# StumpWM.
-=dev-lisp/cl-launch-2.36
-
-# # Compiz.
-# =dev-python/compizconfig-python-0.8.4-r3
-# =x11-apps/ccsm-0.8.4-r1
-# =x11-libs/compiz-bcop-0.8.4
-# =x11-libs/libcompizconfig-0.8.4-r2
-# =x11-plugins/compiz-plugins-extra-0.8.6-r1
-# x11-plugins/compiz-plugins-main::kutkevich
-# =x11-themes/emerald-themes-0.5.2
-# x11-wm/compiz::kutkevich
-# =x11-wm/compiz-fusion-0.8.6
-# =x11-wm/emerald-0.8.4-r2
-
-# # Compiz 0.9.
-# =x11-wm/emerald-0.9.5::fm

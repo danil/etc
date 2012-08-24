@@ -3,7 +3,7 @@
 app-admin/conky lua lua-cairo
 app-cdr/gnomebaker dvdr
 app-crypt/pinentry gtk
-app-editors/emacs -X
+app-editors/emacs -X -dbus
 app-emulation/virtualbox -additions
 app-office/openoffice-bin java
 app-text/fbreader -qt4 gtk

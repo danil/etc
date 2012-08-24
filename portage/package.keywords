@@ -4,12 +4,14 @@
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/io-2009.01.02-r1 ~amd64
 =games-strategy/freeciv-2.2.5 ~amd64
+=gnome-extra/docky-2.1.4 ~amd64
 =media-gfx/blender-2.60a ~amd64
 =media-radio/radiotray-0.6.1 ~amd64
 =net-libs/nodejs-0.4.11 ~amd64
 =net-mail/offlineimap-6.3.4 ~amd64
 =sci-mathematics/genius-1.0.11 ~amd64
 =sys-apps/etckeeper-0.63 ~amd64
+=x11-plugins/screenlets-0.1.2 ~amd64
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
@@ -21,30 +23,58 @@ app-backup/dvcs-autosync ~amd64
 =dev-libs/libpeas-1.2.0-r1 ~amd64
 =media-sound/rhythmbox-2.95 ~amd64
 
-# Compiz.
-dev-python/compizconfig-python ~amd64
-x11-apps/ccsm ~amd64
-x11-libs/libcompizconfig ~amd64
-x11-plugins/compiz-plugins-extra ~amd64
-x11-wm/compiz-fusion ~amd64
-x11-plugins/screenlets ~amd64
-x11-wm/emerald ~amd64
-x11-themes/emerald-themes ~amd64
-# Compiz 0.8. WTF?
-x11-libs/compiz-bcop ~amd64
-=x11-wm/compiz-0.8.6-r3::kutkevich ~amd64
-=x11-plugins/compiz-plugins-main-0.8.6-r1::kutkevich ~amd64
 # Compiz 0.8.
-=x11-libs/compiz-bcop-0.8.8::stuff
-=x11-libs/libcompizconfig-0.8.8::stuff
-=x11-plugins/compiz-plugins-extra-0.8.8::stuff
-=x11-wm/compiz-fusion-0.8.8::stuff
-=x11-wm/emerald-0.8.8::stuff
-x11-plugins/compiz-plugins-main::kutkevich
-x11-wm/compiz::kutkevich
+=dev-python/compizconfig-python-0.8.4-r3 ~amd64
+=x11-apps/ccsm-0.8.4-r1 ~amd64
+=x11-themes/emerald-themes-0.5.2 ~amd64
+=x11-wm/compiz-0.8.6-r3::kutkevich ~amd64
+x11-libs/compiz-bcop::kutkevich ~amd64
+x11-libs/libcompizconfig::kutkevich ~amd64
+x11-plugins/compiz-plugins-extra::kutkevich ~amd64
+x11-plugins/compiz-plugins-main::kutkevich ~amd64
+x11-wm/compiz-fusion::kutkevich ~amd64
+x11-wm/compiz::kutkevich ~amd64
+x11-wm/emerald::kutkevich ~amd64
+
 # # Compiz 0.9.
 # =x11-wm/compiz-0.9.2 ~amd64
 # =x11-plugins/compiz-plugins-main-0.9.2 ~amd64
+
+# Cairo Dock <http://glx-dock.org>.
+=x11-misc/cairo-dock-3.0.2 ~amd64
+=x11-misc/cairo-dock-plugins-3.0.2 ~amd64
+
+# Notify OSD.
+=x11-libs/libwnck-3.2.1 ~amd64
+=x11-misc/notify-osd-0.9.33 ~amd64
+=x11-themes/notify-osd-icons-0.7 ~amd64
+
+# # GNOME 3 stuff.
+# <gnome-base/nautilus-3.4.1
+#
+# app-arch/file-roller
+# app-editors/gedit
+# app-text/evince
+# gnome-base/gnome-control-center
+# gnome-base/gnome-keyring
+# gnome-base/gnome-menus
+# gnome-base/gnome-panel
+# gnome-base/gnome-session
+# gnome-base/gnome-settings-daemon
+# gnome-extra/gconf-editor
+# gnome-extra/gnome-screensaver
+# gnome-extra/gnome-tweak-tool
+# mail-client/evolution
+# media-gfx/eog
+# net-im/empathy
+# net-misc/networkmanager
+# x11-libs/gtk+
+# x11-libs/vte
+# x11-misc/notification-daemon
+# x11-terms/gnome-terminal
+# x11-themes/gnome-backgrounds
+# x11-themes/gnome-icon-theme-symbolic
+# x11-themes/gnome-themes-standard
 
 # FBReader.
 # =app-text/fbreader-0.12.2 ~amd64
@@ -52,65 +82,12 @@ x11-wm/compiz::kutkevich
 
 # Clean out your world file
 # <http://forums.gentoo.org/viewtopic-t-142475.html>.
-#=app-portage/udept-0.5.99.0.2.95-r1 ~x86
+#=app-portage/udept-0.5.99.0.2.95-r1 ~amd64
 
-# Kutkevich overlay.
-
-# Configuration files.
-=kutkevich/danil-etc-9999 ~amd64
-=kutkevich/danil-home-9999 ~amd64
-
-# msort 8.53 depend on tre 0.8.0 (incompatible with tre 0.7.5).
-=app-text/msort-8.53 ~amd64
-=dev-libs/tre-0.8.0 ~amd64
-
-# MadWifi.
-#milhouse: =net-wireless/madwifi-hal-0.10.5.6.9999 ~amd64
-#milhouse: =net-wireless/madwifi-hal-tools-0.10.5.6.9999 ~amd64
-
-# Lua.
-=dev-lua/luarocks-2.0.1 ~amd64
-=dev-lua/orbit-daemon-9999 ~amd64
-
-# Lisp/Scheme overlay.
-
-# StumpWM.
-#=x11-wm/stumpwm-0.9.6-r3 ~amd64
-=x11-wm/stumpwm-0.9.7 ~amd64
-#=dev-lisp/cl-launch-2.36 ~amd64
-#=dev-lisp/sbcl-1.0.38-r1 ~amd64
-=dev-lisp/sbcl-1.0.36-r1 ~amd64
-=dev-lisp/clx-0.7.4 ~amd64
-=dev-lisp/cl-ppcre-1.2.16 ~amd64
-
-# Ubuntu overlay.
-# Ubuntu One.
-=dev-libs/protobuf-2.3.0-r1 ~amd64
-=dev-python/configglue-0.2 ~amd64
-=dev-python/oauth-1.0.1 ~amd64
-=dev-python/ubuntuone-storage-protocol-1.2.0 ~amd64
-=gnome-extra/ubuntuone-client-1.2.1 ~amd64
-
-# xmonad.
-=x11-misc/xmobar-0.13 ~amd64
-=dev-haskell/alsa-mixer-0.1.2 ~amd64
-=dev-haskell/alsa-core-0.5 ~amd64
-=dev-haskell/x11-xft-0.3 ~amd64
-
-# Virtualbox.
-=app-emulation/virtualbox-4.1.8 ~amd64
-=app-emulation/virtualbox-modules-4.1.8 ~amd64
-
-# Avant Window Navigator
-=x11-libs/libdesktop-agnostic-0.3.92 ~amd64
-gnome-extra/avant-window-navigator-extras ~amd64
-gnome-extra/avant-window-navigator ~amd64
+# # msort 8.53 depend on tre 0.8.0 (incompatible with tre 0.7.5).
+# =app-text/msort-8.53 ~amd64
+# =dev-libs/tre-0.8.0 ~amd64
 
 # PiTiVi.
 =media-libs/gnonlin-0.10.17 ~amd64
 =media-video/pitivi-0.14.1 ~amd64
-
-# Notify OSD.
-=x11-libs/libwnck-3.2.1 ~amd64
-=x11-misc/notify-osd-0.9.33 ~amd64
-=x11-themes/notify-osd-icons-0.7 ~amd64

@@ -1,11 +1,14 @@
+# app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
 # media-sound/volumeicon libnotify
 # sys-devel/gcc go
+# x11-wm/stumpwm sbcl #Lisp/Scheme overlay
 >=dev-libs/keybinder-0.3.0-r200:0 python #required by unity-extra/glipper
 app-admin/conky lua lua-cairo iostats
 app-cdr/gnomebaker dvdr
 app-crypt/pinentry gtk
 app-editors/emacs -X -dbus
 app-emulation/virtualbox -additions
+app-misc/sphinx mysql postgres
 app-office/openoffice-bin java
 app-text/fbreader -qt4 gtk
 dev-db/sqlite extensions
@@ -14,15 +17,23 @@ dev-libs/libxml2 python
 dev-libs/pwlib ldap
 games-strategy/freeciv sdl -gtk
 gnome-base/gnome-session branding
+gnome-base/gnome-settings-daemon policykit #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.2.1[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
 gnome-extra/avant-window-navigator vala
+mail-client/mutt doc imap #`man muttrc`
 media-libs/gd fontconfig truetype
+media-libs/lcms:0 python #required by media-gfx/inkscape
 media-libs/libpng apng
 media-sound/moc curl
 media-sound/rhythmbox libnotify
 media-sound/volti libnotify
 media-video/mplayer ftp
+net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
+net-im/telepathy-connection-managers jabber irc sip icq #Empathy
 net-libs/libsoup gnome
+net-misc/curl nss #required by mail-client/thunderbird-bin
+net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
+net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 net-misc/wicd libnotify
 net-p2p/transmission gtk
 net-print/cups gnutls
@@ -32,6 +43,8 @@ sys-fs/udev extras
 sys-fs/udev gudev #gnome-extra/gnome-power-manager
 sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-base/gvfs, gnome-base/libgnome, gnome-base/libbonoboui, dev-perl/gnome2-perl, x11-misc/shutter
 sys-libs/zlib minizip #media-video/vlc
+virtual/notification-daemon -gnome #required by x11-misc/notify-osd
+www-servers/nginx -nginx_modules_http_geo
 x11-libs/qt-gui dbus
 x11-misc/shutter drawing
 x11-misc/tint2 battery
@@ -39,69 +52,23 @@ x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/compiz-fusion emerald
 x11-wm/xmonad doc
 
-# Unity <http://github.com/shiznix/unity-gentoo>.
-app-admin/packagekit qt4 gtk #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-app-admin/packagekit-base networkmanager #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-dev-libs/libdbusmenu gtk #required by unity-base/indicator-application-0.5.0 unity-base/unity-meta-5.12.0 unity-base/unity-meta
-dev-libs/protobuf python #required by unity-base/ubuntuone-storage-protocol-3.0.0, unity-base/ubuntuone-control-panel-3.0.1, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-dev-libs/xapian-bindings python #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-gnome-base/gnome-settings-daemon policykit #required by gnome-base/gnome-control-center-99.3.4.2, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-gnome-extra/zeitgeist passiv extensions plugins #required by dev-libs/libappindicator, unity-base/indicator-appmenu, x11-misc/appmenu-gtk, unity-base/unity, unity-base/unity-scope-video-remote, unity-base/unity-meta,unity-base/unity-meta
-gnome-extra/zeitgeist-datasources telepathy #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-gnome-extra/zeitgeist-extensions geolocation #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1[alsa], gnome-base/gnome-control-center-99.3.4.2, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-
-# NetworkManager.
-gnome-extra/nm-applet bluetooth
-net-misc/networkmanager bluetooth modemmanager
+# Git.
+#dev-vcs/git cgi #Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>
+dev-lang/tk -truetype #Gitk: Error in startup script: expected integer but got "Sans"
+dev-vcs/git cvs #enable Git integration with CVS `man gitcvs-migration `
+dev-vcs/git subversion #enable subversion (version control system) support for Git
+dev-vcs/git tk
+dev-vcs/subversion -dso
+dev-vcs/subversion perl
 
 # Gajim.
 dev-lang/python:2.7 sqlite
 net-libs/farsight2 python
 net-im/gajim gmail jingle libnotify
 
-# Inkscape.
-media-libs/lcms:0 python
-
-# thunderbird-bin.
-net-misc/curl nss
-
-# media-sound/listen.
-media-sound/listen gnome
-media-libs/libgpod python
-
-# Linphone.
-media-libs/mediastreamer video
-net-voip/linphone video
-
-# Git.
-# Enable CVS integration `man gitcvs-migration `.
-dev-vcs/git cvs
-# Enable subversion (version control system) support.
-dev-vcs/git subversion
-dev-vcs/git tk
-dev-vcs/subversion -dso
-dev-vcs/subversion perl
-# Gitk: Error in startup script: expected integer but got "Sans"
-dev-lang/tk -truetype
-
-# Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>.
-#dev-vcs/git cgi
-
-# docbook2pdf <http://bugs.gentoo.org/61938#c0> used for
-# <http://habrahabr.ru/blogs/Git/80909/>.
-#app-text/docbook-sgml-utils jadetex
-
-# Sphinx.
-app-misc/sphinx mysql postgres
-
-# Mutt.
-# `man muttrc`
-mail-client/mutt doc imap
-
-# Bridging TAP OpenVPN
-# <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
-net-misc/openvpn iproute2
+# NetworkManager.
+gnome-extra/nm-applet bluetooth
+net-misc/networkmanager bluetooth modemmanager
 
 # Chromium.
 # dev-libs/libxml2 icu
@@ -109,30 +76,33 @@ net-misc/openvpn iproute2
 media-video/ffmpeg threads
 virtual/ffmpeg encode threads
 
-# nginx.
-www-servers/nginx -nginx_modules_http_geo
-#www-servers/nginx nginx_modules_http_passenger
+# # Unity <http://github.com/shiznix/unity-gentoo>.
+# app-admin/packagekit qt4 gtk #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+# app-admin/packagekit-base networkmanager #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+# dev-libs/libdbusmenu gtk #required by unity-base/indicator-application-0.5.0 unity-base/unity-meta-5.12.0 unity-base/unity-meta
+# dev-libs/protobuf python #required by unity-base/ubuntuone-storage-protocol-3.0.0, unity-base/ubuntuone-control-panel-3.0.1, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+# dev-libs/xapian-bindings python #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+# gnome-extra/zeitgeist passiv extensions plugins #required by dev-libs/libappindicator, unity-base/indicator-appmenu, x11-misc/appmenu-gtk, unity-base/unity, unity-base/unity-scope-video-remote, unity-base/unity-meta,unity-base/unity-meta
+# gnome-extra/zeitgeist-datasources telepathy #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+# gnome-extra/zeitgeist-extensions geolocation #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
+# media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1[alsa], gnome-base/gnome-control-center-99.3.4.2, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
 
-# Layman Sunrise <http://overlays.gentoo.org/proj/sunrise>.
-#app-portage/layman git subversion
+# Blender.
+media-video/ffmpeg theora x264
+virtual/ffmpeg theora x264
 
-# NTP <http://en.gentoo-wiki.com/wiki/NTP#Installation>.
-net-misc/ntp caps
+# # media-sound/listen.
+# media-sound/listen gnome
+# media-libs/libgpod python
 
-# Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>,
-# <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>.
-net-dialup/ppp dhcp #mppe-mppc
+# # docbook2pdf <http://bugs.gentoo.org/61938#c0> used for
+# # <http://habrahabr.ru/blogs/Git/80909/>.
+# app-text/docbook-sgml-utils jadetex
 
-# Lisp/Scheme overlay.
-x11-wm/stumpwm sbcl
-
-# Empathy.
-net-im/telepathy-connection-managers jabber irc sip icq
-
-# Linphone.
-net-voip/linphone video
-#net-voip/linphone gtk
-media-libs/mediastreamer video
+# # Linphone.
+# #net-voip/linphone gtk
+# media-libs/mediastreamer video
+# net-voip/linphone video
 
 # Gtk.
 app-misc/geoclue gtk
@@ -170,14 +140,9 @@ net-libs/gnome-online-accounts gnome
 net-libs/libproxy gnome
 net-voip/ekiga gnome
 sci-mathematics/genius gnome
-virtual/notification-daemon gnome
 www-client/midori gnome
 x11-libs/goffice gnome
 
-# Ekiga.
-net-libs/opal sip
-net-libs/ptlib wav
-
-# Blender.
-media-video/ffmpeg theora x264
-virtual/ffmpeg theora x264
+# # Ekiga.
+# net-libs/opal sip
+# net-libs/ptlib wav

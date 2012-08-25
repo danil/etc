@@ -49,7 +49,6 @@ x11-libs/qt-gui dbus
 x11-misc/shutter drawing
 x11-misc/tint2 battery
 x11-terms/rxvt-unicode -iso14755 256-color
-x11-wm/compiz-fusion emerald
 x11-wm/xmonad doc
 
 # Git.
@@ -60,6 +59,10 @@ dev-vcs/git subversion #enable subversion (version control system) support for G
 dev-vcs/git tk
 dev-vcs/subversion -dso
 dev-vcs/subversion perl
+
+# Compiz.
+# x11-wm/compiz-fusion emerald
+x11-wm/compiz gtk
 
 # Gajim.
 dev-lang/python:2.7 sqlite
@@ -142,6 +145,12 @@ net-voip/ekiga gnome
 sci-mathematics/genius gnome
 www-client/midori gnome
 x11-libs/goffice gnome
+
+# Gnome keyring.
+app-admin/system-config-printer-gnome gnome-keyring
+app-text/evince gnome-keyring
+net-im/telepathy-mission-control gnome-keyring
+net-wireless/gnome-bluetooth gnome-keyring
 
 # # Ekiga.
 # net-libs/opal sip

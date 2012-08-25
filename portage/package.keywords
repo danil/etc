@@ -63,7 +63,7 @@ x11-wm/emerald::kutkevich ~amd64
 =x11-misc/notify-osd-0.9.34 ~amd64
 =x11-themes/notify-osd-icons-0.7 ~amd64
 
-# Gnome 3 stuff <http://www.gentoo.org/proj/en/desktop/gnome/howtos/gnome-3.2-upgrade.xml>, <http://forums.gentoo.org/viewtopic-p-6883080.html#6883080>.
+# Gnome3 stuff <http://www.gentoo.org/proj/en/desktop/gnome/howtos/gnome-3.2-upgrade.xml>, <http://forums.gentoo.org/viewtopic-p-6883080.html#6883080>.
 <app-arch/file-roller-3.4 ~amd64
 <app-editors/gedit-3.4 ~amd64
 <app-editors/gedit-plugins-3.4 ~amd64
@@ -76,7 +76,6 @@ x11-wm/emerald::kutkevich ~amd64
 <gnome-base/nautilus-3.4 ~amd64
 <gnome-extra/evolution-data-server-3.4 ~amd64
 <gnome-extra/gconf-editor-3.4 ~amd64
-<gnome-extra/gnome-tweak-tool-3.4 ~amd64
 <media-gfx/eog-3.4 ~amd64
 <net-im/empathy-3.4 ~amd64
 <x11-libs/vte-3.4 ~amd64
@@ -86,6 +85,16 @@ x11-wm/emerald::kutkevich ~amd64
 =dev-libs/libgdata-0.10.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =dev-libs/libgweather-3.4.1 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[weather], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =gnome-extra/sushi-0.2.1 ~amd64 #required by gnome-base/nautilus-3.2.1-r1
+
+# # GNOME3 tweak tool.
+# <gnome-base/gnome-shell-3.4 ~amd64 #required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+# <gnome-extra/gnome-tweak-tool-3.4 ~amd64
+# <net-wireless/gnome-bluetooth-3.4 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1[bluetooth], required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+# <x11-wm/mutter-3.4 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+# =app-accessibility/at-spi2-core-2.2.3 ~amd64 #required by dev-python/pyatspi-2.2.1, required by app-accessibility/caribou-0.4.2, required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+# =app-accessibility/caribou-0.4.2 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+# =dev-libs/folks-0.6.6 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+# =dev-python/pyatspi-2.2.1 ~amd64 #required by app-accessibility/caribou-0.4.2, required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 
 # # Unity <http://github.com/shiznix/unity-gentoo>.
 # */*::unity-gentoo

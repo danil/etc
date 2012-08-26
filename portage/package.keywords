@@ -31,20 +31,18 @@ app-backup/dvcs-autosync ~amd64
 =x11-apps/fusion-icon-0.1-r2 ~amd64
 =x11-libs/compiz-bcop-0.8.8 ~amd64
 =x11-libs/libcompizconfig-0.8.8 ~amd64
-=x11-libs/libcompizconfig-0.8.8 ~amd64
 =x11-plugins/compiz-plugins-main-0.8.8::kutkevich ~amd64
 =x11-themes/emerald-themes-0.5.2 ~amd64
 =x11-wm/compiz-0.8.8::kutkevich ~amd64
 =x11-wm/emerald-0.8.8::stuff ~amd64
 x11-plugins/compiz-plugins-extra::kutkevich ~amd64
-x11-plugins/compiz-plugins-extra::kutkevich ~amd64
-x11-wm/compiz-fusion::kutkevich ~amd64
 x11-wm/compiz-fusion::kutkevich ~amd64
 x11-wm/emerald::kutkevich ~amd64
 
 # # Compiz 0.9.
-# =x11-wm/compiz-0.9.2 ~amd64
-# =x11-plugins/compiz-plugins-main-0.9.2 ~amd64
+# =x11-wm/compiz-0.9.7.8-r1::kutkevich ~amd64
+# =x11-plugins/compiz-plugins-main-0.9.7.2::fm ~amd64
+# =x11-plugins/compiz-plugins-extra-0.9.7.0::fm ~amd64
 
 # Cairo Dock <http://glx-dock.org>, <http://code.google.com/p/rion-overlay>.
 =x11-misc/cairo-dock-3.0.2 ~amd64

@@ -1,5 +1,4 @@
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
-# media-sound/volumeicon libnotify
 # sys-devel/gcc go
 # x11-wm/stumpwm sbcl #Lisp/Scheme overlay
 >=dev-libs/keybinder-0.3.0-r200:0 python #required by unity-extra/glipper
@@ -25,8 +24,6 @@ media-libs/gd fontconfig truetype
 media-libs/lcms:0 python #required by media-gfx/inkscape
 media-libs/libpng apng
 media-sound/moc curl
-media-sound/rhythmbox libnotify
-media-sound/volti libnotify
 media-video/mplayer ftp
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
 net-im/telepathy-connection-managers jabber irc sip icq #Empathy
@@ -34,7 +31,7 @@ net-libs/libsoup gnome
 net-misc/curl nss #required by mail-client/thunderbird-bin
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
-net-misc/wicd libnotify ambiance
+net-misc/wicd ambiance
 net-p2p/transmission gtk
 net-print/cups gnutls
 sys-auth/consolekit policykit
@@ -67,7 +64,7 @@ x11-wm/compiz gtk
 # Gajim.
 dev-lang/python:2.7 sqlite
 net-libs/farsight2 python
-net-im/gajim gmail jingle libnotify
+net-im/gajim gmail jingle
 
 # NetworkManager.
 gnome-extra/nm-applet bluetooth
@@ -107,24 +104,38 @@ virtual/ffmpeg theora x264
 # media-libs/mediastreamer video
 # net-voip/linphone video
 
+# Desktop notification support.
+# media-sound/volumeicon libnotify
+app-office/orage libnotify
+media-sound/rhythmbox libnotify
+media-sound/volti libnotify
+media-sound/volumeicon libnotify
+net-im/gajim libnotify
+net-misc/wicd libnotify
+xfce-base/xfce4-settings libnotify
+xfce-base/xfdesktop libnotify
+xfce-extra/xfce4-volumed libnotify
+
 # Gtk.
 app-misc/geoclue gtk
 app-mobilephone/obex-data-server gtk
 app-text/ghostscript-gpl gtk
 dev-python/twisted gtk
 dev-vcs/git gtk
+gnome-base/librsvg gtk3
 gnome-extra/libgsf gtk
 media-gfx/graphviz gtk
 media-libs/libcanberra gtk gtk3
 media-sound/pulseaudio gtk
 net-analyzer/nmap gtk
 net-dialup/ppp gtk
-net-dns/avahi gtk
+net-dns/avahi gtk gtk3
 sys-auth/polkit gtk
 sys-devel/gcc gtk
 www-client/opera gtk
 www-client/w3m gtk
 x11-misc/xdg-user-dirs gtk
+x11-themes/light-themes gtk3
 
 # Gnome.
 app-office/abiword gnome
@@ -151,6 +162,7 @@ app-admin/system-config-printer-gnome gnome-keyring
 app-text/evince gnome-keyring
 net-im/telepathy-mission-control gnome-keyring
 net-wireless/gnome-bluetooth gnome-keyring
+xfce-base/xfce4-session gnome-keyring
 
 # # Ekiga.
 # net-libs/opal sip

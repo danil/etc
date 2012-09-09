@@ -1,5 +1,6 @@
 # */*::kutkevich
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
+<www-client/firefox-bin-15 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/io-2009.01.02-r1 ~amd64
@@ -12,7 +13,6 @@
 =net-mail/offlineimap-6.3.4 ~amd64
 =sci-mathematics/genius-1.0.11 ~amd64
 =sys-apps/etckeeper-0.63 ~amd64
-=www-client/firefox-bin-13.0.1 #required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
 =x11-plugins/screenlets-0.1.2 ~amd64
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
@@ -93,6 +93,11 @@ x11-wm/emerald::kutkevich ~amd64
 # =app-accessibility/caribou-0.4.2 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 # =dev-libs/folks-0.6.6 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 # =dev-python/pyatspi-2.2.1 ~amd64 #required by app-accessibility/caribou-0.4.2, required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
+
+# Xfce <http://www.gentoo.org/doc/en/xfce-config.xml>,
+# <https://wiki.archlinux.org/index.php/Xfce>,
+# <http://wiki.gentoo.org/wiki/Xfce>.
+=x11-themes/faenza-xfce-icon-theme-0.2.1 ~amd64
 
 # # Unity <http://github.com/shiznix/unity-gentoo>.
 # */*::unity-gentoo

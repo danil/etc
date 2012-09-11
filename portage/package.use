@@ -4,6 +4,7 @@ app-admin/conky lua lua-cairo
 app-cdr/gnomebaker dvdr
 app-crypt/pinentry gtk
 app-editors/emacs -X -dbus
+app-editors/gedit python #required by app-editors/gedit-plugins
 app-emulation/virtualbox -additions
 app-office/openoffice-bin java
 app-text/fbreader -qt4 gtk
@@ -22,7 +23,7 @@ media-sound/rhythmbox libnotify
 media-sound/volti libnotify
 media-video/mplayer ftp
 net-libs/libsoup gnome
-net-misc/wicd libnotify
+net-misc/wicd libnotify ambiance
 net-p2p/transmission gtk
 net-print/cups gnutls
 sys-auth/consolekit policykit

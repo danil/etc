@@ -76,6 +76,10 @@ x11-wm/emerald::kutkevich ~amd64
 # x11-themes/gnome-icon-theme-symbolic
 # x11-themes/gnome-themes-standard
 
+# Faenza icons.
+=x11-themes/faenza-icon-theme-1.2-r1
+=x11-themes/faenza-xfce-icon-theme-0.2.1
+
 # FBReader.
 # =app-text/fbreader-0.12.2 ~amd64
 # =dev-libs/liblinebreak-1.0 ~amd64

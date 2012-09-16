@@ -1,11 +1,11 @@
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
 # sys-devel/gcc go
-# x11-wm/stumpwm sbcl #Lisp/Scheme overlay
 >=dev-libs/keybinder-0.3.0-r200:0 python #required by unity-extra/glipper
 app-admin/conky lua lua-cairo iostats
 app-cdr/gnomebaker dvdr
 app-crypt/pinentry gtk
 app-editors/emacs -X -dbus
+app-editors/gedit python #required by app-editors/gedit-plugins
 app-emulation/virtualbox -additions
 app-misc/sphinx mysql postgres
 app-office/openoffice-bin java
@@ -38,7 +38,7 @@ sys-auth/consolekit policykit
 sys-auth/pambase consolekit
 sys-fs/udev extras
 sys-fs/udev gudev #gnome-extra/gnome-power-manager
-sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-base/gvfs, gnome-base/libgnome, gnome-base/libbonoboui, dev-perl/gnome2-perl, x11-misc/shutter
+sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-base/gvfs[gdu], gnome-base/libgnome, gnome-base/libbonoboui, dev-perl/gnome2-perl, x11-misc/shutter
 sys-libs/zlib minizip #media-video/vlc
 virtual/notification-daemon -gnome #required by x11-misc/notify-osd
 www-servers/nginx -nginx_modules_http_geo

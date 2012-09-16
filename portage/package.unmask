@@ -26,12 +26,3 @@ x11-wm/emerald::kutkevich
 # =gnome-base/gnome-panel-3.4.1 #required by unity-base/indicator-applet-0.5.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =media-video/cheese-3.4.2 #required by gnome-base/gnome-control-center-99.3.4.2[cheese], required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =sys-libs/db-5.1.29 #required by unity-base/unity-lens-applications-5.12.0, required by unity-base/unity-lens-files-5.10.0, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-
-# # Kutkevich overlay.
-# # Unmasking these versions because is a live ebuilds clone/checkout.
-# #=www-servers/fcgiwrap-9999
-
-# Ruby 1.9
-# <http://gentoo.org/proj/en/prog_lang/ruby/index.xml?style=printable>,
-# <http://subforge.org/blogs/show/3>.
-#=dev-lang/ruby-1.9.1_p429

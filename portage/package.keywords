@@ -6,7 +6,6 @@
 =dev-lang/io-2009.01.02-r1 ~amd64
 =dev-python/python-prctl-1.3.1 ~amd64 #required by unity-extra/glipper
 =games-strategy/freeciv-2.2.5 ~amd64
-=gnome-extra/nautilus-dropbox-0.6.7 ~amd64
 =media-gfx/blender-2.60a ~amd64
 =media-radio/radiotray-0.6.1 ~amd64
 =net-libs/nodejs-0.4.11 ~amd64
@@ -161,39 +160,57 @@ x11-wm/emerald::kutkevich ~amd64
 # =x11-themes/gnome-icon-theme-3.4.0 ~amd64 #required by x11-themes/unity-asset-pool-0.8.23, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-wm/mutter-3.2.2-r1 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 
+# Cairo Dock <http://glx-dock.org>.
+=x11-misc/cairo-dock-3.0.2 ~amd64
+=x11-misc/cairo-dock-plugins-3.0.2 ~amd64
+
+# Notify OSD.
+=x11-libs/libwnck-3.2.1 ~amd64
+=x11-misc/notify-osd-0.9.33 ~amd64
+=x11-themes/notify-osd-icons-0.7 ~amd64
+
+# # GNOME 3 stuff.
+# <gnome-base/nautilus-3.4.1
+#
+# app-arch/file-roller
+# app-editors/gedit
+# app-text/evince
+# gnome-base/gnome-control-center
+# gnome-base/gnome-keyring
+# gnome-base/gnome-menus
+# gnome-base/gnome-panel
+# gnome-base/gnome-session
+# gnome-base/gnome-settings-daemon
+# gnome-extra/gconf-editor
+# gnome-extra/gnome-screensaver
+# gnome-extra/gnome-tweak-tool
+# mail-client/evolution
+# media-gfx/eog
+# net-im/empathy
+# net-misc/networkmanager
+# x11-libs/gtk+
+# x11-libs/vte
+# x11-misc/notification-daemon
+# x11-terms/gnome-terminal
+# x11-themes/gnome-backgrounds
+# x11-themes/gnome-icon-theme-symbolic
+# x11-themes/gnome-themes-standard
+
+# Faenza icons.
+=x11-themes/faenza-icon-theme-1.2-r1
+=x11-themes/faenza-xfce-icon-theme-0.2.1
+
 # FBReader.
 # =app-text/fbreader-0.12.2 ~amd64
 # =dev-libs/liblinebreak-1.0 ~amd64
 
 # Clean out your world file
 # <http://forums.gentoo.org/viewtopic-t-142475.html>.
-#=app-portage/udept-0.5.99.0.2.95-r1 ~x86
+#=app-portage/udept-0.5.99.0.2.95-r1 ~amd64
 
 # # msort 8.53 depend on tre 0.8.0 (incompatible with tre 0.7.5).
 # =app-text/msort-8.53 ~amd64
 # =dev-libs/tre-0.8.0 ~amd64
-
-# Lisp/Scheme overlay.
-
-# # StumpWM.
-# #=x11-wm/stumpwm-0.9.6-r3 ~amd64
-# =x11-wm/stumpwm-0.9.7 ~amd64
-# #=dev-lisp/cl-launch-2.36 ~amd64
-# #=dev-lisp/sbcl-1.0.38-r1 ~amd64
-# =dev-lisp/sbcl-1.0.36-r1 ~amd64
-# =dev-lisp/clx-0.7.4 ~amd64
-# =dev-lisp/cl-ppcre-1.2.16 ~amd64
-
-# # xmonad.
-# =x11-misc/xmobar-0.13 ~amd64
-# =dev-haskell/alsa-mixer-0.1.2 ~amd64
-# =dev-haskell/alsa-core-0.5 ~amd64
-# =dev-haskell/x11-xft-0.3 ~amd64
-
-# # Avant Window Navigator
-# =x11-libs/libdesktop-agnostic-0.3.92 ~amd64
-# gnome-extra/avant-window-navigator-extras ~amd64
-# gnome-extra/avant-window-navigator ~amd64
 
 # PiTiVi.
 =media-libs/gnonlin-0.10.17 ~amd64

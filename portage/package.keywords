@@ -65,23 +65,32 @@ x11-wm/emerald::kutkevich ~amd64
 <app-editors/gedit-3.4 ~amd64
 <app-editors/gedit-plugins-3.4 ~amd64
 <app-text/evince-3.4 ~amd64
+<dev-libs/libgweather-3.4 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[weather], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 <gnome-base/gnome-control-center-3.4 ~amd64
+<gnome-base/gnome-desktop-3.4 ~amd64
 <gnome-base/gnome-keyring-3.4 ~amd64
+<gnome-base/gnome-menus-3.4 ~amd64
 <gnome-base/gnome-session-3.4 ~amd64
 <gnome-base/gnome-settings-daemon-3.4 ~amd64
 <gnome-base/libgnome-keyring-3.4 ~amd64
+<gnome-base/libgnomekbd-3.4 ~amd64
 <gnome-base/nautilus-3.4 ~amd64
 <gnome-extra/evolution-data-server-3.4 ~amd64
 <gnome-extra/gconf-editor-3.4 ~amd64
 <media-gfx/eog-3.4 ~amd64
+<media-video/cheese-3.4 ~amd64
 <net-im/empathy-3.4 ~amd64
+<net-libs/gnome-online-accounts-3.4 ~amd64
 <x11-libs/vte-3.4 ~amd64
+=dev-lang/spidermonkey-1.8.5-r1 ~amd64
 =dev-libs/glib-2.32.4::gentoo ~amd64
 =dev-libs/gobject-introspection-1.32.1 ~amd64 #required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/gobject-introspection-common-1.32.1 ~amd64 #required by dev-libs/gobject-introspection-1.32.1, required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/libgdata-0.10.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=dev-libs/libgweather-3.4.1 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[weather], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =gnome-extra/sushi-0.2.1 ~amd64 #required by gnome-base/nautilus-3.2.1-r1
+=net-libs/liboauth-0.9.7 ~amd64
+=net-print/cups-pk-helper-0.2.2 ~amd64
+=x11-libs/mx-1.4.2 ~amd64
 
 # # GNOME3 tweak tool.
 # <gnome-base/gnome-shell-3.4 ~amd64 #required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool

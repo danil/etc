@@ -76,12 +76,27 @@ x11-wm/emerald::kutkevich ~amd64
 <media-gfx/eog-3.4 ~amd64
 <net-im/empathy-3.4 ~amd64
 <x11-libs/vte-3.4 ~amd64
+=dev-lang/spidermonkey-1.8.5-r1 ~amd64 #required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
+=dev-libs/gjs-1.32.0 ~amd64 #required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/glib-2.32.4::gentoo ~amd64
 =dev-libs/gobject-introspection-1.32.1 ~amd64 #required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/gobject-introspection-common-1.32.1 ~amd64 #required by dev-libs/gobject-introspection-1.32.1, required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/libgdata-0.10.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =dev-libs/libgweather-3.4.1 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[weather], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=dev-libs/libpeas-1.4.0-r1 ~amd64 #required by app-editors/gedit-3.2.6, required by app-editors/gedit-plugins-3.2.1-r1
+=dev-util/fix-la-relink-command-0.1.1 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=gnome-base/gnome-desktop-3.4.2 ~amd64 #required by media-gfx/eog-3.2.2
+=gnome-base/gnome-menus-3.4.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=gnome-base/libgnomekbd-3.4.0.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =gnome-extra/sushi-0.2.1 ~amd64 #required by gnome-base/nautilus-3.2.1-r1
+=media-video/cheese-3.4.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=net-libs/gnome-online-accounts-3.4.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=net-libs/liboauth-0.9.7 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=net-print/cups-pk-helper-0.2.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3[cups], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=x11-libs/gdk-pixbuf-2.26.4 ~amd64 #required by media-libs/cogl-1.8.2, required by media-libs/clutter-1.8.4, required by media-video/cheese-3.4.2, required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=x11-libs/gtk+-3.4.4 ~amd64 #required by gnome-base/gnome-settings-daemon-3.2.3, required by gnome-base/gnome-session-3.2.1-r1, required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=x11-libs/mx-1.4.7 ~amd64 #required by media-video/cheese-3.4.2, required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=x11-libs/pango-1.30.1 ~amd64 #required by x11-libs/gtk+-3.4.4, required by gnome-base/gnome-desktop-3.4.2, required by media-video/cheese-3.4.2, required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 
 # # GNOME3 tweak tool.
 # <gnome-base/gnome-shell-3.4 ~amd64 #required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
@@ -117,7 +132,7 @@ x11-wm/emerald::kutkevich ~amd64
 # =dev-libs/gobject-introspection-1.32.1 ~amd64 #required by x11-libs/gtk+-99.3.4.2[introspection], required by gnome-base/gnome-session-99.3.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =dev-libs/gobject-introspection-common-1.32.1 ~amd64 #required by dev-libs/gobject-introspection-1.32.1, required by net-libs/libsocialweb-0.25.20[introspection,-vala], required by gnome-base/gnome-control-center-99.3.4.2[socialweb], required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =dev-libs/libgdata-0.10.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-# =dev-libs/libgweather-3.4.1 ~amd64 #required by mail-client/evolution-2.32.3-r1, required by @selected, required by @world (argument)
+# =dev-libs/libgweather-3.4.1 ~amd64 #required by mail-client/evolution-2.32.3-r1
 # =dev-libs/libindicate-12.10.0 ~amd64
 # =dev-libs/libindicate-qt-0.2.5.91 ~amd64 #required by unity-base/unity-6.2.0, required by gnome-base/nautilus-99.3.4.2, required by gnome-extra/sushi-0.2.1
 # =dev-libs/libwacom-0.5 ~amd64 #required by gnome-base/gnome-settings-daemon-99.3.4.2, required by gnome-base/gnome-session-99.3.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)

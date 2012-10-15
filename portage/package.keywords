@@ -1,5 +1,6 @@
 # */*::kutkevich
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
+<sys-devel/gcc-4.7
 <www-client/firefox-bin-16 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
@@ -74,7 +75,7 @@ x11-wm/emerald::kutkevich ~amd64
 <gnome-base/nautilus-3.4 ~amd64
 <gnome-extra/evolution-data-server-3.4 ~amd64
 <gnome-extra/gconf-editor-3.4 ~amd64
-<media-gfx/eog-3.4 ~amd64
+<media-gfx/eog-3.6 ~amd64
 <net-im/empathy-3.4 ~amd64
 <x11-libs/vte-3.4 ~amd64
 =dev-lang/spidermonkey-1.8.5-r1 ~amd64 #required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1

@@ -27,6 +27,7 @@ media-sound/moc curl
 media-video/mplayer ftp
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
 net-im/telepathy-connection-managers jabber irc sip icq #Empathy
+net-libs/farstream python #required by net-im/gajim-0.15.1[jingle], required by @selected, required by @world (argument)
 net-libs/libsoup gnome
 net-misc/curl nss #required by mail-client/thunderbird-bin
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>

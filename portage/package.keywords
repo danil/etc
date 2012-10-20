@@ -50,12 +50,13 @@ x11-wm/emerald::kutkevich ~amd64
 =x11-misc/cairo-dock-plugins-3.0.2 ~amd64
 
 # # Empathy.
-# =gnome-base/gnome-keyring-3.2.2 ~amd64 #required by gnome-base/libgnome-keyring-3.2.2, required by net-libs/libsoup-gnome-2.36.1, required by media-libs/libchamplain-0.12.3, required by net-im/empathy-3.2.2-r1[map], required by net-im/empathy
-# =gnome-base/libgnome-keyring-3.2.2 ~amd64 #required by gnome-base/gnome-keyring-3.2.2, required by net-im/empathy-3.2.2-r1, required by net-im/empathy
-# =media-libs/libchamplain-0.12.3 ~amd64 #required by net-im/empathy-3.2.2-r1[map], required by net-im/empathy
-# =net-im/empathy-3.2.2-r1 ~amd64
-# =net-im/telepathy-logger-0.4.0 ~amd64 #required by net-im/empathy-3.2.2-r1, required by net-im/empathy
-# =net-libs/telepathy-glib-0.18.1 ~amd64 #required by net-im/telepathy-logger-0.4.0, required by net-im/empathy-3.2.2-r1, required by net-im/empathy
+# <net-im/empathy-3.6 ~amd64
+# =media-libs/clutter-gst-1.6.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+# =media-libs/cogl-1.10.4 ~amd64 #required by media-libs/clutter-gst-1.6.0, required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
+# =sci-geosciences/geocode-glib-0.99.0 ~amd64 #required by net-im/empathy-3.4.2.3[geocode], required by net-im/empathy (argument)
+# =media-libs/clutter-gtk-1.4.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+# =media-libs/clutter-1.10.8 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+# =dev-libs/folks-0.6.9 ~amd64 #required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
 
 # Notify OSD.
 =x11-libs/libwnck-3.2.1 ~amd64
@@ -83,7 +84,6 @@ x11-wm/emerald::kutkevich ~amd64
 <gnome-extra/gnome-color-manager-3.6 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[colord], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 <media-gfx/eog-3.6 ~amd64
 <media-video/cheese-3.6 ~amd64
-<net-im/empathy-3.6 ~amd64
 <net-libs/gnome-online-accounts-3.6 ~amd64
 <net-wireless/gnome-bluetooth-3.6 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[bluetooth], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 <x11-libs/vte-3.6 ~amd64

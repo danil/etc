@@ -50,6 +50,11 @@ x11-misc/tint2 battery
 x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/xmonad doc
 
+# Temporary.
+media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1-r1[alsa], required by gnome-base/gnome-settings-daemon-3.4.2, required by gnome-base/gnome-session-3.4.2.1, required by gnome-base/gnome-control-center-3.4.2-r1, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+x11-libs/libdrm libkms #required by media-libs/mesa-9.0[-gbm,xorg], required by x11-libs/cairo-1.10.2-r3[opengl], required by x11-libs/goocanvas-0.14, required by dev-perl/Goo-Canvas-0.60.0, required by x11-misc/shutter-0.88.1[drawing]
+virtual/udev gudev hwdb #required by sys-fs/udisks-1.0.4-r2, required by sys-fs/udiskie-0.4.1
+
 # Git.
 #dev-vcs/git cgi #Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>
 dev-lang/tk -truetype #Gitk: Error in startup script: expected integer but got "Sans"

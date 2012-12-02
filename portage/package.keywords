@@ -23,6 +23,7 @@ www-client/google-chrome:stable ~amd64
 # Temporary.
 =net-misc/sparkleshare-0.9.2 ~amd64
 =xfce-extra/thunar-media-tags-plugin-0.2.0 ~amd64
+app-backup/dvcs-autosync ~amd64
 
 # SpiderOak <http://spideroak.com>.
 =app-backup/spideroak-bin-4.7.9948 ~amd64
@@ -32,35 +33,30 @@ www-client/google-chrome:stable ~amd64
 =dev-python/psutil-0.6.1 ~amd64
 =sys-process/glances-1.4.2.1 ~amd64
 
-# Tmp.
-app-backup/dvcs-autosync ~amd64
+# Compiz 0.9.
+=x11-wm/compiz-0.9.8.2::kutkevich ~amd64
 
-# # Rhythmbox.
-# =dev-libs/libpeas-1.2.0-r1 ~amd64
-# =media-sound/rhythmbox-2.97 ~amd64
-
-# Compiz 0.8.
-=dev-python/compizconfig-python-0.8.4-r3 ~amd64
-=x11-apps/ccsm-0.8.4-r1 ~amd64
-=x11-apps/fusion-icon-0.1-r2 ~amd64
-=x11-libs/compiz-bcop-0.8.8 ~amd64
-=x11-libs/libcompizconfig-0.8.8 ~amd64
-=x11-plugins/compiz-plugins-main-0.8.8::kutkevich ~amd64
-=x11-themes/emerald-themes-0.5.2 ~amd64
-=x11-wm/compiz-0.8.8::kutkevich ~amd64
-=x11-wm/emerald-0.8.8::stuff ~amd64
-x11-plugins/compiz-plugins-extra::kutkevich ~amd64
-x11-wm/compiz-fusion::kutkevich ~amd64
-x11-wm/emerald::kutkevich ~amd64
-
-# # Compiz 0.9.
-# =x11-wm/compiz-0.9.7.8-r1::kutkevich ~amd64
-# =x11-plugins/compiz-plugins-main-0.9.7.2::fm ~amd64
-# =x11-plugins/compiz-plugins-extra-0.9.7.0::fm ~amd64
+# # Compiz 0.8.
+# =dev-python/compizconfig-python-0.8.4-r4 ~amd64
+# =x11-apps/ccsm-0.8.4-r1 ~amd64
+# =x11-apps/fusion-icon-0.1-r2 ~amd64
+# =x11-libs/compiz-bcop-0.8.8 ~amd64
+# =x11-libs/libcompizconfig-0.8.8 ~amd64
+# =x11-plugins/compiz-plugins-main-0.8.8::kutkevich ~amd64
+# =x11-themes/emerald-themes-0.5.2 ~amd64
+# =x11-wm/compiz-0.8.8::kutkevich ~amd64
+# =x11-wm/emerald-0.8.8::stuff ~amd64
+# x11-plugins/compiz-plugins-extra::kutkevich ~amd64
+# x11-wm/compiz-fusion::kutkevich ~amd64
+# x11-wm/emerald::kutkevich ~amd64
 
 # Cairo Dock <http://glx-dock.org>, <http://code.google.com/p/rion-overlay>.
 =x11-misc/cairo-dock-3.0.2 ~amd64
 =x11-misc/cairo-dock-plugins-3.0.2 ~amd64
+
+# Docky.
+=x11-libs/libdesktop-agnostic-0.3.92 ~amd64 #required by x11-misc/dockmanager-0.1.0, required by x11-misc/dockmanager (argument)
+=x11-misc/dockmanager-0.1.0 ~amd64
 
 # # Empathy.
 # <net-im/empathy-3.6 ~amd64
@@ -75,6 +71,10 @@ x11-wm/emerald::kutkevich ~amd64
 =x11-libs/libwnck-3.2.1 ~amd64
 =x11-misc/notify-osd-0.9.34 ~amd64
 =x11-themes/notify-osd-icons-0.7 ~amd64
+
+# # Rhythmbox.
+# =dev-libs/libpeas-1.2.0-r1 ~amd64
+# =media-sound/rhythmbox-2.97 ~amd64
 
 # Gnome3 stuff <http://www.gentoo.org/proj/en/desktop/gnome/howtos/gnome-3.2-upgrade.xml>, <http://forums.gentoo.org/viewtopic-p-6883080.html#6883080>.
 <app-arch/file-roller-3.6 ~amd64
@@ -189,10 +189,6 @@ x11-wm/emerald::kutkevich ~amd64
 # =x11-misc/appmenu-qt-0.2.6 ~amd64 #required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-themes/gnome-icon-theme-3.4.0 ~amd64 #required by x11-themes/unity-asset-pool-0.8.23, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-wm/mutter-3.2.2-r1 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-
-# Cairo Dock <http://glx-dock.org>.
-=x11-misc/cairo-dock-3.0.2 ~amd64
-=x11-misc/cairo-dock-plugins-3.0.2 ~amd64
 
 # Notify OSD.
 =x11-libs/libwnck-3.2.1 ~amd64

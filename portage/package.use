@@ -66,7 +66,7 @@ dev-vcs/subversion perl
 
 # Compiz.
 # x11-wm/compiz-fusion emerald
-x11-wm/compiz gtk
+x11-wm/compiz gtk hjkl
 
 # Gajim.
 dev-lang/python:2.7 sqlite

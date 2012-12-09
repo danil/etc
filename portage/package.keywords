@@ -58,14 +58,15 @@ app-backup/dvcs-autosync ~amd64
 =x11-libs/libdesktop-agnostic-0.3.92 ~amd64 #required by x11-misc/dockmanager-0.1.0, required by x11-misc/dockmanager (argument)
 =x11-misc/dockmanager-0.1.0 ~amd64
 
-# # Empathy.
-# <net-im/empathy-3.6 ~amd64
-# =media-libs/clutter-gst-1.6.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
-# =media-libs/cogl-1.10.4 ~amd64 #required by media-libs/clutter-gst-1.6.0, required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
-# =sci-geosciences/geocode-glib-0.99.0 ~amd64 #required by net-im/empathy-3.4.2.3[geocode], required by net-im/empathy (argument)
-# =media-libs/clutter-gtk-1.4.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
-# =media-libs/clutter-1.10.8 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
-# =dev-libs/folks-0.6.9 ~amd64 #required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
+# Empathy.
+<net-im/empathy-3.6 ~amd64
+=dev-libs/folks-0.6.9 ~amd64 #required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
+=media-libs/clutter-1.10.8 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+=media-libs/clutter-gst-1.6.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+=media-libs/clutter-gtk-1.4.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+=media-libs/cogl-1.10.4 ~amd64 #required by media-libs/clutter-gst-1.6.0, required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
+=net-voip/telepathy-rakia-0.7.4 ~amd64
+=sci-geosciences/geocode-glib-0.99.0 ~amd64 #required by net-im/empathy-3.4.2.3[geocode], required by net-im/empathy (argument)
 
 # Notify OSD.
 =x11-libs/libwnck-3.2.1 ~amd64
@@ -95,6 +96,7 @@ app-backup/dvcs-autosync ~amd64
 <gnome-extra/evolution-data-server-3.6 ~amd64
 <gnome-extra/gconf-editor-3.6 ~amd64
 <gnome-extra/gnome-color-manager-3.6 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[colord], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+<mail-client/evolution-3.6 ~amd64
 <media-gfx/eog-3.6 ~amd64
 <media-video/cheese-3.6 ~amd64
 <net-libs/gnome-online-accounts-3.6 ~amd64

@@ -32,6 +32,7 @@ net-libs/libsoup gnome
 net-misc/curl nss #required by mail-client/thunderbird-bin
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
+net-misc/sparkleshare nautilus
 net-misc/wicd ambiance
 net-p2p/transmission gtk
 net-print/cups gnutls

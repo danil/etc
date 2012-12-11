@@ -1,7 +1,8 @@
 # */*::kutkevich
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
 <sys-devel/gcc-4.7
-<www-client/firefox-bin-16 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
+<mail-client/thunderbird-bin-18 ~amd64
+<www-client/firefox-bin-18 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
 =dev-lang/go-1.0.2 ~amd64
@@ -19,8 +20,12 @@ media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
 
-# Tmp.
+# Temporary.
 app-backup/dvcs-autosync ~amd64
+
+# Glances <https://github.com/nicolargo/glances>.
+=dev-python/psutil-0.6.1 ~amd64
+=sys-process/glances-1.4.2.1 ~amd64
 
 # # Rhythmbox.
 # =dev-libs/libpeas-1.2.0-r1 ~amd64
@@ -49,6 +54,10 @@ x11-wm/emerald::kutkevich ~amd64
 =x11-misc/cairo-dock-3.0.2 ~amd64
 =x11-misc/cairo-dock-plugins-3.0.2 ~amd64
 
+# Docky.
+=x11-libs/libdesktop-agnostic-0.3.92 ~amd64 #required by x11-misc/dockmanager-0.1.0, required by x11-misc/dockmanager (argument)
+=x11-misc/dockmanager-0.1.0 ~amd64
+
 # # Empathy.
 # =gnome-base/gnome-keyring-3.2.2 ~amd64 #required by gnome-base/libgnome-keyring-3.2.2, required by net-libs/libsoup-gnome-2.36.1, required by media-libs/libchamplain-0.12.3, required by net-im/empathy-3.2.2-r1[map], required by net-im/empathy
 # =gnome-base/libgnome-keyring-3.2.2 ~amd64 #required by gnome-base/gnome-keyring-3.2.2, required by net-im/empathy-3.2.2-r1, required by net-im/empathy
@@ -63,47 +72,46 @@ x11-wm/emerald::kutkevich ~amd64
 =x11-themes/notify-osd-icons-0.7 ~amd64
 
 # Gnome3 stuff <http://www.gentoo.org/proj/en/desktop/gnome/howtos/gnome-3.2-upgrade.xml>, <http://forums.gentoo.org/viewtopic-p-6883080.html#6883080>.
-<app-arch/file-roller-3.4 ~amd64
-<app-editors/gedit-3.4 ~amd64
-<app-editors/gedit-plugins-3.4 ~amd64
-<app-text/evince-3.4 ~amd64
-<gnome-base/gnome-control-center-3.4 ~amd64
-<gnome-base/gnome-keyring-3.4 ~amd64
-<gnome-base/gnome-session-3.4 ~amd64
-<gnome-base/gnome-settings-daemon-3.4 ~amd64
-<gnome-base/libgnome-keyring-3.4 ~amd64
-<gnome-base/nautilus-3.4 ~amd64
-<gnome-extra/evolution-data-server-3.4 ~amd64
-<gnome-extra/gconf-editor-3.4 ~amd64
+<app-arch/file-roller-3.6 ~amd64
+<app-crypt/gcr-3.6 ~amd64 #required by gnome-base/gnome-keyring-3.4.1, required by app-text/evince-3.4.0[gnome-keyring]
+<app-editors/gedit-3.6 ~amd64
+<app-editors/gedit-plugins-3.6 ~amd64
+<app-text/evince-3.6 ~amd64
+<dev-libs/libgweather-3.6 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[weather], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+<gnome-base/gnome-control-center-3.6 ~amd64
+<gnome-base/gnome-desktop-3.6 ~amd64
+<gnome-base/gnome-keyring-3.6 ~amd64
+<gnome-base/gnome-menus-3.6 ~amd64
+<gnome-base/gnome-session-3.6 ~amd64
+<gnome-base/gnome-settings-daemon-3.6 ~amd64
+<gnome-base/libgnome-keyring-3.6 ~amd64
+<gnome-base/libgnomekbd-3.6 ~amd64
+<gnome-base/nautilus-3.6 ~amd64
+<gnome-extra/evolution-data-server-3.6 ~amd64
+<gnome-extra/gconf-editor-3.6 ~amd64
+<gnome-extra/gnome-color-manager-3.6 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[colord], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 <media-gfx/eog-3.6 ~amd64
-<net-im/empathy-3.4 ~amd64
-<x11-libs/vte-3.4 ~amd64
-=dev-lang/spidermonkey-1.8.5-r1 ~amd64 #required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
-=dev-libs/gjs-1.32.0 ~amd64 #required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
+<media-video/cheese-3.6 ~amd64
+<net-libs/gnome-online-accounts-3.6 ~amd64
+<net-wireless/gnome-bluetooth-3.6 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[bluetooth], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+<x11-libs/vte-3.6 ~amd64
+=app-admin/openrc-settingsd-1.0.1 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[-systemd], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=dev-lang/spidermonkey-1.8.5-r1 ~amd64
 =dev-libs/glib-2.32.4::gentoo ~amd64
 =dev-libs/gobject-introspection-1.32.1 ~amd64 #required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/gobject-introspection-common-1.32.1 ~amd64 #required by dev-libs/gobject-introspection-1.32.1, required by dev-libs/gjs-1.32.0, required by gnome-extra/sushi-0.2.1, required by gnome-base/nautilus-3.2.1-r1[previewer], required by gnome-extra/nautilus-dropbox-0.7.1
 =dev-libs/libgdata-0.10.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=dev-libs/libgweather-3.4.1 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[weather], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=dev-libs/libpeas-1.4.0-r1 ~amd64 #required by app-editors/gedit-3.2.6, required by app-editors/gedit-plugins-3.2.1-r1
-=dev-util/fix-la-relink-command-0.1.1 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=gnome-base/gnome-desktop-3.4.2 ~amd64 #required by media-gfx/eog-3.2.2
-=gnome-base/gnome-menus-3.4.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=gnome-base/libgnomekbd-3.4.0.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=dev-libs/vala-common-0.18.0 ~amd64 #required by gnome-base/librsvg-2.36.3, required by media-gfx/eog-3.4.3-r1[svg]
+=gnome-base/librsvg-2.36.3 ~amd64 #required by app-office/abiword-2.8.6-r2
 =gnome-extra/sushi-0.2.1 ~amd64 #required by gnome-base/nautilus-3.2.1-r1
-=media-video/cheese-3.4.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=net-libs/gnome-online-accounts-3.4.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=net-libs/liboauth-0.9.7 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=net-print/cups-pk-helper-0.2.2 ~amd64 #required by gnome-base/gnome-control-center-3.2.3[cups], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=x11-libs/gdk-pixbuf-2.26.4 ~amd64 #required by media-libs/cogl-1.8.2, required by media-libs/clutter-1.8.4, required by media-video/cheese-3.4.2, required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=x11-libs/gtk+-3.4.4 ~amd64 #required by gnome-base/gnome-settings-daemon-3.2.3, required by gnome-base/gnome-session-3.2.1-r1, required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=x11-libs/mx-1.4.7 ~amd64 #required by media-video/cheese-3.4.2, required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-=x11-libs/pango-1.30.1 ~amd64 #required by x11-libs/gtk+-3.4.4, required by gnome-base/gnome-desktop-3.4.2, required by media-video/cheese-3.4.2, required by gnome-base/gnome-control-center-3.2.3[cheese], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=net-libs/liboauth-0.9.7 ~amd64
+=net-print/cups-pk-helper-0.2.2 ~amd64
+=sys-auth/nss-myhostname-0.3 ~amd64 #required by app-admin/openrc-settingsd-1.0.1, required by gnome-base/gnome-control-center-3.4.2-r1[-systemd], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+=x11-libs/mx-1.4.2 ~amd64
 
 # # GNOME3 tweak tool.
 # <gnome-base/gnome-shell-3.4 ~amd64 #required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 # <gnome-extra/gnome-tweak-tool-3.4 ~amd64
-# <net-wireless/gnome-bluetooth-3.4 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1[bluetooth], required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 # <x11-wm/mutter-3.4 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 # =app-accessibility/at-spi2-core-2.2.3 ~amd64 #required by dev-python/pyatspi-2.2.1, required by app-accessibility/caribou-0.4.2, required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
 # =app-accessibility/caribou-0.4.2 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool

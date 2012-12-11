@@ -23,6 +23,7 @@ mail-client/mutt doc imap #`man muttrc`
 media-libs/gd fontconfig truetype
 media-libs/lcms:0 python #required by media-gfx/inkscape
 media-libs/libpng apng
+media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1-r1[alsa], required by gnome-base/gnome-settings-daemon-3.4.2, required by gnome-base/gnome-session-3.4.2.1, required by gnome-base/gnome-control-center-3.4.2-r1, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 media-sound/moc curl
 media-video/mplayer ftp
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>

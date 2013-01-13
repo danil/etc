@@ -42,7 +42,9 @@ app-backup/dvcs-autosync ~amd64
 =sys-process/glances-1.4.2.1 ~amd64
 
 # Compiz 0.9.
+=x11-themes/emerald-themes-0.5.2 ~amd64
 =x11-wm/compiz-0.9.8.2::kutkevich ~amd64
+=x11-wm/emerald-0.9.5::kutkevich ~amd64
 
 # # Compiz 0.8.
 # =dev-python/compizconfig-python-0.8.4-r4 ~amd64

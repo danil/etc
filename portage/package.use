@@ -176,6 +176,11 @@ net-im/telepathy-mission-control gnome-keyring
 net-wireless/gnome-bluetooth gnome-keyring
 xfce-base/xfce4-session gnome-keyring
 
+# # Psi.
+# x11-libs/qt-core qt3support #required by x11-libs/qt-gui-4.8.4, required by net-im/psi-0.14-r4, required by net-im/psi (argument)
+# x11-libs/qt-gui qt3support #required by x11-libs/qt-core-4.8.4[qt3support], required by app-crypt/qca-2.0.3, required by app-crypt/qca-gnupg-2.0.0_beta3, required by net-im/psi-0.14-r4[crypt], required by net-im/psi (argument)
+# x11-libs/qt-sql qt3support #required by x11-libs/qt-qt3support-4.8.4, required by x11-libs/qt-gui-4.8.4[qt3support], required by net-im/psi-0.14-r4, required by net-im/psi (argument)
+
 # # Ekiga.
 # net-libs/opal sip
 # net-libs/ptlib wav

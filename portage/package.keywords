@@ -250,3 +250,7 @@ app-backup/dvcs-autosync ~amd64
 # PiTiVi.
 =media-libs/gnonlin-0.10.17 ~amd64
 =media-video/pitivi-0.14.1 ~amd64
+
+# # Spring.
+# games-strategy/spring ~amd64
+# games-util/springlobby ~amd64

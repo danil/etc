@@ -22,16 +22,16 @@ media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
 
+# Temporary.
+=net-misc/sparkleshare-0.9.2 ~amd64
+=xfce-extra/thunar-media-tags-plugin-0.2.0 ~amd64
+app-backup/dvcs-autosync ~amd64
+
 # Steam.
 =games-util/steam-base-1.0.0.18 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 =games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 =games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 games-util/steam-meta ~amd64
-
-# Temporary.
-=net-misc/sparkleshare-0.9.2 ~amd64
-=xfce-extra/thunar-media-tags-plugin-0.2.0 ~amd64
-app-backup/dvcs-autosync ~amd64
 
 # SpiderOak <http://spideroak.com>.
 =app-backup/spideroak-bin-4.7.9948 ~amd64

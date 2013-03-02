@@ -11,7 +11,7 @@
 =games-strategy/freeciv-2.2.5 ~amd64
 =media-gfx/blender-2.60a ~amd64
 =media-radio/radiotray-0.6.1 ~amd64
-=net-im/gajim-0.15.2 ~amd64
+=net-im/gajim-0.15.2-r1 ~amd64
 =net-libs/nodejs-0.4.11 ~amd64
 =net-mail/offlineimap-6.3.4 ~amd64
 =sci-mathematics/genius-1.0.11 ~amd64
@@ -28,10 +28,10 @@ www-client/google-chrome:stable ~amd64
 app-backup/dvcs-autosync ~amd64
 
 # Steam.
-=games-util/steam-base-1.0.0.18 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
+<games-util/steam-launcher-2 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 =games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 =games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-games-util/steam-meta ~amd64
+=games-util/steam-meta-9999 ~amd64
 
 # SpiderOak <http://spideroak.com>.
 =app-backup/spideroak-bin-4.7.9948 ~amd64

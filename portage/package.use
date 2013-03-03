@@ -14,6 +14,7 @@ dev-db/sqlite extensions
 dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 dev-libs/libxml2 python
 dev-libs/pwlib ldap
+dev-qt/qtgui dbus
 games-strategy/freeciv sdl -gtk
 gnome-base/gnome-session branding
 gnome-base/gnome-settings-daemon policykit #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.2.1[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
@@ -44,7 +45,6 @@ sys-fs/udev keymap #x11-base/xorg-server: may cause input device autoconfigurati
 sys-libs/zlib minizip #media-video/vlc
 virtual/notification-daemon -gnome #required by x11-misc/notify-osd
 www-servers/nginx -nginx_modules_http_geo
-x11-libs/qt-gui dbus
 x11-misc/cairo-dock-plugins terminal
 x11-misc/shutter drawing
 x11-misc/tint2 battery

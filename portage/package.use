@@ -184,3 +184,6 @@ xfce-base/xfce4-session gnome-keyring
 # # Ekiga.
 # net-libs/opal sip
 # net-libs/ptlib wav
+
+# Steam.
+media-libs/libsdl abi_x86_32 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay

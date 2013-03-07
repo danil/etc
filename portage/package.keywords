@@ -78,6 +78,10 @@ app-backup/dvcs-autosync ~amd64
 # =dev-libs/libpeas-1.2.0-r1 ~amd64
 # =media-sound/rhythmbox-2.97 ~amd64
 
+# Xfce.
+=xfce-base/thunar-1.6.2 ~amd64
+=xfce-base/exo-0.10.2 ~amd64 #required by xfce-base/thunar-1.6.2, required by xfce-base/thunar
+
 # Gnome3 stuff <http://www.gentoo.org/proj/en/desktop/gnome/howtos/gnome-3.2-upgrade.xml>, <http://forums.gentoo.org/viewtopic-p-6883080.html#6883080>.
 <app-arch/file-roller-3.8 ~amd64
 <app-crypt/gcr-3.7 ~amd64 #required by gnome-base/gnome-keyring-3.4.1, required by app-text/evince-3.4.0[gnome-keyring]
@@ -93,10 +97,11 @@ app-backup/dvcs-autosync ~amd64
 <gnome-base/gnome-settings-daemon-3.6 ~amd64
 <gnome-base/libgnome-keyring-3.6 ~amd64
 <gnome-base/libgnomekbd-3.6 ~amd64
-<gnome-base/nautilus-3.6 ~amd64
+<gnome-base/nautilus-3.7 ~amd64
 <gnome-extra/evolution-data-server-3.6 ~amd64
 <gnome-extra/gconf-editor-3.6 ~amd64
 <gnome-extra/gnome-color-manager-3.6 ~amd64 #required by gnome-base/gnome-control-center-3.4.2-r1[colord], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+<gnome-extra/sushi-3.7 ~amd64 #required by gnome-base/nautilus-3.2.1-r1
 <mail-client/evolution-3.6 ~amd64
 <media-gfx/eog-3.6 ~amd64
 <media-video/cheese-3.6 ~amd64
@@ -121,9 +126,9 @@ app-backup/dvcs-autosync ~amd64
 =dev-python/pycairo-1.10.0-r4 ~amd64 #required by dev-python/pygobject-3.2.2[cairo], required by dev-libs/libpeas-1.4.0-r1, required by app-editors/gedit-plugins-3.6.1-r1
 =dev-python/pygobject-3.4.2-r1 ~amd64 #required by dev-libs/libpeas-1.4.0-r1, required by app-editors/gedit-plugins-3.6.1-r1
 =gnome-base/librsvg-2.36.3 ~amd64 #required by app-office/abiword-2.8.6-r2
-=gnome-extra/sushi-0.2.1 ~amd64 #required by gnome-base/nautilus-3.2.1-r1
-=media-libs/clutter-1.10.8 ~amd64
-=media-libs/clutter-gst-1.6.0-r1 ~amd64
+=media-libs/clutter-1.12.2 ~amd64
+=media-libs/clutter-gst-1.6.0-r1:1.0 ~amd64
+=media-libs/clutter-gst-2.0.0:2.0 ~amd64
 =media-libs/clutter-gtk-1.4.0 ~amd64
 =media-libs/cogl-1.10.4 ~amd64
 =net-libs/liboauth-0.9.7 ~amd64
@@ -131,6 +136,9 @@ app-backup/dvcs-autosync ~amd64
 =sys-auth/nss-myhostname-0.3 ~amd64 #required by app-admin/openrc-settingsd-1.0.1, required by gnome-base/gnome-control-center-3.4.2-r1[-systemd], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =x11-libs/mx-1.4.2 ~amd64
 =x11-themes/gtk-engines-unico-1.0.3_pre20121212 ~amd64
+=dev-util/gdbus-codegen-2.34.3 ~amd64 #required by gnome-base/nautilus-3.6.3, required by gnome-extra/sushi-3.6.1
+=gnome-base/gvfs-1.14.2 ~amd64 #required by gnome-base/nautilus-3.6.3, required by gnome-extra/sushi-3.6.1
+=app-crypt/libsecret-0.14 ~amd64 #required by gnome-base/gvfs-1.14.2[gnome-keyring], required by gnome-base/nautilus-3.6.3, required by gnome-extra/sushi-3.6.1
 
 # # GNOME3 tweak tool.
 # <gnome-base/gnome-shell-3.4 ~amd64 #required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool

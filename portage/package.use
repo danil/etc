@@ -4,7 +4,6 @@
 >=dev-libs/keybinder-0.3.0-r200:0 python #required by unity-extra/glipper
 app-admin/conky lua lua-cairo iostats
 app-cdr/gnomebaker dvdr
-app-crypt/pinentry gtk
 app-editors/emacs -X -dbus
 app-editors/gedit python #required by app-editors/gedit-plugins
 app-emulation/virtualbox -additions
@@ -34,7 +33,6 @@ net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 net-misc/sparkleshare nautilus
 net-misc/wicd ambiance
-net-p2p/transmission gtk
 net-print/cups gnutls
 sys-auth/consolekit policykit
 sys-auth/pambase consolekit
@@ -119,21 +117,26 @@ virtual/ffmpeg theora x264
 # Desktop notification support.
 # media-sound/volumeicon libnotify
 app-office/orage libnotify
+mail-client/balsa libnotify
 media-sound/rhythmbox libnotify
 media-sound/volti libnotify
 media-sound/volumeicon libnotify
 net-im/gajim libnotify
 net-misc/wicd libnotify
+xfce-base/thunar libnotify
 xfce-base/xfce4-settings libnotify
 xfce-base/xfdesktop libnotify
+xfce-extra/thunar-volman libnotify
 xfce-extra/xfce4-volumed libnotify
 
 # Gtk.
+app-crypt/pinentry gtk
 app-misc/geoclue gtk
 app-mobilephone/obex-data-server gtk
 app-text/ghostscript-gpl gtk
 dev-python/twisted gtk
 dev-vcs/git gtk
+gnome-base/gvfs gtk
 gnome-base/librsvg gtk3
 gnome-extra/libgsf gtk
 media-gfx/graphviz gtk
@@ -142,6 +145,7 @@ media-sound/pulseaudio gtk
 net-analyzer/nmap gtk
 net-dialup/ppp gtk
 net-dns/avahi gtk gtk3
+net-p2p/transmission gtk
 sys-auth/polkit gtk
 sys-devel/gcc gtk
 www-client/opera gtk

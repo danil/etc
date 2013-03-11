@@ -1,7 +1,7 @@
 # */*::kutkevich
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
-<sys-devel/gcc-4.7 ~amd64
 <mail-client/thunderbird-bin-18 ~amd64
+<sys-devel/gcc-4.7 ~amd64
 <www-client/firefox-bin-18 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
 =app-mobilephone/dfu-util-0.1 ~amd64
 =app-office/openoffice-bin-3.2.0 ~amd64
@@ -17,6 +17,7 @@
 =sci-mathematics/genius-1.0.11 ~amd64
 =sys-apps/etckeeper-0.63 ~amd64
 =x11-plugins/screenlets-0.1.2 ~amd64
+app-text/gpicker::kutkevich ~amd64
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
@@ -25,6 +26,12 @@ www-client/google-chrome:stable ~amd64
 =net-misc/sparkleshare-0.9.2 ~amd64
 =xfce-extra/thunar-media-tags-plugin-0.2.0 ~amd64
 app-backup/dvcs-autosync ~amd64
+
+# Steam.
+=games-util/steam-base-1.0.0.18 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
+=games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
+=games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
+games-util/steam-meta ~amd64
 
 # SpiderOak <http://spideroak.com>.
 =app-backup/spideroak-bin-4.7.9948 ~amd64
@@ -61,16 +68,6 @@ app-backup/dvcs-autosync ~amd64
 =x11-libs/libdesktop-agnostic-0.3.92 ~amd64 #required by x11-misc/dockmanager-0.1.0, required by x11-misc/dockmanager (argument)
 =x11-misc/dockmanager-0.1.0 ~amd64
 
-# Empathy.
-<net-im/empathy-3.6 ~amd64
-=dev-libs/folks-0.6.9 ~amd64 #required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
-=media-libs/clutter-1.10.8 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
-=media-libs/clutter-gst-1.6.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
-=media-libs/clutter-gtk-1.4.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
-=media-libs/cogl-1.10.4 ~amd64 #required by media-libs/clutter-gst-1.6.0, required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
-=net-voip/telepathy-rakia-0.7.4 ~amd64
-=sci-geosciences/geocode-glib-0.99.0 ~amd64 #required by net-im/empathy-3.4.2.3[geocode], required by net-im/empathy (argument)
-
 # Notify OSD.
 =x11-libs/libwnck-3.2.1 ~amd64
 =x11-misc/notify-osd-0.9.34 ~amd64
@@ -80,8 +77,12 @@ app-backup/dvcs-autosync ~amd64
 # =dev-libs/libpeas-1.2.0-r1 ~amd64
 # =media-sound/rhythmbox-2.97 ~amd64
 
+# Xfce.
+=xfce-base/thunar-1.6.2 ~amd64
+=xfce-base/exo-0.10.2 ~amd64 #required by xfce-base/thunar-1.6.2, required by xfce-base/thunar
+
 # Gnome3 stuff <http://www.gentoo.org/proj/en/desktop/gnome/howtos/gnome-3.2-upgrade.xml>, <http://forums.gentoo.org/viewtopic-p-6883080.html#6883080>.
-<app-arch/file-roller-3.6 ~amd64
+<app-arch/file-roller-3.8 ~amd64
 <app-crypt/gcr-3.6 ~amd64 #required by gnome-base/gnome-keyring-3.4.1, required by app-text/evince-3.4.0[gnome-keyring]
 <app-editors/gedit-3.6 ~amd64
 <app-editors/gedit-plugins-3.6 ~amd64
@@ -118,6 +119,10 @@ app-backup/dvcs-autosync ~amd64
 =net-print/cups-pk-helper-0.2.2 ~amd64
 =sys-auth/nss-myhostname-0.3 ~amd64 #required by app-admin/openrc-settingsd-1.0.1, required by gnome-base/gnome-control-center-3.4.2-r1[-systemd], required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
 =x11-libs/mx-1.4.2 ~amd64
+=media-libs/cogl-1.10.4 ~amd64
+=media-libs/clutter-1.10.8 ~amd64
+=media-libs/clutter-gst-1.6.0-r1 ~amd64
+=media-libs/clutter-gtk-1.4.2 ~amd64
 
 # # GNOME3 tweak tool.
 # <gnome-base/gnome-shell-3.4 ~amd64 #required by gnome-extra/gnome-tweak-tool-3.2.2-r2, required by gnome-extra/gnome-tweak-tool
@@ -132,6 +137,69 @@ app-backup/dvcs-autosync ~amd64
 # <https://wiki.archlinux.org/index.php/Xfce>,
 # <http://wiki.gentoo.org/wiki/Xfce>.
 =x11-themes/faenza-xfce-icon-theme-0.2.1 ~amd64
+
+# Notify OSD.
+=x11-libs/libwnck-3.2.1 ~amd64
+=x11-misc/notify-osd-0.9.33 ~amd64
+=x11-themes/notify-osd-icons-0.7 ~amd64
+
+# # GNOME 3 stuff.
+# <gnome-base/nautilus-3.4.1
+#
+# app-arch/file-roller
+# app-editors/gedit
+# app-text/evince
+# gnome-base/gnome-control-center
+# gnome-base/gnome-keyring
+# gnome-base/gnome-menus
+# gnome-base/gnome-panel
+# gnome-base/gnome-session
+# gnome-base/gnome-settings-daemon
+# gnome-extra/gconf-editor
+# gnome-extra/gnome-screensaver
+# gnome-extra/gnome-tweak-tool
+# mail-client/evolution
+# media-gfx/eog
+# net-im/empathy
+# net-misc/networkmanager
+# x11-libs/gtk+
+# x11-libs/vte
+# x11-misc/notification-daemon
+# x11-terms/gnome-terminal
+# x11-themes/gnome-backgrounds
+# x11-themes/gnome-icon-theme-symbolic
+# x11-themes/gnome-themes-standard
+
+# Faenza icons.
+=x11-themes/faenza-icon-theme-1.2-r1
+=x11-themes/faenza-xfce-icon-theme-0.2.1
+
+# PiTiVi.
+=media-libs/gnonlin-0.10.17 ~amd64
+=media-video/pitivi-0.14.1 ~amd64
+
+# # Empathy.
+# <gnome-extra/gnome-contacts-3.6 ~amd64
+# <net-im/empathy-3.6 ~amd64
+# =dev-libs/folks-0.6.9 ~amd64 #required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
+# =media-libs/clutter-1.10.8 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+# =media-libs/clutter-gst-1.6.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+# =media-libs/clutter-gtk-1.4.0 ~amd64 #required by media-video/cheese-3.4.2, required by net-im/empathy-3.4.2.3[v4l], required by net-im/empathy (argument)
+# =media-libs/cogl-1.10.4 ~amd64 #required by media-libs/clutter-gst-1.6.0, required by net-im/empathy-3.4.2.3, required by net-im/empathy (argument)
+# =net-voip/telepathy-rakia-0.7.4 ~amd64
+# =sci-geosciences/geocode-glib-0.99.0 ~amd64 #required by net-im/empathy-3.4.2.3[geocode], required by net-im/empathy (argument)
+
+# # Spring.
+# games-strategy/spring ~amd64
+# games-util/springlobby ~amd64
+
+# # msort 8.53 depend on tre 0.8.0 (incompatible with tre 0.7.5).
+# =app-text/msort-8.53 ~amd64
+# =dev-libs/tre-0.8.0 ~amd64
+
+# Clean out your world file
+# <http://forums.gentoo.org/viewtopic-t-142475.html>.
+#=app-portage/udept-0.5.99.0.2.95-r1 ~amd64
 
 # # Unity <http://github.com/shiznix/unity-gentoo>.
 # */*::unity-gentoo
@@ -152,7 +220,7 @@ app-backup/dvcs-autosync ~amd64
 # =dev-libs/gobject-introspection-1.32.1 ~amd64 #required by x11-libs/gtk+-99.3.4.2[introspection], required by gnome-base/gnome-session-99.3.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =dev-libs/gobject-introspection-common-1.32.1 ~amd64 #required by dev-libs/gobject-introspection-1.32.1, required by net-libs/libsocialweb-0.25.20[introspection,-vala], required by gnome-base/gnome-control-center-99.3.4.2[socialweb], required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =dev-libs/libgdata-0.10.2 ~amd64 #required by gnome-extra/evolution-data-server-3.2.3-r2, required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-# =dev-libs/libgweather-3.4.1 ~amd64 #required by mail-client/evolution-2.32.3-r1
+# =dev-libs/libgweather-3.4.1 ~amd64 #required by mail-client/evolution-2.32.3-r1, required by @selected, required by @world (argument)
 # =dev-libs/libindicate-12.10.0 ~amd64
 # =dev-libs/libindicate-qt-0.2.5.91 ~amd64 #required by unity-base/unity-6.2.0, required by gnome-base/nautilus-99.3.4.2, required by gnome-extra/sushi-0.2.1
 # =dev-libs/libwacom-0.5 ~amd64 #required by gnome-base/gnome-settings-daemon-99.3.4.2, required by gnome-base/gnome-session-99.3.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
@@ -194,55 +262,3 @@ app-backup/dvcs-autosync ~amd64
 # =x11-misc/appmenu-qt-0.2.6 ~amd64 #required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-themes/gnome-icon-theme-3.4.0 ~amd64 #required by x11-themes/unity-asset-pool-0.8.23, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-wm/mutter-3.2.2-r1 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
-
-# Notify OSD.
-=x11-libs/libwnck-3.2.1 ~amd64
-=x11-misc/notify-osd-0.9.33 ~amd64
-=x11-themes/notify-osd-icons-0.7 ~amd64
-
-# # GNOME 3 stuff.
-# <gnome-base/nautilus-3.4.1
-#
-# app-arch/file-roller
-# app-editors/gedit
-# app-text/evince
-# gnome-base/gnome-control-center
-# gnome-base/gnome-keyring
-# gnome-base/gnome-menus
-# gnome-base/gnome-panel
-# gnome-base/gnome-session
-# gnome-base/gnome-settings-daemon
-# gnome-extra/gconf-editor
-# gnome-extra/gnome-screensaver
-# gnome-extra/gnome-tweak-tool
-# mail-client/evolution
-# media-gfx/eog
-# net-im/empathy
-# net-misc/networkmanager
-# x11-libs/gtk+
-# x11-libs/vte
-# x11-misc/notification-daemon
-# x11-terms/gnome-terminal
-# x11-themes/gnome-backgrounds
-# x11-themes/gnome-icon-theme-symbolic
-# x11-themes/gnome-themes-standard
-
-# Faenza icons.
-=x11-themes/faenza-icon-theme-1.2-r1
-=x11-themes/faenza-xfce-icon-theme-0.2.1
-
-# FBReader.
-# =app-text/fbreader-0.12.2 ~amd64
-# =dev-libs/liblinebreak-1.0 ~amd64
-
-# Clean out your world file
-# <http://forums.gentoo.org/viewtopic-t-142475.html>.
-#=app-portage/udept-0.5.99.0.2.95-r1 ~amd64
-
-# # msort 8.53 depend on tre 0.8.0 (incompatible with tre 0.7.5).
-# =app-text/msort-8.53 ~amd64
-# =dev-libs/tre-0.8.0 ~amd64
-
-# PiTiVi.
-=media-libs/gnonlin-0.10.17 ~amd64
-=media-video/pitivi-0.14.1 ~amd64

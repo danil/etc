@@ -25,7 +25,7 @@
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap1_sect2>.
 # Note: all /dev/hd*s will appear as /dev/sd*s
 # <http://linuxquestions.org/questions/arch-29/why-sda-and-not-hda-552872/>.
-/dev/sda1               /boot           ext2            noauto,noatime  1 2
+/dev/sda1               /boot           ext4            noauto,noatime  1 2
 /dev/sda2               /               ext4            defaults        0 1
 /dev/sda3               none            swap            sw              0 0
 #milhouse: /dev/sda1               /               ext3            defaults        0 1

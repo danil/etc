@@ -5,6 +5,7 @@
 <app-emulation/winetricks-99999999 ~amd64
 <mail-client/thunderbird-bin-18.0 ~amd64
 <net-wireless/blueman-9999 ~amd64
+<sys-apps/bleachbit-9999 ~amd64
 <sys-apps/the_silver_searcher-0.15 ~amd64
 <sys-devel/gcc-4.7.0 ~amd64
 <www-client/firefox-bin-18 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>
@@ -20,6 +21,7 @@
 =net-libs/nodejs-0.4.11 ~amd64
 =net-mail/offlineimap-6.3.4 ~amd64
 =sci-mathematics/genius-1.0.11 ~amd64
+=sys-apps/baobab-3.6.4 ~amd64
 =sys-apps/etckeeper-0.63 ~amd64
 =x11-plugins/screenlets-0.1.2 ~amd64
 app-text/gpicker::kutkevich ~amd64

@@ -1,7 +1,10 @@
 # */*::kutkevich
 # =x11-terms/rxvt-unicode-9.17 ~amd64
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
+<app-emulation/playonlinux-9999 ~amd64
+<app-emulation/winetricks-99999999 ~amd64
 <mail-client/thunderbird-bin-18.0 ~amd64
+<net-wireless/blueman-9999 ~amd64
 <sys-apps/the_silver_searcher-0.15 ~amd64
 <sys-devel/gcc-4.7.0 ~amd64
 <www-client/firefox-bin-18 #>=13 required by Duplicate Tab Closer addon <https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-closer>

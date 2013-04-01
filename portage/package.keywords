@@ -35,11 +35,11 @@ www-client/google-chrome:stable ~amd64
 app-backup/dvcs-autosync ~amd64
 
 # Steam.
+<games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
+<games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 <games-util/steam-launcher-2 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-=games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-=games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-=games-util/steam-meta-9999 ~amd64
-=media-libs/libsdl-2.0 ~amd64 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay
+<games-util/steam-meta-9999 ~amd64
+=media-libs/libsdl-2.0.0_pre7022 ~amd64 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay
 
 # SpiderOak <http://spideroak.com>.
 =app-backup/spideroak-bin-4.7.9948 ~amd64

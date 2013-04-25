@@ -23,6 +23,7 @@
 =sci-mathematics/genius-1.0.11 ~amd64
 =sys-apps/baobab-3.6.4 ~amd64
 =sys-apps/etckeeper-0.63 ~amd64
+=www-plugins/google-talkplugin-3.17.0.0 ~amd64
 =x11-plugins/screenlets-0.1.2 ~amd64
 app-text/gpicker::kutkevich ~amd64
 media-sound/listen ~amd64

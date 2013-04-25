@@ -49,6 +49,7 @@ x11-misc/shutter drawing
 x11-misc/tint2 battery
 x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/xmonad doc
+virtual/udev keymap
 
 app-text/ghostscript-gpl cups #required by net-print/cups-1.5.2-r4, required by gnome-base/gnome-control-center-3.6.3-r1[cups], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
 media-libs/gst-plugins-base theora #required by media-video/cheese-3.6.2, required by gnome-base/gnome-control-center-3.6.3-r1[v4l], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]

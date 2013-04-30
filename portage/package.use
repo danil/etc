@@ -42,6 +42,7 @@ sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-
 sys-fs/udev keymap #x11-base/xorg-server: may cause input device autoconfiguration to fail if was built without keymap support
 sys-libs/zlib minizip #media-video/vlc
 virtual/notification-daemon -gnome #required by x11-misc/notify-osd
+virtual/udev keymap #if built without keymap support may cause input device x11-base/xorg-server autoconfiguration to fail
 www-servers/nginx -nginx_modules_http_geo
 x11-misc/cairo-dock-plugins terminal
 x11-misc/shutter drawing

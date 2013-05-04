@@ -1,0 +1,6 @@
+# Set to the hostname of this machine
+# Danil.
+# <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
+#hostname="localhost"
+# Lisa Simpson. ASUS Eee PC 4G (701). 192.168.8.9
+hostname="lisa"

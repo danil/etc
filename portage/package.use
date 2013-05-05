@@ -1,14 +1,14 @@
+# app-portage/layman git subversion #<http://overlays.gentoo.org/proj/sunrise>.
 # sys-devel/gcc go
-app-editors/emacs -X
+# www-apps/cgit doc
+app-editors/emacs -X -dbus
+app-misc/sphinx mysql postgres
 dev-db/sqlite extensions
 dev-libs/libxml2 python
 dev-libs/pwlib ldap
-
-# Layman Sunrise <http://overlays.gentoo.org/proj/sunrise>.
-#app-portage/layman git subversion
-
-# NTP <http://en.gentoo-wiki.com/wiki/NTP#Installation>.
-net-misc/ntp caps
+mail-client/mutt doc imap #mutt `man muttrc`
+net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
+net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>
 
 # nginx.
 # ngx_http_fastcgi_module
@@ -25,19 +25,3 @@ dev-vcs/subversion -dso
 dev-vcs/subversion perl
 # Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>.
 dev-vcs/git cgi
-
-#www-apps/cgit doc
-
-# Sphinx.
-app-misc/sphinx mysql postgres
-
-# Mutt.
-# `man muttrc`
-mail-client/mutt doc imap
-
-# Bridging TAP OpenVPN
-# <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
-net-misc/openvpn iproute2
-
-# Layman Sunrise <http://overlays.gentoo.org/proj/sunrise>.
-#app-portage/layman git subversion

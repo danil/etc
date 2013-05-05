@@ -10,7 +10,7 @@
 # IPv4 and IPv6 localhost aliases
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
-#127.0.0.1  localhost
+# 127.0.0.1 localhost
 127.0.0.1 disco.kutkevich.org disco localhost
 ::1       localhost
 

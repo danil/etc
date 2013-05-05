@@ -14,6 +14,7 @@ clock="UTC"
 # If you do not want to set the hardware clock to the current system
 # time (software clock) during shutdown, set this to no.
 # You normally don't need to do this if you run a ntp daemon.
+#clock_systohc="YES"
 # Danil.
 # <http://en.gentoo-wiki.com/wiki/NTP#Setting_the_hardware_clock_during_shutdown>.
 clock_systohc="NO"

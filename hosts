@@ -12,7 +12,6 @@
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 # 127.0.0.1 localhost
 127.0.0.1 disco.kutkevich.org disco localhost
-::1       localhost
 
 #
 # Imaginary network.
@@ -32,3 +31,11 @@
 # from your network provider (if any) or from your regional registry (ARIN,
 # APNIC, LACNIC, RIPE NCC, or AfriNIC.)
 #
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback localhost
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts

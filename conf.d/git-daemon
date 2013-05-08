@@ -11,7 +11,7 @@
 #   --port=XXXX   --- Starts in port XXXX instead of 9418
 #
 # Danil.
-# GITDAEMON_OPTS="--syslog /var/git"
+# GITDAEMON_OPTS="--syslog --base-path=/var/git"
 GITDAEMON_OPTS="--syslog --base-path=/var/git /var/git"
 
 # To run an anonymous git safely, the following user should be able to only

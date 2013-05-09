@@ -30,6 +30,8 @@
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
 <sys-apps/the_silver_searcher-0.15 ~amd64
 =net-mail/offlineimap-6.3.4 ~amd64
+=sci-mathematics/genius-1.0.16 ~amd64
+=sys-process/glances-1.6 ~amd64
 =www-apps/cgit-0.9.0.2-r1 ~amd64
 =www-client/w3m-0.5.3-r2 ~amd64 #due to compilation bug in stable version
 

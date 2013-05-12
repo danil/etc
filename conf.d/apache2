@@ -33,7 +33,11 @@
 #  SSL_DEFAULT_VHOST  Enables default vhost for SSL (you should enable this
 #                     when you enable SSL)
 #
-APACHE2_OPTS="-D DEFAULT_VHOST -D INFO -D SSL -D SSL_DEFAULT_VHOST -D LANGUAGE"
+# Danil
+# <https://library.linode.com/server-monitoring/nagios/gentoo#sph_configure-apache>,
+# <http://wiki.gentoo.org/wiki/Nagios#Apache>.
+# APACHE2_OPTS="-D DEFAULT_VHOST -D INFO -D SSL -D SSL_DEFAULT_VHOST -D LANGUAGE"
+APACHE2_OPTS="-D DEFAULT_VHOST -D INFO -D SSL -D SSL_DEFAULT_VHOST -D LANGUAGE -D PHP5 -D NAGIOS"
 
 # Extended options for advanced uses of Apache ONLY
 # You don't need to edit these unless you are doing crazy Apache stuff

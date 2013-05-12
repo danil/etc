@@ -25,3 +25,10 @@ dev-vcs/subversion -dso
 dev-vcs/subversion perl
 # Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>.
 dev-vcs/git cgi
+
+# Nagios.
+# dev-lang/php cgi #required by net-analyzer/nagios, net-analyzer/nagios-core[web,lighttpd,-apache2]
+dev-lang/php apache2 #required by net-analyzer/nagios, net-analyzer/nagios-core[web,apache2]
+media-libs/gd jpeg png #required by net-analyzer/nagios, net-analyzer/nagios-core[web]
+net-analyzer/nagios-core apache2 #lighttpd
+net-analyzer/nagios-plugins nagios-ssh

@@ -1,6 +1,9 @@
 # Unmasking these versions because is a live ebuilds (svn) checkout.
 =www-servers/fcgiwrap-9999
 
+# Nagios.
+=sys-devel/automake-1.11.6 #required by net-analyzer/nagios, net-analyzer/nagios-core[apache2]
+
 # Clean out your world file
 # <http://forums.gentoo.org/viewtopic-t-142475.html>.
 #=app-portage/udept-0.5.99.0.2.95-r1

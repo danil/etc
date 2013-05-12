@@ -38,6 +38,9 @@
 # Sunrise overlay.
 =dev-ruby/feed2imap-0.9.3 ~amd64
 
+# # Nagios.
+# =net-analyzer/nagios-check_fail2ban-3 ~amd64
+
 # Prosody.
 # =dev-libs/luaexpat-1.1 ~amd64
 # =dev-libs/luasec-0.4 ~amd64

@@ -27,7 +27,7 @@
 -A INPUT -p tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp --dport 443 -j ACCEPT
 
-#  Allow FTP.
+#  Allow FTP
 #  <http://stackoverflow.com/questions/10400672/linux-bash-setting-iptables-rules-to-allow-both-active-and-passive-ftp>.
 #  Allow FTP connections @ port 21.
 -A INPUT  -p tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
@@ -39,7 +39,11 @@
 -A INPUT  -p tcp --sport 1024: --dport 1024: -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 -A OUTPUT -p tcp --sport 1024: --dport 1024: -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
-# #  Allow inbound UDP streams on port 53 for a DNS server.
+#  Allow inbound NTP (Network Time Protocol) connections
+#  <http://superuser.com/questions/141772/what-are-the-iptables-rules-to-permit-ntp#141795>.
+-A INPUT -p udp --dport 123 -j ACCEPT
+
+# #  Allow inbound UDP streams on port 53 for a DNS server
 # #  <https://wiki.archlinux.org/index.php/Simple_Stateful_Firewall#Opening_ports_to_incoming_connections>.
 # -A INPUT -p udp --dport 53 -j ACCEPT
 

@@ -26,6 +26,10 @@
 -A INPUT -p tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp --dport 443 -j ACCEPT
 
+#  Allow inbound NTP (Network Time Protocol) connections
+#  <http://superuser.com/questions/141772/what-are-the-iptables-rules-to-permit-ntp#141795>.
+-A INPUT -p udp --dport 123 -j ACCEPT
+
 #  Log iptables denied calls.
 -A INPUT -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
 

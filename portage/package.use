@@ -13,8 +13,9 @@ net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOW
 # nginx.
 # ngx_http_fastcgi_module
 # <http://sysoev.ru/nginx/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass>.
-www-servers/nginx fastcgi -nginx_modules_http_geo
-#www-servers/nginx nginx_modules_http_passenger
+www-servers/nginx -nginx_modules_http_geo
+# www-servers/nginx fastcgi
+# www-servers/nginx nginx_modules_http_passenger
 
 # Git.
 # Enable CVS integration `man gitcvs-migration `.

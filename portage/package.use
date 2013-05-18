@@ -195,4 +195,5 @@ xfce-base/xfce4-session gnome-keyring
 # net-libs/ptlib wav
 
 # Steam.
+games-util/steam-meta steamruntime
 media-libs/libsdl abi_x86_32 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay

@@ -26,6 +26,7 @@
 =www-plugins/google-talkplugin-3.17.0.0 ~amd64
 =x11-plugins/screenlets-0.1.2 ~amd64
 app-text/gpicker::kutkevich ~amd64
+dev-ruby/mruby-bin::kutkevich ~amd64
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64

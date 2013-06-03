@@ -1,5 +1,0 @@
-# # Danil.
-# # Debian script.
-# # Called when the user closes or open the lid.
-# event=button/lid LID 00000080 .*
-# action=/etc/acpi/actions/lid.sh %e

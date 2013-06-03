@@ -1,13 +1,13 @@
+# /etc/anacrontab: configuration file for anacron
+
+# See anacron(8) and anacrontab(5) for details.
+
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-# format: period delay job-identifier command
-##
-## If you turn any of the following on, make sure that the
-## regular cron daemon does not run them also. This could
-## lead to double execution of the jobs.
-#1       5       cron.daily      run-parts /etc/cron.daily
-#7       10      cron.weekly     run-parts /etc/cron.weekly
-#30      15      cron.monthly    run-parts /etc/cron.monthly
+HOME=/root
+LOGNAME=root
 
-# Danil.
-1       5       cron.daily      run-parts /etc/cron.daily
+# These replace cron's entries
+1	5	cron.daily	run-parts --report /etc/cron.daily
+7	10	cron.weekly	run-parts --report /etc/cron.weekly
+@monthly	15	cron.monthly	run-parts --report /etc/cron.monthly

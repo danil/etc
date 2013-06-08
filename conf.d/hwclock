@@ -18,13 +18,16 @@ clock_hctosys="YES"
 # If you do not want to set the hardware clock to the current system
 # time (software clock) during shutdown, set this to no.
 #clock_systohc="YES"
-
-# If you wish to pass any other arguments to hwclock during bootup,
-# you may do so here. Alpha users may wish to use --arc or --srm here.
-clock_args=""
+# Danil.
+# <http://en.gentoo-wiki.com/wiki/NTP#Setting_the_hardware_clock_during_shutdown>.
+clock_systohc="YES"
 
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_pre23>,
 # <http://gentoo.org/doc/en/guide-localization.xml?style=printable#doc_chap1_pre1>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap3_pre4>.
 TIMEZONE="Europe/Moscow"
+
+# If you wish to pass any other arguments to hwclock during bootup,
+# you may do so here. Alpha users may wish to use --arc or --srm here.
+clock_args=""

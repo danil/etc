@@ -1,6 +1,8 @@
 # */*::kutkevich
 # =x11-terms/rxvt-unicode-9.17 ~amd64
 # x11-base/xorg-server::kutkevich ~amd64 #fix the urxvt cursor with compositing <http://code.google.com/p/chromium-os/issues/detail?id=12997>, <http://gerrit.chromium.org/gerrit/474>.
+<app-emulation/playonlinux-9999 ~amd64
+<app-emulation/winetricks-99999999 ~amd64
 <mail-client/thunderbird-bin-18 ~amd64
 <net-wireless/blueman-9999 ~amd64
 <sys-apps/bleachbit-9999 ~amd64
@@ -23,7 +25,9 @@
 =sys-apps/etckeeper-0.63 ~amd64
 =www-plugins/google-talkplugin-3.17.0.0 ~amd64
 =x11-plugins/screenlets-0.1.2 ~amd64
+app-cdr/simpleburn::kutkevich ~amd64
 app-text/gpicker::kutkevich ~amd64
+dev-ruby/mruby-bin::kutkevich ~amd64
 media-sound/listen ~amd64
 media-sound/volumeicon ~amd64
 www-client/google-chrome:stable ~amd64
@@ -34,23 +38,22 @@ www-client/google-chrome:stable ~amd64
 app-backup/dvcs-autosync ~amd64
 
 # Steam.
+<games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
+<games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
 <games-util/steam-launcher-2 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-=games-util/steam-client-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-=games-util/steam-games-meta-9999 ~amd64 #required by games-util/steam-meta-9999, required by games-util/steam-meta (argument)
-=games-util/steam-meta-9999 ~amd64
-=media-libs/libsdl-2.0 ~amd64 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay
+<games-util/steam-meta-9999 ~amd64
+=media-libs/libsdl-2.0.0_pre7022 ~amd64 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay
 
 # SpiderOak <http://spideroak.com>.
 =app-backup/spideroak-bin-4.7.9948 ~amd64
 =dev-util/patchelf-0.6 ~amd64 #required by app-backup/spideroak-bin-4.7.9948, required by app-backup/spideroak-bin (argument)
 
 # Glances <https://github.com/nicolargo/glances>.
-=dev-python/psutil-0.6.1 ~amd64
-=sys-process/glances-1.4.2.1 ~amd64
+=sys-process/glances-1.6 ~amd64
 
 # Compiz 0.9.
 =x11-themes/emerald-themes-0.5.2 ~amd64
-=x11-wm/compiz-0.9.8.2::kutkevich ~amd64
+=x11-wm/compiz-0.9.8.6::kutkevich ~amd64
 =x11-wm/emerald-0.9.5::kutkevich ~amd64
 
 # # Compiz 0.8.
@@ -291,3 +294,7 @@ app-backup/dvcs-autosync ~amd64
 # =x11-misc/appmenu-qt-0.2.6 ~amd64 #required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-themes/gnome-icon-theme-3.4.0 ~amd64 #required by x11-themes/unity-asset-pool-0.8.23, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
 # =x11-wm/mutter-3.2.2-r1 ~amd64 #required by gnome-base/gnome-shell-3.2.2.1, required by unity-base/unity-5.12.0, required by unity-base/unity-scope-video-remote-0.3.5, required by unity-base/unity-meta-5.12.0, required by unity-base/unity-meta (argument)
+
+# # Zod.
+# games-strategy/zod-engine-data::hasufell ~amd64
+# games-strategy/zod-engine::hasufell ~amd64

@@ -25,6 +25,7 @@
 =sys-apps/etckeeper-0.63 ~amd64
 =www-plugins/google-talkplugin-3.17.0.0 ~amd64
 =x11-plugins/screenlets-0.1.2 ~amd64
+app-cdr/simpleburn::kutkevich ~amd64
 app-text/gpicker::kutkevich ~amd64
 dev-ruby/mruby-bin::kutkevich ~amd64
 media-sound/listen ~amd64
@@ -52,7 +53,7 @@ app-backup/dvcs-autosync ~amd64
 
 # Compiz 0.9.
 =x11-themes/emerald-themes-0.5.2 ~amd64
-=x11-wm/compiz-0.9.8.2::kutkevich ~amd64
+=x11-wm/compiz-0.9.8.6::kutkevich ~amd64
 =x11-wm/emerald-0.9.5::kutkevich ~amd64
 
 # # Compiz 0.8.

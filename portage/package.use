@@ -8,8 +8,10 @@ app-cdr/gnomebaker dvdr
 app-editors/emacs -X -dbus
 app-editors/gedit python #required by app-editors/gedit-plugins
 app-emulation/virtualbox -additions
+app-i18n/ibus dconf # required by gnome-extra/gnome-tweak-tool
 app-misc/sphinx mysql postgres
 app-office/openoffice-bin java
+app-text/ghostscript-gpl cups #required by net-print/cups-1.5.2-r4, required by gnome-base/gnome-control-center-3.6.3-r1[cups], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
 dev-db/sqlite extensions
 dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 dev-libs/libxml2 python
@@ -22,6 +24,7 @@ gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
 gnome-extra/avant-window-navigator vala
 mail-client/mutt doc imap #`man muttrc`
 media-libs/gd fontconfig truetype
+media-libs/gst-plugins-base theora #required by media-video/cheese-3.6.2, required by gnome-base/gnome-control-center-3.6.3-r1[v4l], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
 media-libs/lcms:0 python #required by media-gfx/inkscape
 media-libs/libpng apng
 media-sound/moc curl
@@ -50,9 +53,6 @@ x11-misc/shutter drawing
 x11-misc/tint2 battery
 x11-terms/rxvt-unicode -iso14755 256-color
 x11-wm/xmonad doc
-
-app-text/ghostscript-gpl cups #required by net-print/cups-1.5.2-r4, required by gnome-base/gnome-control-center-3.6.3-r1[cups], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
-media-libs/gst-plugins-base theora #required by media-video/cheese-3.6.2, required by gnome-base/gnome-control-center-3.6.3-r1[v4l], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
 
 # Temporary.
 media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1-r1[alsa], required by gnome-base/gnome-settings-daemon-3.4.2, required by gnome-base/gnome-session-3.4.2.1, required by gnome-base/gnome-control-center-3.4.2-r1, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]

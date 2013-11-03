@@ -2,9 +2,11 @@
 # app-text/fbreader -qt4 gtk
 # media-libs/sdl-mixer timidity # required by games-strategy/zod-engine::hasufell
 # sys-devel/gcc go
+# x11-terms/rxvt-unicode unicode3 #required by tmux powerline <https://powerline.readthedocs.org/en/latest/fontpatching.html>
 >=dev-libs/keybinder-0.3.0-r200:0 python #required by unity-extra/glipper
 app-admin/conky lua lua-cairo iostats
 app-cdr/gnomebaker dvdr
+app-crypt/libsecret vala #required by app-backup/deja-dup
 app-editors/emacs -X -dbus
 app-editors/gedit python #required by app-editors/gedit-plugins
 app-emulation/virtualbox -additions
@@ -23,13 +25,17 @@ gnome-base/gnome-settings-daemon policykit #required by gnome-base/gnome-control
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
 gnome-extra/avant-window-navigator vala
 mail-client/mutt doc imap #`man muttrc`
+media-gfx/imagemagick perl #required by x11-misc/shutter-0.90
 media-libs/gd fontconfig truetype
 media-libs/gst-plugins-base theora #required by media-video/cheese-3.6.2, required by gnome-base/gnome-control-center-3.6.3-r1[v4l], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
 media-libs/lcms:0 python #required by media-gfx/inkscape
 media-libs/libpng apng
 media-sound/moc curl
+media-video/libav threads network # required by media-video/mpv
 media-video/mplayer ftp
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
+net-fs/cifs-utils ads #required by net-fs/samba-3.6.19[client] gnome-base/gvfs-1.14.2[samba] media-gfx/gimp-2.8.6[gnome] media-plugins/gimp-lqr-0.7.1
+net-fs/samba winbind #required by net-fs/cifs-utils-6.1-r1[acl]
 net-libs/farstream python #required by net-im/gajim-0.15.1[jingle]
 net-libs/libsoup gnome
 net-misc/curl nss #required by mail-client/thunderbird-bin
@@ -44,6 +50,7 @@ sys-fs/udev extras
 sys-fs/udev gudev #gnome-extra/gnome-power-manager
 sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-base/gvfs[gdu], gnome-base/libgnome, gnome-base/libbonoboui, dev-perl/gnome2-perl, x11-misc/shutter
 sys-fs/udev keymap #x11-base/xorg-server: may cause input device autoconfiguration to fail if was built without keymap support
+sys-libs/talloc python #required by sys-libs/tevent-0.9.19 net-fs/samba-3.6.16
 sys-libs/zlib minizip #media-video/vlc
 virtual/notification-daemon -gnome #required by x11-misc/notify-osd
 virtual/udev keymap #if built without keymap support may cause input device x11-base/xorg-server autoconfiguration to fail
@@ -202,3 +209,10 @@ xfce-base/xfce4-session gnome-keyring
 # Steam.
 games-util/steam-meta steamruntime
 media-libs/libsdl abi_x86_32 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay
+
+# # kportagetray.
+# dev-qt/qtcore qt3support
+# dev-qt/qtgui qt3support
+# dev-qt/qtsql qt3support
+# dev-python/PyQt4 declarative script sql webkit
+# dev-qt/qtdeclarative qt3support

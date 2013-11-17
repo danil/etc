@@ -12,4 +12,4 @@
 # UUID=ecbecf8e-d3e8-48ba-84dc-6533e67df157 LABEL=fs_root
 /dev/sda1               /           ext4        rw,relatime,data=ordered    0 1
 # Danil <https://wiki.archlinux.org/index.php/swap#Swap_partition>.
-/dev/sda3               none        swap        sw                          0 0
+/dev/sda2               none        swap        sw                          0 0

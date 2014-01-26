@@ -6,6 +6,3 @@
 
 # PCI device 0x8086:0x10f5 (e1000e)
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:27:13:b6:09:83", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
-
-# PCI device 0x8086:0x0084 (iwlagn)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:26:c7:4f:50:86", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"

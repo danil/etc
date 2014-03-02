@@ -1,219 +1,32 @@
+# app-misc/sphinx mysql postgres
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
-# app-text/fbreader -qt4 gtk
-# media-libs/sdl-mixer timidity # required by games-strategy/zod-engine::hasufell
-# sys-devel/gcc go
-# x11-terms/rxvt-unicode unicode3 #required by tmux powerline <https://powerline.readthedocs.org/en/latest/fontpatching.html>
->=dev-libs/keybinder-0.3.0-r200:0 python #required by unity-extra/glipper
+# app-text/docbook-sgml-utils jadetex #docbook2pdf <http://bugs.gentoo.org/61938#c0> used for <http://habrahabr.ru/blogs/Git/80909/>
+# dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
+# games-strategy/freeciv sdl -gtk
+# net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 app-admin/conky lua lua-cairo iostats
-app-cdr/gnomebaker dvdr
-app-crypt/libsecret vala #required by app-backup/deja-dup
 app-editors/emacs -X -dbus
-app-editors/gedit python #required by app-editors/gedit-plugins
-app-emulation/virtualbox -additions
-app-i18n/ibus dconf # required by gnome-extra/gnome-tweak-tool
-app-misc/sphinx mysql postgres
-app-office/openoffice-bin java
-app-text/ghostscript-gpl cups #required by net-print/cups-1.5.2-r4, required by gnome-base/gnome-control-center-3.6.3-r1[cups], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
+app-emulation/virtualbox -additions -opengl
 dev-db/sqlite extensions
-dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
-dev-libs/libxml2 python
-dev-libs/pwlib ldap
-dev-qt/qtgui dbus
-games-strategy/freeciv sdl -gtk
-gnome-base/gnome-session branding
-gnome-base/gnome-settings-daemon policykit #required by gnome-base/gnome-control-center-3.2.3, required by net-libs/gnome-online-accounts-3.2.1[gnome], required by gnome-extra/evolution-data-server-3.2.3-r2[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
+dev-vcs/git tk gtk
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
-gnome-extra/avant-window-navigator vala
 mail-client/mutt doc imap #`man muttrc`
-media-gfx/imagemagick perl #required by x11-misc/shutter-0.90
-media-libs/gd fontconfig truetype
-media-libs/gst-plugins-base theora #required by media-video/cheese-3.6.2, required by gnome-base/gnome-control-center-3.6.3-r1[v4l], required by net-libs/gnome-online-accounts-3.6.2[gnome], required by gnome-extra/evolution-data-server-3.6.3[gnome-online-accounts], required by app-office/libreoffice-bin-3.6.4.3[gnome]
-media-libs/lcms:0 python #required by media-gfx/inkscape
-media-libs/libpng apng
-media-sound/moc curl
-media-video/libav threads network # required by media-video/mpv
-media-video/mplayer ftp
+media-libs/harfbuzz icu #required by net-libs/webkit-gtk
+media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio
+media-video/ffmpeg threads #required by media-video/mpv
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
-net-fs/cifs-utils ads #required by net-fs/samba-3.6.19[client] gnome-base/gvfs-1.14.2[samba] media-gfx/gimp-2.8.6[gnome] media-plugins/gimp-lqr-0.7.1
-net-fs/samba winbind #required by net-fs/cifs-utils-6.1-r1[acl]
-net-libs/farstream python #required by net-im/gajim-0.15.1[jingle]
-net-libs/libsoup gnome
-net-misc/curl nss #required by mail-client/thunderbird-bin
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
-net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
-net-misc/sparkleshare nautilus
-net-misc/wicd ambiance
+net-misc/wicd ambiance #icons from ubuntu ambiance theme
 net-print/cups gnutls
-sys-auth/consolekit policykit
-sys-auth/pambase consolekit
-sys-fs/udev extras
-sys-fs/udev gudev #gnome-extra/gnome-power-manager
-sys-fs/udev hwdb #required by sys-fs/udisks, sys-apps/gnome-disk-utility, gnome-base/gvfs[gdu], gnome-base/libgnome, gnome-base/libbonoboui, dev-perl/gnome2-perl, x11-misc/shutter
-sys-fs/udev keymap #x11-base/xorg-server: may cause input device autoconfiguration to fail if was built without keymap support
-sys-libs/talloc python #required by sys-libs/tevent-0.9.19 net-fs/samba-3.6.16
-sys-libs/zlib minizip #media-video/vlc
-virtual/notification-daemon -gnome #required by x11-misc/notify-osd
-virtual/udev keymap #if built without keymap support may cause input device x11-base/xorg-server autoconfiguration to fail
-www-servers/nginx -nginx_modules_http_geo
-x11-libs/cairo xcb #required by x11-wm/i3
-x11-misc/cairo-dock-plugins terminal
-x11-misc/shutter drawing
-x11-misc/tint2 battery
-x11-terms/rxvt-unicode -iso14755 256-color
-x11-wm/xmonad doc
-
-# Temporary.
-media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1-r1[alsa], required by gnome-base/gnome-settings-daemon-3.4.2, required by gnome-base/gnome-session-3.4.2.1, required by gnome-base/gnome-control-center-3.4.2-r1, required by net-libs/gnome-online-accounts-3.4.2[gnome], required by gnome-extra/evolution-data-server-3.4.4[gnome-online-accounts], required by app-office/libreoffice-bin-3.5.5.3[gnome]
-x11-libs/libdrm libkms #required by media-libs/mesa-9.0[-gbm,xorg], required by x11-libs/cairo-1.10.2-r3[opengl], required by x11-libs/goocanvas-0.14, required by dev-perl/Goo-Canvas-0.60.0, required by x11-misc/shutter-0.88.1[drawing]
-virtual/udev gudev hwdb #required by sys-fs/udisks-1.0.4-r2, required by sys-fs/udiskie-0.4.1
-
-# Empathy.
-=dev-libs/folks-0.6.9 eds #required by gnome-extra/gnome-contacts-3.4.1, required by gnome-extra/gnome-contacts
-net-im/telepathy-connection-managers jabber irc sip icq
-
-# Git.
-#dev-vcs/git cgi #Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>
-dev-lang/tk -truetype #Gitk: Error in startup script: expected integer but got "Sans"
-dev-vcs/git cvs #enable Git integration with CVS `man gitcvs-migration `
-dev-vcs/git subversion #enable subversion (version control system) support for Git
-dev-vcs/git tk
-dev-vcs/subversion -dso
-dev-vcs/subversion perl
-
-# Compiz.
-# x11-wm/compiz-fusion emerald
+sys-libs/zlib minizip #required by media-video/vlc
+virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
+x11-terms/rxvt-unicode 256-color
 x11-wm/compiz gtk hjkl
 
 # Gajim.
 dev-lang/python:2.7 sqlite
-net-libs/farsight2 python
-net-im/gajim gmail jingle
-
-# NetworkManager.
-gnome-extra/nm-applet bluetooth
-net-misc/networkmanager bluetooth modemmanager
-
-# Chromium.
-# dev-libs/libxml2 icu
-# media-video/ffmpeg x264 #enable h264 encoding <http://bugs.gentoo.org/show_bug.cgi?id=333547>, <http://forums.gentoo.org/viewtopic-t-707495-postdays-0-postorder-asc-start-325.html>
-media-video/ffmpeg threads
-virtual/ffmpeg encode threads
+net-im/gajim jingle
 
 # Xfce.
-media-libs/libopenraw gtk #required by xfce-extra/tumbler-0.1.25[raw]
 xfce-base/thunar exif
 xfce-extra/tumbler odf raw
-
-# # Unity <http://github.com/shiznix/unity-gentoo>.
-# app-admin/packagekit qt4 gtk #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-# app-admin/packagekit-base networkmanager #required by unity-base/indicator-session-0.3.96, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-# dev-libs/libdbusmenu gtk #required by unity-base/indicator-application-0.5.0 unity-base/unity-meta-5.12.0 unity-base/unity-meta
-# dev-libs/protobuf python #required by unity-base/ubuntuone-storage-protocol-3.0.0, unity-base/ubuntuone-control-panel-3.0.1, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-# dev-libs/xapian-bindings python #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-# gnome-extra/zeitgeist passiv extensions plugins #required by dev-libs/libappindicator, unity-base/indicator-appmenu, x11-misc/appmenu-gtk, unity-base/unity, unity-base/unity-scope-video-remote, unity-base/unity-meta,unity-base/unity-meta
-# gnome-extra/zeitgeist-datasources telepathy #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-# gnome-extra/zeitgeist-extensions geolocation #required by dev-libs/libappindicator-0.4.92, unity-base/indicator-appmenu-0.3.97, x11-misc/appmenu-gtk-0.3.92, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-# media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio-2.1[alsa], gnome-base/gnome-control-center-99.3.4.2, unity-base/unity-5.12.0, unity-base/unity-scope-video-remote-0.3.5, unity-base/unity-meta-5.12.0, unity-base/unity-meta
-
-# Blender.
-media-video/ffmpeg theora x264
-virtual/ffmpeg theora x264
-
-# # media-sound/listen.
-# media-sound/listen gnome
-# media-libs/libgpod python
-
-# # docbook2pdf <http://bugs.gentoo.org/61938#c0> used for
-# # <http://habrahabr.ru/blogs/Git/80909/>.
-# app-text/docbook-sgml-utils jadetex
-
-# # Linphone.
-# #net-voip/linphone gtk
-# media-libs/mediastreamer video
-# net-voip/linphone video
-
-# Desktop notification support.
-# media-sound/volumeicon libnotify
-app-office/orage libnotify
-mail-client/balsa libnotify
-media-sound/rhythmbox libnotify
-media-sound/volti libnotify
-media-sound/volumeicon libnotify
-net-im/gajim libnotify
-net-misc/wicd libnotify
-xfce-base/thunar libnotify
-xfce-base/xfce4-settings libnotify
-xfce-base/xfdesktop libnotify
-xfce-extra/thunar-volman libnotify
-xfce-extra/xfce4-volumed libnotify
-
-# Gtk.
-app-crypt/pinentry gtk
-app-misc/geoclue gtk
-app-mobilephone/obex-data-server gtk
-app-text/ghostscript-gpl gtk
-dev-python/twisted gtk
-dev-vcs/git gtk
-gnome-base/gvfs gtk
-gnome-base/librsvg gtk3
-gnome-extra/libgsf gtk
-media-gfx/graphviz gtk
-media-libs/libcanberra gtk gtk3
-media-sound/pulseaudio gtk
-net-analyzer/nmap gtk
-net-dialup/ppp gtk
-net-dns/avahi gtk gtk3
-net-p2p/transmission gtk
-sys-auth/polkit gtk
-sys-devel/gcc gtk
-www-client/opera gtk
-www-client/w3m gtk
-x11-misc/xdg-user-dirs gtk
-x11-themes/light-themes gtk3
-
-# Gnome.
-app-office/abiword gnome
-app-office/libreoffice-bin gnome
-app-text/stardict gnome
-dev-libs/libgdata gnome
-dev-util/meld gnome
-gnome-base/nautilus gnome
-media-gfx/gimp gnome
-media-gfx/inkscape gnome
-media-libs/libcanberra gnome
-media-sound/pulseaudio gnome
-media-video/vlc gnome
-net-im/gajim gnome
-net-libs/gnome-online-accounts gnome
-net-libs/libproxy gnome
-net-voip/ekiga gnome
-sci-mathematics/genius gnome
-www-client/midori gnome
-x11-libs/goffice gnome
-
-# Gnome keyring.
-app-admin/system-config-printer-gnome gnome-keyring
-app-text/evince gnome-keyring
-net-im/telepathy-mission-control gnome-keyring
-net-wireless/gnome-bluetooth gnome-keyring
-xfce-base/xfce4-session gnome-keyring
-
-# # Psi.
-# x11-libs/qt-core qt3support #required by x11-libs/qt-gui-4.8.4, required by net-im/psi-0.14-r4, required by net-im/psi (argument)
-# x11-libs/qt-gui qt3support #required by x11-libs/qt-core-4.8.4[qt3support], required by app-crypt/qca-2.0.3, required by app-crypt/qca-gnupg-2.0.0_beta3, required by net-im/psi-0.14-r4[crypt], required by net-im/psi (argument)
-# x11-libs/qt-sql qt3support #required by x11-libs/qt-qt3support-4.8.4, required by x11-libs/qt-gui-4.8.4[qt3support], required by net-im/psi-0.14-r4, required by net-im/psi (argument)
-
-# # Ekiga.
-# net-libs/opal sip
-# net-libs/ptlib wav
-
-# Steam.
-games-util/steam-meta steamruntime
-media-libs/libsdl abi_x86_32 #required by games-util/steam-client-meta-9999::steam-overlay, required by games-util/steam-meta-9999::steam-overlay
-
-# # kportagetray.
-# dev-qt/qtcore qt3support
-# dev-qt/qtgui qt3support
-# dev-qt/qtsql qt3support
-# dev-python/PyQt4 declarative script sql webkit
-# dev-qt/qtdeclarative qt3support

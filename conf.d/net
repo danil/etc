@@ -111,3 +111,8 @@ dhcp_ppp0="release nodns nontp nonis"
 # <http://www.gentoo.ru/content/3g-huawei-e1750>,
 # <http://ru.gentoo-wiki.com/wiki/Huawei_GPRS/3G_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC>,
 # <http://en.gentoo-wiki.com/wiki/Huawei_E160>.
+
+# The network scripts are now part of net-misc/netifrc
+# In order to avoid sys-apps/openrc-0.12.4 from removing this file, this comment was
+# added; you can safely remove this comment.  Please see
+# /usr/share/doc/netifrc*/README* for more information.

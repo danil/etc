@@ -5,6 +5,7 @@
 # games-strategy/freeciv sdl -gtk
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 app-admin/conky lua lua-cairo iostats
+app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-editors/emacs -X -dbus
 app-emulation/virtualbox -additions -opengl
 dev-db/sqlite extensions

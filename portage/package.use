@@ -29,5 +29,6 @@ dev-lang/python:2.7 sqlite
 net-im/gajim jingle
 
 # Xfce.
+media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]
 xfce-base/thunar exif
 xfce-extra/tumbler odf raw

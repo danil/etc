@@ -20,8 +20,6 @@ x11-themes/delorean-gtk-theme::kutkevich ~amd64
 x11-themes/slim-theme-larry-abducted-by-znurt::kutkevich ~amd64
 
 # Stumpwm <https://github.com/stumpwm/stumpwm>.
-# =dev-lisp/cl-ppcre-1.2.16::gentoo ~amd64
-# x11-wm/stumpwm::kutkevich ~amd64
 <dev-lisp/asdf-9999::gentoo ~amd64 #required by dev-lisp/uiop
 <dev-lisp/sbcl-9999::gentoo ~amd64 #1.0.55-r1 wont compil
 <dev-lisp/uiop-9999::gentoo ~amd64 #required by dev-lisp/asdf, dev-lisp/sbcl

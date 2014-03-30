@@ -36,5 +36,3 @@ x11-themes/slim-theme-larry-abducted-by-znurt::kutkevich ~amd64
 <x11-themes/emerald-themes-9999::gentoo ~amd64
 x11-wm/compiz::kutkevich ~amd64
 x11-wm/emerald::kutkevich ~amd64
-
-media-fonts/source-pro::gentoo ~amd64

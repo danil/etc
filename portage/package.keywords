@@ -8,6 +8,8 @@
 # <x11-misc/xchainkeys-9999::kutkevich ~amd64
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
+<media-fonts/fantasque-sans-9999::kutkevich ~amd64
+<media-video/mpv-9999::gentoo ~amd64 #mpv - mplayer replacement <https://github.com/mpv-player/mpv>.
 <net-im/skype-9999::gentoo ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
 <sys-apps/the_silver_searcher-9999::gentoo ~amd64
@@ -20,7 +22,6 @@
 =x11-wm/awesome-3.5.5::gentoo ~amd64
 app-emulation/vagrant-bin::kutkevich ~amd64
 dev-ruby/mruby-bin::kutkevich ~amd64
-<media-video/mpv-9999::gentoo ~amd64 #mpv - mplayer replacement <https://github.com/mpv-player/mpv>.
 
 # Stumpwm <https://github.com/stumpwm/stumpwm>.
 <dev-lisp/asdf-9999::gentoo ~amd64 #required by dev-lisp/uiop

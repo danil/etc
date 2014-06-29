@@ -15,6 +15,7 @@
 <sys-apps/the_silver_searcher-9999::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
 <www-plugins/google-talkplugin-9999::gentoo ~amd64
+<x11-misc/dex-9999::gentoo ~amd64 #execute commands on startup in awesome wm <http://superuser.com/questions/130242/how-can-i-execute-commands-on-startup-in-awesome#326626>
 <x11-misc/dunst-9999::gentoo ~amd64
 <x11-themes/slim-theme-larry-abducted-by-znurt-9999::kutkevich ~amd64
 =dev-python/urwid-1.1.0::gentoo ~amd64 #required by net-misc/wicd; due to =dev-python/urwid-1.0.2: Active version of CPython 3 is not supported by dev-python/urwid-1.0.2

@@ -9,6 +9,7 @@
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
 <media-fonts/fantasque-sans-9999::kutkevich ~amd64
+<media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-video/mpv-9999::gentoo ~amd64 #mpv - mplayer replacement <https://github.com/mpv-player/mpv>.
 <net-im/skype-9999::gentoo ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64

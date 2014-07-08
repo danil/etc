@@ -6,7 +6,6 @@
 # games-strategy/freeciv sdl -gtk
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 # x11-wm/compiz gtk hjkl
-# xfce-base/xfce4-session -xscreensaver
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-editors/emacs -X -dbus
 app-emulation/virtualbox -additions -opengl
@@ -17,6 +16,7 @@ gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
 gnome-base/gvfs udisks #required by xfce-base/thunar[udev]
 mail-client/mutt doc imap #`man muttrc`
 media-libs/harfbuzz icu #required by app-office/libreoffice-bin
+media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, media-libs/sk1libs
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
 media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio
 media-video/ffmpeg threads #required by media-video/mpv
@@ -29,6 +29,8 @@ sys-fs/udev gudev #required by sys-fs/udev-init-scripts
 sys-libs/zlib minizip #required by media-video/vlc
 virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
 x11-terms/rxvt-unicode 256-color
+x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
+xfce-base/xfce4-session -xscreensaver
 
 # Awesome.
 media-libs/gd fontconfig #required by media-gfx/graphviz, x11-wm/awesome[doc]

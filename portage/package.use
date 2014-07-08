@@ -32,11 +32,6 @@ x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 xfce-base/xfce4-session -xscreensaver
 
-# Awesome.
-media-libs/gd fontconfig #required by media-gfx/graphviz, x11-wm/awesome[doc]
-x11-libs/cairo xcb #required by x11-wm/awesome
-x11-wm/awesome dbus doc
-
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]
 xfce-base/thunar exif

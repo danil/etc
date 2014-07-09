@@ -5,11 +5,11 @@
 # <app-portage/udept-9999::gentoo ~amd64 #clean out your world file <http://forums.gentoo.org/viewtopic-t-142475.html>
 # <app-text/msort-9999::kutkevich ~amd64
 # <dev-python/psutil-9999::gentoo ~amd64
+# <media-fonts/fantasque-sans-9999::kutkevich ~amd64
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
+<app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
-<media-fonts/fantasque-sans-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
-<media-video/mpv-9999::gentoo ~amd64 #mpv - mplayer replacement <https://github.com/mpv-player/mpv>.
 <net-im/skype-9999::gentoo ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
 <sys-apps/the_silver_searcher-9999::gentoo ~amd64
@@ -20,10 +20,10 @@
 <x11-misc/xchainkeys-9999::kutkevich ~amd64
 <x11-themes/slim-theme-larry-abducted-by-znurt-9999::kutkevich ~amd64
 =dev-python/urwid-1.1.0::gentoo ~amd64 #required by net-misc/wicd; due to =dev-python/urwid-1.0.2: Active version of CPython 3 is not supported by dev-python/urwid-1.0.2
+=media-fonts/fantasque-sans-1.6.4::kutkevich ~amd64
 =media-libs/freetype-2.5.3-r1::gentoo ~amd64 #required by media-gfx/feh, media-libs/imlib2
 =media-libs/harfbuzz-0.9.28::gentoo ~amd64 #required by app-office/libreoffice-bin
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
-=x11-wm/awesome-3.5.5::gentoo ~amd64
 app-emulation/vagrant-bin::kutkevich ~amd64
 dev-ruby/mruby-bin::kutkevich ~amd64
 

@@ -18,8 +18,6 @@ mail-client/mutt doc imap #`man muttrc`
 media-libs/harfbuzz icu #required by app-office/libreoffice-bin
 media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, media-libs/sk1libs
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
-media-plugins/alsa-plugins pulseaudio #required by media-sound/pulseaudio
-media-video/ffmpeg threads #required by media-video/mpv
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
 net-im/skype -pulseaudio
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>

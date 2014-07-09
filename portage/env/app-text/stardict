@@ -1,0 +1,2 @@
+# <http://forums.gentoo.org/viewtopic-t-981348-start-0.html#7509586>.
+LDFLAGS="${LDFLAGS} -lgmodule-2.0"

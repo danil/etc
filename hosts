@@ -10,10 +10,14 @@
 # IPv4 and IPv6 localhost aliases
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
-#127.0.0.1	localhost
-127.0.0.1 leela.kutkevich.org leela localhost omorphia.local
+#127.0.0.1localhost
+127.0.0.1 h3.kutkevich.org h3 localhost omorphia.local
+# 127.0.0.1 omorphia.local
+# 5.9.104.240 omorfia.ru
 # 195.5.131.242 euroembankment.ru
 # 5.9.104.240 omorfia-production.studio.molinos.ru
+# 93.93.130.185 spik.ru
+# 93.93.130.185 agroreserv.ru
 
 #milhouse: 127.0.0.1 milhouse.kutkevich.org milhouse localhost
 ::1		localhost

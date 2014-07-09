@@ -13,7 +13,7 @@ SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:
 # Mass_Storage (pci-0000:00:1a.0-usb-0:1:1.2-scsi-0:0:0:0)
 SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_SERIAL}=="HUAWEI_Mass_Storage-0:0", SYMLINK+="cdrom1", ENV{GENERATED}="1"
 
-# MATSHITADVD-RAM_UJ892 (pci-0000:00:1f.2-scsi-0:0:0:0)
+# Optiarc_DVD_RW_AD-7910S (pci-0000:00:1f.2-scsi-0:0:0:0)
 SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-0:0:0:0", SYMLINK+="cdrom2", ENV{GENERATED}="1"
 SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-0:0:0:0", SYMLINK+="cdrw2", ENV{GENERATED}="1"
 SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-0:0:0:0", SYMLINK+="dvd2", ENV{GENERATED}="1"

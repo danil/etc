@@ -11,6 +11,10 @@ clock="UTC"
 # with CONFIG_RTC_HCTOSYS set to y and your hardware clock set to UTC.
 #clock_hctosys="YES"
 
+# Danil.
+# <http://en.gentoo-wiki.com/wiki/NTP#Setting_the_hardware_clock_during_shutdown>.
+clock_hctosys="YES"
+
 # If you do not want to set the hardware clock to the current system
 # time (software clock) during shutdown, set this to no.
 #clock_systohc="YES"

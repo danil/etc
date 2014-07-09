@@ -1,15 +1,1 @@
-=sys-devel/automake-1.11.6 #due to net-dns/avahi-0.6.30-r1 failed to build <http://forums.gentoo.org/viewtopic-p-7117366.html#7117366>
-
-# URxvt space between the characters looks much bigger
-# <https://bugs.freedesktop.org/show_bug.cgi?id=47178>,
-# <http://forums.gentoo.org/viewtopic-t-916378-start-0.html#6984764>.
-=x11-libs/libXft-2.3.1
-
-# Wireless do not get IP from DHCP. Try to downgrade.
-# #frink: =net-wireless/iwl5000-ucode-8.24.2.12
-
-# Emacs daemon crashes.
-#=app-emacs/emacs-daemon-0.17
-
-# Epiphany slow.
-#=www-client/epiphany-2.26.3-r4
+# */*::unity-gentoo #unity-gentoo unmasked repository annoying(

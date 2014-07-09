@@ -1,8 +1,11 @@
 # <http://ewald.tienkamp.nl/2010/06/21/gentoo-blocker-adobeflash-10-1-license>.
-net-im/skype skype-eula
-www-client/google-chrome google-chrome
+net-im/skype skype-4.0.0.7-copyright
 www-plugins/adobe-flash AdobeFlash-11.x
 www-plugins/google-talkplugin Google-TOS
+
+# Chrome.
+www-client/google-chrome google-chrome
+www-plugins/chrome-binary-plugins:stable::gentoo google-chrome
 
 # VirtualBox.
 app-emulation/virtualbox-extpack-oracle PUEL

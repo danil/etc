@@ -9,6 +9,7 @@
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
+<app-misc/cv-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64

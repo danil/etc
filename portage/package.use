@@ -9,12 +9,14 @@
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-editors/emacs -X -dbus
 app-emulation/virtualbox -additions -opengl
+app-mobilephone/gammu python #required by app-mobilephone/wammu
 dev-db/sqlite extensions
 dev-libs/libxml2 python #required by app-admin/system-config-printer-common, app-admin/system-config-printer-gnome
 dev-vcs/git tk gtk
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
 gnome-base/gvfs udisks #required by xfce-base/thunar[udev]
 mail-client/mutt doc imap #`man muttrc`
+media-gfx/feh curl exif
 media-libs/harfbuzz icu #required by app-office/libreoffice-bin
 media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, media-libs/sk1libs
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
@@ -30,9 +32,13 @@ x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 xfce-base/xfce4-session -xscreensaver
 
+media-video/ffmpeg threads #required by media-video/mpv[postproc]
+x11-libs/cairo xcb #required by x11-misc/i3lock
+
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]
 xfce-base/thunar exif
+xfce-base/thunar udisks #required by xfce-extra/thunar-volman
 xfce-extra/tumbler odf raw
 
 # Gajim.

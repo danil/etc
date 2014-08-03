@@ -31,7 +31,6 @@ GRUB_TIMEOUT=10
 #GRUB_GFXMODE=640x480
 # Danil.
 GRUB_GFXMODE=640x480
-# GRUB_GFXMODE=1440x900x32
 
 # Path to theme spec txt file.
 # The starfield is by default provided with use truetype.

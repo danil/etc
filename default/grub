@@ -30,9 +30,9 @@ GRUB_TIMEOUT=10
 # You can see them in real GRUB with the command `vbeinfo'.
 #GRUB_GFXMODE=640x480
 # Danil.
-# <https://wiki.archlinux.org/index.php/Grub2#Setting_the_framebuffer_resolution>,
-# <https://wiki.sabayon.org/index.php?title=HOWTO:_Using_Custom_Framebuffer_Resolution_with_GRUB2#Discover_VESA_framebuffer_modes_supported_by_your_hardware>.
-GRUB_GFXMODE=640x480
+# <http://wiki.gentoo.org/wiki/GRUB2#Using_framebuffer_display>,
+# <https://wiki.archlinux.org/index.php/GRUB#Setting_the_framebuffer_resolution>.
+GRUB_GFXMODE=1440x900x16
 
 # Path to theme spec txt file.
 # The starfield is by default provided with use truetype.

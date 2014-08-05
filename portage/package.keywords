@@ -30,11 +30,15 @@ dev-ruby/mruby-bin::kutkevich ~amd64
 
 =x11-libs/cairo-1.12.16-r3 ~amd64 #required by media-video/mpv[libass], media-libs/libass[harfbuzz], media-libs/harfbuzz
 
-# OpenSCAD.
-<media-gfx/openscad-9999::gentoo ~amd64
-=media-gfx/opencsg-1.3.2-r1 ~amd64 #required by media-gfx/openscad
-=sci-mathematics/cgal-4.3 ~amd64 #required by media-gfx/openscad
+# Connman.
+<gnome-extra/connman-gnome-9999::gentoo ~amd64
+<net-misc/connman-9999::gentoo ~amd64
 
 # Glances - htop replacement <https://github.com/nicolargo/glances>.
 <dev-python/psutil-9999::gentoo ~amd64
 <sys-process/glances-9999::gentoo ~amd64
+
+# OpenSCAD.
+<media-gfx/openscad-9999::gentoo ~amd64
+=media-gfx/opencsg-1.3.2-r1 ~amd64 #required by media-gfx/openscad
+=sci-mathematics/cgal-4.3 ~amd64 #required by media-gfx/openscad

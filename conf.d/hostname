@@ -2,5 +2,5 @@
 # Danil.
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 #hostname="localhost"
-# Professor John Frink, Jr. ThinkPad T400. 192.168.8.15.
-hostname="frink"
+# Host 5 aka Professor John Frink, Jr. ThinkPad T400. 192.168.8.15.
+hostname="h6"

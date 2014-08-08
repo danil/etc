@@ -9,6 +9,7 @@
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
+<app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
@@ -27,8 +28,6 @@
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
 app-emulation/vagrant-bin::kutkevich ~amd64
 dev-ruby/mruby-bin::kutkevich ~amd64
-
-=x11-libs/cairo-1.12.16-r3 ~amd64 #required by media-video/mpv[libass], media-libs/libass[harfbuzz], media-libs/harfbuzz
 
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64

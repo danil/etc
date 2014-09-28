@@ -34,6 +34,10 @@ x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 xfce-base/xfce4-session -xscreensaver
 
+# Seafile.
+net-libs/ccnet python client #required by net-misc/seafile-client
+net-misc/seafile client
+
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]
 xfce-base/thunar exif

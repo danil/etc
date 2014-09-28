@@ -9,8 +9,11 @@
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
+<app-emulation/vagrant-bin-9999::kutkevich ~amd64
 <app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
+<dev-ruby/mruby-bin-9999::kutkevich ~amd64
+<dev-vcs/git-extras-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
@@ -23,14 +26,20 @@
 <x11-misc/dunst-9999::gentoo ~amd64
 <x11-misc/skippy-xd-9999::kutkevich ~amd64
 <x11-misc/xchainkeys-9999::kutkevich ~amd64
+<x11-plugins/pidgin-window_merge-9999::kutkevich ~amd64
 <x11-themes/slim-theme-larry-abducted-by-znurt-9999::kutkevich ~amd64
 =dev-python/urwid-1.1.0::gentoo ~amd64 #required by net-misc/wicd; due to =dev-python/urwid-1.0.2: Active version of CPython 3 is not supported by dev-python/urwid-1.0.2
 =media-fonts/fantasque-sans-1.6.4::kutkevich ~amd64
 =media-libs/freetype-2.5.3-r1::gentoo ~amd64 #required by media-gfx/feh, media-libs/imlib2
 =media-libs/harfbuzz-0.9.28::gentoo ~amd64 #required by app-office/libreoffice-bin
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
-app-emulation/vagrant-bin::kutkevich ~amd64
-dev-ruby/mruby-bin::kutkevich ~amd64
+
+# Seafile.
+<net-libs/ccnet-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client
+<net-libs/libevhtp-9999::kutkevich ~amd64 #required by net-misc/seafile, net-misc/seafile-client
+<net-libs/libsearpc-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client, et-libs/ccnet
+<net-misc/seafile-9999::kutkevich ~amd64
+<net-misc/seafile-client-9999::kutkevich ~amd64
 
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64

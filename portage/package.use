@@ -7,7 +7,7 @@
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 # x11-wm/compiz gtk hjkl
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
-app-editors/emacs -X -dbus -gtk3
+app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
 dev-db/sqlite extensions
@@ -40,6 +40,10 @@ media-video/ffmpeg webp
 media-video/ffmpeg x264
 media-video/ffmpeg theora
 media-video/ffmpeg vpx #VP8 and VP9 video compression format for WebM video file format video <http://en.wikipedia.org/wiki/VP8>, <http://en.wikipedia.org/wiki/Webm>
+
+# Seafile.
+net-libs/ccnet python client #required by net-misc/seafile-client
+net-misc/seafile client
 
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]

@@ -9,10 +9,15 @@
 # <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
+<app-emulation/vagrant-bin-9999::kutkevich ~amd64
 <app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
+<dev-ruby/mruby-bin-9999::kutkevich ~amd64
+<dev-vcs/git-extras-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
+<media-gfx/mozjpeg-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
+<net-misc/wrk-9999::kutkevich ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
 <sys-apps/the_silver_searcher-9999::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
@@ -29,8 +34,13 @@
 =media-libs/harfbuzz-0.9.28::gentoo ~amd64 #required by app-office/libreoffice-bin
 =media-video/ffmpeg-2.2.5::gentoo ~amd64 #used with webm
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
-app-emulation/vagrant-bin::kutkevich ~amd64
-dev-ruby/mruby-bin::kutkevich ~amd64
+
+# Seafile.
+<net-libs/ccnet-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client
+<net-libs/libevhtp-9999::kutkevich ~amd64 #required by net-misc/seafile, net-misc/seafile-client
+<net-libs/libsearpc-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client, et-libs/ccnet
+<net-misc/seafile-9999::kutkevich ~amd64
+<net-misc/seafile-client-9999::kutkevich ~amd64
 
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64

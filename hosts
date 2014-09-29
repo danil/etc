@@ -1,9 +1,9 @@
 # /etc/hosts: Local Host Database
 #
-# This file describes a number of aliases-to-address mappings for the for
+# This file describes a number of aliases-to-address mappings for the for 
 # local hosts that share this file.
 #
-# In the presence of the domain name service or NIS, this file may not be
+# In the presence of the domain name service or NIS, this file may not be 
 # consulted at all; see /etc/host.conf for the resolution order.
 #
 
@@ -11,7 +11,7 @@
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 #127.0.0.1localhost
-127.0.0.1 h6.kutkevich.org h6 localhost
+127.0.0.1 h6.kutkevich.org h6 localhost omorphia.local
 # 127.0.0.1 omorphia.local
 # 5.9.104.240 omorfia.ru
 # 195.5.131.242 euroembankment.ru
@@ -19,7 +19,6 @@
 # 93.93.130.185 spik.ru
 # 93.93.130.185 agroreserv.ru
 
-#milhouse: 127.0.0.1 milhouse.kutkevich.org milhouse localhost
 ::1		localhost
 
 #
@@ -27,16 +26,16 @@
 #10.0.0.2               myname
 #10.0.0.3               myfriend
 #
-# According to RFC 1918, you can use the following IP networks for private
+# According to RFC 1918, you can use the following IP networks for private 
 # nets which will never be connected to the Internet:
 #
 #       10.0.0.0        -   10.255.255.255
 #       172.16.0.0      -   172.31.255.255
 #       192.168.0.0     -   192.168.255.255
 #
-# In case you want to be able to connect directly to the Internet (i.e. not
-# behind a NAT, ADSL router, etc...), you need real official assigned
-# numbers.  Do not try to invent your own network numbers but instead get one
-# from your network provider (if any) or from your regional registry (ARIN,
+# In case you want to be able to connect directly to the Internet (i.e. not 
+# behind a NAT, ADSL router, etc...), you need real official assigned 
+# numbers.  Do not try to invent your own network numbers but instead get one 
+# from your network provider (if any) or from your regional registry (ARIN, 
 # APNIC, LACNIC, RIPE NCC, or AfriNIC.)
 #

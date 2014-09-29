@@ -34,8 +34,12 @@ x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 xfce-base/xfce4-session -xscreensaver
 
-media-video/ffmpeg threads #required by media-video/mpv[postproc]
-x11-libs/cairo xcb #required by x11-misc/i3lock
+# Re-encode video and audio streams
+# <http://trac.ffmpeg.org/wiki/How%20to%20use%20-map%20option>.
+media-video/ffmpeg webp
+media-video/ffmpeg x264
+media-video/ffmpeg theora
+media-video/ffmpeg vpx #VP8 and VP9 video compression format for WebM video file format video <http://en.wikipedia.org/wiki/VP8>, <http://en.wikipedia.org/wiki/Webm>
 
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]

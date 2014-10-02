@@ -16,9 +16,11 @@
 <dev-vcs/git-extras-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64
+<media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
 <net-misc/wrk-9999::kutkevich ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
+<sys-apps/mdp-9999::kutkevich ~amd64
 <sys-apps/the_silver_searcher-9999::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
 <www-plugins/google-talkplugin-9999::gentoo ~amd64

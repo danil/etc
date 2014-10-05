@@ -18,6 +18,7 @@
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64
 <media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
+<media-sound/apulse-9999::gentoo ~x86 ~amd64 #used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
 <media-video/ffmpeg-2.3::gentoo ~amd64 #used with webm
 <net-im/skype-9999::gentoo ~amd64
 <net-misc/wrk-9999::kutkevich ~amd64

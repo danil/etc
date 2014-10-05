@@ -22,7 +22,7 @@ media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, 
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
 media-video/ffmpeg threads #required by media-video/mpv[postproc]
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
-net-im/skype -pulseaudio
+net-im/skype -pulseaudio apulse #use alsa pulseaudio emulation instead of pulseaudio <http://wiki.gentoo.org/wiki/Skype#apulse>
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-misc/wicd ambiance #icons from ubuntu ambiance theme
 net-print/cups gnutls

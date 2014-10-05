@@ -16,6 +16,10 @@ config_eth0="dhcp"
 # <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
 # dhcp_eth0="nontp"
+# <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
+# <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
+dhcpcd_eth0="-h h2 -H h2"
+# routes_eth0="default via 192.168.8.1"
 
 # Wireless.
 # WPA Supplicant
@@ -25,7 +29,7 @@ config_eth0="dhcp"
 # modules="iwconfig"
 
 # <http://en.gentoo-wiki.com/wiki/Wireless_Networking#Needed_software>.
-# #frink:    wpa_timeout_wlan0=15
+# #h6:    wpa_timeout_wlan0=15
 # #milhouse: wpa_timeout_ath0=15
 
 # It's important that we tell wpa_supplicant which driver we should be
@@ -38,13 +42,12 @@ config_eth0="dhcp"
 # DHCP
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
 # config_wlan0="dhcp"
-#milhouse: config_ath0="dhcp"
 # <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
 # dhcp_wlan0="nontp"
-#milhouse: dhcp_ath0="nontp"
-# <http://en.gentoo-wiki.com/wiki/Wireless/Configuration#Configuring_.2Fetc.2Fconf.d.2Fnet>.
-# #frink:    dhcpcd_wlan0="-t 30" # Timeout after 30 seconds
+# # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
+# # <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
+# dhcpcd_wlan0="-h h2 -H h2"
 
 # Defining network configuration per ESSID
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4>,
@@ -52,7 +55,7 @@ config_eth0="dhcp"
 
 # tatyana.
 #config_tatyana="dhcp"
-# #frink:    config_tatyana="192.168.9.15/24"
+# #h6:    config_tatyana="192.168.9.15/24"
 # #milhouse: config_tatyana="192.168.9.13/24"
 # routes_tatyana="default via 192.168.9.1"
 # # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4_pre1>.
@@ -61,7 +64,7 @@ config_eth0="dhcp"
 
 # Domainname
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre2>.
-dns_domain_lo="disco.kutkevich.org"
+dns_domain_lo="h2.kutkevich.org"
 
 # NIS domainname
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre3>.
@@ -107,8 +110,10 @@ dns_domain_lo="disco.kutkevich.org"
 # config_ppp0="ppp"
 # Each PPP interface requires an interface to use as a "Link"
 # link_ppp0="/dev/ttyUSB0"
-# dhcpcd_ppp0="-t 10"
 # dhcp_ppp0="release nodns nontp nonis"
+# # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
+# # <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
+# dhcpcd_ppp0="-h h2 -H h2 -t 10"
 # <http://forums.gentoo.org/viewtopic-t-847989.html?sid=8a6c694158f33bb0b8761c6072c805bb>,
 # <http://www.gentoo.ru/content/3g-huawei-e1750>,
 # <http://ru.gentoo-wiki.com/wiki/Huawei_GPRS/3G_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC>,

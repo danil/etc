@@ -2,5 +2,5 @@
 # Danil.
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 #hostname="localhost"
-# Disco Stu. linode317991. 178.79.163.10
-hostname="disco"
+# Host 2. Disco Stu. linode317991. 178.79.163.10
+hostname="h2"

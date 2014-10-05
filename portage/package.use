@@ -1,11 +1,12 @@
-# app-portage/layman git subversion #<http://overlays.gentoo.org/proj/sunrise>.
-# sys-devel/gcc go
-# www-apps/cgit doc
-app-editors/emacs -X -dbus
+# app-misc/sphinx mysql postgres
+# app-text/docbook-sgml-utils jadetex #docbook2pdf <http://bugs.gentoo.org/61938#c0> used for <http://habrahabr.ru/blogs/Git/80909/>
+# net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
+app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
 app-misc/sphinx mysql postgres
 dev-db/sqlite extensions
 dev-libs/libxml2 python
 dev-libs/pwlib ldap
+dev-vcs/git -gnome-keyring tk gtk
 mail-client/mutt doc imap #mutt `man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>
@@ -18,16 +19,6 @@ www-servers/nginx nginx_modules_http_stub_status #used by Munin
 # www-servers/nginx fastcgi
 # www-servers/nginx nginx_modules_http_passenger
 
-# Git.
-# Enable CVS integration `man gitcvs-migration `.
-dev-vcs/git cvs
-# Enable subversion (version control system) support.
-dev-vcs/git subversion
-dev-vcs/subversion -dso
-dev-vcs/subversion perl
-# Gitweb <http://philsergi.com/2008/04/gitweb-apache-gentoo.html>.
-dev-vcs/git cgi
-
 # Nagios.
 # dev-lang/php cgi #required by net-analyzer/nagios, net-analyzer/nagios-core[web,lighttpd,-apache2]
 dev-lang/php apache2 #required by net-analyzer/nagios, net-analyzer/nagios-core[web,apache2]
@@ -39,3 +30,7 @@ net-analyzer/nagios-plugins nagios-ssh
 net-analyzer/munin -minimal -cgi
 net-analyzer/munin http #required for monitoring HTTP-based services such as nginx
 net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]
+
+# Seafile.
+net-libs/ccnet python client #required by net-misc/seafile-client
+net-misc/seafile client

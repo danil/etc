@@ -4,7 +4,6 @@
 # Most people should just leave this line alone ...
 # however, if you know what you're doing, and you
 # want to use ntpd to set the clock, change this to 'ntpd'
-
 # Danil
 # <http://en.gentoo-wiki.com/wiki/NTP#Setting_time_at_boot>.
 NTPCLIENT_CMD="ntpdate"

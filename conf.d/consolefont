@@ -10,9 +10,11 @@
 # <http://ru.gentoo-wiki.com/wiki/Полная_поддержка_русского_языка#baselayout>,
 # <http://ru.gentoo-wiki.com/wiki/Частичная_поддержка_русского_языка#.D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0>,
 # <http://ru.gentoo-wiki.com/wiki/Быстрая_русификация_консоли>.
-#consolefont="default8x16"
-consolefont="cyr-sun16"
-#consolefont="ter-v14n"
+# consolefont="default8x16"
+# consolefont="cyr-sun16"
+# consolefont="ter-v14n"
+# ter-v16n belongs to media-fonts/terminus-font
+consolefont="ter-v16n"
 
 # consoletranslation is the charset map file to use.  Leave commented to use
 # the default one.  Have a look in /usr/share/consoletrans for a selection of

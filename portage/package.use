@@ -6,7 +6,7 @@ app-misc/sphinx mysql postgres
 dev-db/sqlite extensions
 dev-libs/libxml2 python
 dev-libs/pwlib ldap
-dev-vcs/git -gnome-keyring tk gtk
+dev-vcs/git -gnome-keyring
 mail-client/mutt doc imap #mutt `man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>

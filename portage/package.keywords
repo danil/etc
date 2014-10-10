@@ -6,7 +6,6 @@
 # <app-text/msort-9999::kutkevich ~amd64
 # <dev-python/psutil-9999::gentoo ~amd64
 # <media-fonts/fantasque-sans-9999::kutkevich ~amd64
-# <x11-themes/delorean-gtk-theme-9999::kutkevich ~amd64
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
 <app-emulation/vagrant-bin-9999::kutkevich ~amd64

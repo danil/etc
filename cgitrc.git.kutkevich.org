@@ -1,0 +1,151 @@
+include=/etc/cgitrc.common
+
+# Path used to store the cgit cache entries. Default value: "/var/cache/cgit".
+cache-root=/var/cache/cgit/git.kutkevich.org
+
+repo.url=alpha-kutkevich-org.git
+repo.path=/var/git/alpha-kutkevich-org.git
+repo.desc=My home page on Ruby on Rails <http://alpha.kutkevich.org>
+repo.owner=Danil Kutkevich
+
+repo.url=bookmarks.git
+repo.path=/var/git/bookmarks.git
+repo.desc=Bookmarks
+repo.owner=Danil Kutkevich
+
+repo.url=count-ip-in-log.git
+repo.path=/var/git/count-ip-in-log.git
+repo.desc=Count IP addresses in log file
+repo.owner=Danil Kutkevich
+
+repo.url=cv.git
+repo.path=/var/git/cv.git
+repo.desc=My curriculum vitae
+repo.owner=Danil Kutkevich
+
+repo.url=dotfiles.git
+repo.path=/var/git/dotfiles.git
+repo.desc=This is my HOME, including dotfiles and scripts
+repo.owner=Danil Kutkevich
+
+repo.url=etc.git
+repo.path=/var/git/etc.git
+repo.desc=This is my configuration files
+repo.owner=Danil Kutkevich
+
+repo.url=gentoo-overlay.git
+repo.path=/var/git/gentoo-overlay.git
+repo.desc=Personal Gentoo overlay
+repo.owner=Danil Kutkevich
+
+repo.url=nested-scaffold.git
+repo.path=/var/git/nested-scaffold.git
+repo.desc=Ruby on Rails generators sandbox
+repo.owner=Danil Kutkevich
+
+repo.url=rc.git
+repo.path=/var/git/rc.git
+repo.desc=Reference cards
+repo.owner=Danil Kutkevich
+
+repo.url=site-lisp.git
+repo.path=/var/git/site-lisp.git
+repo.desc=Emacs libraries
+repo.owner=Danil Kutkevich
+
+# Mirrored repositories.
+section=outdated mirrors
+
+repo.url=fcgiwrap.git
+repo.path=/var/git/vendor/fcgiwrap.git
+repo.desc=Simple FastCGI wrapper for CGI scripts <http://nginx.localdomain.pl/wiki/FcgiWrap>
+repo.snapshots=0
+repo.clone-url=git://github.com/gnosek/fcgiwrap.git git://kutkevich.org/vendor/fcgiwrap.git
+
+repo.url=feed2imap.git
+repo.path=/var/git/vendor/feed2imap.git
+repo.desc=Feed2Imap is an RSS/Atom feed aggregator <http://home.gna.org/feed2imap>
+repo.snapshots=0
+repo.clone-url=git://github.com/ln/feed2imap.git git://kutkevich.org/vendor/feed2imap.git
+
+repo.url=harumambu.ru.git
+repo.path=/var/git/vendor/harumambu.ru.git
+repo.desc=Freelance aggregator <http://harumambu.ru>
+repo.snapshots=0
+repo.clone-url=git://github.com/golubeff/harumambu.ru.git git://kutkevich.org/vendor/harumambu.ru.git
+
+repo.url=lake.git
+repo.path=/var/git/vendor/lake.git
+repo.desc=A Lua build system
+repo.snapshots=0
+repo.clone-url=git://github.com/sebnow/lake.git git://kutkevich.org/vendor/lake.git
+
+repo.url=lua-haml.git
+repo.path=/var/git/vendor/lua-haml.git
+repo.desc=Haml for Lua <http://github.com/norman/lua-haml>
+repo.snapshots=0
+repo.clone-url=git://github.com/norman/lua-haml.git git://kutkevich.org/vendor/lua-haml.git
+
+repo.url=luaspec.git
+repo.path=/var/git/vendor/luaspec.git
+repo.desc=A specification framework for lua <http://github.com/mirven/luaspec>
+repo.snapshots=0
+repo.clone-url=git://github.com/mirven/luaspec.git git://kutkevich.org/vendor/luaspec.git
+
+repo.url=luv.git
+repo.path=/var/git/vendor/luv.git
+repo.desc=Lua web-framework <http://in.aisys.ru/Luv>
+repo.snapshots=0
+repo.clone-url=git://github.com/temiy/luv.git git://kutkevich.org/vendor/luv.git
+
+repo.url=package.el.git
+repo.path=/var/git/vendor/package.el.git
+repo.desc=Package system for Emacs <http://tromey.com/elpa>
+repo.snapshots=0
+repo.clone-url=git://github.com/technomancy/package.el.git git://kutkevich.org/vendor/package.el.git
+
+repo.url=ree-nginx-passenger-ebuild.git
+repo.path=/var/git/vendor/ree-nginx-passenger-ebuild.git
+repo.desc=Ruby Enterprise Edition + nginx + passenger on Gentoo Linux ebuilds <http://deep-ocean.rubyclub.com.ua/blogs/158-Ruby-Enterprise-Edition---nginx---passenger-on-Gentoo-Linux--ebuild-.html>
+repo.snapshots=0
+repo.clone-url=git://github.com/Deep-Ocean/ree-nginx-passenger-ebuild.git git://kutkevich.org/vendor/ree-nginx-passenger-ebuild.git
+
+repo.url=restas.git
+repo.path=/var/git/vendor/restas.git
+repo.desc=Common Lisp application server <http://restas.lisper.ru>
+repo.snapshots=0
+repo.clone-url=git://github.com/archimag/restas.git git://kutkevich.org/vendor/restas.git
+
+repo.url=ruby-feedparser.git
+repo.path=/var/git/vendor/ruby-feedparser.git
+repo.desc=RSS and Atom parser for Ruby <http://home.gna.org/ruby-feedparser>
+repo.snapshots=0
+repo.clone-url=git://github.com/ln/ruby-feedparser.git git://kutkevich.org/vendor/ruby-feedparser.git
+
+repo.url=teachmate.git
+repo.path=/var/git/vendor/teachmate.git
+repo.desc=Sources of TeachMate.org service <http://teachmate.org>
+repo.snapshots=0
+pprepo.clone-url=git://kutkevich.org/vendor/teachmate.git
+
+# svn mirrors.
+section=outdated svn mirrors
+
+repo.url=google-code-prettify.git
+repo.path=/var/git/vendor/google-code-prettify.git/.git
+repo.desc=A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page <http://code.google.com/p/google-code-prettify>
+repo.snapshots=0
+repo.clone-url=git://kutkevich.org/vendor/google-code-prettify.git http://google-code-prettify.googlecode.com/svn/trunk
+
+# Vendor code.
+section=vendor
+
+repo.url=neotool.git
+repo.path=/var/git/vendor/neotool.git
+repo.desc=NeoTool is a bash script with GUI for flashing Openmoko <http://users.on.net/~antisol/neotool>, <http://wiki.openmoko.org/wiki/NeoTool>
+repo.snapshots=0
+repo.clone-url=git://kutkevich.org/vendor/neotool.git
+
+# Local Variables:
+# mode: conf
+# End:

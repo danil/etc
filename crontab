@@ -16,5 +16,6 @@ HOME=/
 9  3  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
 19 4  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
 29 5  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
+# Danil.
 */45 * * * * root /usr/sbin/anacron -s
-# */10  *  * * * root    test -x /usr/sbin/run-crons && /usr/sbin/run-crons
+# */10  *  * * *	root	test -x /usr/sbin/run-crons && /usr/sbin/run-crons

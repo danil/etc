@@ -6,7 +6,7 @@
 # want to use ntpd to set the clock, change this to 'ntpd'
 # Danil
 # <http://en.gentoo-wiki.com/wiki/NTP#Setting_time_at_boot>.
-#NTPCLIENT_CMD="ntpdate"
+# NTPCLIENT_CMD="ntpdate"
 NTPCLIENT_CMD="sntp"
 
 # Options to pass to the above command

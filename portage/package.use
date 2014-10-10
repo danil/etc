@@ -24,7 +24,6 @@ media-video/ffmpeg threads #required by media-video/mpv[postproc]
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
 net-im/skype -pulseaudio apulse #use alsa pulseaudio emulation instead of pulseaudio <http://wiki.gentoo.org/wiki/Skype#apulse>
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
-net-misc/wicd ambiance #icons from ubuntu ambiance theme
 net-print/cups gnutls
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
 sys-libs/zlib minizip #required by media-video/vlc
@@ -51,7 +50,3 @@ xfce-base/thunar exif
 xfce-base/thunar udisks #required by xfce-extra/thunar-volman
 xfce-base/xfce4-session upower
 xfce-extra/tumbler odf raw
-
-# Gajim.
-dev-lang/python:2.7 sqlite
-net-im/gajim jingle

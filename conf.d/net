@@ -8,13 +8,17 @@
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_pre21>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap2_sect2>.
 config_eth0="dhcp"
+# config_eth0="192.168.8.2/24"
+# routes_eth0="default via 192.168.8.1"
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4_pre1>.
+# dns_servers_eth0="192.168.8.1"
+# dns_search_domains_eth0="tat"
 # <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
 dhcp_eth0="nontp"
 # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
 # <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
 dhcpcd_eth0="-h h3 -H h3"
-# #milhouse: config_eth0="192.168.8.13/24"
 # routes_eth0="default via 192.168.8.1"
 
 # Wireless.
@@ -22,7 +26,7 @@ dhcpcd_eth0="-h h3 -H h3"
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap2_pre2>.
 # Prefer wpa_supplicant over wireless-tools.
 modules="wpa_supplicant"
-#modules="iwconfig"
+# modules="iwconfig"
 
 # <http://en.gentoo-wiki.com/wiki/Wireless_Networking#Needed_software>.
 # #h6:    wpa_timeout_wlan0=15
@@ -32,13 +36,10 @@ modules="wpa_supplicant"
 # using as it's not very good at guessing yet
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap2_pre2>.
 wpa_supplicant_wlan0="-Dwext"
-# <http://old.nabble.com/ath5k-and-wpa_supplicant-td23816188.html#a23818570>.
-#milhouse: wpa_supplicant_ath0="-Dwext"
 
 # DHCP
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
 config_wlan0="dhcp"
-#milhouse: config_ath0="dhcp"
 # <http://en.gentoo-wiki.com/wiki/NTP#DHCP>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
 dhcp_wlan0="nontp"
@@ -67,10 +68,10 @@ dns_domain_lo="h3.kutkevich.org"
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre3>.
 # nis_domain_lo="my-nisdomain"
 
-# duddanov.
-config_linksys="192.168.2.150/24"
-routes_linksys="default via 192.168.2.1"
-dns_servers_linksys="192.168.2.1"
+# # Dudanov.
+# config_linksys="192.168.2.150/24"
+# routes_linksys="default via 192.168.2.1"
+# dns_servers_linksys="192.168.2.1"
 
 # Wireless Tools
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap3_pre2>.

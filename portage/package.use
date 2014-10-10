@@ -22,7 +22,6 @@ media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, 
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
 media-video/ffmpeg threads #required by media-video/mpv[postproc]
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
-net-im/skype -pulseaudio apulse #use alsa pulseaudio emulation instead of pulseaudio <http://wiki.gentoo.org/wiki/Skype#apulse>
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 net-print/cups gnutls
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
@@ -32,6 +31,16 @@ x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 xfce-base/xfce4-session -xscreensaver
+
+dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
+
+# Apulse used by skype for pulseaudio emulation via alsa
+# <http://wiki.gentoo.org/wiki/Skype#apulse>.
+net-im/skype -pulseaudio
+# dev-libs/glib abi_x86_32 #required by media-sound/apulse, net-im/skype[apulse]
+# media-libs/alsa-lib abi_x86_32 #required by media-sound/apulse, net-im/skype[apulse]
+# media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
+# net-im/skype -pulseaudio apulse #use alsa pulseaudio emulation instead of pulseaudio <http://wiki.gentoo.org/wiki/Skype#apulse>
 
 # Re-encode video and audio streams
 # <http://trac.ffmpeg.org/wiki/How%20to%20use%20-map%20option>.

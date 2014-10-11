@@ -19,7 +19,7 @@ NTPCLIENT_OPTS="-s -b -u \
 	2.gentoo.pool.ntp.org 3.gentoo.pool.ntp.org"
 
 # # Danil.
-# NTPCLIENT_OPTS="-P no -r kutkevich.org"
+# NTPCLIENT_OPTS="-P no -r ntp.kutkevich.org"
 
 # If you use hostnames above, then you should depend on dns
 # being up & running before we try to run.  Otherwise, you

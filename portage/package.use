@@ -11,6 +11,7 @@ app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
 dev-db/sqlite extensions
+dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
 dev-libs/libxml2 python #required by app-admin/system-config-printer-common, app-admin/system-config-printer-gnome
 dev-vcs/git -gnome-keyring tk gtk
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
@@ -31,8 +32,6 @@ x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 xfce-base/xfce4-session -xscreensaver
-
-dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
 
 # Apulse used by skype for pulseaudio emulation via alsa
 # <http://wiki.gentoo.org/wiki/Skype#apulse>.
@@ -59,3 +58,8 @@ xfce-base/thunar exif
 xfce-base/thunar udisks #required by xfce-extra/thunar-volman
 xfce-base/xfce4-session upower
 xfce-extra/tumbler odf raw
+
+# Munin <http://wiki.gentoo.org/wiki/Munin#Master>.
+net-analyzer/munin -minimal -cgi
+net-analyzer/munin http #required for monitoring HTTP-based services such as nginx
+net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]

@@ -36,8 +36,6 @@ dhcpcd_eth0="-h h2 -H h2"
 # using as it's not very good at guessing yet
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap2_pre2>.
 # wpa_supplicant_wlan0="-Dwext"
-# <http://old.nabble.com/ath5k-and-wpa_supplicant-td23816188.html#a23818570>.
-#milhouse: wpa_supplicant_ath0="-Dwext"
 
 # DHCP
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=3&style=printable#dhcp>.
@@ -70,7 +68,7 @@ dns_domain_lo="h2.kutkevich.org"
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre3>.
 # nis_domain_lo="my-nisdomain"
 
-# duddanov.
+# # Dudanov.
 # config_linksys="192.168.2.150/24"
 # routes_linksys="default via 192.168.2.1"
 # dns_servers_linksys="192.168.2.1"

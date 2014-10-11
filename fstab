@@ -25,6 +25,8 @@
 /dev/xvda   /            ext3    noatime,errors=remount-ro      0 1
 /dev/xvdb   none         swap    sw                             0 0
 proc        /proc        proc    defaults                       0 0
+# /dev/cdrom            /mnt/cdrom      auto            noauto,ro       0 0
+# /dev/fd0              /mnt/floppy     auto            noauto          0 0
 
 # glibc 2.2 and above expects tmpfs to be mounted at /dev/shm for
 # POSIX shared memory (shm_open, shm_unlink).

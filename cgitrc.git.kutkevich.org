@@ -38,11 +38,6 @@ repo.path=/var/git/gentoo-overlay.git
 repo.desc=Personal Gentoo overlay
 repo.owner=Danil Kutkevich
 
-repo.url=jobtest-aviasales-ru.git
-repo.path=/var/git/jobtest-aviasales-ru.git
-repo.desc=aviasales.ru job test
-repo.owner=Danil Kutkevich
-
 repo.url=nested-scaffold.git
 repo.path=/var/git/nested-scaffold.git
 repo.desc=Ruby on Rails generators sandbox

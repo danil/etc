@@ -27,6 +27,7 @@
 ## Groups of commands.  Often used to group related commands together.
 # Cmnd_Alias	PROCESSES = /usr/bin/nice, /bin/kill, /usr/bin/renice, \
 # 			    /usr/bin/pkill, /usr/bin/top
+# Cmnd_Alias	REBOOT = /sbin/halt, /sbin/reboot, /sbin/poweroff
 
 ##
 ## Defaults specification
@@ -60,7 +61,7 @@
 # Defaults log_output
 # Defaults!/usr/bin/sudoreplay !log_output
 # Defaults!/usr/local/bin/sudoreplay !log_output
-# Defaults!/sbin/reboot !log_output
+# Defaults!REBOOT !log_output
 
 ##
 ## Runas alias specification
@@ -72,6 +73,7 @@
 root ALL=(ALL) ALL
 
 ## Uncomment to allow members of group wheel to execute any command
+# %wheel ALL=(ALL) ALL
 # Danil.
 %wheel ALL=(ALL) ALL
 # <http://mail-archive.com/gentoo-user@lists.gentoo.org/msg47692.html>.

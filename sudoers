@@ -75,6 +75,11 @@ root ALL=(ALL) ALL
 ## Uncomment to allow members of group wheel to execute any command
 # %wheel ALL=(ALL) ALL
 
+# Danil.
+# Members of group wheel to execute any command.
+# <http://mail-archive.com/gentoo-user@lists.gentoo.org/msg47692.html>.
+%wheel ALL=(ALL) ALL
+
 ## Same thing without a password
 # %wheel ALL=(ALL) NOPASSWD: ALL
 
@@ -87,14 +92,11 @@ root ALL=(ALL) ALL
 # ALL ALL=(ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
 
 # Danil.
-# Members of group wheel to execute any command.
-%wheel ALL=(ALL) ALL
-# <http://mail-archive.com/gentoo-user@lists.gentoo.org/msg47692.html>.
-danil ALL=(ALL) NOPASSWD: /bin/mount
-danil ALL=(ALL) NOPASSWD: /bin/umount
-danil ALL=(ALL) NOPASSWD: /etc/init.d/net.wlan0
-danil ALL=(ALL) NOPASSWD: /sbin/iwlist
-danil ALL=(ALL) NOPASSWD: /sbin/shutdown
+# danil ALL=(ALL) NOPASSWD: /bin/mount
+# danil ALL=(ALL) NOPASSWD: /bin/umount
+# danil ALL=(ALL) NOPASSWD: /etc/init.d/net.wlan0
+# danil ALL=(ALL) NOPASSWD: /sbin/iwlist
+# danil ALL=(ALL) NOPASSWD: /sbin/shutdown
 danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate-ram
 danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate
 

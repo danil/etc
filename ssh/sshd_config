@@ -17,6 +17,9 @@
 
 # The default requires explicit activation of protocol 1
 #Protocol 2
+# Danil
+# <http://gentoo.org/doc/en/security/security-handbook.xml?part=1&chap=10&style=printable#doc_chap11>.
+Protocol 2
 
 # HostKey for protocol version 1
 #HostKey /etc/ssh/ssh_host_key
@@ -45,6 +48,10 @@
 #StrictModes yes
 #MaxAuthTries 6
 #MaxSessions 10
+
+# Danil
+# <http://gentoo.org/doc/en/security/security-handbook.xml?part=1&chap=10&style=printable#doc_chap11>.
+PermitRootLogin no
 
 #RSAAuthentication yes
 #PubkeyAuthentication yes

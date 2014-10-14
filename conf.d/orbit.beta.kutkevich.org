@@ -17,12 +17,13 @@ LUA_OPTIONS="-lluarocks.loader"
 #       that launches services and exits.
 ORBIT_BINARY="/usr/lib/lua/luarocks/lib/luarocks/rocks/orbit/2.2.0-1/bin/orbit"
 # Path to the Orbit application (needs to be absolute path).
-ORBIT_APP="/home/danil/src/hol/kutkevich.lua"
+# ORBIT_APP="/home/danil/src/hol/kutkevich.lua"
+ORBIT_APP="/var/www/kepler/beta-kutkevich-org/kutkevich.lua"
 # Binds to the specified port (default 8080).
 #ORBIT_PORT="80"
 # Logs all output to the file (default stdout and stderr) (needs to be
 # absolute path).
-#ORBIT_LOG="/var/log/orbit/beta.kutkevich.org.log"
+ORBIT_LOG="/var/log/orbit/beta.kutkevich.org.log"
 
 # The user and group to run your application as. If you do not specify
 # these, the application will be run as root:root.

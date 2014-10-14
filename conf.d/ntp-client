@@ -6,7 +6,7 @@
 # want to use ntpd to set the clock, change this to 'ntpd'
 # Danil
 # <http://en.gentoo-wiki.com/wiki/NTP#Setting_time_at_boot>.
-#NTPCLIENT_CMD="ntpdate"
+# NTPCLIENT_CMD="ntpdate"
 NTPCLIENT_CMD="sntp"
 
 # Options to pass to the above command
@@ -18,7 +18,7 @@ NTPCLIENT_CMD="sntp"
 # NTPCLIENT_OPTS="-s -b -u \
 # 	0.gentoo.pool.ntp.org 1.gentoo.pool.ntp.org \
 # 	2.gentoo.pool.ntp.org 3.gentoo.pool.ntp.org"
-NTPCLIENT_OPTS="-P no -r kutkevich.org"
+NTPCLIENT_OPTS="-P no -r ntp.kutkevich.org"
 
 
 # If you use hostnames above, then you should depend on dns

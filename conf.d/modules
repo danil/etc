@@ -28,15 +28,18 @@
 modules="${modules_2_6} fuse"
 module_fuse_args=""
 
-# Power Management
-# <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_sect4>.
-#milhouse: modules_2_6="${modules_2_6} fan"
-#milhouse: module_fan_args_2_6=""
+# # Danil.
+# # Power Management
+# # <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_sect4>.
+# modules_2_6="${modules_2_6} fan"
+# module_fan_args_2_6=""
 
+# Danil.
 # VirtualBox <http://en.gentoo-wiki.com/wiki/VirtualBox#Run>
 # (and emerge messages for package
 #  app-emulation/virtualbox-modules-3.1.8).
 modules="${modules_2_6} vboxdrv vboxnetflt vboxnetadp"
 
-# <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Kernel_Module_Configuration>.
-#milhouse: modules_2_6="${modules_2_6} intel-agp drm i915"
+# # Danil
+# # <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Kernel_Module_Configuration>.
+# modules_2_6="${modules_2_6} intel-agp drm i915"

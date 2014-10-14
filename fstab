@@ -1,8 +1,8 @@
 # /etc/fstab: static file system information.
 #
-# noatime turns off atimes for increased performance (atimes normally aren't
-# needed); notail increases performance of ReiserFS (at the expense of storage
-# efficiency).  It's safe to drop the noatime options if you want and to
+# noatime turns off atimes for increased performance (atimes normally aren't 
+# needed); notail increases performance of ReiserFS (at the expense of storage 
+# efficiency).  It's safe to drop the noatime options if you want and to 
 # switch between notail / tail freely.
 #
 # The root filesystem should have a pass number of either 0 or 1.
@@ -32,8 +32,8 @@
 # POSIX shared memory (shm_open, shm_unlink).
 # (tmpfs is a dynamically expandable/shrinkable ramdisk, and will
 #  use almost no memory if not populated with files)
-# Danil
+# Danil.
 # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#The_fstab_file>,
 # <https://wiki.archlinux.org/index.php//dev/shm>.
-shm         /dev/shm    tmpfs       nodev,nosuid,noexec 0 0
-# shm                  /dev/shm        devtmpfs                nodev,nosuid,noexec     0 0
+shm         /dev/shm     tmpfs   nodev,nosuid,noexec             0 0
+# shm			/dev/shm	devtmpfs		nodev,nosuid,noexec	0 0

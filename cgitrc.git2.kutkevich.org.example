@@ -1,0 +1,26 @@
+include=/etc/cgitrc.common
+
+# Path used to store the cgit cache entries. Default value: "/var/cache/cgit".
+cache-root=/var/cache/cgit/git2.kutkevich.org
+
+# Set a subheading for the repository index page
+root-desc=Private Git repositories
+
+# Specify some default clone prefixes
+#clone-prefix=git://foobar.com ssh://foobar.com/pub/git http://foobar.com/git
+clone-prefix=ssh://kutkevich.org/var/git
+
+# If set to "1" showing full author email adresses will be
+# disabled. Default value: "0".
+noplainemail=0
+
+section=tmp
+
+repo.url=hol.git
+repo.path=/var/git/hol.git
+repo.desc=Home page on Lua
+repo.owner=Danil Kutkevich
+
+# Local Variables:
+# mode: conf
+# End:

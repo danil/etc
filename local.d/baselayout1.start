@@ -3,6 +3,7 @@
 # /etc/local.d and gain the suffix .start or .stop. OpenRC then
 # executes those in alphabetic order
 # <http://gentoo.org/doc/en/openrc-migration.xml?style=printable#rc_local>,
+# <http://wiki.gentoo.org/wiki/Local.d>,
 # <http://en.gentoo-wiki.com/wiki/Run_a_command_on_boot>.
 
 # This is a good place to load any misc programs

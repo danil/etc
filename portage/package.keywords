@@ -1,3 +1,9 @@
+# Server.
+
+<www-client/phantomjs-9999::gentoo ~amd64
+
+# Desktop.
+
 # */*::kutkevich
 # <app-backup/dvcs-autosync-9999::betagarden ~amd64
 # <app-emulation/playonlinux-9999::gentoo ~amd64

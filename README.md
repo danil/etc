@@ -1,7 +1,5 @@
-etc
-===
-
-My config.
+Configs
+=======
 
 Copying
 -------

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Danil.
+# Last sync time see in /usr/portage/metadata/timestamp
+emerge --sync --quiet 2>&1
+
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    logger -t portage "ALERT sync exited abnormally with [$EXITVALUE]"
+fi
+
+exit 0

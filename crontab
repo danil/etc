@@ -7,15 +7,18 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
 HOME=/
 
-# Danil.
-# Cron, Anacron and daily jobs
-# <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
-# <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
-# check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
-59  *  * * *	root	rm -f /var/spool/cron/lastrun/cron.hourly
-9  3  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
-19 4  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
-29 5  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
-# Danil.
+# # Danil.
+# # Cron daily jobs
+# # <http://wiki.gentoo.org/wiki/Cron#Using_cronbase>,
+# # <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
+# # <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
+# # check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
+# 59  *  * * *	root	rm -f /var/spool/cron/lastrun/cron.hourly
+# 9  3  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
+# 19 4  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
+# 29 5  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
 # */10  *  * * *	root	test -x /usr/sbin/run-crons && /usr/sbin/run-crons
+
+# Danil.
+# <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
 */45 * * * * root /usr/sbin/anacron -s

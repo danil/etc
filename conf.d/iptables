@@ -1,7 +1,7 @@
 # /etc/conf.d/iptables
 
 # Danil.
-# <https://library.linode.com/securing-your-server#sph_creating-a-firewall>,
+# <https://www.linode.com/docs/security/securing-your-server#creating-a-firewall>,
 # <http://wiki.gentoo.org/wiki/Iptables>,
 
 # Location in which iptables initscript will save set rules on 

@@ -18,7 +18,7 @@ config_eth0="dhcp"
 dhcp_eth0="nontp"
 # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
 # <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
-dhcpcd_eth0="-h h3 -H h3"
+dhcpcd_eth0="-h h9 -H h9"
 # routes_eth0="default via 192.168.8.1"
 
 # Wireless.
@@ -45,7 +45,7 @@ config_wlan0="dhcp"
 dhcp_wlan0="nontp"
 # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
 # <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
-dhcpcd_wlan0="-h h3 -H h3"
+dhcpcd_wlan0="-h h9 -H h9"
 
 # Defining network configuration per ESSID
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=4&chap=4&style=printable#doc_chap4>,
@@ -62,7 +62,7 @@ dhcpcd_wlan0="-h h3 -H h3"
 
 # Domainname
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre2>.
-dns_domain_lo="h3.kutkevich.org"
+dns_domain_lo="h9.kutkevich.org"
 
 # NIS domainname
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?style=printable&part=1&chap=8#doc_chap2_pre3>.
@@ -111,7 +111,7 @@ link_ppp0="/dev/ttyUSB0"
 dhcp_ppp0="release nodns nontp nonis"
 # <https://wiki.gentoo.org/wiki/Complete_Handbook/Configuring_the_system#Automatic_IP_retrieval>,
 # <http://unix.stackexchange.com/questions/85276/prevent-dhcpcd-from-setting-hostname#86043>.
-dhcpcd_ppp0="-h h3 -H h3 -t 10"
+dhcpcd_ppp0="-h h9 -H h9 -t 10"
 # <http://forums.gentoo.org/viewtopic-t-847989.html?sid=8a6c694158f33bb0b8761c6072c805bb>,
 # <http://www.gentoo.ru/content/3g-huawei-e1750>,
 # <http://ru.gentoo-wiki.com/wiki/Huawei_GPRS/3G_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC>,

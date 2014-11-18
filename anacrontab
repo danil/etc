@@ -9,5 +9,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #7       10      cron.weekly     run-parts /etc/cron.weekly
 #30      15      cron.monthly    run-parts /etc/cron.monthly
 
-# Danil.
+# Danil <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
 1       5       cron.daily      run-parts /etc/cron.daily

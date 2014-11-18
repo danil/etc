@@ -1,14 +1,22 @@
 # /etc/conf.d/ip6tables
 
+# Danil.
+# <https://www.linode.com/docs/security/securing-your-server#creating-a-firewall>,
+# <http://wiki.gentoo.org/wiki/Iptables>,
+
 # Location in which iptables initscript will save set rules on 
 # service shutdown
-IP6TABLES_SAVE="/var/lib/ip6tables/rules-save"
+# Danil.
+# IP6TABLES_SAVE="/var/lib/ip6tables/rules-save"
+IP6TABLES_SAVE="/etc/iptables/v6.rules"
 
 # Options to pass to iptables-save and iptables-restore 
 SAVE_RESTORE_OPTIONS="-c"
 
 # Save state on stopping iptables
-SAVE_ON_STOP="yes"
+# Danil.
+# SAVE_ON_STOP="yes"
+SAVE_ON_STOP="no"
 
 # If you need to log iptables messages as soon as iptables starts,
 # AND your logger does NOT depend on the network, then you may wish

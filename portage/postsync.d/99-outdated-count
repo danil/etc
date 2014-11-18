@@ -1,0 +1,6 @@
+#!/bin/sh
+# <https://gentoo.org/doc/en/handbook/handbook-amd64.xml?style=printable&part=3&chap=6>.
+emerge --verbose --color=n --nospinner --pretend --deep --update --newuse world \
+    | grep Total \
+    | sed --expression='s/.*Total: \([0-9]*\) package.*/\1/' \
+    > /etc/portage/package.outdated

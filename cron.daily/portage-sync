@@ -2,7 +2,7 @@
 
 # Danil.
 # Last sync time see in /usr/portage/metadata/timestamp
-emerge --sync --quiet 2>&1
+emerge --sync --quiet > /dev/null
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then

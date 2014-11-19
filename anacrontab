@@ -1,4 +1,7 @@
-SHELL=/bin/sh
+# Danil.
+# SHELL=/bin/sh
+SHELL=/bin/bash
+
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 # format: period delay job-identifier command
 ##

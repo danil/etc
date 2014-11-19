@@ -1,0 +1,4 @@
+# # Danil.
+# # <http://gentoo.org/doc/en/power-management-guide.xml?style=printable#doc_chap2_pre9>.
+# event=battery BAT0 00000080 00000001
+# action=/etc/acpi/actions/pmg_switch_runlevel.sh %e

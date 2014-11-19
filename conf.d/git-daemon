@@ -18,6 +18,6 @@ GITDAEMON_OPTS="--syslog --base-path=/var/git /var/git"
 # read your Git repositories. It should not able able to write to anywhere on
 # your system, esp. not the repositories.
 GIT_USER="nobody"
-# Danil.
-# GIT_GROUP="nobody"
-GIT_GROUP="apache"
+GIT_GROUP="nobody"
+# # Danil.
+# GIT_GROUP="apache"

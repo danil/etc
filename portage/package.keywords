@@ -1,3 +1,9 @@
+# Firmware.
+
+<sys-firmware/iwl3160-7260-bt-ucode-9999::gentoo ~amd64 #bluetooth
+<sys-firmware/iwl7260-ucode-9999::gentoo ~amd64
+<sys-firmware/nvidia-firmware-9999::gentoo ~amd64
+
 # Server.
 
 <www-client/phantomjs-9999::gentoo ~amd64

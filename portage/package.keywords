@@ -55,20 +55,25 @@
 # =dev-libs/glib-2.40.2 ~amd64 #required by media-sound/apulse, net-im/skype[apulse]
 # =media-libs/alsa-lib-1.0.28 ~amd64 #required by media-sound/apulse, net-im/skype[apulse]
 
+# Connman.
+<gnome-extra/connman-gnome-9999::gentoo ~amd64
+<net-misc/connman-9999::gentoo ~amd64
+
+# LXQt power manager.
+<dev-libs/libqtxdg-9999::gentoo ~amd64 #required by lxqt-base/liblxqt, lxqt-base/lxqt-powermanagement
+<lxqt-base/liblxqt-9999::gentoo ~amd64 #required by lxqt-base/lxqt-powermanagement
+<lxqt-base/lxqt-powermanagement-9999::gentoo ~amd64
+
+# Glances - htop replacement <https://github.com/nicolargo/glances>.
+<dev-python/psutil-9999::gentoo ~amd64
+<sys-process/glances-9999::gentoo ~amd64
+
 # Seafile.
 <net-libs/ccnet-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client
 <net-libs/libevhtp-9999::kutkevich ~amd64 #required by net-misc/seafile, net-misc/seafile-client
 <net-libs/libsearpc-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client, et-libs/ccnet
 <net-misc/seafile-9999::kutkevich ~amd64
 <net-misc/seafile-client-9999::kutkevich ~amd64
-
-# Connman.
-<gnome-extra/connman-gnome-9999::gentoo ~amd64
-<net-misc/connman-9999::gentoo ~amd64
-
-# Glances - htop replacement <https://github.com/nicolargo/glances>.
-<dev-python/psutil-9999::gentoo ~amd64
-<sys-process/glances-9999::gentoo ~amd64
 
 # # OpenSCAD.
 # <media-gfx/openscad-9999::gentoo ~amd64

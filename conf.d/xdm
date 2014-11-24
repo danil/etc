@@ -7,13 +7,6 @@ CHECKVT=7
 
 # What display manager do you use ?  [ xdm | gdm | kdm | gpe | entrance ]
 # NOTE: If this is set in /etc/rc.conf, that setting will override this one.
-#
-# KDE-specific note:
-# - If you are using kdeprefix go with "kdm-4.Y", e.g. "kdm-4.3".
-#     You can find possible versions by looking at the directories in /usr/kde/.
-# - Else, if you are using KDE 3 enter "kdm-3.5"
-# - Else, if you are using KDE 4 enter "kdm" without a version
-
 # Danil
 # DISPLAYMANAGER="xdm"
 # <http://en.gentoo-wiki.com/wiki/SLiM#Start_on_boot>.
@@ -22,15 +15,3 @@ DISPLAYMANAGER="slim"
 # DISPLAYMANAGER="lightdm"
 # # <http://en.gentoo-wiki.com/wiki/GDM#Configuration>.
 # DISPLAYMANAGER="gdm"
-
-# Set whether xorg should depend on hald or not. If set to 'auto' then the init
-# script tries to determine the dependency on hald automatically, by examining
-# xorg.conf files on various locations. If you have built xorg without hal
-# use-flag, you should set 'no' here.  If xorg has been built with hal then you
-# may set 'auto' or 'yes' here.
-# Possible values are: [ yes | no | auto ]
-
-# Danil.
-# NEEDS_HALD="auto"
-NEEDS_HALD="yes"
-#milhouse: NEEDS_HALD="no"

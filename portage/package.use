@@ -74,6 +74,7 @@ media-video/ffmpeg theora
 media-video/ffmpeg vpx #VP8 and VP9 video compression format for WebM video file format video <http://en.wikipedia.org/wiki/VP8>, <http://en.wikipedia.org/wiki/Webm>
 
 # Seafile.
+dev-lang/python sqlite #required by net-misc/seafile-client, net-misc/seafile
 net-libs/ccnet python client #required by net-misc/seafile-client
 net-misc/seafile client
 

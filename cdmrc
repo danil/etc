@@ -35,7 +35,7 @@ namelist=(Xfce Bash)
 # (Continued example:)
 # flaglist=(X C C C)
 # Danil.
-flaglist=(X C)
+flaglist=(C C)
 
 # Style for the cdm dialog, which is printed with dialog(1).
 # Default to unset, causing dialog(1) to use the system wide default.

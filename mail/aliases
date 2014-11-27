@@ -19,7 +19,6 @@ postfix:            root
 # Danil <http://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server#Basic_Setup>.
 root:               danil
 
-
 # Standard RFC2142 aliases
 abuse:              postmaster
 ftp:                root

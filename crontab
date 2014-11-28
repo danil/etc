@@ -20,5 +20,5 @@ HOME=/
 # */10  *  * * *	root	test -x /usr/sbin/run-crons && /usr/sbin/run-crons
 
 # Danil.
-# <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
+# Anacron <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
 */45 * * * * root /usr/sbin/anacron -s

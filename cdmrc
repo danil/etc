@@ -15,7 +15,8 @@
 #   '/usr/bin/cdm ~/.submenu.cdmrc'  # or go to a submenu :)
 # )
 # Danil.
-# <https://wiki.archlinux.org/index.php/CDM#Menu_items>.
+# <https://wiki.archlinux.org/index.php/CDM#Menu_items>,
+# <https://github.com/ghost1227/cdm>.
 binlist=(
   'startxfce4' #<https://wiki.archlinux.org/index.php/Xfce#Virtual_console>
   '/bin/bash --login'

@@ -97,8 +97,10 @@ root ALL=(ALL) ALL
 # danil ALL=(ALL) NOPASSWD: /etc/init.d/net.wlan0
 # danil ALL=(ALL) NOPASSWD: /sbin/iwlist
 # danil ALL=(ALL) NOPASSWD: /sbin/shutdown
-danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate-ram
+danil ALL=(ALL) NOPASSWD: /sbin/reboot
+danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
 danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate
+danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate-ram
 
 ## Read drop-in files from /etc/sudoers.d
 ## (the '#' here does not indicate a comment)

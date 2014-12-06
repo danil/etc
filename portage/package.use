@@ -8,6 +8,7 @@ app-misc/sphinx stemmer mysql
 dev-db/mariadb sphinx
 dev-db/sqlite extensions
 dev-libs/libxml2 python #required by app-text/gnome-doc-utils, sci-mathematics/genius
+dev-ruby/mruby local-mri
 dev-vcs/git -gnome-keyring
 mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>

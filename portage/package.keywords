@@ -6,6 +6,7 @@
 
 # Server.
 
+<dev-ruby/mruby-9999::kutkevich ~amd64
 <www-client/phantomjs-9999::gentoo ~amd64
 
 # Desktop.
@@ -24,7 +25,6 @@
 <app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
 <app-portage/layman-2.1.1::gentoo ~amd64 #because layman 2.0 can't parse gzipped overlay list
-<dev-ruby/mruby-bin-9999::kutkevich ~amd64
 <dev-vcs/git-extras-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64

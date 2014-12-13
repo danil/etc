@@ -21,6 +21,7 @@
 # <media-fonts/fantasque-sans-9999::kutkevich ~amd64
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
+<app-editors/dit-9999::kutkevich ~amd64
 <app-emulation/vagrant-bin-9999::kutkevich ~amd64
 <app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
@@ -29,6 +30,7 @@
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64
 <media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
+<media-tv/popcorntime-bin-9999::kutkevich ~amd64
 <media-video/ffmpeg-2.3::gentoo ~amd64 #used with webm
 <net-im/skype-9999::gentoo ~amd64
 <net-misc/wrk-9999::kutkevich ~amd64

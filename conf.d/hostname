@@ -2,5 +2,5 @@
 # Danil.
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 #hostname="localhost"
-# Host 9. ThinkPad T440p.
-hostname="h9"
+# Host 10: ThinkPad T430 1T8VRTN 14" 1600х900 i7 3520M Ivy Bridge 2900MHz Intel HD 4000 DDR3 16Gb 1600MHz SSD 128Gb 2.2Kg.
+hostname="h10"

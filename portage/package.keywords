@@ -3,6 +3,7 @@
 # Server.
 
 <dev-ruby/mruby-9999::kutkevich ~amd64
+<dev-util/icdiff-9999::kutkevich ~amd64
 <www-client/phantomjs-9999::gentoo ~amd64
 
 # Desktop.

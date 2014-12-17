@@ -62,8 +62,8 @@ x11-apps/wmutils::kutkevich ~amd64
 # =media-libs/alsa-lib-1.0.28 ~amd64 #required by media-sound/apulse, net-im/skype[apulse]
 
 # Connman.
+<gnome-extra/connman-gnome-9999::gentoo ~amd64
 <net-misc/connman-9999::gentoo ~amd64
-net-misc/connman-ui::kutkevich ~amd64
 
 # LXQt power manager.
 <dev-libs/libqtxdg-9999::gentoo ~amd64 #required by lxqt-base/liblxqt, lxqt-base/lxqt-powermanagement

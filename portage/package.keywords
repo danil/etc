@@ -51,6 +51,9 @@
 games-action/minecraft::kutkevich ~amd64
 x11-apps/wmutils::kutkevich ~amd64
 
+# Temporary.
+=dev-vcs/git-2.2.1 ~amd64
+
 # # Apulse used by skype for pulseaudio emulation via alsa
 # # <http://wiki.gentoo.org/wiki/Skype#apulse>.
 # <media-sound/apulse-9999::gentoo ~x86 ~amd64

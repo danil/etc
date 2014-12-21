@@ -19,6 +19,8 @@
 # <https://github.com/ghost1227/cdm>.
 binlist=(
   'startxfce4' #<https://wiki.archlinux.org/index.php/Xfce#Virtual_console>
+  '~/.dwm/dwmrc' #<https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
+  '~/.xsession urxvt'
   '/bin/bash --login'
   'sudo /sbin/reboot'
   'sudo /sbin/shutdown -h now'
@@ -30,7 +32,7 @@ binlist=(
 # (Continued example:)
 # namelist=('X session' Console FBTerm 'Sub menu')
 # Danil.
-namelist=(xfce bash reboot shutdown)
+namelist=(xfce dwm 'X session' bash reboot shutdown)
 
 # Type of the programs, one-by-one matched with $binlist.
 # `C' for *C*onsole programs, which would be `exec'ed.
@@ -39,7 +41,7 @@ namelist=(xfce bash reboot shutdown)
 # (Continued example:)
 # flaglist=(X C C C)
 # Danil.
-flaglist=(C C C C)
+flaglist=(C X X C C C)
 
 # Style for the cdm dialog, which is printed with dialog(1).
 # Default to unset, causing dialog(1) to use the system wide default.

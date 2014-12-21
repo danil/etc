@@ -18,8 +18,8 @@
 # <https://wiki.archlinux.org/index.php/CDM#Menu_items>,
 # <https://github.com/ghost1227/cdm>.
 binlist=(
-  'startxfce4' #<https://wiki.archlinux.org/index.php/Xfce#Virtual_console>
-  '~/.dwm/dwmrc' #<https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
+  '~/.xsession xfce' #<https://wiki.archlinux.org/index.php/Xfce#Virtual_console>
+  '~/.xsession dwm' #<https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
   '~/.xsession urxvt'
   '/bin/bash --login'
   'sudo /sbin/reboot'
@@ -41,7 +41,7 @@ namelist=(xfce dwm 'X session' bash reboot shutdown)
 # (Continued example:)
 # flaglist=(X C C C)
 # Danil.
-flaglist=(C X X C C C)
+flaglist=(X X X C C C)
 
 # Style for the cdm dialog, which is printed with dialog(1).
 # Default to unset, causing dialog(1) to use the system wide default.

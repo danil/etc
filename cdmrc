@@ -15,9 +15,15 @@
 #   '/usr/bin/cdm ~/.submenu.cdmrc'  # or go to a submenu :)
 # )
 # Danil.
+# <https://wiki.archlinux.org/index.php/CDM#Menu_items>,
+# <https://github.com/ghost1227/cdm>.
 binlist=(
+  '~/.xsession xfce' #<https://wiki.archlinux.org/index.php/Xfce#Virtual_console>
+  '~/.xsession dwm' #<https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
+  '~/.xsession urxvt'
   '/bin/bash --login'
-  'startxfce4' #<https://wiki.archlinux.org/index.php/Xfce#Manually>
+  'sudo /sbin/reboot'
+  'sudo /sbin/shutdown -h now'
 )
 
 # List all program display names, one-by-one matched with $binlist.
@@ -26,7 +32,7 @@ binlist=(
 # (Continued example:)
 # namelist=('X session' Console FBTerm 'Sub menu')
 # Danil.
-namelist=(Bash Xfce)
+namelist=(xfce dwm 'X session' bash reboot shutdown)
 
 # Type of the programs, one-by-one matched with $binlist.
 # `C' for *C*onsole programs, which would be `exec'ed.
@@ -35,12 +41,14 @@ namelist=(Bash Xfce)
 # (Continued example:)
 # flaglist=(X C C C)
 # Danil.
-flaglist=(C X)
+flaglist=(X X X C C C)
 
 # Style for the cdm dialog, which is printed with dialog(1).
 # Default to unset, causing dialog(1) to use the system wide default.
 # See /usr/share/doc/cdm/themes for some nice choices.
-dialogrc=/usr/share/cdm/themes/blackandwhite
+# Danil.
+# dialogrc=/usr/share/cdm/themes/blackandwhite
+dialogrc=
 
 # Index of the first item in the menu.
 countfrom=0

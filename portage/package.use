@@ -4,10 +4,12 @@
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
+app-editors/emacs libxml2 #used by www browser
 app-misc/sphinx stemmer mysql
 dev-db/mariadb sphinx
 dev-db/sqlite extensions
 dev-libs/libxml2 python #required by app-text/gnome-doc-utils, sci-mathematics/genius
+dev-ruby/mruby local-mri
 dev-vcs/git -gnome-keyring
 mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
@@ -54,8 +56,10 @@ net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]
 # sys-libs/zlib minizip #required by media-video/vlc
 # virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
 # x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
+# x11-misc/dunst dunstify #notify-send replacement
 # x11-terms/rxvt-unicode 256-color
 # x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
+# x11-wm/dwm savedconfig
 # xfce-base/xfce4-session -xscreensaver
 
 # # Apulse used by skype for pulseaudio emulation via alsa
@@ -74,8 +78,12 @@ net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]
 # media-video/ffmpeg vpx #VP8 and VP9 video compression format for WebM video file format video <http://en.wikipedia.org/wiki/VP8>, <http://en.wikipedia.org/wiki/Webm>
 
 # # Seafile.
+# dev-lang/python sqlite #required by net-misc/seafile-client, net-misc/seafile
 # net-libs/ccnet python client #required by net-misc/seafile-client
 # net-misc/seafile client
+
+# # dwm.
+# x11-misc/slock savedconfig
 
 # # Xfce.
 # media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]

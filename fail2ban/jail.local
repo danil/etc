@@ -26,6 +26,8 @@ sender = fail2ban@h2.kutkevich.org
 # interpolation to the chosen action shortcut (e.g.  action_mw,
 # action_mwl, etc) in jail.local globally (section [DEFAULT]) or per
 # specific section
+# Danil
+# <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04#configure-fail2ban-with-your-service-settings>.
 action = %(action_mw)s
 
 #

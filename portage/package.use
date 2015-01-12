@@ -4,6 +4,7 @@
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
+app-editors/emacs libxml2 #used by www browser
 app-misc/sphinx stemmer mysql
 dev-db/mariadb sphinx
 dev-db/sqlite extensions
@@ -58,6 +59,7 @@ x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
 x11-misc/dunst dunstify #notify-send replacement
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
+x11-wm/dwm savedconfig
 xfce-base/xfce4-session -xscreensaver
 
 # Apulse used by skype for pulseaudio emulation via alsa

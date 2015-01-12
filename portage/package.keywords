@@ -1,9 +1,14 @@
 # Firmware.
 
+# <sys-firmware/iwl3160-7260-bt-ucode-9999::gentoo ~amd64 #bluetooth
+# <sys-firmware/iwl7260-ucode-9999::gentoo ~amd64
+# <sys-firmware/nvidia-firmware-9999::gentoo ~amd64
+
 # Server.
 
 <dev-ruby/mruby-9999::kutkevich ~amd64
 <dev-util/icdiff-9999::kutkevich ~amd64
+<net-misc/tlsdate-0.0.13::gentoo ~amd64
 <www-client/phantomjs-9999::gentoo ~amd64
 
 # Desktop.
@@ -33,7 +38,6 @@
 <net-misc/wrk-9999::kutkevich ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
 <sys-apps/mdp-9999::kutkevich ~amd64
-<sys-apps/the_silver_searcher-9999::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
 <www-plugins/google-talkplugin-9999::gentoo ~amd64
 <x11-misc/cdm-9999::gentoo ~amd64 #starting x11 <https://wiki.archlinux.org/index.php/CDM>
@@ -63,11 +67,6 @@ x11-apps/wmutils::kutkevich ~amd64
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64
 <net-misc/connman-9999::gentoo ~amd64
-
-# LXQt power manager.
-<dev-libs/libqtxdg-9999::gentoo ~amd64 #required by lxqt-base/liblxqt, lxqt-base/lxqt-powermanagement
-<lxqt-base/liblxqt-9999::gentoo ~amd64 #required by lxqt-base/lxqt-powermanagement
-<lxqt-base/lxqt-powermanagement-9999::gentoo ~amd64
 
 # Glances - htop replacement <https://github.com/nicolargo/glances>.
 <dev-python/psutil-9999::gentoo ~amd64

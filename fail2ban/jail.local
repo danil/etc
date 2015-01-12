@@ -1,0 +1,69 @@
+# Danil.
+
+[DEFAULT]
+
+#
+# MISCELLANEOUS OPTIONS
+#
+
+# "maxretry" is the number of failures before a host get banned.
+maxretry = 20
+
+#
+# ACTIONS
+#
+
+# Some options used for actions
+
+# Destination email address used solely for the interpolations in
+# jail.{conf,local,d/*} configuration files.
+destemail = danil@kutkevich.org
+
+# Sender email address used solely for some actions
+sender = fail2ban@h2.kutkevich.org
+
+# Choose default action.  To change, just override value of 'action' with the
+# interpolation to the chosen action shortcut (e.g.  action_mw,
+# action_mwl, etc) in jail.local globally (section [DEFAULT]) or per
+# specific section
+# Danil
+# <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04#configure-fail2ban-with-your-service-settings>.
+action = %(action_mw)s
+
+#
+# JAILS
+#
+
+#
+# SSH servers
+#
+
+# Danil <https://wiki.archlinux.org/index.php/Fail2ban#SSH_jail>.
+[sshd]
+
+enabled  = true
+
+#
+# HTTP servers
+#
+
+# Danil
+# <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
+[nginx-noscript]
+
+enabled  = false
+
+# Danil
+# <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
+[nginx-proxy]
+
+enabled  = false
+
+#
+# FTP servers
+#
+
+# Danil.
+[vsftpd]
+
+enabled  = true

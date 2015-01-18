@@ -64,11 +64,8 @@ xfce-base/xfce4-session -xscreensaver
 
 # Apulse used by skype for pulseaudio emulation via alsa
 # <http://wiki.gentoo.org/wiki/Skype#apulse>.
-net-im/skype -pulseaudio
-# dev-libs/glib abi_x86_32 #required by media-sound/apulse, net-im/skype[apulse]
-# media-libs/alsa-lib abi_x86_32 #required by media-sound/apulse, net-im/skype[apulse]
-# media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
-# net-im/skype -pulseaudio apulse #use alsa pulseaudio emulation instead of pulseaudio <http://wiki.gentoo.org/wiki/Skype#apulse>
+net-im/skype apulse -pulseaudio
+media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
 
 # Re-encode video and audio streams
 # <http://trac.ffmpeg.org/wiki/How%20to%20use%20-map%20option>.

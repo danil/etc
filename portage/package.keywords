@@ -32,6 +32,7 @@
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64
 <media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
+<media-sound/apulse-9999::gentoo ~amd64 #used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
 <media-tv/popcorntime-bin-9999::kutkevich ~amd64
 <media-video/ffmpeg-2.3::gentoo ~amd64 #used with webm
 <net-im/skype-9999::gentoo ~amd64
@@ -57,12 +58,6 @@ x11-apps/wmutils::kutkevich ~amd64
 
 # Temporary.
 =dev-vcs/git-2.2.1 ~amd64
-
-# # Apulse used by skype for pulseaudio emulation via alsa
-# # <http://wiki.gentoo.org/wiki/Skype#apulse>.
-# <media-sound/apulse-9999::gentoo ~x86 ~amd64
-# =dev-libs/glib-2.40.2 ~amd64 #required by media-sound/apulse, net-im/skype[apulse]
-# =media-libs/alsa-lib-1.0.28 ~amd64 #required by media-sound/apulse, net-im/skype[apulse]
 
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64

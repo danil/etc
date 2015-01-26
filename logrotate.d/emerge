@@ -1,0 +1,11 @@
+# # Danil.
+# # Genlop supports reading logs from compressed files (gzip and bzip2)
+# # <http://wiki.gentoo.org/wiki/Q_applets#Extracting_information_from_emerge_logs>,
+# # <http://wiki.gentoo.org/wiki/Genlop>,
+# # <http://en.chys.info/2009/04/logrotating-emergelog/>.
+# /var/log/emerge.log {
+#     compresscmd /bin/bzip2
+#     compressext .bz2
+#     create 660 portage portage
+#     uncompresscmd /bin/bunzip2
+# }

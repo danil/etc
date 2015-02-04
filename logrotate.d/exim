@@ -1,5 +1,7 @@
 /var/log/exim/exim*.log {
-	daily
+	# Danil.
+	# daily
+	monthly
 	missingok
 	rotate 28
 	compress

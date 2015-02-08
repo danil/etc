@@ -56,9 +56,6 @@
 games-action/minecraft::kutkevich ~amd64
 x11-apps/wmutils::kutkevich ~amd64
 
-# Temporary.
-=dev-vcs/git-2.2.1 ~amd64
-
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64
 <net-misc/connman-9999::gentoo ~amd64

@@ -81,6 +81,7 @@ net-misc/seafile client
 
 # dwm.
 x11-misc/slock savedconfig
+x11-terms/st savedconfig
 
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]

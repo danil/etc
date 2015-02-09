@@ -1,10 +1,9 @@
 # Use keymap to specify the default console keymap.  There is a complete tree
 # of keymaps in /usr/share/keymaps to choose from.
 # Danil.
-# <http://ru.gentoo-wiki.com/wiki/Полная_поддержка_русского_языка#baselayout>,
-# <http://gentoo.org/doc/en/guide-localization.xml?style=printable#doc_chap4>,
-# <http://ru.gentoo-wiki.com/wiki/Быстрая_русификация_консоли>.
-#keymap="us"
+# <http://wiki.gentoo.org/wiki/Localization/HOWTO#Keyboard_layout_for_the_console>,
+# <http://wiki.gentoo.org/wiki/Localization#Core_system>.
+# keymap="us"
 keymap="-u ru"
 
 # Should we first load the 'windowkeys' console keymap?  Most x86 users will

@@ -60,11 +60,6 @@ x11-apps/wmutils::kutkevich ~amd64
 <gnome-extra/connman-gnome-9999::gentoo ~amd64
 <net-misc/connman-9999::gentoo ~amd64
 
-# LXQt power manager.
-<dev-libs/libqtxdg-9999::gentoo ~amd64 #required by lxqt-base/liblxqt, lxqt-base/lxqt-powermanagement
-<lxqt-base/liblxqt-9999::gentoo ~amd64 #required by lxqt-base/lxqt-powermanagement
-<lxqt-base/lxqt-powermanagement-9999::gentoo ~amd64
-
 # Glances - htop replacement <https://github.com/nicolargo/glances>.
 <dev-python/psutil-9999::gentoo ~amd64
 <sys-process/glances-9999::gentoo ~amd64

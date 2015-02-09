@@ -1,0 +1,5 @@
+# Danil
+# <http://linuxquestions.org/questions/linux-general-1/how-to-rotate-auth-log-792736/>.
+/var/log/auth.log {
+    copytruncate
+}

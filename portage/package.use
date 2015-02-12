@@ -59,7 +59,6 @@ x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
 x11-misc/dunst dunstify #notify-send replacement
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
-x11-wm/dwm savedconfig
 xfce-base/xfce4-session -xscreensaver
 
 # Apulse used by skype for pulseaudio emulation via alsa
@@ -79,9 +78,11 @@ dev-lang/python sqlite #required by net-misc/seafile-client, net-misc/seafile
 net-libs/ccnet python client #required by net-misc/seafile-client
 net-misc/seafile client
 
-# dwm.
+# Suckless.
 x11-misc/slock savedconfig
+x11-misc/tabbed savedconfig
 x11-terms/st savedconfig
+x11-wm/dwm savedconfig
 
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]

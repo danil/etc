@@ -38,10 +38,10 @@ static const Layout layouts[] = {
 #define MODKEY Mod4Mask
 #define MODKEY2 Mod1Mask
 #define TAGKEYS(KEY,TAG) \
-	{ MODKEY2,                       KEY,      view,           {.ui = 1 << TAG} }, \
-	{ MODKEY2|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
-	{ MODKEY2|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
-	{ MODKEY2|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }

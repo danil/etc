@@ -1,6 +1,7 @@
 # Use keymap to specify the default console keymap.  There is a complete tree
 # of keymaps in /usr/share/keymaps to choose from.
 # Danil.
+# Look in /usr/share/keymaps/i386/qwerty.
 # <http://wiki.gentoo.org/wiki/Localization/HOWTO#Keyboard_layout_for_the_console>,
 # <http://wiki.gentoo.org/wiki/Localization#Core_system>.
 # keymap="us"

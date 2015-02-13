@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char font[]            = "Monospace:pixelsize=22:antialias=true:hinting=true:autohint=true:style=regular";
 static const char normbordercolor[] = "#000000"; /* passive window border */
 static const char normbgcolor[]     = "#404040"; /* passive desktop number background */
 static const char normfgcolor[]     = "#bbbbbb";
@@ -33,9 +33,9 @@ static const Bool resizehints = True; /* True means respect size hints in tiled 
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
+	{ "[M]",      monocle }, /* first entry is default */
+	{ "[]=",      tile },
 	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
 };
 
 /* key definitions */

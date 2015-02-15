@@ -79,6 +79,7 @@ net-libs/ccnet python client #required by net-misc/seafile-client
 net-misc/seafile client
 
 # Suckless.
+x11-misc/dmenu savedconfig
 x11-misc/slock savedconfig
 x11-misc/tabbed savedconfig
 x11-terms/st savedconfig

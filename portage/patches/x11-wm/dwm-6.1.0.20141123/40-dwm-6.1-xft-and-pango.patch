@@ -1,6 +1,6 @@
 Author: http://lists.suckless.org/dev/att-23055/00-xft.diff,
 http://lists.suckless.org/dev/att-23055/00-xft.diff
-Description: Pango or Xft Patches for dwm 6.1
+Description: Pango and Xft Patches for dwm 6.1
 
 diff --git a/config.mk b/config.mk
 index bc3d80e..f5e949f 100644

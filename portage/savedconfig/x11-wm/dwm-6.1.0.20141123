@@ -1,7 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+
+/* Pango and Xft */
+/* <http://lists.suckless.org/dev/att-23055/00-xft.diff>, */
+/* <http://lists.suckless.org/dev/att-23055/00-xft.diff>. */
 static const char font[]            = "Monospace:pixelsize=22:antialias=true:hinting=true:autohint=true:style=regular";
+
 static const char normbordercolor[] = "#000000"; /* passive window border */
 static const char normbgcolor[]     = "#404040"; /* passive desktop number background */
 static const char normfgcolor[]     = "#bbbbbb";
@@ -24,7 +29,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	/* { "Gimp",     NULL,       NULL,       0,            True,        -1 }, */
 	/* { "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 }, */
-	{ NULL,       NULL,       NULL,       0,            False,       -1 },
+	{ NULL,       NULL,       NULL,       0,            False,       -1 }, /* remove application defaults <http://dwm.suckless.org/customisation/noapps> */
 };
 
 /* layout(s) */
@@ -40,7 +45,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask
+#define MODKEY Mod4Mask /* change Mod1 key <http://dwm.suckless.org/customisation/windows_key> */
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \

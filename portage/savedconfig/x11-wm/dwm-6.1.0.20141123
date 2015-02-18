@@ -1,7 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+
+/* Pango and Xft */
+/* <http://lists.suckless.org/dev/att-23055/00-xft.diff>, */
+/* <http://lists.suckless.org/dev/att-23055/00-xft.diff>. */
 static const char font[]            = "Monospace:pixelsize=22:antialias=true:hinting=true:autohint=true:style=regular";
+
 static const char normbordercolor[] = "#000000"; /* passive window border */
 static const char normbgcolor[]     = "#404040"; /* passive desktop number background */
 static const char normfgcolor[]     = "#bbbbbb";
@@ -22,8 +27,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
+	/* { "Gimp",     NULL,       NULL,       0,            True,        -1 }, */
+	/* { "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 }, */
+	{ NULL,       NULL,       NULL,       0,            False,       -1 }, /* remove application defaults <http://dwm.suckless.org/customisation/noapps> */
 };
 
 /* layout(s) */
@@ -39,7 +45,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask
+#define MODKEY Mod4Mask /* change Mod1 key <http://dwm.suckless.org/customisation/windows_key> */
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -106,5 +112,32 @@ static Button buttons[] = {
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+};
+
+/* command/control via FIFO <http://dwm.suckless.org/patches/dwmfifo>. */
+static const char *dwmfifo = "/tmp/dwm.fifo";
+static Command commands[] = {
+	{ "focusstack+",     focusstack,     {.i = +1} },
+	{ "focusstack-",     focusstack,     {.i = -1} },
+	{ "killclient",      killclient,     {0} },
+	{ "quit",            quit,           {0} },
+	{ "tag1",            tag,            {.ui = 1 << 0} },
+	{ "tag2",            tag,            {.ui = 1 << 1} },
+	{ "tag3",            tag,            {.ui = 1 << 2} },
+	{ "tag4",            tag,            {.ui = 1 << 3} },
+	{ "tag5",            tag,            {.ui = 1 << 4} },
+	{ "tag6",            tag,            {.ui = 1 << 5} },
+	{ "tag7",            tag,            {.ui = 1 << 6} },
+	{ "tag8",            tag,            {.ui = 1 << 7} },
+	{ "tag9",            tag,            {.ui = 1 << 8} },
+	{ "view1",           view,           {.ui = 1 << 0} },
+	{ "view2",           view,           {.ui = 1 << 1} },
+	{ "view3",           view,           {.ui = 1 << 2} },
+	{ "view4",           view,           {.ui = 1 << 3} },
+	{ "view5",           view,           {.ui = 1 << 4} },
+	{ "view6",           view,           {.ui = 1 << 5} },
+	{ "view7",           view,           {.ui = 1 << 6} },
+	{ "view8",           view,           {.ui = 1 << 7} },
+	{ "view9",           view,           {.ui = 1 << 8} },
 };
 

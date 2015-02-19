@@ -56,6 +56,7 @@ sys-fs/udev gudev #required by sys-fs/udev-init-scripts
 sys-libs/zlib minizip #required by media-video/vlc
 virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
 x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
+x11-libs/libxcb xkb #required by x11-misc/i3lock, x11-libs/libxkbcommon[X]
 x11-misc/dunst dunstify #notify-send replacement
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.

@@ -1,1 +1,2 @@
 # */*::unity-gentoo #unity-gentoo unmasked repository annoying(
+=x11-drivers/xf86-input-synaptics-1.8.1 #bugging thinkpad t440p

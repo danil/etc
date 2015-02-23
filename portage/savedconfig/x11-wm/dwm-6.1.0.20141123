@@ -130,6 +130,7 @@ static Command commands[] = {
 	{ "tag7",            tag,            {.ui = 1 << 6} },
 	{ "tag8",            tag,            {.ui = 1 << 7} },
 	{ "tag9",            tag,            {.ui = 1 << 8} },
+	{ "view0",           view,           {.ui = ~0 } },
 	{ "view1",           view,           {.ui = 1 << 0} },
 	{ "view2",           view,           {.ui = 1 << 1} },
 	{ "view3",           view,           {.ui = 1 << 2} },
@@ -139,6 +140,5 @@ static Command commands[] = {
 	{ "view7",           view,           {.ui = 1 << 6} },
 	{ "view8",           view,           {.ui = 1 << 7} },
 	{ "view9",           view,           {.ui = 1 << 8} },
-	{ "view0",           view,           {.ui = ~0 } },
 };
 

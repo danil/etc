@@ -139,5 +139,6 @@ static Command commands[] = {
 	{ "view7",           view,           {.ui = 1 << 6} },
 	{ "view8",           view,           {.ui = 1 << 7} },
 	{ "view9",           view,           {.ui = 1 << 8} },
+	{ "view0",           view,           {.ui = ~0 } },
 };
 

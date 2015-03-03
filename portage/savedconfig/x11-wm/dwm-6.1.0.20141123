@@ -58,7 +58,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "uxterm", NULL };
+static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -130,6 +130,7 @@ static Command commands[] = {
 	{ "tag7",            tag,            {.ui = 1 << 6} },
 	{ "tag8",            tag,            {.ui = 1 << 7} },
 	{ "tag9",            tag,            {.ui = 1 << 8} },
+	{ "view0",           view,           {.ui = ~0 } },
 	{ "view1",           view,           {.ui = 1 << 0} },
 	{ "view2",           view,           {.ui = 1 << 1} },
 	{ "view3",           view,           {.ui = 1 << 2} },

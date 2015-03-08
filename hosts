@@ -12,6 +12,7 @@
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 # 127.0.0.1 localhost
 127.0.0.1 h2.kutkevich.org h2 localhost
+192.168.0.18 fhirwall.cloud.health-samurai.ru
 # 127.0.0.1 omorphia.local
 # 5.9.104.240 omorfia.ru
 # 195.5.131.242 euroembankment.ru

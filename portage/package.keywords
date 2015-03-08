@@ -56,6 +56,11 @@
 games-action/minecraft::kutkevich ~amd64
 x11-apps/wmutils::kutkevich ~amd64
 
+# Suckless.
+<x11-misc/dmenu-9999::kutkevich ~amd64
+<x11-misc/tabbed-9999::gentoo ~amd64
+<x11-wm/dwm-9999::kutkevich ~amd64
+
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64
 <net-misc/connman-9999::gentoo ~amd64

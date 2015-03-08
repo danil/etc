@@ -1,10 +1,11 @@
 # Use keymap to specify the default console keymap.  There is a complete tree
 # of keymaps in /usr/share/keymaps to choose from.
 # Danil.
+# Look in /usr/share/keymaps/i386/qwerty.
 # <http://wiki.gentoo.org/wiki/Localization/HOWTO#Keyboard_layout_for_the_console>,
 # <http://wiki.gentoo.org/wiki/Localization#Core_system>.
 # keymap="us"
-keymap="-u ru"
+keymap="ruwin_cplk-UTF-8"
 
 # Should we first load the 'windowkeys' console keymap?  Most x86 users will
 # say "yes" here.  Note that non-x86 users should leave it as "no".
@@ -25,3 +26,6 @@ dumpkeys_charset=""
 # Some fonts map AltGr-E to the currency symbol instead of the Euro.
 # To fix this, set to "yes"
 fix_euro="NO"
+
+# Danil.
+unicode="yes"

@@ -55,8 +55,6 @@ net-print/cups gnutls
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
 sys-libs/zlib minizip #required by media-video/vlc
 virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
-x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
-x11-libs/libxcb xkb #required by x11-misc/i3lock, x11-libs/libxkbcommon[X]
 x11-misc/dunst dunstify #notify-send replacement
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
@@ -66,6 +64,10 @@ xfce-base/xfce4-session -xscreensaver
 # <http://wiki.gentoo.org/wiki/Skype#apulse>.
 net-im/skype apulse -pulseaudio
 media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
+
+# i3lock.
+x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
+x11-libs/libxcb xkb #required by x11-libs/libxkbcommon[X] and x11-misc/i3lock
 
 # Re-encode video and audio streams
 # <http://trac.ffmpeg.org/wiki/How%20to%20use%20-map%20option>.

@@ -29,6 +29,13 @@ GRUB_DISTRIBUTOR="Gentoo"
 # Boot with systemd instead of sysvinit (openrc)
 # GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd"
 
+# Danil.
+# Disable discrete nvidia (nouveau)
+# <https://github.com/Bumblebee-Project/Bumblebee/issues/592#issuecomment-49726754>,
+# <https://github.com/Bumblebee-Project/bbswitch/issues/78#issuecomment-41381548>,
+# <http://h30499.www3.hp.com/t5/Networking/wifi-and-brightness-issues-with-EliteBook-755-on-Ubuntu-14-04/td-p/6568286#.VPy1RM17jUY>.
+GRUB_CMDLINE_LINUX="acpi_osi=\"!Windows 2012\" acpi_osi=\"!Windows 2013\""
+
 # Append parameters to the linux kernel command line for non-recovery entries
 #GRUB_CMDLINE_LINUX_DEFAULT=""
 

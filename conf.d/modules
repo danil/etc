@@ -40,6 +40,12 @@
 # #  app-emulation/virtualbox-modules-3.1.8).
 # modules="${modules_2_6} vboxdrv vboxnetflt vboxnetadp"
 
+# # Danil.
+# # Disable discrete nvidia (nouveau)
+# # <http://ubuntuguide.net/turn-off-discrete-nvidia-optimus-graphics-card-ubuntu>,
+# # Danil <https://github.com/Bumblebee-Project/bbswitch>.
+# modules="${modules_2_6} bbswitch"
+
 # # Danil
 # # <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Kernel_Module_Configuration>.
 # modules_2_6="${modules_2_6} intel-agp drm i915"

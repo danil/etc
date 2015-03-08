@@ -14,7 +14,7 @@
 # consolefont="cyr-sun16"
 # consolefont="ter-v14n"
 # ter-v16n belongs to media-fonts/terminus-font
-consolefont="ter-v16n"
+consolefont="ter-v22n"
 
 # consoletranslation is the charset map file to use.  Leave commented to use
 # the default one.  Have a look in /usr/share/consoletrans for a selection of

@@ -20,7 +20,7 @@
 binlist=(
   '~/.xsession xfce' #<https://wiki.archlinux.org/index.php/Xfce#Virtual_console>
   '~/.xsession dwm' #<https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
-  '~/.xsession urxvt'
+  '~/.xsession st' #run suckless terminal
   '/bin/bash --login'
   'sudo /sbin/reboot'
   'sudo /sbin/shutdown -h now'

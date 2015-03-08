@@ -1,1 +1,2 @@
 # */*::unity-gentoo #unity-gentoo unmasked repository annoying(
+=sci-mathematics/genius-1.0.19

@@ -59,6 +59,7 @@ x11-apps/wmutils::kutkevich ~amd64
 # Suckless.
 <x11-misc/dmenu-9999::kutkevich ~amd64
 <x11-misc/tabbed-9999::gentoo ~amd64
+<x11-terms/st-9999::kutkevich ~amd64
 <x11-wm/dwm-9999::kutkevich ~amd64
 
 # Connman.

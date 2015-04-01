@@ -82,6 +82,7 @@ net-libs/ccnet python client #required by net-misc/seafile-client
 net-misc/seafile client
 
 # Suckless.
+www-servers/quark savedconfig
 x11-misc/dmenu savedconfig
 x11-misc/slock savedconfig
 x11-misc/tabbed savedconfig

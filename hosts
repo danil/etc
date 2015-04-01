@@ -16,6 +16,7 @@
 # 192.168.0.69 fhirwall.cloud.health-samurai.io fhirwall.cloud.health-samurai.ru
 # 192.168.0.69 hostel.coreos.health-samurai.io hostel.coreos.health-samurai.ru
 # 192.168.0.69 medappdemo.coreos.health-samurai.io medappdemo.coreos.health-samurai.ru
+# 192.168.0.69 pg2web.coreos.health-samurai.io pg2web.coreos.health-samurai.ru
 # 127.0.0.1 omorphia.local
 # 5.9.104.240 omorfia.ru
 # 195.5.131.242 euroembankment.ru

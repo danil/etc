@@ -58,6 +58,7 @@ virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
 x11-misc/dunst dunstify #notify-send replacement
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
+x11-themes/flatstudio gtk2 gtk3
 xfce-base/xfce4-session -xscreensaver
 
 app-arch/bzip2 abi_x86_32 #required by media-libs/freetype-2.5.5[bzip2], dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5

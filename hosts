@@ -12,6 +12,8 @@
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 # 127.0.0.1 localhost
 127.0.0.1 h9.kutkevich.org h9 localhost
+# 192.168.0.18 aidbox.health-samurai.io
+# 192.168.0.18 danil.aidbox.health-samurai.io
 # 192.168.0.69 fhirterm.coreos.health-samurai.io fhirterm.coreos.health-samurai.ru
 # 192.168.0.69 fhirwall.cloud.health-samurai.io fhirwall.cloud.health-samurai.ru
 # 192.168.0.69 hostel.coreos.health-samurai.io hostel.coreos.health-samurai.ru

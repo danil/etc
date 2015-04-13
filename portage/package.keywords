@@ -1,13 +1,14 @@
 # Firmware.
 
 # <sys-firmware/iwl3160-7260-bt-ucode-9999::gentoo ~amd64 #bluetooth
-# <sys-firmware/iwl7260-ucode-9999::gentoo ~amd64
+# <sys-firmware/iwl7260-ucode-9999:10::gentoo ~amd64 #for kernel versions < 3.19.0
 # <sys-firmware/nvidia-firmware-9999::gentoo ~amd64
 
 # Server.
 
 <dev-ruby/mruby-9999::kutkevich ~amd64
 <dev-util/icdiff-9999::kutkevich ~amd64
+<dev-vcs/hgview-9999::gentoo ~amd64
 <net-misc/tlsdate-0.0.13::gentoo ~amd64
 <www-client/phantomjs-9999::gentoo ~amd64
 
@@ -48,6 +49,7 @@
 <x11-misc/skippy-xd-9999::kutkevich ~amd64
 <x11-misc/xchainkeys-9999::kutkevich ~amd64
 <x11-plugins/pidgin-window_merge-9999::kutkevich ~amd64
+<x11-themes/flatstudio-9999::kutkevich ~amd64
 <x11-themes/slim-theme-larry-abducted-by-znurt-9999::kutkevich ~amd64
 =dev-python/urwid-1.1.0::gentoo ~amd64 #required by net-misc/wicd; due to =dev-python/urwid-1.0.2: Active version of CPython 3 is not supported by dev-python/urwid-1.0.2
 =media-fonts/fantasque-sans-1.6.4::kutkevich ~amd64

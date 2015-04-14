@@ -1,7 +1,8 @@
 #!/bin/sh
 # <https://forums.gentoo.org/viewtopic-t-1014416.html>.
 sudo -u root \
-     sh -c "emerge --verbose --color=n --nospinner --pretend --deep --update --newuse world \
+     sh -c "emerge --verbose --color=n --nospinner --pretend \
+                   --deep --update --newuse --with-bdeps=y world \
               | grep Total \
               | sed --expression='s/.*Total: \([0-9]*\) package.*/\1/' \
               > /etc/portage/package.outdated"

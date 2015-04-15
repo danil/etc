@@ -8,10 +8,10 @@
 static const char font[]            = "Monospace:pixelsize=24:antialias=true:hinting=true:autohint=true:style=regular";
 
 static const char normbordercolor[] = "#000000"; /* passive window border */
-static const char normbgcolor[]     = "#404040"; /* passive desktop number background */
+static const char normbgcolor[]     = "#000000"; /* passive desktop number background */
 static const char normfgcolor[]     = "#bbbbbb";
 static const char selbordercolor[]  = "#ff4500"; /* active window border */
-static const char selbgcolor[]      = "#000000"; /* active desktop number background */
+static const char selbgcolor[]      = "#404040"; /* active desktop number background */
 static const char selfgcolor[]      = "#eeeeee";
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */

@@ -1,13 +1,14 @@
 # Firmware.
 
 <sys-firmware/iwl3160-7260-bt-ucode-9999::gentoo ~amd64 #bluetooth
-<sys-firmware/iwl7260-ucode-9999::gentoo ~amd64
+<sys-firmware/iwl7260-ucode-9999:10::gentoo ~amd64 #for kernel versions < 3.19.0
 <sys-firmware/nvidia-firmware-9999::gentoo ~amd64
 
 # Server.
 
 <dev-ruby/mruby-9999::kutkevich ~amd64
 <dev-util/icdiff-9999::kutkevich ~amd64
+<dev-vcs/hgview-9999::gentoo ~amd64
 <net-misc/tlsdate-0.0.13::gentoo ~amd64
 <www-client/phantomjs-9999::gentoo ~amd64
 
@@ -24,6 +25,7 @@
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
 <app-editors/dit-9999::kutkevich ~amd64
+<app-emulation/docker-9999::gentoo ~amd64
 <app-emulation/vagrant-bin-9999::kutkevich ~amd64
 <app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
@@ -47,6 +49,7 @@
 <x11-misc/skippy-xd-9999::kutkevich ~amd64
 <x11-misc/xchainkeys-9999::kutkevich ~amd64
 <x11-plugins/pidgin-window_merge-9999::kutkevich ~amd64
+<x11-themes/flatstudio-9999::kutkevich ~amd64
 <x11-themes/slim-theme-larry-abducted-by-znurt-9999::kutkevich ~amd64
 =dev-python/urwid-1.1.0::gentoo ~amd64 #required by net-misc/wicd; due to =dev-python/urwid-1.0.2: Active version of CPython 3 is not supported by dev-python/urwid-1.0.2
 =media-fonts/fantasque-sans-1.6.4::kutkevich ~amd64
@@ -61,6 +64,7 @@ x11-apps/wmutils::kutkevich ~amd64
 <x11-misc/tabbed-9999::gentoo ~amd64
 <x11-terms/st-9999::kutkevich ~amd64
 <x11-wm/dwm-9999::kutkevich ~amd64
+www-servers/quark::kutkevich ~amd64
 
 # Connman.
 <gnome-extra/connman-gnome-9999::gentoo ~amd64
@@ -76,6 +80,16 @@ x11-apps/wmutils::kutkevich ~amd64
 <net-libs/libsearpc-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client, et-libs/ccnet
 <net-misc/seafile-9999::kutkevich ~amd64
 <net-misc/seafile-client-9999::kutkevich ~amd64
+
+# Skype.
+=dev-qt/qtcore-4.8.6-r1 ~amd64 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+=dev-qt/qtxmlpatterns-4.8.6-r1 ~amd64 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+=dev-qt/qtdbus-4.8.6-r1 ~amd64 #required by net-im/skype-4.3.0.37-r5
+=dev-qt/qtgui-4.8.6-r2 ~amd64 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+=dev-qt/qtscript-4.8.6-r1 ~amd64 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+=dev-qt/qtchooser-0_p20150102 ~amd64 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+=dev-qt/qttranslations-4.8.6-r1 ~amd64 #required by dev-qt/qtcore-4.8.6-r1, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+=dev-qt/qtwebkit-4.8.6-r1 ~amd64 #required by net-im/skype-4.3.0.37-r5
 
 # # OpenSCAD.
 # <media-gfx/openscad-9999::gentoo ~amd64

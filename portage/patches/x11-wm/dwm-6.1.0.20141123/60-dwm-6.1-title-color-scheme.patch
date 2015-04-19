@@ -1,0 +1,11 @@
+--- dwm.c	2015-04-16 00:50:38.674987865 +0300
++++ dwm.c	2015-04-16 01:00:21.236975977 +0300
+@@ -729,7 +729,7 @@
+ 	if((w = x - xx) > bh) {
+ 		x = xx;
+ 		if(m->sel) {
+-			drw_setscheme(drw, m == selmon ? &scheme[SchemeSel] : &scheme[SchemeNorm]);
++			drw_setscheme(drw, &scheme[SchemeNorm]);
+ 			drw_text(drw, x, 0, w, bh, m->sel->name, 0);
+ 			drw_rect(drw, x, 0, w, bh, m->sel->isfixed, m->sel->isfloating, 0);
+ 		}

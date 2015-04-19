@@ -38,7 +38,7 @@ FORCE_TIMEOUT=2
 #
 # The following values should not be arbitrarily changed.
 #
-# `emerge --config dev-db/postgresql-server:9.2' uses these values to
+# `emerge --config dev-db/postgresql:9.4' uses these values to
 # determine where to create the data directory, where to place the
 # configuration files, and any additional options to pass to initdb.
 #
@@ -48,10 +48,10 @@ FORCE_TIMEOUT=2
 ##############################################################################
 
 # Location of configuration files
-PGDATA="/etc/postgresql-9.2/"
+PGDATA="/etc/postgresql-9.4/"
 
 # Where the data directory is located/to be created
-DATA_DIR="/var/lib/postgresql/9.2/data"
+DATA_DIR="/var/lib/postgresql/9.4/data"
 
 # Additional options to pass to initdb.
 # See `man initdb' for available options.

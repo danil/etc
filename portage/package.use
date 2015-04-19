@@ -1,3 +1,7 @@
+# Multilib support on amd64
+# <https://www.gentoo.org/support/news-items/2015-03-28-true-multilib.html>.
+*/* abi_x86_32
+
 # Server.
 
 # app-misc/sphinx mysql postgres
@@ -11,6 +15,7 @@ dev-db/sqlite extensions
 dev-libs/libxml2 python #required by app-text/gnome-doc-utils, sci-mathematics/genius
 dev-ruby/mruby local-mri
 dev-vcs/git -gnome-keyring
+dev-vcs/hgview -qt4 ncurses
 mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 
@@ -58,6 +63,7 @@ net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]
 # x11-misc/dunst dunstify #notify-send replacement
 # x11-terms/rxvt-unicode 256-color
 # x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
+# x11-themes/flatstudio gtk2 gtk3
 # xfce-base/xfce4-session -xscreensaver
 
 # # Apulse used by skype for pulseaudio emulation via alsa
@@ -82,6 +88,7 @@ net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]
 # net-misc/seafile client
 
 # # Suckless.
+# www-servers/quark savedconfig
 # x11-misc/dmenu savedconfig
 # x11-misc/slock savedconfig
 # x11-misc/tabbed savedconfig

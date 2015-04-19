@@ -36,7 +36,6 @@
 <media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
 <media-sound/apulse-9999::gentoo ~amd64 #used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
 <media-tv/popcorntime-bin-9999::kutkevich ~amd64
-<media-video/ffmpeg-2.3::gentoo ~amd64 #used with webm
 <net-im/skype-9999::gentoo ~amd64
 <net-misc/wrk-9999::kutkevich ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64

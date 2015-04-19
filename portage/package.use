@@ -1,7 +1,3 @@
-# Multilib support on amd64
-# <https://www.gentoo.org/support/news-items/2015-03-28-true-multilib.html>.
-*/* abi_x86_32
-
 # Server.
 
 # app-misc/sphinx mysql postgres
@@ -34,6 +30,93 @@ media-gfx/imagemagick jpeg png
 net-analyzer/munin -minimal -cgi
 net-analyzer/munin http #required for monitoring HTTP-based services such as nginx
 net-analyzer/rrdtool perl #required by net-analyzer/munin[-minimal]
+
+# Multilib support on amd64
+# <https://www.gentoo.org/support/news-items/2015-03-28-true-multilib.html>.
+app-arch/bzip2 abi_x86_32 #required by media-libs/freetype-2.5.5[bzip2], dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-db/sqlite abi_x86_32 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-lang/orc abi_x86_32 #required by media-libs/gst-plugins-base-0.10.36-r2[orc], net-libs/farstream-0.1.2-r2, net-im/pidgin-2.10.10[gstreamer], x11-plugins/pidgin-window_merge-0.3_p20130512::kutkevich
+dev-libs/expat abi_x86_32 #required by media-libs/fontconfig-2.11.1-r2, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-libs/glib abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2[glib], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-libs/icu abi_x86_32 #required by media-libs/harfbuzz-0.9.35[icu], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+dev-libs/libffi abi_x86_32 #required by virtual/libffi-3.0.13-r1, dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+dev-libs/libpthread-stubs abi_x86_32 #required by x11-libs/libxcb-1.11-r1, x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-libs/libxml2 abi_x86_32 #required by media-libs/gst-plugins-base-0.10.36-r2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+dev-libs/lzo abi_x86_32 #required by x11-libs/cairo-1.12.18-r1, x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+dev-libs/openssl abi_x86_32 #required by dev-qt/qtcore-4.8.6-r1[ssl], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-qt/qtcore abi_x86_32 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-qt/qtdbus abi_x86_32 #required by net-im/skype-4.3.0.37-r5
+dev-qt/qtgui abi_x86_32 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-qt/qtscript abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-qt/qtwebkit abi_x86_32 #required by net-im/skype-4.3.0.37-r5
+dev-qt/qtxmlpatterns abi_x86_32 #required by dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+dev-util/pkgconfig abi_x86_32 #required by virtual/pkgconfig-0-r1, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+media-gfx/graphite2 abi_x86_32 #required by media-libs/harfbuzz-0.9.35[graphite], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+media-libs/alsa-lib abi_x86_32 #required by media-sound/apulse-0.1.4, net-im/skype-4.3.0.37-r5[apulse]
+media-libs/fontconfig abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+media-libs/freetype abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+media-libs/gst-plugins-base abi_x86_32 #required by dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+media-libs/gstreamer abi_x86_32 #required by dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+media-libs/harfbuzz abi_x86_32 #required by x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+media-libs/libjpeg-turbo abi_x86_32 #required by virtual/jpeg-0-r2, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+media-libs/libogg abi_x86_32 #required by media-libs/gst-plugins-base-1.4.5[ogg], xfce-extra/tumbler-0.1.30[gstreamer]
+media-libs/libpng abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+media-libs/libvorbis abi_x86_32 #required by media-libs/gst-plugins-base-1.4.5[vorbis], xfce-extra/tumbler-0.1.30[gstreamer]
+media-libs/mesa abi_x86_32 #required by x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+media-libs/tiff abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2[tiff], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-apps/dbus abi_x86_32 #required by dev-qt/qtdbus-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-apps/util-linux abi_x86_32 #required by x11-libs/libSM-1.2.2-r1[uuid], dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-devel/llvm abi_x86_32 #required by media-libs/mesa-10.3.7-r1[llvm], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+sys-fs/udev abi_x86_32 #required by virtual/libudev-215-r1[-systemd], media-libs/mesa-10.3.7-r1[udev], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+sys-libs/ncurses abi_x86_32 #required by sys-libs/readline-6.2_p5-r1, dev-db/sqlite-3.8.7.4[readline], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-libs/readline abi_x86_32 #required by dev-db/sqlite-3.8.7.4[readline], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-libs/zlib abi_x86_32 #required by media-libs/tiff-4.0.3-r6[zlib], dev-qt/qtgui-4.8.6-r2[tiff], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+virtual/jpeg abi_x86_32 #required by media-libs/tiff-4.0.3-r6[jpeg], dev-qt/qtgui-4.8.6-r2[tiff], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+virtual/libffi abi_x86_32 #required by dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+virtual/libiconv abi_x86_32 #required by dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+virtual/libudev abi_x86_32 #required by media-libs/mesa-10.3.7-r1[udev], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+virtual/pkgconfig abi_x86_32 #required by media-libs/gst-plugins-base-0.10.36-r2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+x11-libs/cairo abi_x86_32 #required by x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/libICE abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libSM abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libX11 abi_x86_32 #required by x11-libs/libXfixes-5.0.1, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXScrnSaver abi_x86_32 #required by net-im/skype-4.3.0.37-r5
+x11-libs/libXau abi_x86_32 #required by x11-libs/libxcb-1.11-r1, x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXcursor abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXdamage abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/libXdmcp abi_x86_32 #required by x11-libs/libxcb-1.11-r1, x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXext abi_x86_32 #required by x11-libs/libXrandr-1.4.2, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXfixes abi_x86_32 #required by x11-libs/libXcursor-1.1.14, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXft abi_x86_32 #required by x11-libs/pango-1.36.8[X], media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/libXi abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXrandr abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXrender abi_x86_32 #required by x11-libs/libXcursor-1.1.14, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXv abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2[xv], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libXxf86vm abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/libdrm abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/libpciaccess abi_x86_32 #required by x11-libs/libdrm-2.4.59[video_cards_intel], media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/libxcb abi_x86_32 #required by x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-libs/libxshmfence abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/pango abi_x86_32 #required by media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-libs/pixman abi_x86_32 #required by x11-libs/cairo-1.12.18-r1, x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/damageproto abi_x86_32 #required by x11-libs/libXdamage-1.1.4-r1, media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/dri2proto abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/dri3proto abi_x86_32 #required by media-libs/mesa-10.3.7-r1[dri3], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/fixesproto abi_x86_32 #required by x11-libs/libXfixes-5.0.1, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/glproto abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/inputproto abi_x86_32 #required by x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/kbproto abi_x86_32 #required by x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/presentproto abi_x86_32 #required by media-libs/mesa-10.3.7-r1[dri3], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/randrproto abi_x86_32 #required by x11-libs/libXrandr-1.4.2, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/renderproto abi_x86_32 #required by x11-libs/libXrender-0.9.8, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/scrnsaverproto abi_x86_32 #required by x11-libs/libXScrnSaver-1.2.2-r1, net-im/skype-4.3.0.37-r5
+x11-proto/videoproto abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2[xv], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/xcb-proto abi_x86_32 #required by x11-libs/libxcb-1.11-r1, x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/xextproto abi_x86_32 #required by x11-libs/libXi-1.7.4, dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/xf86bigfontproto abi_x86_32 #required by x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+x11-proto/xf86driproto abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/xf86vidmodeproto abi_x86_32 #required by media-libs/mesa-10.3.7-r1, x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+x11-proto/xproto abi_x86_32 #required by x11-libs/libXv-1.0.10, dev-qt/qtgui-4.8.6-r2[xv], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 
 # Desktop.
 

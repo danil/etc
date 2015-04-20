@@ -1,0 +1,4 @@
+# h9 firmware.
+<sys-firmware/iwl3160-7260-bt-ucode-9999::gentoo ~amd64 #bluetooth
+<sys-firmware/iwl7260-ucode-9999:10::gentoo ~amd64 #for kernel versions < 3.19.0
+<sys-firmware/nvidia-firmware-9999::gentoo ~amd64

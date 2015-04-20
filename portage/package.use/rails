@@ -1,0 +1,5 @@
+# Ruby on Rails.
+media-gfx/imagemagick jpeg png
+# app-misc/sphinx mysql postgres
+app-misc/sphinx stemmer mysql
+dev-db/mariadb sphinx

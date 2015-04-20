@@ -1,0 +1,28 @@
+# Common.
+
+# app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
+# net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
+app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
+app-editors/emacs libxml2 #used by www browser
+dev-libs/libxml2 python #required by app-text/gnome-doc-utils, sci-mathematics/genius
+dev-ruby/mruby local-mri
+dev-vcs/git -gnome-keyring
+dev-vcs/hgview -qt4 ncurses
+mail-client/mutt doc imap #`man muttrc`
+net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
+
+# nginx.
+# ngx_http_fastcgi_module
+# <http://sysoev.ru/nginx/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass>.
+# www-servers/nginx -nginx_modules_http_geo
+www-servers/nginx nginx_modules_http_stub_status #used by Munin
+# www-servers/nginx fastcgi
+# www-servers/nginx nginx_modules_http_passenger
+
+# Suckless.
+www-servers/quark savedconfig
+x11-misc/dmenu savedconfig
+x11-misc/slock savedconfig
+x11-misc/tabbed savedconfig
+x11-terms/st savedconfig
+x11-wm/dwm savedconfig

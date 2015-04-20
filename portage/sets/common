@@ -18,27 +18,6 @@
 # sys-power/powertop
 # sys-process/atop
 # sys-process/iotop
-app-dicts/aspell-en #emacs spell checker
-app-dicts/aspell-ru #emacs spell checker
-app-misc/cv #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/cv>
-app-misc/jq #json console formater <http://stedolan.github.io/jq/tutorial>, <http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json#15231463>
-app-text/dos2unix
-app-text/sloccount
-dev-util/icdiff #two columns diff
-dev-util/source-highlight #highlighted source code in less (less filter)
-dev-vcs/hgview #tig for hg (mercurial ncurses tui interface)
-mail-mta/exim #deliver local mail to /var/mail
-media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
-net-dns/bind-tools #`dig`, `host` and `nslookup`
-net-mail/mailutils #read local mail from /var/mail
-net-misc/httpie #curl replacement <http://httpie.org>
-net-misc/tlsdate #ntp replacement
-sci-mathematics/genius #console-based calculator
-sys-apps/lsb-release #release version compliant to Linux Standard Base (LSB)
-sys-apps/mdp #markdown presentation tool
-sys-devel/bc #used by bash prompt
-sys-fs/gt5 #baobab replacement; diskspace usage <http://gt5.sourceforge.net>
-sys-process/glances #htop replacement <https://github.com/nicolargo/glances>
 app-admin/emacs-updater
 app-admin/logrotate
 app-admin/pwgen
@@ -48,34 +27,56 @@ app-arch/arj
 app-arch/lzip
 app-arch/unrar
 app-arch/unzip
+app-dicts/aspell-en #emacs spell checker
+app-dicts/aspell-ru #emacs spell checker
 app-editors/nano
 app-editors/vim
 app-emulation/docker
 app-misc/colordiff
+app-misc/cv #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/cv>
+app-misc/jq #json console formater <http://stedolan.github.io/jq/tutorial>, <http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json#15231463>
 app-misc/tmux
 app-portage/eix
 app-portage/gentoolkit
 app-portage/layman
 app-portage/portage-utils
 app-shells/bash-completion
+app-text/dos2unix
+app-text/sloccount
 app-text/tree
 dev-db/postgresql
 dev-lang/go
 dev-util/ccache
+dev-util/icdiff #two columns diff
+dev-util/source-highlight #highlighted source code in less (less filter)
 dev-vcs/git
 dev-vcs/git-extras
+dev-vcs/hgview #tig for hg (mercurial ncurses tui interface)
 dev-vcs/mercurial
 dev-vcs/tig
+mail-mta/exim #deliver local mail to /var/mail
+media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
+net-analyzer/ngrep
+net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp
 net-ftp/vsftpd
+net-mail/mailutils #read local mail from /var/mail
 net-mail/offlineimap
 net-misc/curl
 net-misc/dhcpcd
+net-misc/httpie #curl replacement <http://httpie.org>
 net-misc/mosh
 net-misc/telnet-bsd
+net-misc/tlsdate #ntp replacement
 net-misc/whois
+sci-mathematics/genius #console-based calculator
+sys-apps/lsb-release #release version compliant to Linux Standard Base (LSB)
+sys-apps/mdp #markdown presentation tool
 sys-apps/mlocate
 sys-apps/the_silver_searcher
+sys-devel/bc #used by bash prompt
+sys-fs/gt5 #baobab replacement; diskspace usage <http://gt5.sourceforge.net>
+sys-process/glances #htop replacement <https://github.com/nicolargo/glances>
 sys-process/htop
 sys-process/lsof
 sys-process/vixie-cron

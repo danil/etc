@@ -1,0 +1,58 @@
+# Desktop.
+
+# app-admin/conky lua lua-cairo iostats
+# app-text/docbook-sgml-utils jadetex #docbook2pdf <http://bugs.gentoo.org/61938#c0> used for <http://habrahabr.ru/blogs/Git/80909/>
+# dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
+# games-strategy/freeciv sdl -gtk
+# x11-wm/compiz gtk hjkl
+app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
+app-emulation/virtualbox -additions -opengl
+app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
+dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
+dev-libs/libxml2 python #required by app-admin/system-config-printer-common, app-admin/system-config-printer-gnome
+dev-vcs/git tk gtk
+gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
+gnome-base/gvfs udisks #required by xfce-base/thunar[udev]
+media-gfx/feh curl exif
+media-libs/harfbuzz icu #required by app-office/libreoffice-bin
+media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, media-libs/sk1libs
+media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
+media-video/ffmpeg threads #required by media-video/mpv[postproc]
+net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
+net-print/cups gnutls
+sys-fs/udev gudev #required by sys-fs/udev-init-scripts
+sys-libs/zlib minizip #required by media-video/vlc
+virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
+x11-misc/dunst dunstify #notify-send replacement
+x11-terms/rxvt-unicode 256-color
+x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
+x11-themes/flatstudio gtk2 gtk3
+xfce-base/xfce4-session -xscreensaver
+
+# Apulse used by skype for pulseaudio emulation via alsa
+# <http://wiki.gentoo.org/wiki/Skype#apulse>.
+net-im/skype apulse -pulseaudio
+media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
+
+# i3lock.
+x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock
+x11-libs/libxcb xkb #required by x11-libs/libxkbcommon[X] and x11-misc/i3lock
+
+# Re-encode video and audio streams
+# <http://trac.ffmpeg.org/wiki/How%20to%20use%20-map%20option>.
+media-video/ffmpeg webp
+media-video/ffmpeg x264
+media-video/ffmpeg theora
+media-video/ffmpeg vpx #VP8 and VP9 video compression format for WebM video file format video <http://en.wikipedia.org/wiki/VP8>, <http://en.wikipedia.org/wiki/Webm>
+
+# Seafile.
+dev-lang/python sqlite #required by net-misc/seafile-client, net-misc/seafile
+net-libs/ccnet python client #required by net-misc/seafile-client
+net-misc/seafile client
+
+# Xfce.
+media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]
+xfce-base/thunar exif
+xfce-base/thunar udisks #required by xfce-extra/thunar-volman
+xfce-base/xfce4-session upower
+xfce-extra/tumbler odf raw

@@ -1,10 +1,34 @@
 # Desktop.
 
+# */* branding
+# */* encode #recording video <http://en.gentoo-wiki.com/wiki/Webcam#Recording>
+# */* gnome #gnome <http://gentoo.org/doc/en/gnome-config.xml?style=printable#doc_chap2_pre1>
+# */* lm_sensors #lm sensors <http://en.gentoo-wiki.com/wiki/Lm_sensors>
+# */* pulseaudio #audio <http://forums.gentoo.org/viewtopic-p-7104346.html#7104346>
 # app-admin/conky lua lua-cairo iostats
 # app-text/docbook-sgml-utils jadetex #docbook2pdf <http://bugs.gentoo.org/61938#c0> used for <http://habrahabr.ru/blogs/Git/80909/>
 # dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 # games-strategy/freeciv sdl -gtk
 # x11-wm/compiz gtk hjkl
+*/* -minimal #<http://en.gentoo-wiki.com/wiki/X.Org#USE_Flags>, <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Direct_.26_Indirect_Rendering>, <http://en.gentoo-wiki.com/wiki/ALSA#ALSA_Userspace>
+*/* acpi apm pmu #power management <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_sect3>
+*/* alsa #alsa <http://gentoo.org/doc/en/alsa-guide.xml?style=printable#doc_chap3_sect7>
+*/* consolekit #<https://wiki.archlinux.org/index.php/Udiskie#Consolekit_.28recommended.29>, <https://wiki.archlinux.org/index.php/ConsoleKit>
+*/* gif jpeg png tiff xpm svg cairo
+*/* gnome-keyring -networkmanager #gnome
+*/* gstreamer #gstreamer; если необходимые плагины не собираются и нет звука в приложениях, то добавить пакет gst-plugins-meta в зависимоти `echo "media-plugins/gst-plugins-meta" >> /var/lib/portage/world`
+*/* hal dbus udev #<http://en.gentoo-wiki.com/wiki/HAL#Using_HAL>, <http://en.gentoo-wiki.com/wiki/Lenovo_ThinkPad_T400#Installation_Prep>, <http://gentoo.org/proj/en/desktop/x/x11/xorg-server-1.9-upgrade-guide.xml?style=printable>
+*/* laptop #<http://en.gentoo-wiki.com/wiki/Lenovo_ThinkPad_T400#Installation_Prep>
+*/* libnotify #desktop notification support
+*/* mad mp3 ogg vorbis flac mpeg
+*/* midi #midi <http://gentoo.org/doc/en/alsa-guide.xml?style=printable#doc_chap4>
+*/* opengl X
+*/* pdf djvu spell grammar xv svga
+*/* policykit #use the PolicyKit framework (sys-auth/polkit) to get authorization for suspend/shutdown
+*/* truetype cleartype xft
+*/* v4l v4l2 #webcam <http://en.gentoo-wiki.com/wiki/Webcam#Testing>, <http://en.gentoo-wiki.com/wiki/Webcam#Viewing>
+*/* wifi bluetooth #wireless network
+*/* xorg dri #x.org <http://en.gentoo-wiki.com/wiki/X.Org#USE_Flags>
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome

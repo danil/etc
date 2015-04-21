@@ -10,7 +10,6 @@
 # x11-apps/xdpyinfo #show dpi
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
 # x11-misc/tint2 #does not work in stumpwm <https://code.google.com/p/tint2/issues/detail?id=157>
-# x11-misc/xcalib #load icc/icm display color profiles (only calibration curves) <https://wiki.archlinux.org/index.php/ICC_Profiles#xcalib>
 # xfce-extra/xfce4-power-manager
 gnome-extra/connman-gnome #wifi tray icon
 media-fonts/fantasque-sans #fantastic monospace font

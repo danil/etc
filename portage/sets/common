@@ -56,6 +56,7 @@ dev-vcs/mercurial
 dev-vcs/tig
 mail-mta/exim #deliver local mail to /var/mail
 media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
+net-analyzer/ngrep
 net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp
 net-ftp/vsftpd

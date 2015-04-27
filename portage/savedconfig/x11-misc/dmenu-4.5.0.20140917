@@ -9,7 +9,7 @@ static const char *prompt = NULL;           /* -p  option; prompt to the elft of
 static const char *normbgcolor = "black";   /* -nb option; normal background                 */
 static const char *normfgcolor = "white";   /* -nf option; normal foreground                 */
 static const char *selbgcolor  = "OrangeRed1"; /* -sb option; selected background               */
-static const char *selfgcolor  = "white";   /* -sf option; selected foreground               */
+static const char *selfgcolor  = "black";   /* -sf option; selected foreground               */
 static const char *outbgcolor  = "#00ffff";
 static const char *outfgcolor  = "#000000";
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */

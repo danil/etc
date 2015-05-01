@@ -26,7 +26,7 @@ net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks in
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
 net-wireless/rfkill #enabled bluetooth <http://wiki.gentoo.org/wiki/Bluetooth#Software>
 sys-power/hibernate-script #`hibernate` and `hibernate-ram` s3 aka suspend to ram aka sleep
-x11-apps/light #screen backlight <https://wiki.archlinux.org/index.php/backlight>
+x11-apps/light #screen backlight <https://github.com/haikarainen/light>, <https://wiki.archlinux.org/index.php/backlight>
 x11-apps/wmutils #get active window `pfw` and kill it `killw` <https://github.com/wmutils/core>
 x11-apps/xev
 x11-apps/xrandr #enable/disable external monitor

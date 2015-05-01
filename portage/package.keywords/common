@@ -15,7 +15,6 @@
 <net-misc/tlsdate-0.0.13::gentoo ~amd64
 <net-misc/wrk-9999::kutkevich ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
-<www-client/phantomjs-9999::gentoo ~amd64
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
 
 # Suckless.

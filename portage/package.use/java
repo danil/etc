@@ -1,2 +1,2 @@
 # java.
-dev-java/icedtea-bin -X
+dev-java/icedtea-bin -X -alsa -cups

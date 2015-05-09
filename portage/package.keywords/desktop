@@ -10,6 +10,7 @@
 <app-arch/xarchiver-9999::gentoo ~amd64
 <app-cdr/simpleburn-9999::kutkevich ~amd64
 <app-emulation/vagrant-bin-9999::kutkevich ~amd64
+<gnome-extra/connman-gnome-9999::gentoo ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
 <media-sound/apulse-9999::gentoo ~amd64 #used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
 <media-tv/popcorntime-bin-9999::kutkevich ~amd64
@@ -32,10 +33,6 @@
 =media-libs/harfbuzz-0.9.28::gentoo ~amd64 #required by app-office/libreoffice-bin
 games-action/minecraft::kutkevich ~amd64
 x11-apps/wmutils::kutkevich ~amd64
-
-# Connman.
-<gnome-extra/connman-gnome-9999::gentoo ~amd64
-<net-misc/connman-9999::gentoo ~amd64
 
 # Seafile.
 <net-libs/ccnet-9999::kutkevich ~amd64 #required by net-misc/seafile[client], net-misc/seafile-client

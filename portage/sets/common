@@ -64,7 +64,6 @@ net-mail/mailutils #read local mail from /var/mail
 net-mail/offlineimap
 net-misc/curl
 net-misc/dhcpcd
-net-misc/httpie #curl replacement <http://httpie.org>
 net-misc/mosh
 net-misc/telnet-bsd
 net-misc/tlsdate #ntp replacement
@@ -76,7 +75,6 @@ sys-apps/mlocate
 sys-apps/the_silver_searcher
 sys-devel/bc #used by bash prompt
 sys-fs/gt5 #baobab replacement; diskspace usage <http://gt5.sourceforge.net>
-sys-process/glances #htop replacement <https://github.com/nicolargo/glances>
 sys-process/htop
 sys-process/lsof
 sys-process/vixie-cron

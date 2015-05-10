@@ -1,5 +1,6 @@
 # app-misc/sphinx
 # dev-db/mariadb
 # dev-db/sqlite
+dev-util/ctags #projectile <https://github.com/bbatsov/projectile#regenerate-tags>
 media-gfx/imagemagick
 www-client/phantomjs

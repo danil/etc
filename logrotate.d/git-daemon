@@ -1,0 +1,4 @@
+# Danil.
+/var/log/git-daemon.log {
+    notifempty
+}

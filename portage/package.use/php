@@ -1,0 +1,2 @@
+# PHP.
+dev-lang/php -truetype -xpm #dependecies conflict with truetype xpm

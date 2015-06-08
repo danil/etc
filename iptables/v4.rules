@@ -65,6 +65,9 @@
 #  Allow rsync.
 -A INPUT -p tcp --dport 873 -j ACCEPT
 
+#  Allow git-daemon.
+-A INPUT -p tcp --dport 9418 -j ACCEPT
+
 #  Log iptables denied calls.
 -A INPUT -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
 

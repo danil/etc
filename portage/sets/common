@@ -45,7 +45,6 @@ app-text/dos2unix
 app-text/sloccount
 app-text/tree
 dev-db/postgresql
-dev-lang/go
 dev-util/ccache
 dev-util/icdiff #two columns diff
 dev-util/source-highlight #highlighted source code in less (less filter)

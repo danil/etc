@@ -1,0 +1,10 @@
+#!/bin/sh
+
+su git --shell=/bin/bash --command /home/danil/bin/my-git-mirror.sh
+
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    logger -t git "ALERT mirroring exited abnormally with [$EXITVALUE]"
+fi
+
+exit 0

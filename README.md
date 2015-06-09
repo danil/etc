@@ -4,7 +4,7 @@
 
 ### I18n
 
-Set somewhere monday first day of the week:
+Set somewhere in locale file monday first day of the week:
 `first_weekday 1`
 
 ## Copying

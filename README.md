@@ -1,10 +1,15 @@
-Configs
-=======
+# Configs
 
-Copying
--------
+## TODO
 
-Copyright (C) 2014 Danil Kutkevich <danil@kutkevich.org>
+### I18n
+
+Set somewhere monday first day of the week:
+`first_weekday 1`
+
+## Copying
+
+Copyright (C) 2015 Danil Kutkevich <danil@kutkevich.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

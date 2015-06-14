@@ -67,6 +67,7 @@ net-misc/mosh
 net-misc/telnet-bsd
 net-misc/tlsdate #ntp replacement
 net-misc/whois
+net-p2p/syncthing #dropbox replacement
 sci-mathematics/genius #console-based calculator
 sys-apps/lsb-release #release version compliant to Linux Standard Base (LSB)
 sys-apps/mdp #markdown presentation tool

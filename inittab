@@ -36,7 +36,7 @@ su0:S:wait:/sbin/rc single
 su1:S:wait:/sbin/sulogin
 
 # TERMINALS
-c1:12345:respawn:/sbin/agetty 38400 hvc0 linux
+c1:12345:respawn:/sbin/agetty 38400 ttyS0 linux
 # c1:12345:respawn:/sbin/agetty 38400 tty1 linux
 # c2:2345:respawn:/sbin/agetty 38400 tty2 linux
 # c3:2345:respawn:/sbin/agetty 38400 tty3 linux

@@ -18,7 +18,6 @@
 # sys-power/powertop
 # sys-process/atop
 # sys-process/iotop
-app-admin/emacs-updater
 app-admin/logrotate
 app-admin/pwgen
 app-admin/sudo
@@ -27,8 +26,6 @@ app-arch/arj
 app-arch/lzip
 app-arch/unrar
 app-arch/unzip
-app-dicts/aspell-en #emacs spell checker
-app-dicts/aspell-ru #emacs spell checker
 app-editors/nano
 app-editors/vim
 app-emulation/docker

@@ -37,7 +37,6 @@ media-sound/sox #`play` audio files from cli
 media-video/mpv #mplayer replacement <https://github.com/mpv-player/mpv>
 net-im/skype
 net-mail/dovecot
-net-misc/seafile-client #dropbox replacement
 net-misc/tor
 net-p2p/bitcoin-qt
 net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks installed <http://wiki.gentoo.org/wiki/Tor#Torify>

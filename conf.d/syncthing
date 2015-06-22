@@ -4,10 +4,10 @@ SYNC_NAME="syncthing"
 SYNC_PIDFILE="/var/run/${SYNC_NAME}.pid"
 
 # If you are going to run syncthing as a user, also uncomment the SYNC_HOME line
+# Danil.
 # SYNC_USER="root"
 # SYNC_GROUP="root"
 # #SYNC_HOME="/home/${SYNC_USER}/.config/${SYNC_NAME}"
-# Danil.
 SYNC_USER="danil"
 SYNC_GROUP="danil"
 SYNC_HOME="/home/${SYNC_USER}/.config/${SYNC_NAME}"

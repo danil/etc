@@ -1,3 +1,5 @@
+# app-misc/abduco #app-misc/abduco + app-misc/dvtm is a tmux alternative
+# app-misc/dvtm #app-misc/abduco + app-misc/dvtm is a tmux alternative
 # app-misc/reptyr #move running program to tmux <https://github.com/nelhage/reptyr>
 # app-text/catdoc #convert doc, xls, ppt and rtf files to text
 # app-text/convmv #convert filenames to utf8

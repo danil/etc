@@ -1,3 +1,4 @@
+# app-admin/system-config-printer-gnome #deprecated
 # app-misc/cdctl #<http://superuser.com/questions/71939/disable-cd-dvd-button-on-linux-laptop-ubuntu>
 # app-text/mupdf #pdf viewer recommended by xfce (unfortunately there is no toc) <https://wiki.xfce.org/recommendedapps#mupdf>
 # lxqt-base/lxqt-powermanagement #stand alone power manager
@@ -12,7 +13,6 @@
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
 # x11-misc/tint2 #does not work in stumpwm <https://code.google.com/p/tint2/issues/detail?id=157>
 # xfce-extra/xfce4-power-manager
-app-admin/system-config-printer-gnome
 app-arch/xarchiver
 app-cdr/simpleburn
 app-dicts/stardict-freedict-eng-rus

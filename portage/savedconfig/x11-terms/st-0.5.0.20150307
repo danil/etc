@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Monospace:pixelsize=31:antialias=true:hinting=true:autohint=true:style=regular";
+static char font[] = "Monospace:pixelsize=32:antialias=true:hinting=true:autohint=true:style=regular";
 static int borderpx = 2;
 static char shell[] = "/bin/sh";
 static char *utmp = NULL;

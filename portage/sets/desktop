@@ -38,7 +38,6 @@ media-video/mpv #mplayer replacement <https://github.com/mpv-player/mpv>
 net-im/skype
 net-mail/dovecot
 net-misc/tor
-net-p2p/bitcoin-qt
 net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks installed <http://wiki.gentoo.org/wiki/Tor#Torify>
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
 net-wireless/rfkill #enabled bluetooth <http://wiki.gentoo.org/wiki/Bluetooth#Software>

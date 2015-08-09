@@ -1,0 +1,12 @@
+#!/bin/sh
+
+su danil \
+   --shell=/bin/bash \
+   --command "source ~/.bash_aliases && bundle exec 'ruby ~/bin/thtm/thtm.rb'"
+
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    logger -t git "ALERT mirroring exited abnormally with [$EXITVALUE]"
+fi
+
+exit 0

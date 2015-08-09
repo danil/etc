@@ -1,8 +1,13 @@
 #!/bin/sh
 
+export HOME=/home/danil
+export RBENV_VERSION=2.2.2
+
 su danil \
    --shell=/bin/bash \
-   --command "source ~/.bash_aliases && bundle exec 'ruby ~/bin/thtm/thtm.rb'"
+   --command "cd ${HOME}/bin/thtm && \
+              source ${HOME}/.bash_aliases && \
+              bundle exec 'ruby $HOME/bin/thtm/thtm.rb'"
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then

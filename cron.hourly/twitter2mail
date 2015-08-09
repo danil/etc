@@ -1,12 +1,15 @@
 #!/bin/sh
 
 export HOME=/home/danil
+
+# rbenv <https://github.com/sstephenson/rbenv#basic-github-checkout>.
 export RBENV_VERSION=2.2.2
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
 su danil \
    --shell=/bin/bash \
-   --command "cd ${HOME}/bin/thtm && \
-              source ${HOME}/.bash_aliases && \
+   --command "cd $HOME/bin/thtm && \
+              eval '$(rbenv init -)' && \
               bundle exec 'ruby $HOME/bin/thtm/thtm.rb'"
 
 EXITVALUE=$?

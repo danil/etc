@@ -19,7 +19,6 @@ app-dicts/stardict-freedict-eng-rus
 app-dicts/stardict-quick-ru-en
 app-editors/leafpad
 app-emulation/virtualbox
-app-office/libreoffice-bin
 app-text/evince
 app-text/stardict
 dev-python/gnome-keyring-python

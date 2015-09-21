@@ -6,7 +6,6 @@
 # media-libs/hal-flash #drm video support <https://github.com/cshorler/hal-flash>
 # media-tv/popcorntime #torrent video player
 # net-irc/weechat
-# net-misc/connman-ui #wifi tray icon
 # x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
@@ -22,7 +21,6 @@ app-emulation/virtualbox
 app-text/evince
 app-text/stardict
 dev-python/gnome-keyring-python
-gnome-extra/connman-gnome #wifi tray icon
 media-fonts/dejavu
 media-fonts/fantasque-sans #fantastic monospace font
 media-fonts/fira-sans #thin sans font
@@ -36,6 +34,7 @@ media-sound/sox #`play` audio files from cli
 media-video/mpv #mplayer replacement <https://github.com/mpv-player/mpv>
 net-im/skype
 net-mail/dovecot
+net-misc/cmst #wifi tray icon
 net-misc/tor
 net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks installed <http://wiki.gentoo.org/wiki/Tor#Torify>
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>

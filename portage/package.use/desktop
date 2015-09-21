@@ -33,6 +33,7 @@ app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-key
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
 dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
+dev-libs/libpcre pcre16 #required by net-misc/cmst
 dev-libs/libxml2 python #required by app-admin/system-config-printer-common, app-admin/system-config-printer-gnome
 dev-vcs/git tk gtk
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba

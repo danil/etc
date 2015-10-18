@@ -2,3 +2,4 @@ app-admin/emacs-updater
 app-dicts/aspell-en #spell checker
 app-dicts/aspell-ru #spell checker
 app-text/xmlstarlet #used by flycheck
+dev-lang/lua #used by flycheck

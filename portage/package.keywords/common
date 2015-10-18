@@ -2,7 +2,7 @@
 
 # <app-text/msort-9999::kutkevich ~amd64
 <app-editors/dit-9999::kutkevich ~amd64
-<app-emulation/docker-9999::gentoo ~amd64
+<app-emulation/docker-1.8.1::gentoo ~amd64
 <app-misc/cv-9999::kutkevich ~amd64
 <app-misc/jq-9999::gentoo ~amd64
 <dev-ruby/mruby-9999::kutkevich ~amd64

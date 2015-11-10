@@ -1,0 +1,3 @@
+# java headless.
+dev-java/icedtea-bin -X -awt -gtk -alsa -cups
+dev-java/oracle-jre-bin -X -awt -gtk -alsa -cups

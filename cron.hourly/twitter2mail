@@ -3,14 +3,14 @@
 export HOME=/home/danil
 
 # rbenv <https://github.com/sstephenson/rbenv#basic-github-checkout>.
-export RBENV_VERSION=2.2.2
+export RBENV_VERSION=2.2.3
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
 su danil \
    --shell=/bin/bash \
-   --command "cd $HOME/bin/thtm && \
+   --command "cd $HOME/bin/twitma && \
               eval '$(rbenv init -)' && \
-              bundle exec 'ruby $HOME/bin/thtm/thtm.rb'"
+              bundle exec 'ruby $HOME/bin/twitma/twitma.rb'"
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then

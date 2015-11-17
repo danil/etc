@@ -1,0 +1,4 @@
+# Danil.
+/var/log/jabber/prosody.* {
+  notifempty
+}

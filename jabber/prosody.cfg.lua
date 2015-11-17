@@ -15,7 +15,7 @@
 -- for the server. Note that you must create the accounts separately
 -- (see http://prosody.im/doc/creating_accounts for info)
 -- Example: admins = { "user1@example.com", "user2@example.net" }
-admins = { }
+admins = { "danil@kutkevich.org" }
 
 -- Enable use of libevent for better performance under high load
 -- For more information see: http://prosody.im/doc/libevent
@@ -162,6 +162,19 @@ VirtualHost "example.com"
 	ssl = {
 		key = "/etc/jabber/certs/example.com.key";
 		certificate = "/etc/jabber/certs/example.com.crt";
+	}
+
+-- Danil.
+VirtualHost "kutkevich.org"
+	enabled = true
+
+	-- Assign this host a certificate for TLS, otherwise it would use the one
+	-- set in the global section (if any).
+	-- Note that old-style SSL on port 5223 only supports one certificate, and will always
+	-- use the global one.
+	ssl = {
+		key = "/etc/jabber/certs/kutkevich.org.key";
+		certificate = "/etc/jabber/certs/kutkevich.org.crt";
 	}
 
 ------ Components ------

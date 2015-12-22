@@ -1,20 +1,12 @@
 #!/bin/sh
 
-export HOME=/home/danil
-
-# rbenv <https://github.com/sstephenson/rbenv#basic-github-checkout>.
-export RBENV_VERSION=2.2.3
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-
 su danil \
    --shell=/bin/bash \
-   --command "cd $HOME/bin/twitma && \
-              eval '$(rbenv init -)' && \
-              bundle exec 'ruby $HOME/bin/twitma/twitma.rb'"
+   --command '"$HOME"/.gvm/pkgsets/go1.5.1/global/bin/tgtm'
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then
-    logger -t git "ALERT mirroring exited abnormally with [$EXITVALUE]"
+    logger -t git "ALERT tweets mailing exited abnormally with [$EXITVALUE]"
 fi
 
 exit 0

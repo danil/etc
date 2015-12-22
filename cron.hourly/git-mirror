@@ -6,7 +6,7 @@ su git \
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then
-    logger -t git "ALERT mirroring exited abnormally with [$EXITVALUE]"
+    logger -t git "ALERT git mirroring exited abnormally with [$EXITVALUE]"
 fi
 
 exit 0

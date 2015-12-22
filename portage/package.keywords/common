@@ -15,7 +15,7 @@
 <net-misc/wrk-9999::kutkevich ~amd64
 <net-p2p/syncthing-9999::kutkevich ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
-=app-portage/layman-2.3.0::gentoo ~amd64 #because layman 2.0 can't parse gzipped overlay list
+<app-portage/layman-2.4::gentoo ~amd64 #because layman 2.0 can't parse gzipped overlay list
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
 
 # Suckless.

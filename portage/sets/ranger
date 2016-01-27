@@ -1,0 +1,6 @@
+app-arch/atool #archives previews
+app-misc/ranger #vim-inspired filemanager for the console <https://github.com/hut/ranger>
+app-text/highlight #highlight source code
+app-text/poppler #pdf previews
+media-video/mediainfo #pdf previews
+www-client/w3m #for the "w3mimgdisplay" program to preview images

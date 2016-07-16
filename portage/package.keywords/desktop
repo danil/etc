@@ -14,9 +14,10 @@
 <media-sound/apulse-9999::gentoo ~amd64 #used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
 <media-tv/popcorntime-bin-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
+<net-misc/aria2-9999::gentoo ~amd64 #multi-protocol downloader (BitTorrent)
 <net-misc/cmst-9999::gentoo ~amd64
-<net-misc/dropbox-9999::gentoo ~amd64
 <sys-apps/mdp-9999::kutkevich ~amd64
+<www-client/firefox-bin-46::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
 <www-plugins/google-talkplugin-9999::gentoo ~amd64
 <x11-apps/light-9999::kutkevich ~amd64
@@ -33,6 +34,13 @@
 =media-libs/harfbuzz-0.9.28::gentoo ~amd64 #required by app-office/libreoffice-bin
 games-action/minecraft::kutkevich ~amd64
 x11-apps/wmutils::kutkevich ~amd64
+
+# Suckless.
+# =x11-terms/st-0.6::gentoo ~amd64
+<x11-misc/dmenu-9999::kutkevich ~amd64
+<x11-misc/tabbed-9999::gentoo ~amd64
+<x11-terms/st-9999::kutkevich ~amd64
+<x11-wm/dwm-9999::kutkevich ~amd64
 
 # Maim (screenshot).
 <media-gfx/maim-9999::kutkevich ~amd64

@@ -1,3 +1,4 @@
-# Benchmarks.
-app-benchmarks/wrk #a-la `ab` c http benchmark tool <https://github.com/wg/wrk>
+# Benchmarks a-la `ab`.
 app-admin/apache-tools
+app-benchmarks/siege
+app-benchmarks/wrk #c http benchmark tool <https://github.com/wg/wrk>

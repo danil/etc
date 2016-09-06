@@ -1,4 +1,4 @@
-#	$OpenBSD: sshd_config,v 1.97 2015/08/06 14:53:21 deraadt Exp $
+#	$OpenBSD: sshd_config,v 1.98 2016/02/17 05:29:04 djm Exp $
 
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
@@ -21,7 +21,7 @@
 # <http://gentoo.org/doc/en/security/security-handbook.xml?part=1&chap=10&style=printable#doc_chap11>.
 Protocol 2
 
-# HostKey for protocol version 1
+#HostKey for protocol version 1
 #HostKey /etc/ssh/ssh_host_key
 # HostKeys for protocol version 2
 #HostKey /etc/ssh/ssh_host_rsa_key
@@ -114,7 +114,7 @@ PrintMotd no
 PrintLastLog no
 #TCPKeepAlive yes
 #UseLogin no
-UsePrivilegeSeparation sandbox		# Default for new installations.
+#UsePrivilegeSeparation sandbox
 #PermitUserEnvironment no
 #Compression delayed
 #ClientAliveInterval 0
@@ -131,20 +131,6 @@ UsePrivilegeSeparation sandbox		# Default for new installations.
 
 # override default of no subsystems
 Subsystem	sftp	/usr/lib64/misc/sftp-server
-
-# the following are HPN related configuration options
-# tcp receive buffer polling. disable in non autotuning kernels
-#TcpRcvBufPoll yes
-
-# disable hpn performance boosts
-#HPNDisabled no
-
-# buffer size for hpn to non-hpn connections
-#HPNBufferSize 2048
-
-
-# allow the use of the none cipher
-#NoneEnabled no
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs

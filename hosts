@@ -26,6 +26,20 @@
 # 93.93.130.185 spik.ru
 # 93.93.130.185 agroreserv.ru
 
+# # Waveaccess.
+# 127.0.0.1 aidbox.local
+# 127.0.0.1 danil.aidbox.local
+# 127.0.0.1 foobar.aidbox.local
+# 127.0.0.1 loinc.aidbox.local
+# 127.0.0.1 nsi.aidbox.local
+# 127.0.0.1 text.aidbox.local
+# 172.17.0.3 bastion-public.narus.local
+# 172.17.0.3 bastion.narus.local
+# 172.17.0.3 app.narus.local
+# 172.17.0.3 db-master.narus.local
+# 172.17.0.3 db-slave.narus.local
+# 172.17.0.3 monitoring-master.narus.local
+
 ::1		localhost
 
 #

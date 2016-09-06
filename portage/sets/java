@@ -1,2 +1,5 @@
 # java <https://wiki.gentoo.org/wiki/Java>.
 dev-java/icedtea-bin
+
+# # aidbox (medapp).
+# app-misc/elasticsearch

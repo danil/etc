@@ -4,3 +4,4 @@ app-dicts/aspell-ru #spell checker
 app-text/htmltidy #html checker used by flycheck
 app-text/xmlstarlet #used by flycheck
 dev-python/pylint #python checker used by flycheck
+dev-util/cppcheck #static analysis of C/C++ code used by flycheck <https://github.com/danmar/cppcheck>

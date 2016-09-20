@@ -1,0 +1,7 @@
+# Skype.
+dev-qt/qtwebkit -exceptions #required by net-im/skype::gentoo
+
+# Apulse used by skype for pulseaudio emulation via alsa
+# <http://wiki.gentoo.org/wiki/Skype#apulse>.
+media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
+net-im/skype apulse -pulseaudio

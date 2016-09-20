@@ -29,10 +29,12 @@
 */* v4l v4l2 #webcam <http://en.gentoo-wiki.com/wiki/Webcam#Testing>, <http://en.gentoo-wiki.com/wiki/Webcam#Viewing>
 */* wifi bluetooth #wireless network
 */* xorg dri #x.org <http://en.gentoo-wiki.com/wiki/X.Org#USE_Flags>
+>=dev-qt/qtcore-5.4.2 icu #required by net-misc/dropbox::gentoo[X] and dev-qt/qtwebkit
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
 dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
+dev-libs/libpcre pcre16 #required by net-misc/cmst
 dev-libs/libxml2 python #required by app-admin/system-config-printer-common, app-admin/system-config-printer-gnome
 dev-vcs/git tk gtk
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
@@ -44,8 +46,10 @@ media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[gla
 media-video/ffmpeg cpu_flags_x86_sse3 cpu_flags_x86_mmxext
 media-video/ffmpeg threads #required by media-video/mpv[postproc]
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
+net-misc/aria2 bittorrent metalink ssh #multi-protocol downloader (BitTorrent)
 net-print/cups gnutls
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
+sys-libs/binutils-libs abi_x86_32 #required by x11-libs/cairo-1.14.6::gentoo, x11-themes/gtk-engines-unico-1.0.3_pre20140109::gentoo, x11-themes/flatstudio-1.03::kutkevich[gtk3], @desktop, @selected, @world (argument)
 sys-libs/zlib minizip #required by media-video/vlc
 virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
 x11-misc/dunst dunstify #notify-send replacement
@@ -53,11 +57,6 @@ x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.
 x11-themes/flatstudio gtk2 gtk3
 xfce-base/xfce4-session -xscreensaver
-
-# Apulse used by skype for pulseaudio emulation via alsa
-# <http://wiki.gentoo.org/wiki/Skype#apulse>.
-net-im/skype apulse -pulseaudio
-media-sound/apulse abi_x86_32 #required by net-im/skype[apulse]
 
 # i3lock.
 x11-libs/cairo xcb #required by x11-misc/i3lock, x11-misc/xautolock

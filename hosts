@@ -12,8 +12,8 @@
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 # 127.0.0.1 localhost
 127.0.0.1 h10.kutkevich.org h10 localhost
-192.168.0.18 aidbox.health-samurai.io
-192.168.0.18 danil.aidbox.health-samurai.io
+# 192.168.0.18 aidbox.health-samurai.io
+# 192.168.0.18 danil.aidbox.health-samurai.io
 # 192.168.0.69 fhirterm.coreos.health-samurai.io fhirterm.coreos.health-samurai.ru
 # 192.168.0.69 fhirwall.cloud.health-samurai.io fhirwall.cloud.health-samurai.ru
 # 192.168.0.69 hostel.coreos.health-samurai.io hostel.coreos.health-samurai.ru
@@ -25,6 +25,20 @@
 # 5.9.104.240 omorfia-production.studio.molinos.ru
 # 93.93.130.185 spik.ru
 # 93.93.130.185 agroreserv.ru
+
+# # Waveaccess.
+# 127.0.0.1 aidbox.local
+# 127.0.0.1 danil.aidbox.local
+# 127.0.0.1 foobar.aidbox.local
+# 127.0.0.1 loinc.aidbox.local
+# 127.0.0.1 nsi.aidbox.local
+# 127.0.0.1 text.aidbox.local
+# 172.17.0.3 bastion-public.narus.local
+# 172.17.0.3 bastion.narus.local
+# 172.17.0.3 app.narus.local
+# 172.17.0.3 db-master.narus.local
+# 172.17.0.3 db-slave.narus.local
+# 172.17.0.3 monitoring-master.narus.local
 
 ::1		localhost
 

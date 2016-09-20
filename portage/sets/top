@@ -1,0 +1,7 @@
+# Tops.
+net-analyzer/iftop #network interfaces
+sys-power/powertop
+sys-process/atop #resource-specific view of processes
+sys-process/ftop #open files by processes
+sys-process/htop #classic top replacement
+sys-process/iotop

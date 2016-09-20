@@ -6,23 +6,19 @@
 # media-libs/hal-flash #drm video support <https://github.com/cshorler/hal-flash>
 # media-tv/popcorntime #torrent video player
 # net-irc/weechat
-# net-misc/connman-ui #wifi tray icon
-# x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark
+# x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark <https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide#Test_3D_acceleration>
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
 # x11-misc/tint2 #does not work in stumpwm <https://code.google.com/p/tint2/issues/detail?id=157>
+# x11-plugins/pidgin-window_merge
 # xfce-extra/xfce4-power-manager
 app-arch/xarchiver
 app-cdr/simpleburn
-app-dicts/stardict-freedict-eng-rus
-app-dicts/stardict-quick-ru-en
-app-editors/leafpad
+app-editors/mousepad
 app-emulation/virtualbox
 app-text/evince
-app-text/stardict
 dev-python/gnome-keyring-python
-gnome-extra/connman-gnome #wifi tray icon
 media-fonts/dejavu
 media-fonts/fantasque-sans #fantastic monospace font
 media-fonts/fira-sans #thin sans font
@@ -30,12 +26,16 @@ media-fonts/libertine #sans-serif font used by Wikipedia
 media-fonts/terminus-font #used in console (ter-v16n)
 media-gfx/feh
 media-gfx/gimp
+media-gfx/maim #maim (make image) takes screenshots of your desktop
 media-gfx/ristretto #xfce image viewer <https://wiki.xfce.org/recommendedapps#ristretto>, <http://www.ohloh.net/p/ristretto>
 media-sound/alsa-utils
 media-sound/sox #`play` audio files from cli
 media-video/mpv #mplayer replacement <https://github.com/mpv-player/mpv>
 net-im/skype
 net-mail/dovecot
+net-misc/aria2 #multi-protocol downloader (BitTorrent)
+net-misc/cmst #connman wifi tray icon
+net-misc/dropbox
 net-misc/tor
 net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks installed <http://wiki.gentoo.org/wiki/Tor#Torify>
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
@@ -47,7 +47,6 @@ sys-process/anacron
 www-client/firefox-bin
 www-client/google-chrome
 www-plugins/adobe-flash
-www-plugins/google-talkplugin
 x11-apps/light #screen backlight <https://github.com/haikarainen/light>, <https://wiki.archlinux.org/index.php/backlight>
 x11-apps/wmutils #get active window `pfw` and kill it `killw` <https://github.com/wmutils/core>
 x11-apps/xev
@@ -71,7 +70,6 @@ x11-misc/xclip #tmux and xorg clipboard integration <https://github.com/tmux-plu
 x11-misc/xdotool #simulate keyboard input in xchainkeys
 x11-misc/xsel #copy selection in termina to the xorg clipboard (used by emacs and urxvt) <https://wiki.archlinux.org/index.php/rxvt-unicode#Automatic_Script_Management>
 x11-misc/xxkb #keyboard layout indicator for tray
-x11-plugins/pidgin-window_merge
 x11-themes/faenza-icon-theme
 x11-themes/flatstudio #dark (black) gtk 2/3 theme
 x11-themes/gtk-chtheme
@@ -82,3 +80,8 @@ xfce-base/thunar
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler #thumbnails generator for thunar and ristretto <https://wiki.archlinux.org/index.php/thunar#Plugins_and_addons>, <http://www.ohloh.net/p/tumbler>
+
+# # Stardict.
+# app-dicts/stardict-freedict-eng-rus
+# app-dicts/stardict-quick-ru-en
+# app-text/stardict

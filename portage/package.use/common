@@ -15,6 +15,7 @@ dev-vcs/git -gnome-keyring
 dev-vcs/hgview -qt4 ncurses
 mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
+sys-libs/libseccomp static-libs #required by app-emulation/docker
 
 # nginx.
 # ngx_http_fastcgi_module

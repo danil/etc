@@ -35,6 +35,9 @@ GRUB_DISTRIBUTOR="Gentoo"
 # # <https://github.com/Bumblebee-Project/bbswitch/issues/78#issuecomment-41381548>,
 # # <http://h30499.www3.hp.com/t5/Networking/wifi-and-brightness-issues-with-EliteBook-755-on-Ubuntu-14-04/td-p/6568286#.VPy1RM17jUY>.
 # GRUB_CMDLINE_LINUX="acpi_osi=\"!Windows 2013\""
+# # h11 Latitude e7250 <https://bugs.freedesktop.org/show_bug.cgi?id=89360>
+# GRUB_CMDLINE_LINUX="intel_iommu=igfx_off"
+# GRUB_CMDLINE_LINUX="intel_iommu=on,igfx_off"
 
 # Append parameters to the linux kernel command line for non-recovery entries
 #GRUB_CMDLINE_LINUX_DEFAULT=""

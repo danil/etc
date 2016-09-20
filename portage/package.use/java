@@ -1,2 +1,3 @@
 # java.
 dev-java/icedtea-bin -X -awt -gtk -alsa -cups
+dev-java/oracle-jre-bin -X -alsa -awt -gtk -cups

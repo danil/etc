@@ -17,7 +17,6 @@
 <net-misc/aria2-9999::gentoo ~amd64 #multi-protocol downloader (BitTorrent)
 <net-misc/cmst-9999::gentoo ~amd64
 <sys-apps/mdp-9999::kutkevich ~amd64
-<www-client/firefox-bin-46::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
 <www-plugins/google-talkplugin-9999::gentoo ~amd64
 <x11-apps/light-9999::kutkevich ~amd64
@@ -36,11 +35,11 @@ games-action/minecraft::kutkevich ~amd64
 x11-apps/wmutils::kutkevich ~amd64
 
 # Suckless.
-# =x11-terms/st-0.6::gentoo ~amd64
+<x11-terms/st-9999::kutkevich ~amd64
 <x11-misc/dmenu-9999::kutkevich ~amd64
 <x11-misc/tabbed-9999::gentoo ~amd64
-<x11-terms/st-9999::kutkevich ~amd64
 <x11-wm/dwm-9999::kutkevich ~amd64
+# =x11-terms/st-0.7::gentoo ~amd64
 
 # Maim (screenshot).
 <media-gfx/maim-9999::kutkevich ~amd64

@@ -2,12 +2,14 @@ diff --git a/slstatus.c b/slstatus.c
 index ffffffff..bbbbbbb 000000
 --- a/slstatus.c
 +++ b/slstatus.c
-@@ -139,6 +139,6 @@ battery_state(const char *bat)
+@@ -137,9 +137,9 @@ battery_state(const char *bat)
+ 	} else if (strcmp(state, "Discharging") == 0) {
+ 		return smprintf("-");
  	} else if (strcmp(state, "Full") == 0) {
- 		return smprintf("=");
+-		return smprintf("=");
++		return smprintf("⚡");
  	} else {
 -		return smprintf("?");
 +		return smprintf("⚡");
  	}
  }
-

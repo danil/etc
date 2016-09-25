@@ -1,0 +1,13 @@
+diff --git a/slstatus.c b/slstatus.c
+index ffffffff..bbbbbbb 000000
+--- a/slstatus.c
++++ b/slstatus.c
+@@ -324,7 +324,7 @@ load_avg(void)
+ 		return smprintf(UNKNOWN_STR);
+ 	}
+
+-	return smprintf("%.2f %.2f %.2f", avgs[0], avgs[1], avgs[2]);
++	return smprintf("%.2f", avgs[0]);
+ }
+
+ static char *

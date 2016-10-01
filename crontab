@@ -20,4 +20,9 @@ HOME=/
 
 # Danil.
 # Anacron <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
-*/45 * * * * /usr/sbin/anacron -s
+*/15 * * * * /usr/sbin/anacron -s
+# * * * * * /usr/bin/play /home/danil/local/share/sounds/battery.oga
+# * * * * * /bin/bash -c "/home/danil/bin/notify_battery.sh --min=0 --max=100"
+# * * * * * /home/danil/bin/notify_battery.sh --min=0 --max=2 --critical
+# */5 * * * * /home/danil/bin/notify_battery.sh --min=3 --max=5
+# */10 * * * * /home/danil/bin/notify_battery.sh --min=5 --max=10

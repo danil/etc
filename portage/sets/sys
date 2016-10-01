@@ -1,0 +1,8 @@
+sys-process/fcron #a-la vixie-cron+anacron two in one
+dev-util/ccache
+app-editors/nano
+app-editors/vim
+app-admin/sudo
+app-admin/syslog-ng
+app-admin/logrotate
+net-misc/curl

@@ -1,28 +1,36 @@
-# for vixie cron
-# $Header: /var/cvsroot/gentoo-x86/sys-process/vixie-cron/files/crontab-3.0.1-r4,v 1.3 2011/09/20 15:13:51 idl0r Exp $
+# for fcron 
+# $Id$
+
+# fcron:
+# This is NOT the system crontab! fcron does not support a system crontab.
+# to get /etc/cron.{hourly|daily|weekly|montly} working with fcron run
+# crontab /etc/crontab
+# as root.
+# NOTE: This will REPLACE root's current crontab!!
 
 # Global variables
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
-MAILTO=root
+MAILTO=danil
 HOME=/
 
-# # Danil.
-# # Cron daily jobs
-# # <http://wiki.gentoo.org/wiki/Cron#Using_cronbase>,
-# # <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
-# # <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
-# # check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
-# 59  *  * * *	root	rm -f /var/spool/cron/lastrun/cron.hourly
-# 9  3  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
-# 19 4  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
-# 29 5  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
-# */10  *  * * *	root	test -x /usr/sbin/run-crons && /usr/sbin/run-crons
-
 # Danil.
-# Anacron <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
-*/45 * * * * root /usr/sbin/anacron -s
-# * * * * * root /bin/bash -c "/home/danil/bin/notify_battery.sh --min=0 --max=57"
-# * * * * * root /home/danil/bin/notify_battery.sh --min=0 --max=2 --critical
-# */5 * * * * root /home/danil/bin/notify_battery.sh --min=3 --max=5
-# */10 * * * * root /home/danil/bin/notify_battery.sh --min=5 --max=10
+# <http://wiki.gentoo.org/wiki/Cron#Using_cronbase>,
+# <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
+# <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
+
+# check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
+59  *  * * *    rm -f /var/spool/cron/lastrun/cron.hourly
+9  3  * * *     rm -f /var/spool/cron/lastrun/cron.daily
+19 4  * * 6     rm -f /var/spool/cron/lastrun/cron.weekly
+29 5  1 * *     rm -f /var/spool/cron/lastrun/cron.monthly
+*/10  *  * * *  test -x /usr/sbin/run-crons && /usr/sbin/run-crons
+
+# # Danil.
+# # Anacron <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
+# # */45 * * * * /usr/sbin/anacron -s
+# * * * * * /usr/bin/play /home/danil/local/share/sounds/battery.oga
+# * * * * * /bin/bash -c "/home/danil/bin/notify_battery.sh --min=0 --max=57"
+# * * * * * /home/danil/bin/notify_battery.sh --min=0 --max=2 --critical
+# */5 * * * * /home/danil/bin/notify_battery.sh --min=3 --max=5
+# */10 * * * * /home/danil/bin/notify_battery.sh --min=5 --max=10

@@ -7,6 +7,7 @@ dev-libs/expat abi_x86_32 #required by media-libs/fontconfig-2.11.1-r2, dev-qt/q
 dev-libs/glib abi_x86_32 #required by dev-qt/qtgui-4.8.6-r2[glib], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 dev-libs/icu abi_x86_32 #required by media-libs/harfbuzz-0.9.35[icu], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
 dev-libs/libffi abi_x86_32 #required by virtual/libffi-3.0.13-r1, dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+dev-libs/libpcre abi_x86_32 #required by dev-libs/glib-2.48.2::gentoo, gnome-base/dconf-0.26.0::gentoo
 dev-libs/libpthread-stubs abi_x86_32 #required by x11-libs/libxcb-1.11-r1, x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 dev-libs/libxml2 abi_x86_32 #required by media-libs/gst-plugins-base-0.10.36-r2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
 dev-libs/lzo abi_x86_32 #required by x11-libs/cairo-1.12.18-r1, x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
@@ -43,6 +44,7 @@ sys-libs/zlib abi_x86_32 #required by media-libs/tiff-4.0.3-r6[zlib], dev-qt/qtg
 virtual/jpeg abi_x86_32 #required by media-libs/tiff-4.0.3-r6[jpeg], dev-qt/qtgui-4.8.6-r2[tiff], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 virtual/libffi abi_x86_32 #required by dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
 virtual/libiconv abi_x86_32 #required by dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
+virtual/libintl abi_x86_32 #required by dev-libs/glib-2.48.2::gentoo, gnome-base/dconf-0.26.0::gentoo
 virtual/libudev abi_x86_32 #required by media-libs/mesa-10.3.7-r1[udev], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
 virtual/pkgconfig abi_x86_32 #required by media-libs/gst-plugins-base-0.10.36-r2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
 x11-libs/cairo abi_x86_32 #required by x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]

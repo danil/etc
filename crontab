@@ -7,12 +7,13 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=danil
 HOME=/
 
-# # Danil.
-# # <http://wiki.gentoo.org/wiki/Cron#Using_cronbase>,
-# # <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
-# # <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
-# # check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
-# 59  *  * * *	root	rm -f /var/spool/cron/lastrun/cron.hourly
+# Danil.
+# <https://wiki.gentoo.org/wiki/Cron#Using_anacron>,
+# <http://wiki.gentoo.org/wiki/Cron#Using_cronbase>,
+# <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
+# <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
+# check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
+59  *  * * *	root	rm -f /var/spool/cron/lastrun/cron.hourly
 # 9  3  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
 # 19 4  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
 # 29 5  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
@@ -20,9 +21,7 @@ HOME=/
 
 # Danil.
 # Anacron <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
-*/15 * * * * /usr/sbin/anacron -s
-# * * * * * /usr/bin/play /home/danil/local/share/sounds/battery.oga
-# * * * * * /bin/bash -c "/home/danil/bin/notify_battery.sh --min=0 --max=100"
-# * * * * * /home/danil/bin/notify_battery.sh --min=0 --max=2 --critical
-# */5 * * * * /home/danil/bin/notify_battery.sh --min=3 --max=5
-# */10 * * * * /home/danil/bin/notify_battery.sh --min=5 --max=10
+*/15 * * * * root /usr/sbin/anacron -s
+*/1 * * * * root /home/danil/bin/notify_battery.sh --min=0 --max=2 --critical
+*/2 * * * * root /home/danil/bin/notify_battery.sh --min=3 --max=5
+*/5 * * * * root /home/danil/bin/notify_battery.sh --min=5 --max=10

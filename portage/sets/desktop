@@ -10,13 +10,13 @@
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
-# x11-misc/tint2 #does not work in stumpwm <https://code.google.com/p/tint2/issues/detail?id=157>
 # x11-plugins/pidgin-window_merge
 # xfce-extra/xfce4-power-manager
 app-arch/xarchiver
 app-cdr/simpleburn
 app-editors/mousepad
 app-emulation/virtualbox
+app-office/libreoffice-bin
 app-text/evince
 dev-python/gnome-keyring-python
 media-fonts/dejavu
@@ -57,11 +57,8 @@ x11-base/xorg-server
 x11-misc/cdm #starting x11 <https://wiki.archlinux.org/index.php/CDM>
 x11-misc/dex #execute commands on window manager startup <http://superuser.com/questions/130242/how-can-i-execute-commands-on-startup-in-awesome#326626>
 x11-misc/dunst #minimalistic notification daemon (notify-osd from canonical replace) <http://knopwob.org/dunst>, <http://github.com/knopwob/dunst>, <https://wiki.archlinux.org/index.php/Desktop_notifications#Standalone>
-x11-misc/dzen #status bar
 x11-misc/i3lock #xscreensaver replacement
-x11-misc/i3status #generate status for dzen2 status bar
 x11-misc/skippy-xd #ala compiz scale (osx expose) <https://github.com/richardgv/skippy-xd>, <https://code.google.com/p/skippy-xd>
-x11-misc/trayer-srg
 x11-misc/unclutter #hide mouse cursor after while <https://wiki.archlinux.org/index.php/unclutter>
 x11-misc/wmctrl #show desktop and more <http://rox.sourceforge.net/desktop/book/export/html/188.html>
 x11-misc/xautolock #used by i3lock
@@ -73,13 +70,18 @@ x11-misc/xxkb #keyboard layout indicator for tray
 x11-themes/faenza-icon-theme
 x11-themes/flatstudio #dark (black) gtk 2/3 theme
 x11-themes/gtk-chtheme
-x11-themes/sound-theme-freedesktop
 x11-themes/sound-theme-freedesktop #my 'complete' sound
 x11-themes/vanilla-dmz-xcursors
 xfce-base/thunar
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler #thumbnails generator for thunar and ristretto <https://wiki.archlinux.org/index.php/thunar#Plugins_and_addons>, <http://www.ohloh.net/p/tumbler>
+
+# # WM status bars/trays.
+# # x11-misc/tint2 #does not work in stumpwm <https://code.google.com/p/tint2/issues/detail?id=157>
+# x11-misc/dzen #status bar
+# x11-misc/i3status #generate status for dzen2 status bar
+# x11-misc/trayer-srg
 
 # # Stardict.
 # app-dicts/stardict-freedict-eng-rus

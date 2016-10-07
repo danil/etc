@@ -41,6 +41,10 @@ GRUB_DISTRIBUTOR="Gentoo"
 
 # Append parameters to the linux kernel command line for non-recovery entries
 #GRUB_CMDLINE_LINUX_DEFAULT=""
+# # Danil.
+# # Hibernate to swap file (disk)
+# # https://wiki.gentoo.org/wiki/Suspend_and_hibernate#Suspend_to_disk_with_swapfile>.
+# GRUB_CMDLINE_LINUX_DEFAULT="resume=/dev/sda5 resume_offset=offset_of_swapfile"
 
 # Uncomment to disable graphical terminal (grub-pc only)
 #GRUB_TERMINAL=console

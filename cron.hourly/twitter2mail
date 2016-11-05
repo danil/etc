@@ -1,8 +1,7 @@
 #!/bin/sh
 
-su danil \
-   --shell=/bin/bash \
-   --command '"$HOME"/.gvm/pkgsets/go1.5.1/global/bin/tgtm'
+su danil --shell=/bin/bash \
+         --command '"$HOME"/go/bin/ptichka -config "$HOME"/.ptichkarc.toml'
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then

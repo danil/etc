@@ -30,7 +30,7 @@ media-gfx/maim #maim (make image) takes screenshots of your desktop
 media-gfx/ristretto #xfce image viewer <https://wiki.xfce.org/recommendedapps#ristretto>, <http://www.ohloh.net/p/ristretto>
 media-sound/alsa-utils
 media-sound/sox #`play` audio files from cli
-media-video/mpv #mplayer replacement <https://github.com/mpv-player/mpv>
+media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
 net-im/skype
 net-mail/dovecot
 net-misc/aria2 #multi-protocol downloader (BitTorrent)

@@ -1,0 +1,9 @@
+# Danil.
+/log/netdata/*.log {
+  missingok
+  delaycompress
+  sharedscripts
+  postrotate
+    /bin/kill -HUP `pidof netdata 2>/dev/null` 2>/dev/null || true
+  endscript
+}

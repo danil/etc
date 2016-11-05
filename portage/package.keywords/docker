@@ -1,0 +1,6 @@
+# <app-emulation/docker-2::gentoo ~amd64
+<app-emulation/docker-1.10::gentoo ~amd64
+
+=dev-go/blackfriday-1.2_p20150720::gentoo ~amd64 #required by dev-go/go-md2man-1.0.3::gentoo
+=dev-go/go-md2man-1.0.3::gentoo ~amd64
+=dev-go/sanitized-anchor-name-0_pre20150822::gentoo ~amd64 #required by dev-go/blackfriday, dev-go/go-md2man

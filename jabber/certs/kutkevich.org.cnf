@@ -1,0 +1,52 @@
+oid_section = new_oids
+
+[ new_oids ]
+
+# RFC 6120 section 13.7.1.4. defines this OID
+xmppAddr = 1.3.6.1.5.5.7.8.5
+
+# RFC 4985 defines this OID
+SRVName  = 1.3.6.1.5.5.7.8.7
+
+[ req ]
+
+default_bits       = 4096
+default_keyfile    = kutkevich.org.key
+distinguished_name = distinguished_name
+req_extensions     = v3_extensions
+x509_extensions    = v3_extensions
+
+# ask about the DN?
+prompt = no
+
+[ distinguished_name ]
+
+commonName             = kutkevich.org
+countryName            = RU
+localityName           = The Internet
+organizationName       = Danil Kutkevich Organisation
+organizationalUnitName = XMPP Department
+emailAddress           = danil@kutkevich.org
+
+[ v3_extensions ]
+
+# for certificate requests (req_extensions)
+# and self-signed certificates (x509_extensions)
+
+basicConstraints = CA:FALSE
+keyUsage         = digitalSignature,keyEncipherment
+extendedKeyUsage = serverAuth,clientAuth
+subjectAltName   = @subject_alternative_name
+
+[ subject_alternative_name ]
+
+# See http://tools.ietf.org/html/rfc6120#section-13.7.1.2 for more info.
+
+DNS.0       =                                           kutkevich.org
+otherName.0 =                 xmppAddr;FORMAT:UTF8,UTF8:kutkevich.org
+otherName.1 =            SRVName;IA5STRING:_xmpp-client.kutkevich.org
+otherName.2 =            SRVName;IA5STRING:_xmpp-server.kutkevich.org
+
+DNS.1       =                                conference.kutkevich.org
+otherName.3 =      xmppAddr;FORMAT:UTF8,UTF8:conference.kutkevich.org
+otherName.4 = SRVName;IA5STRING:_xmpp-server.conference.kutkevich.org

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+su danil --shell=/bin/bash \
+         --command '"$HOME"/go/bin/ptichka -config "$HOME"/.ptichkarc.toml'
+
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    logger -t git "ALERT tweets mailing exited abnormally with [$EXITVALUE]"
+fi
+
+exit 0

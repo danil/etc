@@ -8,8 +8,8 @@ app-text/xmlto
 net-analyzer/arping
 net-analyzer/fail2ban
 net-analyzer/mtr
-net-analyzer/munin
+net-analyzer/netdata #monitoring a-la munin
 net-analyzer/nmap
 net-analyzer/tcpdump
 net-analyzer/traceroute
-sys-fs/sshfs-fuse
+net-fs/sshfs

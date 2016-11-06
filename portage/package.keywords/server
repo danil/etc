@@ -1,2 +1,1 @@
-<net-analyzer/netdata-9999::kutkevich **
-<net-analyzer/netdata-9999::kutkevich ~amd64
+<net-analyzer/netdata-9999::kutkevich ~amd64 #monitoring a-la munin

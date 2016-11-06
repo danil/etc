@@ -10,6 +10,7 @@
 # net-mail/notmuch #mail indexer <http://notmuchmail.org>
 # net-misc/socat #curl for unix sockets (request/response)
 # net-misc/wrk #HTTP benchmarking <https://github.com/wg/wrk>
+# net-p2p/syncthing #dropbox replacement
 # sci-geosciences/gpsbabel #gps track points reduce (garmin etrex 20 supports 250 points per route) <http://gpsbabel.org/htmldoc-development/filter_simplify.html>, <https://support.garmin.com/support/searchSupport/case.faces?caseId=%7B0b02f820-03db-11e0-e050-000000000000%7D>
 # sys-apps/hdparm #SSD TRIM verify <https://wiki.archlinux.org/index.php/Solid_State_Drives#Verify_TRIM_Support>
 # sys-apps/iproute2
@@ -64,7 +65,6 @@ net-misc/mosh
 net-misc/telnet-bsd
 net-misc/tlsdate #ntp replacement
 net-misc/whois
-net-p2p/syncthing #dropbox replacement
 sci-mathematics/genius #console-based calculator
 sys-apps/lsb-release #release version compliant to Linux Standard Base (LSB)
 sys-apps/mdp #markdown presentation tool

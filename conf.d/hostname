@@ -4,3 +4,5 @@
 #hostname="localhost"
 # Host 2. Disco Stu. linode317991. 178.79.163.10
 hostname="h2"
+# # Host 10: ThinkPad T430 1T8VRTN 14" 1600х900 i7 3520M Ivy Bridge 2900MHz Intel HD 4000 DDR3 16Gb 1600MHz SSD 128Gb 2.2Kg.
+# hostname="h10"

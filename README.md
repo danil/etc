@@ -1,8 +1,6 @@
-Configs
-=======
+# Configs
 
-Copying
--------
+## TODO
 
 Copyright (C) 2016 Danil Kutkevich <danil@kutkevich.org>
 

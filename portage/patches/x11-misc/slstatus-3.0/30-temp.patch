@@ -1,0 +1,13 @@
+diff --git a/slstatus.c b/slstatus.c
+index ffffffff..bbbbbbb 000000
+--- a/slstatus.c
++++ b/slstatus.c
+@@ -433,7 +433,7 @@ temp(const char *file)
+ 	fscanf(fp, "%d", &temp);
+ 	fclose(fp);
+
+-	return smprintf("%d°C", temp / 1000);
++	return smprintf("%d", temp / 1000);
+ }
+
+ static char *

@@ -2,7 +2,7 @@
 =dev-lang/go-1.7.3::gentoo ~amd64
 
 # Go tools (godoc - used by emacs).
-=dev-go/go-crypto-0_pre20160126 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, de
-=dev-go/go-net-0_pre20160216 ~amd64 # required by dev-go/go-tools-0_pre20160220::gentoo, dev
-=dev-go/go-text-0_pre20160211 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-
+=dev-go/go-crypto-0_pre20160126 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-net-0_pre20160216 ~amd64 # required by dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-text-0_pre20160211 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
 =dev-go/go-tools-0_pre20160220::gentoo ~amd64

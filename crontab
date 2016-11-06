@@ -1,5 +1,5 @@
 # for vixie cron
-# $Header: /var/cvsroot/gentoo-x86/sys-process/vixie-cron/files/crontab-3.0.1-r4,v 1.3 2011/09/20 15:13:51 idl0r Exp $
+# $Id$
 
 # Global variables
 SHELL=/bin/bash
@@ -8,17 +8,20 @@ MAILTO=root
 HOME=/
 
 # Danil.
-# Cron daily jobs
+# <https://wiki.gentoo.org/wiki/Cron#Using_anacron>,
 # <http://wiki.gentoo.org/wiki/Cron#Using_cronbase>,
 # <http://forums.gentoo.org/viewtopic-p-5847500.html#5847500>,
 # <http://gentoo.org/doc/en/cron-guide.xml?style=printable#doc_chap3_pre17>.
 # check scripts in cron.hourly, cron.daily, cron.weekly and cron.monthly
 59  *  * * *	root	rm -f /var/spool/cron/lastrun/cron.hourly
-9  4  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
-19 5  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
-29 6  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
+9  3  * * *	root	rm -f /var/spool/cron/lastrun/cron.daily
+19 4  * * 6	root	rm -f /var/spool/cron/lastrun/cron.weekly
+29 5  1 * *	root	rm -f /var/spool/cron/lastrun/cron.monthly
 */10  *  * * *	root	test -x /usr/sbin/run-crons && /usr/sbin/run-crons
 
 # # Danil.
 # # Anacron <http://wiki.gentoo.org/wiki/Cron#Using_anacron>.
-# */45 * * * * root /usr/sbin/anacron -s
+# */15 * * * * root /usr/sbin/anacron -s
+# */1 * * * * root /home/danil/bin/notify_battery.sh --min=0 --max=2 --critical
+# */2 * * * * root /home/danil/bin/notify_battery.sh --min=3 --max=5
+# */5 * * * * root /home/danil/bin/notify_battery.sh --min=5 --max=10

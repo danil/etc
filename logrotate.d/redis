@@ -1,0 +1,3 @@
+# Danil.
+/var/log/redis/*.log {
+}

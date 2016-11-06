@@ -1,5 +1,6 @@
 # # Danil.
 # # Debian script.
 # # Called when the user closes or open the lid.
+# # <https://wiki.gentoo.org/wiki/ACPI>.
 # event=button/lid LID 00000080 .*
 # action=/etc/acpi/actions/lid.sh %e

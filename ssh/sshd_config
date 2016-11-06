@@ -21,7 +21,7 @@
 # <http://gentoo.org/doc/en/security/security-handbook.xml?part=1&chap=10&style=printable#doc_chap11>.
 Protocol 2
 
-# HostKey for protocol version 1
+#HostKey for protocol version 1
 #HostKey /etc/ssh/ssh_host_key
 # HostKeys for protocol version 2
 #HostKey /etc/ssh/ssh_host_rsa_key

@@ -1,4 +1,8 @@
+# app-misc/abduco #app-misc/abduco + app-misc/dvtm is a tmux alternative
+# app-misc/dvtm #app-misc/abduco + app-misc/dvtm is a tmux alternative
+# app-misc/fzy #fuzzy text finder/selector for the terminal <https://github.com/jhawthorn/fzy>
 # app-misc/reptyr #move running program to tmux <https://github.com/nelhage/reptyr>
+# app-shells/mksh #a-la suckless shell (mirbsd korn shell)
 # app-text/catdoc #convert doc, xls, ppt and rtf files to text
 # app-text/convmv #convert filenames to utf8
 # dev-perl/rename #rename files by regexp <http://stackoverflow.com/questions/2709458/bash-script-to-replace-spaces-in-file-names#2709619>
@@ -9,41 +13,27 @@
 # net-analyzer/masscan #port scanner <https://github.com/robertdavidgraham/masscan>
 # net-mail/notmuch #mail indexer <http://notmuchmail.org>
 # net-misc/socat #curl for unix sockets (request/response)
-# net-misc/wrk #HTTP benchmarking <https://github.com/wg/wrk>
 # net-p2p/syncthing #dropbox replacement
 # sci-geosciences/gpsbabel #gps track points reduce (garmin etrex 20 supports 250 points per route) <http://gpsbabel.org/htmldoc-development/filter_simplify.html>, <https://support.garmin.com/support/searchSupport/case.faces?caseId=%7B0b02f820-03db-11e0-e050-000000000000%7D>
 # sys-apps/hdparm #SSD TRIM verify <https://wiki.archlinux.org/index.php/Solid_State_Drives#Verify_TRIM_Support>
 # sys-apps/iproute2
-# sys-apps/pciutils #lspci <https://www.gentoo.org/doc/en/handbook/handbook-amd64.xml?style=printable&part=1&chap=7#doc_chap2>
-# sys-apps/usbutils #lsusb
-# sys-power/powertop
-# sys-process/atop
-# sys-process/iotop
-app-admin/logrotate
-app-admin/pwgen
-app-admin/sudo
-app-admin/syslog-ng
+app-admin/makepasswd #password generator
+app-admin/pwgen #password generator
 app-arch/arj
 app-arch/lzip
 app-arch/unrar
 app-arch/unzip
-app-editors/nano
-app-editors/vim
 app-emulation/docker
 app-misc/colordiff
 app-misc/cv #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/cv>
+app-misc/jo #json output from a shell <https://github.com/jpmens/jo>
 app-misc/jq #json console formater <http://stedolan.github.io/jq/tutorial>, <http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json#15231463>
 app-misc/tmux
-app-portage/eix
-app-portage/gentoolkit
-app-portage/layman
-app-portage/portage-utils
 app-shells/bash-completion
 app-text/dos2unix
-app-text/sloccount
+app-text/sloccount #sloc source code line of code
 app-text/tree
 dev-db/postgresql
-dev-util/ccache
 dev-util/icdiff #two columns diff
 dev-util/source-highlight #highlighted source code in less (less filter)
 dev-vcs/git
@@ -52,14 +42,16 @@ dev-vcs/hgview #tig for hg (mercurial ncurses tui interface)
 dev-vcs/mercurial
 dev-vcs/tig
 mail-mta/exim #deliver local mail to /var/mail
+media-gfx/jhead #rename jpeg's by exif date `jhead -n%Y%m%d-%H%M%S file.jpg`
 media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
 net-analyzer/ngrep
+net-analyzer/ssh-audit #output usefull info about ssh server <https://github.com/arthepsy/ssh-audit>
 net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp
 net-ftp/vsftpd
 net-mail/mailutils #read local mail from /var/mail
 net-mail/offlineimap
-net-misc/curl
+net-mail/swaks #command line smtp testing, including tls and auth
 net-misc/dhcpcd
 net-misc/mosh
 net-misc/telnet-bsd
@@ -69,11 +61,10 @@ sci-mathematics/genius #console-based calculator
 sys-apps/lsb-release #release version compliant to Linux Standard Base (LSB)
 sys-apps/mdp #markdown presentation tool
 sys-apps/mlocate
+sys-apps/pciutils #lspci <https://www.gentoo.org/doc/en/handbook/handbook-amd64.xml?style=printable&part=1&chap=7#doc_chap2>
 sys-apps/the_silver_searcher
+sys-apps/usbutils #lsusb
 sys-devel/bc #used by bash prompt
-sys-fs/gt5 #baobab replacement; diskspace usage <http://gt5.sourceforge.net>
-sys-process/htop
+sys-fs/ncdu #diskspace usage is an baobab and gt5 replacement
 sys-process/lsof
-sys-process/vixie-cron
 www-servers/nginx
-www-servers/quark

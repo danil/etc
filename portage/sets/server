@@ -1,6 +1,5 @@
 # dev-db/sqlite #used by feed2email ruby gem
 # net-mail/mlmmj #mailing list management in succless tradition <http://mlmmj.org/>
-app-admin/apache-tools
 app-admin/mcelog
 app-admin/monit
 app-admin/sysstat

@@ -1,8 +1,8 @@
 #!/bin/bash
 # # Danil.
-# # The script uses the hibernate-ram command from
-# # sys-power/hibernate-script - make sure the package is installed on
-# # your system.
+# # The script uses the hibernate-ram command from sys-power/hibernate-script
+# # make sure the package is installed on your system
+# # <https://wiki.gentoo.org/wiki/ACPI>.
 
 # if [ -x "/usr/sbin/hibernate-ram" ]
 # then

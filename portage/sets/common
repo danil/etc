@@ -45,6 +45,7 @@ mail-mta/exim #deliver local mail to /var/mail
 media-gfx/jhead #rename jpeg's by exif date `jhead -n%Y%m%d-%H%M%S file.jpg`
 media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
 net-analyzer/ngrep
+net-analyzer/ssh-audit #output usefull info about ssh server <https://github.com/arthepsy/ssh-audit>
 net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp
 net-ftp/vsftpd

@@ -26,6 +26,7 @@
 /dev/sda                /               ext4            noatime,errors=remount-ro 0 1
 # /dev/sdb               none            swap            sw              0 0
 /swapfile               none            swap            sw              0 0
+/dev/sdb                /mnt/trash      ext4            noatime,errors=remount-ro 0 1
 proc                    /proc           proc            defaults        0 0
 # /dev/cdrom            /mnt/cdrom      auto            noauto,ro       0 0
 # /dev/fd0              /mnt/floppy     auto            noauto          0 0

@@ -1,3 +1,4 @@
-# java headless.
-dev-java/icedtea-bin -X -alsa -awt -cups -gtk
-dev-java/oracle-jre-bin -X -alsa -awt -cups -gtk
+# java headless
+# <https://wiki.gentoo.org/wiki/Java#Setting_up_a_headless_JRE>.
+dev-java/icedtea-bin headless-awt -X -alsa -awt -cups -fontconfig -gtk
+dev-java/oracle-jre-bin headless-awt -X -alsa -awt -cups -fontconfig -gtk

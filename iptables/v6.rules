@@ -45,6 +45,9 @@
 #  Allow git-daemon.
 -A INPUT -p tcp --dport 9418 -j ACCEPT
 
+#  Allow minecraft.
+--append INPUT --protocol tcp --dport 25565 --source 188.134.8.88,188.134.8.89 --jump ACCEPT
+
 # #  Jabber XMPP server.
 # -A INPUT -p tcp --dport 5222 -j ACCEPT
 # -A INPUT -p tcp --dport 5269 -j ACCEPT

@@ -1,3 +1,4 @@
+# Games USE flags (multilib support on amd64 and so on).
 dev-libs/nettle abi_x86_32 # required by net-libs/gnutls-3.3.24-r1::gentoo, app-emulation/wine-1.8.3::gentoo[ssl], app-emulation/playonlinux-4.2.8::gentoo, @games, @selected, @world (argument)
 media-libs/libmad abi_x86_32 # required by media-plugins/gst-plugins-mad-1.8.3::gentoo # required by media-plugins/gst-plugins-meta-1.8.3::gentoo[mp3] # required by app-emulation/wine-1.8.3::gentoo[gstreamer] # required by app-emulation/playonlinux-4.2.8::gentoo # required by @games # required by @selected # required by @world (argument)
 media-libs/gst-plugins-ugly abi_x86_32 # required by media-plugins/gst-plugins-meta-1.8.3::gentoo[-dvd,mp3] # required by app-emulation/wine-1.8.3::gentoo[gstreamer] # required by app-emulation/playonlinux-4.2.8::gentoo # required by @games # required by @selected # required by @world (argument)

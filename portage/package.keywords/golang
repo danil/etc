@@ -1,4 +1,5 @@
 # Golang.
+<dev-go/go-tools-9999::gentoo ~amd64
 =dev-lang/go-1.7.3::gentoo ~amd64
 
 # Go tools (godoc - used by emacs).

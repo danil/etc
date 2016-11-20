@@ -6,3 +6,7 @@
 
 * https://github.com/ivanceras/svgbobrus
 * https://github.com/RazrFalcon/svgcleaner
+
+## Golang
+
+* https://github.com/mvdan/interfacer

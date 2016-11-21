@@ -1,12 +1,12 @@
-#!/bin/sh
+# #!/bin/sh
 
-su git \
-   --shell=/bin/bash \
-   --command "/home/danil/bin/my-git-mirror.sh"
+# su git \
+#    --shell=/bin/bash \
+#    --command "/home/danil/bin/my-git-mirror.sh"
 
-EXITVALUE=$?
-if [ $EXITVALUE != 0 ]; then
-    logger -t git "ALERT git mirroring exited abnormally with [$EXITVALUE]"
-fi
+# EXITVALUE=$?
+# if [ $EXITVALUE != 0 ]; then
+#     logger -t git "ALERT git mirroring exited abnormally with [$EXITVALUE]"
+# fi
 
-exit 0
+# exit 0

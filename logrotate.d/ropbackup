@@ -1,0 +1,5 @@
+/mnt/trash/ropbackups/*.zip {
+       daily
+       nocompress
+       rotate 12
+}

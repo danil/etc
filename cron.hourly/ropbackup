@@ -1,0 +1,12 @@
+#!/bin/sh
+
+su danil \
+   --shell=/bin/bash \
+   --command "/home/danil/bin/ropbackup.sh"
+
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    logger -t git "ALERT rop backup exited abnormally with [$EXITVALUE]"
+fi
+
+exit 0

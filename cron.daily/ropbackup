@@ -2,7 +2,7 @@
 
 su danil \
    --shell=/bin/bash \
-   --command "/home/danil/bin/ropbackup.sh"
+   --command "/home/danil/bin/ropbackup.sh --directory=/mnt/trash/ropbackups"
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then

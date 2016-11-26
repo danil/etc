@@ -1,0 +1,5 @@
+# Drone.io
+<dev-go/go-bindata-9999::gentoo ~amd64
+<dev-go/go-bindata-assetfs-9999::gentoo ~amd64
+<dev-util/drone-9999::gentoo ~amd64
+<dev-util/drone-ui-9999::gentoo ~amd64

@@ -1,2 +1,3 @@
 # PHP.
 dev-lang/php -truetype -xpm #dependecies conflict with truetype xpm
+dev-lang/php xmlwriter #required by php linter squizlabs/php_codesniffer 2.7.0

@@ -1,0 +1,2 @@
+# Emacs linters.
+<dev-util/shellcheck-9999::gentoo ~amd64 #static analysis tool for shell scripts, bash and so on (https://github.com/koalaman/shellcheck, http://www.shellcheck.net)

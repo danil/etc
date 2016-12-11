@@ -25,9 +25,9 @@ app-arch/unrar
 app-arch/unzip
 app-emulation/docker
 app-misc/colordiff
-app-misc/cv #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/cv>
 app-misc/jo #json output from a shell <https://github.com/jpmens/jo>
 app-misc/jq #json console formater <http://stedolan.github.io/jq/tutorial>, <http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json#15231463>
+app-misc/progress #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/progress>
 app-misc/tmux
 app-shells/bash-completion
 app-text/dos2unix

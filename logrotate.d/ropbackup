@@ -1,9 +1,0 @@
-/mnt/trash/ropbackups/*.zip {
-       daily
-       nocompress
-       nodateext
-       rotate 10
-       postrotate
-         /usr/bin/find /mnt/trash/ropbackups -type f -size 0 -delete > /dev/null 2>/dev/null || true
-       endscript
-}

@@ -35,16 +35,15 @@
 -A INPUT -p tcp --dport 443  -j ACCEPT
 
 #  Allow FTP
-#  <http://stackoverflow.com/questions/10400672/linux-bash-setting-iptables-rules-to-allow-both-active-and-passive-ftp>.
-#  Allow FTP connections @ port 21.
--A INPUT  -p tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
--A OUTPUT -p tcp --sport 21 -m conntrack --ctstate ESTABLISHED -j ACCEPT
-#  Allow active FTP connections.
--A INPUT  -p tcp --sport 20 -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
--A OUTPUT -p tcp --dport 20 -m conntrack --ctstate ESTABLISHED -j ACCEPT
-#  Allow passive FTP connections.
--A INPUT  -p tcp --sport 1024: --dport 1024: -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
--A OUTPUT -p tcp --sport 1024: --dport 1024: -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+# <http://unix.stackexchange.com/questions/93554/iptables-to-allow-incoming-ftp#93555>.
+-A INPUT -p tcp -m tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 20 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m tcp --sport 1024:65535 --dport 20:65535 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+-A INPUT -j REJECT --reject-with icmp-port-unreachable
+-A OUTPUT -p tcp -m tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 20 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp -m tcp --sport 1024:65535 --dport 20:65535 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 
 #  Allow inbound NTP (Network Time Protocol) connections
 #  <http://superuser.com/questions/141772/what-are-the-iptables-rules-to-permit-ntp#141795>.

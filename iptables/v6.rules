@@ -30,6 +30,17 @@
 -A INPUT -p tcp --dport 8080 -j ACCEPT
 -A INPUT -p tcp --dport 443  -j ACCEPT
 
+# #  Allow FTP
+# # <http://unix.stackexchange.com/questions/93554/iptables-to-allow-incoming-ftp#93555>.
+# -A INPUT -p tcp -m tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A INPUT -p tcp -m tcp --dport 20 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A INPUT -p tcp -m tcp --sport 1024:65535 --dport 20:65535 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A INPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+# -A INPUT -j REJECT --reject-with icmp-port-unreachable
+# -A OUTPUT -p tcp -m tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A OUTPUT -p tcp -m tcp --dport 20 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A OUTPUT -p tcp -m tcp --sport 1024:65535 --dport 20:65535 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+
 #  Allow inbound NTP (Network Time Protocol) connections
 #  <http://superuser.com/questions/141772/what-are-the-iptables-rules-to-permit-ntp#141795>.
 -A INPUT -p udp --dport 123 -j ACCEPT
@@ -45,8 +56,8 @@
 #  Allow git-daemon.
 -A INPUT -p tcp --dport 9418 -j ACCEPT
 
-#  Allow minecraft.
---append INPUT --protocol tcp --dport 25565 --source 188.134.8.88,188.134.8.89 --jump ACCEPT
+# #  Allow minecraft (error: should use IPv6 IPs).
+# --append INPUT --protocol tcp --dport 25565 --source 188.134.8.88,188.134.8.89 --jump ACCEPT
 
 # #  Jabber XMPP server.
 # -A INPUT -p tcp --dport 5222 -j ACCEPT

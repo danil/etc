@@ -48,7 +48,7 @@ net-analyzer/ngrep
 net-analyzer/ssh-audit #output usefull info about ssh server <https://github.com/arthepsy/ssh-audit>
 net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp
-net-ftp/vsftpd
+net-ftp/pure-ftpd #because vsftpd is annoying
 net-mail/mailutils #read local mail from /var/mail
 net-mail/offlineimap
 net-mail/swaks #command line smtp testing, including tls and auth

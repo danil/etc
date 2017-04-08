@@ -1,4 +1,5 @@
 # Benchmarks a-la `ab`.
 app-admin/apache-tools
 app-benchmarks/siege
+app-benchmarks/sysbench #cpu and memory benchmarks
 app-benchmarks/wrk #c http benchmark tool <https://github.com/wg/wrk>

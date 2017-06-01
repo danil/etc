@@ -33,7 +33,6 @@ app-shells/bash-completion
 app-text/dos2unix
 app-text/sloccount #a-la sloc (count source code lines)
 app-text/tree
-dev-db/postgresql
 dev-util/cloc #a-la sloc (count source code lines)
 dev-util/icdiff #two columns diff
 dev-util/source-highlight #highlighted source code in less (less filter)

@@ -9,12 +9,14 @@
 */* zlib bash-completion readline
 app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
 app-editors/emacs libxml2 #used by www browser
+app-emulation/docker overlay #use "overlay" fs storage because "device mapper" crashed on my system
 dev-libs/libxml2 python #required by app-text/gnome-doc-utils, sci-mathematics/genius
 dev-ruby/mruby local-mri
 dev-vcs/git -gnome-keyring
 dev-vcs/hgview -qt4 ncurses
 mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
+sys-apps/the_silver_searcher lzma
 sys-libs/libseccomp static-libs #required by app-emulation/docker
 
 # nginx.

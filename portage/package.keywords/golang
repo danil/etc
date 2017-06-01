@@ -1,5 +1,6 @@
 # Golang.
-<dev-go/go-tools-9999::gentoo ~amd64
+<dev-go/go-tools-9999::gentoo ~amd64 # required by dev-lang/go-1.7.3
+=app-emulation/containerd-0.2.6::gentoo ~amd64 # required by dev-lang/go-1.7.3
 =dev-lang/go-1.7.3::gentoo ~amd64
 
 # Go tools (godoc - used by emacs).

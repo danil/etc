@@ -3,10 +3,9 @@
 # <app-text/msort-9999::kutkevich ~amd64
 <app-benchmarks/wrk-9999::gentoo ~amd64
 <app-editors/dit-9999::kutkevich ~amd64
-<app-misc/cv-9999::kutkevich ~amd64
 <app-misc/fzy-9999::kutkevich ~amd64
 <app-misc/jo-9999::kutkevich ~amd64 #json output from a shell <https://github.com/jpmens/jo>
-<app-portage/layman-2.4.0::gentoo ~amd64 #because layman 2.0 can't parse gzipped overlay list
+<app-misc/progress-9999::kutkevich ~amd64
 <dev-ruby/mruby-9999::kutkevich ~amd64
 <dev-util/icdiff-9999::kutkevich ~amd64
 <dev-vcs/git-extras-9999::kutkevich ~amd64

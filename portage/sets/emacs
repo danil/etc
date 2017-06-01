@@ -1,4 +1,5 @@
-# Emacs.
+# Used by emacs.
 app-admin/emacs-updater
 app-dicts/aspell-en #spell checker
 app-dicts/aspell-ru #spell checker
+dev-util/ctags #projectile <https://github.com/bbatsov/projectile#regenerate-tags>

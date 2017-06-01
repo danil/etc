@@ -1,11 +1,14 @@
 # app-admin/system-config-printer-gnome #deprecated
+# app-cdr/simpleburn
 # app-misc/cdctl #<http://superuser.com/questions/71939/disable-cd-dvd-button-on-linux-laptop-ubuntu>
 # app-text/mupdf #pdf viewer recommended by xfce (unfortunately there is no toc) <https://wiki.xfce.org/recommendedapps#mupdf>
 # lxqt-base/lxqt-powermanagement #stand alone power manager
 # media-gfx/argyllcms #load icc/icm display color profiles <https://wiki.archlinux.org/index.php/ICC_Profiles#Argyll_CMS>
 # media-libs/hal-flash #drm video support <https://github.com/cshorler/hal-flash>
 # media-tv/popcorntime #torrent video player
+# net-im/skype
 # net-irc/weechat
+# net-misc/aria2 #multi-protocol downloader (BitTorrent)
 # x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark <https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide#Test_3D_acceleration>
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
@@ -13,9 +16,8 @@
 # x11-plugins/pidgin-window_merge
 # xfce-extra/xfce4-power-manager
 app-arch/xarchiver
-app-cdr/simpleburn
 app-editors/mousepad
-app-emulation/virtualbox
+app-emulation/virtualbox-bin
 app-office/libreoffice-bin
 app-text/evince
 dev-python/gnome-keyring-python
@@ -29,15 +31,13 @@ media-gfx/gimp
 media-gfx/maim #maim (make image) takes screenshots of your desktop
 media-gfx/ristretto #xfce image viewer <https://wiki.xfce.org/recommendedapps#ristretto>, <http://www.ohloh.net/p/ristretto>
 media-sound/alsa-utils
+media-sound/apulse
 media-sound/sox #`play` audio files from cli
 media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
-net-im/skype
+net-im/slack-bin
 net-mail/dovecot
-net-misc/aria2 #multi-protocol downloader (BitTorrent)
 net-misc/cmst #connman wifi tray icon
 net-misc/dropbox
-net-misc/tor
-net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks installed <http://wiki.gentoo.org/wiki/Tor#Torify>
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
 net-wireless/rfkill #enabled bluetooth <http://wiki.gentoo.org/wiki/Bluetooth#Software>
 sys-fs/dosfstools
@@ -76,6 +76,10 @@ xfce-base/thunar
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler #thumbnails generator for thunar and ristretto <https://wiki.archlinux.org/index.php/thunar#Plugins_and_addons>, <http://www.ohloh.net/p/tumbler>
+
+# # Tor.
+# net-misc/tor
+# net-proxy/torsocks #torify (tor wraper) will fail if you do not have torsocks installed <http://wiki.gentoo.org/wiki/Tor#Torify>
 
 # # WM status bars/trays.
 # # x11-misc/tint2 #does not work in stumpwm <https://code.google.com/p/tint2/issues/detail?id=157>

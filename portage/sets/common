@@ -25,15 +25,16 @@ app-arch/unrar
 app-arch/unzip
 app-emulation/docker
 app-misc/colordiff
-app-misc/cv #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/cv>
 app-misc/jo #json output from a shell <https://github.com/jpmens/jo>
 app-misc/jq #json console formater <http://stedolan.github.io/jq/tutorial>, <http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json#15231463>
+app-misc/progress #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/progress>
 app-misc/tmux
 app-shells/bash-completion
 app-text/dos2unix
-app-text/sloccount #sloc source code line of code
+app-text/sloccount #a-la sloc (count source code lines)
 app-text/tree
 dev-db/postgresql
+dev-util/cloc #a-la sloc (count source code lines)
 dev-util/icdiff #two columns diff
 dev-util/source-highlight #highlighted source code in less (less filter)
 dev-vcs/git
@@ -44,6 +45,7 @@ dev-vcs/tig
 mail-mta/exim #deliver local mail to /var/mail
 media-gfx/jhead #rename jpeg's by exif date `jhead -n%Y%m%d-%H%M%S file.jpg`
 media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
+net-analyzer/netcat #network connection tool like telnet
 net-analyzer/ngrep
 net-analyzer/ssh-audit #output usefull info about ssh server <https://github.com/arthepsy/ssh-audit>
 net-dns/bind-tools #`dig`, `host` and `nslookup`
@@ -68,6 +70,3 @@ sys-devel/bc #used by bash prompt
 sys-fs/ncdu #diskspace usage is an baobab and gt5 replacement
 sys-process/lsof
 www-servers/nginx
-
-# Benchmarks.
-app-benchmarks/sysbench #cpu and memory benchmarks

@@ -1,5 +1,5 @@
 # Linters for emacs.
-app-text/htmltidy #html checker used by flycheck
+app-text/tidy-html5 #html checker used by flycheck
 app-text/xmlstarlet #used by flycheck
 dev-lang/lua #used by flycheck
 dev-python/pylint #python checker used by flycheck

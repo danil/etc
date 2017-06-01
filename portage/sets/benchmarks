@@ -1,5 +1,8 @@
 # Benchmarks a-la `ab`.
+app-benchmarks/bonnie
 app-admin/apache-tools
+app-benchmarks/dbench
 app-benchmarks/siege
 app-benchmarks/sysbench #cpu and memory benchmarks
+app-benchmarks/tiobench
 app-benchmarks/wrk #c http benchmark tool <https://github.com/wg/wrk>

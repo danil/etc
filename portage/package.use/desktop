@@ -33,6 +33,7 @@
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
+app-text/xmlto text #required by x11-misc/xdg-utils
 dev-libs/leveldb -snappy #required by net-p2p/bitcoin-qt
 dev-libs/libpcre pcre16 #required by net-misc/cmst
 dev-libs/libxml2 python #required by app-admin/system-config-printer-common, app-admin/system-config-printer-gnome
@@ -44,12 +45,17 @@ media-libs/harfbuzz icu #required by app-office/libreoffice-bin
 media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, media-libs/sk1libs
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
+net-fs/samba client # required by gnome-base/gvfs[samba], app-text/evince
 net-misc/aria2 bittorrent metalink ssh #multi-protocol downloader (BitTorrent)
 net-print/cups gnutls
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
 sys-libs/binutils-libs abi_x86_32 #required by x11-libs/cairo-1.14.6::gentoo, x11-themes/gtk-engines-unico-1.0.3_pre20140109::gentoo, x11-themes/flatstudio-1.03::kutkevich[gtk3], @desktop, @selected, @world (argument)
+sys-libs/ntdb python # required by net-fs/samba, gnome-base/gvfs[samba], app-text/evince
+sys-libs/tdb python # required by sys-libs/ldb, net-fs/samba, gnome-base/gvfs[samba], app-text/evince
+sys-libs/tevent python # required by sys-libs/ldb, net-fs/samba, gnome-base/gvfs[samba], app-text/evince
 sys-libs/zlib minizip #required by media-video/vlc
 virtual/udev gudev #required by sys-fs/udisks, sys-fs/udiskie
+x11-base/xorg-server glamor #required by x11-base/xorg-drivers-1.19::gentoo[video_cards_i965]
 x11-misc/dunst dunstify #notify-send replacement
 x11-terms/rxvt-unicode 256-color
 x11-terms/rxvt-unicode pixbuf #application icon <http://wiki.gentoo.org/wiki/URxvt#Application_icon>.

@@ -1,5 +1,9 @@
 # Desktop.
 
+# <net-im/slack-bin-9999::gentoo ~amd64
+# =app-emulation/virtualbox-guest-additions-5.1.16::gentoo ~amd64
+# =x11-drivers/xf86-video-virtualbox-5.1.16::gentoo ~amd64
+
 # */*::kutkevich
 # <app-backup/dvcs-autosync-9999::betagarden ~amd64
 # <app-emulation/playonlinux-9999::gentoo ~amd64
@@ -24,6 +28,7 @@
 <x11-misc/dex-9999::gentoo ~amd64 #execute commands on window manager startup <http://superuser.com/questions/130242/how-can-i-execute-commands-on-startup-in-awesome#326626>
 <x11-misc/dunst-9999::gentoo ~amd64
 <x11-misc/skippy-xd-9999::kutkevich ~amd64
+<x11-misc/xcalib-9999::gentoo ~amd64 #icc profiles monitor color calibration <https://wiki.archlinux.org/index.php/ICC_profiles>
 <x11-misc/xchainkeys-9999::kutkevich ~amd64 #a-la xbindkeys
 <x11-plugins/pidgin-window_merge-9999::kutkevich ~amd64
 <x11-themes/flatstudio-9999::kutkevich ~amd64

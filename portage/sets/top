@@ -1,5 +1,6 @@
 # Tops.
 net-analyzer/iftop #bandwidth usage on an interface
+net-analyzer/nload #bandwidth usage on an interface
 sys-power/powertop
 sys-process/atop #resource-specific view of processes
 sys-process/ftop #open files by processes

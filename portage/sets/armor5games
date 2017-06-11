@@ -1,3 +1,6 @@
+dev-db/pgbouncer
+dev-db/postgresql
+
 dev-db/mongodb
 dev-db/mysql
 dev-lang/mono

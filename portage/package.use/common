@@ -18,6 +18,7 @@ mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 sys-apps/the_silver_searcher lzma
 sys-libs/libseccomp static-libs #required by app-emulation/docker
+www-client/elinks bittorrent #cli http and bittorrent client
 
 # nginx.
 # ngx_http_fastcgi_module

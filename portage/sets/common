@@ -31,7 +31,6 @@ app-misc/progress #progress bar for cp, rm, dd, ... <https://github.com/Xfennec/
 app-misc/tmux
 app-shells/bash-completion
 app-text/dos2unix
-app-text/sloccount #a-la sloc (count source code lines)
 app-text/tree
 dev-util/cloc #a-la sloc (count source code lines)
 dev-util/icdiff #two columns diff
@@ -68,4 +67,5 @@ sys-apps/usbutils #lsusb
 sys-devel/bc #used by bash prompt
 sys-fs/ncdu #diskspace usage is an baobab and gt5 replacement
 sys-process/lsof
+www-client/elinks #cli http and bittorrent client
 www-servers/nginx

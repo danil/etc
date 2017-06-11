@@ -14,7 +14,7 @@
 <media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
 <net-analyzer/ssh-audit-9999::kutkevich ~amd64
 <net-misc/tlsdate-0.0.13::gentoo ~amd64
-<net-p2p/syncthing-9999::kutkevich ~amd64
+<net-p2p/syncthing-9999::gentoo ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64
 =net-misc/httpie-0.6.0::gentoo ~amd64 #cURL-like tool for humans <http://httpie.org>
 =sys-process/htop-2.0.1::gentoo ~amd64

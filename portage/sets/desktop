@@ -68,14 +68,18 @@ x11-misc/xdotool #simulate keyboard input in xchainkeys
 x11-misc/xsel #copy selection in termina to the xorg clipboard (used by emacs and urxvt) <https://wiki.archlinux.org/index.php/rxvt-unicode#Automatic_Script_Management>
 x11-misc/xxkb #keyboard layout indicator for tray
 x11-themes/faenza-icon-theme
-x11-themes/flatstudio #dark (black) gtk 2/3 theme
-x11-themes/gtk-chtheme
 x11-themes/sound-theme-freedesktop #my 'complete' sound
 x11-themes/vanilla-dmz-xcursors
 xfce-base/thunar
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler #thumbnails generator for thunar and ristretto <https://wiki.archlinux.org/index.php/thunar#Plugins_and_addons>, <http://www.ohloh.net/p/tumbler>
+
+# GTK themes.
+# x11-themes/flatstudio #dark (black) gtk 2/3 theme
+# x11-themes/gtk-chtheme #change/switch gtk2/gtk3 themes
+lxde-base/lxappearance #change/switch gtk2/gtk3 themes
+x11-themes/arc-theme #dark (black) gtk 2/3 theme
 
 # # Tor.
 # net-misc/tor

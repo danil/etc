@@ -1,0 +1,2 @@
+>=dev-lua/lpeg-1.0.1::gentoo luajit
+>=dev-lua/mpack-1.0.4::gentoo luajit

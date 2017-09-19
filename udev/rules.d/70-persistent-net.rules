@@ -4,8 +4,10 @@
 # You can modify it, as long as you keep each rule on a single
 # line, and change only the value of the NAME= key.
 
+# Danil <danil@kutkevich.org>.
 # PCI device 0x8086:0x10bf (e1000e)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:27:13:67:1f:05", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
+#SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:27:13:67:1f:05", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="f2:3c:91:70:65:89", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
 
 # PCI device 0x8086:0x4237 (iwlagn)
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:26:c6:63:df:70", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"

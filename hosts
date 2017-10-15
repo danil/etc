@@ -8,7 +8,10 @@
 #
 
 # IPv4 and IPv6 localhost aliases
-# Danil
+# Danil <danil@kutkevich.org>.
+# Order of the domain names is important!
+# First specify full form of the domain name and then short form
+# of the domain name (hostname).
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 # 127.0.0.1 localhost
 127.0.0.1 h10.kutkevich.org h10 localhost

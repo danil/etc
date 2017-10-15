@@ -17,8 +17,8 @@ postfix:            root
 # root:
 # operator:
 # Danil <http://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server#Basic_Setup>.
+root:               danil
 externalusers:      danil@kutkevich.org
-root:               externalusers
 danil:              externalusers
 
 # Standard RFC2142 aliases

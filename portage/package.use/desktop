@@ -1,5 +1,7 @@
 # Desktop.
 
+# media-libs/libpng apng # required by www-client/firefox
+
 # */* branding
 # */* encode #recording video <http://en.gentoo-wiki.com/wiki/Webcam#Recording>
 # */* gnome #gnome <http://gentoo.org/doc/en/gnome-config.xml?style=printable#doc_chap2_pre1>
@@ -41,7 +43,6 @@ dev-vcs/git tk gtk
 gnome-base/gvfs afp archive avahi cdda fuse gdu gnome-keyring gphoto2 ios samba
 gnome-base/gvfs udisks #required by xfce-base/thunar[udev]
 media-gfx/feh curl exif
-media-libs/harfbuzz icu #required by app-office/libreoffice-bin
 media-libs/lcms python #required by media-gfx/inkscape, media-gfx/uniconvertor, media-libs/sk1libs
 media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[glamor], x11-base/xorg-drivers[video_cards_radeon], x11-base/xorg-server[xorg], x11-drivers/xf86-video-intel
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>

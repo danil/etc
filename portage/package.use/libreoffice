@@ -1,0 +1,2 @@
+dev-libs/xmlsec nss # required by app-office/libreoffice-bin
+media-libs/harfbuzz icu #required by app-office/libreoffice-bin

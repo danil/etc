@@ -1,0 +1,6 @@
+# <sys-apps/ripgrep-9999::gentoo ~amd64
+
+# # Rust.
+# <dev-lang/rust-9999::gentoo ~amd64
+# =dev-util/cargo-0.21.0 ~amd64 # required by dev-lang/rust
+# =virtual/rust-1.19.0 ~amd64 # required by dev-util/cargo, required by dev-lang/rust

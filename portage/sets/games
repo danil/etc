@@ -1,1 +1,1 @@
-app-emulation/playonlinux
+# app-emulation/playonlinux #required masked dependency app-emulation/wine

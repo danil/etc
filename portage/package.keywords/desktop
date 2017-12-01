@@ -21,6 +21,7 @@
 <net-im/skype-9999::gentoo ~amd64
 <net-misc/cmst-9999::gentoo ~amd64
 <sys-apps/mdp-9999::kutkevich ~amd64
+<www-client/firefox-bin-58::gentoo ~amd64
 <www-client/google-chrome-9999::gentoo ~amd64
 <www-plugins/google-talkplugin-9999::gentoo ~amd64
 <x11-apps/light-9999::kutkevich ~amd64
@@ -47,8 +48,9 @@ x11-apps/wmutils::kutkevich ~amd64
 # =x11-terms/st-0.7::gentoo ~amd64
 
 # Maim (screenshot).
-<media-gfx/maim-9999::kutkevich ~amd64
-<x11-misc/slop-9999::kutkevich ~amd64
+<x11-misc/shutter-9999::gentoo ~amd64
+<media-gfx/maim-5.4.63::gentoo ~amd64
+<x11-misc/slop-6.3.46::gentoo ~amd64
 
 # GTK themes.
 # <x11-themes/flatstudio-9999::kutkevich ~amd64

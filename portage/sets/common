@@ -47,6 +47,7 @@ media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngc
 net-analyzer/netcat #network connection tool like telnet
 net-analyzer/ngrep
 net-analyzer/ssh-audit #output usefull info about ssh server <https://github.com/arthepsy/ssh-audit>
+net-analyzer/traceroute #traceroute and traceroute6
 net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp
 net-ftp/vsftpd

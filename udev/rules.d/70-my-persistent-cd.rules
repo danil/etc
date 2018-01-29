@@ -4,6 +4,9 @@
 # You can modify it, as long as you keep each rule on a single
 # line, and set the $GENERATED variable.
 
+# Danil <danil@kutkevich.org>
+# <https://www.gentoo.org/support/news-items/2013-03-29-udev-upgrade.html>
+
 # DVD_RW_AD-7910S (pci-0000:00:1f.2-scsi-1:0:0:0)
 SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:0:0:0", SYMLINK+="cdrom", ENV{GENERATED}="1"
 SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:0:0:0", SYMLINK+="cdrw", ENV{GENERATED}="1"

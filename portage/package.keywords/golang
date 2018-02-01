@@ -1,10 +1,8 @@
 # Golang.
 <dev-go/go-tools-9999::gentoo ~amd64 # required by dev-lang/go-1.7.3
-=app-emulation/containerd-0.2.6::gentoo ~amd64 # required by dev-lang/go-1.7.3
-=dev-lang/go-1.7.3::gentoo ~amd64
 
 # Go tools (godoc - used by emacs).
-=dev-go/go-crypto-0_pre20160126 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
-=dev-go/go-net-0_pre20160216 ~amd64 # required by dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
-=dev-go/go-text-0_pre20160211 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-crypto-0_pre20160126::gentoo ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-net-0_pre20160216::gentoo ~amd64 # required by dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-text-0_pre20160211::gentoo ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
 =dev-go/go-tools-0_pre20160220::gentoo ~amd64

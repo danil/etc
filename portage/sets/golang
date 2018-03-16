@@ -1,2 +1,4 @@
+# dev-libs/libgit2 # required by github.com/rgburke/grv/cmd/grv
 dev-db/sqlite
 dev-go/go-tools # godoc used by emacs
+dev-libs/libappindicator # required by github.com/alex2108/syncthing-tray (tray icon for syncthing)

@@ -7,3 +7,9 @@
 =dev-go/go-net-0_pre20160216::gentoo ~amd64 # required by dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
 =dev-go/go-text-0_pre20160211::gentoo ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
 =dev-go/go-tools-0_pre20160220::gentoo ~amd64
+
+# drone.io
+<dev-go/go-bindata-9999::gentoo ~amd64
+<dev-go/go-bindata-assetfs-9999::gentoo ~amd64
+<dev-util/drone-9999::gentoo ~amd64
+<dev-util/drone-ui-9999::gentoo ~amd64

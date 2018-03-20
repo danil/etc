@@ -1,0 +1,5 @@
+# Danil <danil@kutkevich.org>
+# <https://sendgrid.com/docs/Integrate/Mail_Servers/exim.html>.
+MAIN_TLS_ENABLE = 1
+# <https://www.howtoforge.com/exim-authenticated-smarthost>
+AUTH_CLIENT_ALLOW_NOTLS_PASSWORDS = 1

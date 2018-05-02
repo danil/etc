@@ -1,22 +1,23 @@
 -- -*- coding: utf-8-unix; -*-
 function filtering_danil_at_kutkevich_org()
-  -- h2 host messages filtering
+  -- h2 cron notification messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
     mailbox:contain_from("h2.kutkevich.org") *
     mailbox:contain_subject("/usr/sbin/run-crons") *
     (mailbox:contain_body("q: Updating ebuild cache in /usr/portage") +
-     mailbox:contain_body("remote: To create a merge request for"))
-  mailbox:move_messages(danil_at_kutkevich_org.kutkevich_org_h2, result)
+     mailbox:contain_body("remote: To create a merge request for") +
+     mailbox:contain_body("EOF"))
+  mailbox:move_messages(danil_at_kutkevich_org.kut_org_h2, result)
 
-  -- h10 host messages filtering
+  -- h10 cron notification messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
     mailbox:contain_from("h10.kutkevich.org") *
     mailbox:contain_subject("Anacron job 'cron.daily'")
-  mailbox:move_messages(danil_at_kutkevich_org.kutkevich_org_h10, result)
+  mailbox:move_messages(danil_at_kutkevich_org.kut_org_h10, result)
 
-  -- ah9 host messages filtering
+  -- ah9 cron notification messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
     mailbox:contain_from("ah9.armor5games.com") *
@@ -24,7 +25,31 @@ function filtering_danil_at_kutkevich_org()
     (mailbox:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
        (mailbox:contain_body("exim4-base") +
           mailbox:contain_body("WARNING: purging the environment")))
-  mailbox:move_messages(danil_at_kutkevich_org.armor5games_com_ah9, result)
+  mailbox:move_messages(danil_at_kutkevich_org.a5g_com_ah9, result)
+
+  -- ah9 netdata annoying notification messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_from("netdata@ah9.armor5games.com") *
+    mailbox:contain_subject("recovered - last collected secs - web_log_nginx")
+  mailbox:move_messages(danil_at_kutkevich_org.a5g_com_ah9, result)
+
+  -- bh1 cron notification messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_from("bh1.armor5games.com") *
+    mailbox:contain_subject("/usr/sbin/anacron") *
+    (mailbox:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
+       (mailbox:contain_body("exim4-base") +
+          mailbox:contain_body("WARNING: purging the environment")))
+  mailbox:move_messages(danil_at_kutkevich_org.a5g_com_bh1, result)
+
+  -- bh1 netdata annoying notification messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_from("netdata@bh1.armor5games.com") *
+    mailbox:contain_subject("recovered - last collected secs - web_log_nginx")
+  mailbox:move_messages(danil_at_kutkevich_org.a5g_com_bh1, result)
 
   -- luadns.com messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -75,6 +100,19 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("list-post", "<ru_bzr.googlegroups.com>")
   mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
+  -- devel.lists.sailfishos.org list messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_field("List-Id", "devel.lists.sailfishos.org")
+  mailbox:move_messages(danil_at_kutkevich_org.sailfishos_list, result)
+
+  -- -- FIXME: regex are very slow!!!
+  -- -- Sailfish OS feeds messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:match_from("(^|,)[[:space:]]*\"?Jolla[[:space:]]+Users[[:space:]]+Blog\"?[[:space:]]*<")
+  -- mailbox:move_messages(danil_at_kutkevich_org.sailfishos_feeds, result)
+
   -- healthintersections.com.au messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
@@ -121,6 +159,23 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("list-id", "rust-russian.googlegroups.com")
   mailbox:move_messages(danil_at_kutkevich_org.rust_russian_list, result)
 
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_field("list-id", "gentoo-user.gentoo.org")
+  mailbox:move_messages(danil_at_kutkevich_org.gentoo_users, result)
+
+  -- gentoo-user.gentoo.org mailing list messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_field("list-id", "gentoo-user.gentoo.org")
+  mailbox:move_messages(danil_at_kutkevich_org.gentoo_users, result)
+
+  -- gentoo-user-ru.gentoo.org mailing list messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_field("list-id", "gentoo-user-ru.gentoo.org")
+  mailbox:move_messages(danil_at_kutkevich_org.gentoo_community, result)
+
   -- jamendo.com "new music" notifications messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
@@ -145,17 +200,18 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("Reply-To", "info@planeta-sport.ru")
   mailbox:move_messages(danil_at_kutkevich_org.redfox, result)
 
-  -- armor5games cyrillic messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    messages_to_armor5games(mailbox) -
-    messages_from_armor5games_hosts(mailbox) -
-    mailbox:contain_from("notifications@bugsnag.com") *
-    (mailbox:contain_body("здравствуйте") +
-       mailbox:contain_body("уважением") +
-       mailbox:contain_body("резюме") +
-       mailbox:contain_body("портфолио"))
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+  -- -- FIXME: cyrillic not working!!!
+  -- -- armor5games cyrillic messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   messages_to_armor5games(mailbox) -
+  --   messages_from_armor5games_hosts(mailbox) -
+  --   mailbox:contain_from("notifications@bugsnag.com") *
+  --   (mailbox:contain_body("здравствуйте") +
+  --      mailbox:contain_body("уважением") +
+  --      mailbox:contain_body("резюме") +
+  --      mailbox:contain_body("портфолио"))
+  -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
   -- armor5games/bugsnag annoying messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX

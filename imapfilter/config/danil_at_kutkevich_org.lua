@@ -213,33 +213,33 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("List-Id", "ror2ru.googlegroups.com")
   mailbox:move_messages(danil_at_kutkevich_org.list_ror2ru, result)
 
-  -- Arch Linux Saint Petersburg users group messages filtering
-  -- <http://groups.google.com/group/spb-archlinux>.
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "spb-archlinux.googlegroups.com") *
-    mailbox:contain_field("list-post", "<spb-archlinux.googlegroups.com>")
-  mailbox:move_messages(danil_at_kutkevich_org.lists, result)
+  -- -- Arch Linux Saint Petersburg users group messages filtering
+  -- -- <http://groups.google.com/group/spb-archlinux>.
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "spb-archlinux.googlegroups.com") *
+  --   mailbox:contain_field("list-post", "<spb-archlinux.googlegroups.com>")
+  -- mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
-  -- Bazaar russion users group mailing list messages filtering
-  -- <http://groups.google.com/group/ru_bz>
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "ru_bzr.googlegroups.com") *
-    mailbox:contain_field("list-post", "<ru_bzr.googlegroups.com>")
-  mailbox:move_messages(danil_at_kutkevich_org.lists, result)
+  -- -- Bazaar russion users group mailing list messages filtering
+  -- -- <http://groups.google.com/group/ru_bz>
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "ru_bzr.googlegroups.com") *
+  --   mailbox:contain_field("list-post", "<ru_bzr.googlegroups.com>")
+  -- mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
-  -- django-russian.googlegroups.com group list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "django-russian.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.django_russian_list, result)
+  -- -- django-russian.googlegroups.com group list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "django-russian.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.django_russian_list, result)
 
-  -- erlang-russian.googlegroups.com group mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "erlang-russian.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.erlang_russian_list, result)
+  -- -- erlang-russian.googlegroups.com group mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "erlang-russian.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.erlang_russian_list, result)
 
   -- diamondcard.us notification messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -262,23 +262,23 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("List-Id", "exim-users.mailground.net")
   mailbox:move_messages(danil_at_kutkevich_org.exim_lists, result)
 
-  -- spbhug.googlegroups.com mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "spbhug.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.lists, result)
+  -- -- spbhug.googlegroups.com mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "spbhug.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
-  -- emacs-on-rails.googlegroups.com mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "emacs-on-rails.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.emacs_community, result)
+  -- -- emacs-on-rails.googlegroups.com mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "emacs-on-rails.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.emacs_community, result)
 
-  -- spblinux.googlegroups.com mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "spblinux.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.spblinux_list, result)
+  -- -- spblinux.googlegroups.com mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "spblinux.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.spblinux_list, result)
 
   -- pgsql-ru-general.postgresql.org mailing list messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -286,11 +286,11 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("List-Id", "pgsql-ru-general.postgresql.org")
   mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
-  -- stumpwm-devel.nongnu.org mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "stumpwm-devel.nongnu.org")
-  mailbox:move_messages(danil_at_kutkevich_org.stumpwm_list, result)
+  -- -- stumpwm-devel.nongnu.org mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "stumpwm-devel.nongnu.org")
+  -- mailbox:move_messages(danil_at_kutkevich_org.stumpwm_list, result)
 
   -- Succless developers group mailing list messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -298,23 +298,23 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("List-Id", "dev.suckless.org")
   mailbox:move_messages(danil_at_kutkevich_org.suckless_dev, result)
 
-  -- Awesome WM users group mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "awesome.naquadah.org")
-  mailbox:move_messages(danil_at_kutkevich_org.awesome_list, result)
+  -- -- Awesome WM users group mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "awesome.naquadah.org")
+  -- mailbox:move_messages(danil_at_kutkevich_org.awesome_list, result)
 
-  -- Awesome WM developers group mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "awesome-devel.naquadah.org")
-  mailbox:move_messages(danil_at_kutkevich_org.awesome_devel_list, result)
+  -- -- Awesome WM developers group mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "awesome-devel.naquadah.org")
+  -- mailbox:move_messages(danil_at_kutkevich_org.awesome_devel_list, result)
 
-  -- thinking-sphinx.googlegroups.com mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "thinking-sphinx.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.lists, result)
+  -- -- thinking-sphinx.googlegroups.com mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Id", "thinking-sphinx.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
   -- Jolla users group messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -330,18 +330,18 @@ function filtering_danil_at_kutkevich_org()
   --   mailbox:match_from("(^|,)[[:space:]]*\"?Jolla[[:space:]]+Users[[:space:]]+Blog\"?[[:space:]]*<")
   -- mailbox:move_messages(danil_at_kutkevich_org.sailfishos_feeds, result)
 
-  -- healthintersections.com.au messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Subscribe", "http://www.healthintersections.com.au")
-  mailbox:move_messages(danil_at_kutkevich_org.fhir_planet, result)
+  -- -- healthintersections.com.au messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("List-Subscribe", "http://www.healthintersections.com.au")
+  -- mailbox:move_messages(danil_at_kutkevich_org.fhir_planet, result)
 
-  -- drone.io "success" notifications messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("builds@drone.io") *
-    mailbox:contain_subject("[SUCCESS]")
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+  -- -- drone.io "success" notifications messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("builds@drone.io") *
+  --   mailbox:contain_subject("[SUCCESS]")
+  -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
   -- Travis CI "success" notifications messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -357,17 +357,17 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("list-id", "gentoo-user.gentoo.org")
   mailbox:move_messages(danil_at_kutkevich_org.gentoo_users, result)
 
-  -- Gentoo russian group mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("list-id", "gentoo-user-ru.gentoo.org")
-  mailbox:move_messages(danil_at_kutkevich_org.gentoo_community, result)
+  -- -- Gentoo russian group mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("list-id", "gentoo-user-ru.gentoo.org")
+  -- mailbox:move_messages(danil_at_kutkevich_org.gentoo_community, result)
 
-  -- humblebundle.com news messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("contact@humblebundle.com")
-  mailbox:move_messages(danil_at_kutkevich_org.humblebundle_list, result)
+  -- -- humblebundle.com news messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("contact@humblebundle.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.humblebundle_list, result)
 
   -- jamendo.com "new music" notifications messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -393,17 +393,17 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("Reply-To", "info@planeta-sport.ru")
   mailbox:move_messages(danil_at_kutkevich_org.redfox, result)
 
-  -- journal.tinkoff.ru notification messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("journal@tinkoff.ru")
-  mailbox:move_messages(danil_at_kutkevich_org.tinkoff_list, result)
+  -- -- journal.tinkoff.ru notification messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("journal@tinkoff.ru")
+  -- mailbox:move_messages(danil_at_kutkevich_org.tinkoff_list, result)
 
-  -- ink361.com notification messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("newsletter@ink361.com")
-  mailbox:move_messages(danil_at_kutkevich_org.ink361_feed, result)
+  -- -- ink361.com notification messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("newsletter@ink361.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.ink361_feed, result)
 
   -- -- -- FIXME: cyrillic not working!!!
   -- -- auto.ru notification messages filtering
@@ -413,32 +413,32 @@ function filtering_danil_at_kutkevich_org()
   --   mailbox:contain_subject("Найдены новые объявления")
   -- mailbox:move_messages(danil_at_kutkevich_org.auto_ru_feed, result)
 
-  -- velodrive.ru messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("info@velodrive.ru") *
-    mailbox:contain_field("list-id", "3c63feb6") *
-    mailbox:contain_field("Content-Type", "multipart/alternative")
-  mailbox:move_messages(danil_at_kutkevich_org.velodrive, result)
+  -- -- velodrive.ru messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("info@velodrive.ru") *
+  --   mailbox:contain_field("list-id", "3c63feb6") *
+  --   mailbox:contain_field("Content-Type", "multipart/alternative")
+  -- mailbox:move_messages(danil_at_kutkevich_org.velodrive, result)
 
-  -- ivi.ru messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("promo@em.ivi.ru") *
-    mailbox:contain_field("Content-Type", "multipart/alternative")
-  mailbox:move_messages(danil_at_kutkevich_org.iviru, result)
+  -- -- ivi.ru messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("promo@em.ivi.ru") *
+  --   mailbox:contain_field("Content-Type", "multipart/alternative")
+  -- mailbox:move_messages(danil_at_kutkevich_org.iviru, result)
 
-  -- techtarget.com spam messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("NoteBookReview@lists.techtarget.com")
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+  -- -- techtarget.com spam messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("NoteBookReview@lists.techtarget.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
-  -- bongacams.com spam messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("newsletter@bongacams.com")
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+  -- -- bongacams.com spam messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("newsletter@bongacams.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
   -- -- sazhi.net annoying messages filtering
   -- local mailbox = danil_at_kutkevich_org.INBOX
@@ -451,21 +451,21 @@ function filtering_danil_at_kutkevich_org()
   --      mailbox:contain_field("X-Attached", ".zip"))
   -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
-  -- Molinos messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    (mailbox:contain_to("news@lists.molinos.ru") +
-       mailbox:contain_cc("news@lists.molinos.ru") +
-       mailbox:contain_bcc("news@lists.molinos.ru") +
-       mailbox:contain_field("resent-to", "news@lists.molinos.ru") +
-       mailbox:contain_field("x-delivered-to", "news@lists.molinos.ru"))
-  mailbox:move_messages(danil_at_kutkevich_org.molinos, result)
+  -- -- Molinos messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   (mailbox:contain_to("news@lists.molinos.ru") +
+  --      mailbox:contain_cc("news@lists.molinos.ru") +
+  --      mailbox:contain_bcc("news@lists.molinos.ru") +
+  --      mailbox:contain_field("resent-to", "news@lists.molinos.ru") +
+  --      mailbox:contain_field("x-delivered-to", "news@lists.molinos.ru"))
+  -- mailbox:move_messages(danil_at_kutkevich_org.molinos, result)
 
-  -- Waveaccess fhirbase.googlegroups.com mailing list messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("list-id", "fhirbase.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.fhirbase_list, result)
+  -- -- Waveaccess fhirbase.googlegroups.com mailing list messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("list-id", "fhirbase.googlegroups.com")
+  -- mailbox:move_messages(danil_at_kutkevich_org.fhirbase_list, result)
 
   -- Waveaccess hl7/holiadvice notifications messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -475,20 +475,20 @@ function filtering_danil_at_kutkevich_org()
        mailbox:contain_subject("[hl7rus]"))
   mailbox:move_messages(danil_at_kutkevich_org.waveaccess, result)
 
-  -- Waveaccess fhir.org notification messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("chat-noreply@fhir.org")
-  mailbox:move_messages(danil_at_kutkevich_org.fhir_zulip, result)
+  -- -- Waveaccess fhir.org notification messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("chat-noreply@fhir.org")
+  -- mailbox:move_messages(danil_at_kutkevich_org.fhir_zulip, result)
 
-  -- Waveaccess medapp ci notifications messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("list-id", "medappsupport.hospital-systems.com") *
-    (mailbox:contain_field("X-Redmine-Sender", "danil") +
-       mailbox:contain_subject("(Ready for Deploy)") +
-       mailbox:contain_subject("(Done)"))
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+  -- -- Waveaccess medapp ci notifications messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_field("list-id", "medappsupport.hospital-systems.com") *
+  --   (mailbox:contain_field("X-Redmine-Sender", "danil") +
+  --      mailbox:contain_subject("(Ready for Deploy)") +
+  --      mailbox:contain_subject("(Done)"))
+  -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
   -- armor5games annoying messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX

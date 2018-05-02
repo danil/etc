@@ -169,12 +169,12 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_subject("[LuaDNS]: Build completed")
   mailbox:move_messages(danil_at_kutkevich_org.luadns, result)
 
-  -- fruux.com annoying messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("cloud@fruux.com") *
-    mailbox:contain_subject("No events")
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+  -- -- fruux.com annoying messages filtering
+  -- local mailbox = danil_at_kutkevich_org.INBOX
+  -- local result = mailbox:is_unseen() *
+  --   mailbox:contain_from("cloud@fruux.com") *
+  --   mailbox:contain_subject("No events")
+  -- mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
   -- noreply@youtube.com messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
@@ -212,14 +212,6 @@ function filtering_danil_at_kutkevich_org()
   local result = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "ror2ru.googlegroups.com")
   mailbox:move_messages(danil_at_kutkevich_org.list_ror2ru, result)
-
-  -- Arch Linux Saint Petersburg users group messages filtering
-  -- <http://groups.google.com/group/spb-archlinux>.
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_field("List-Id", "spb-archlinux.googlegroups.com") *
-    mailbox:contain_field("list-post", "<spb-archlinux.googlegroups.com>")
-  mailbox:move_messages(danil_at_kutkevich_org.lists, result)
 
   -- Arch Linux Saint Petersburg users group messages filtering
   -- <http://groups.google.com/group/spb-archlinux>.

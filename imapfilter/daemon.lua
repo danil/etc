@@ -1,5 +1,5 @@
 -- https://github.com/lefcha/imapfilter/blob/master/samples/extend.lua
-package.path = package.path .. ";/home/danil/.imapfilter/?.lua"
+package.path = package.path .. ";/etc/imapfilter/?.lua"
 require "config/options"
 require "config/danil_at_kutkevich_org"
 
@@ -11,6 +11,6 @@ require "config/danil_at_kutkevich_org"
 -- endlessly, executing the commands in the forever() function and
 -- sleeping for 600 seconds between intervals:
 function forever()
-  pcall(danil_at_kutkevich_org_filtering)
+  pcall(filtering_danil_at_kutkevich_org)
 end
 become_daemon(3, forever)

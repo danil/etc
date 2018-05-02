@@ -436,6 +436,18 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_field("Content-Type", "multipart/alternative")
   mailbox:move_messages(danil_at_kutkevich_org.iviru, result)
 
+  -- techtarget.com spam messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_from("NoteBookReview@lists.techtarget.com")
+  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+
+  -- bongacams.com spam messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_from("newsletter@bongacams.com")
+  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+
   -- -- sazhi.net annoying messages filtering
   -- local mailbox = danil_at_kutkevich_org.INBOX
   -- local result = mailbox:is_unseen() *
@@ -486,12 +498,22 @@ function filtering_danil_at_kutkevich_org()
        mailbox:contain_subject("(Done)"))
   mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
 
+  -- armor5games annoying messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    messages_to_armor5games(mailbox) *
+    (mailbox:contain_from("unity3d.com") +
+       mailbox:contain_from("noreply@gameanalytics.com"))
+  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+
   -- armor5games cyrillic messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
     messages_to_armor5games(mailbox) -
     messages_from_armor5games_hosts(mailbox) -
-    mailbox:contain_from("notifications@bugsnag.com") *
+    (mailbox:contain_from("notifications@bugsnag.com") +
+       mailbox:contain_from("billing@hetzner.com") +
+       mailbox:contain_from("support@hetzner.com")) *
     mailbox:contain_body("hh.ru")
      -- FIXME: cyrillic not working!!!
      -- (mailbox:contain_body("здравствуйте") +
@@ -507,6 +529,23 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_from("support@bugsnag.com") *
     mailbox:contain_subject("Some events are being dropped due to sampling")
   mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
+
+  -- armor5games trello messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+  mailbox:contain_from("do-not-reply@trello.com") *
+    mailbox:contain_subject("on Rise of Pirates")
+  mailbox:move_messages(danil_at_kutkevich_org.armor5games, result)
+
+  -- armor5games messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    messages_to_armor5games(mailbox) -
+    messages_from_armor5games_hosts(mailbox) -
+    (mailbox:contain_from("notifications@bugsnag.com") +
+       mailbox:contain_from("billing@hetzner.com") +
+       mailbox:contain_from("support@hetzner.com"))
+  mailbox:move_messages(danil_at_kutkevich_org.armor5games, result)
 end
 
 function messages_to_armor5games(mailbox)

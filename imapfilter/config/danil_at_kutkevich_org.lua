@@ -127,13 +127,6 @@ function filtering_danil_at_kutkevich_org()
        mailbox:contain_subject("[hl7rus]"))
   mailbox:move_messages(danil_at_kutkevich_org.waveaccess, result)
 
-  -- drone.io success notifications messages filtering
-  local mailbox = danil_at_kutkevich_org.INBOX
-  local result = mailbox:is_unseen() *
-    mailbox:contain_from("builds@drone.io") *
-    mailbox:contain_subject("[SUCCESS]")
-  mailbox:move_messages(danil_at_kutkevich_org.sieve_trash, result)
-
   -- drone.io "success" notifications messages filtering
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *

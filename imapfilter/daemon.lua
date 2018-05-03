@@ -11,7 +11,7 @@ require "config/danil_at_kutkevich_org"
 -- endlessly, executing the commands in the forever() function and
 -- sleeping for 600 seconds between intervals:
 function forever()
-  local mailbox = danil_at_kutkevich_org.INBOX
+  local mailbox = danil_at_kutkevich_org._new
   repeat
   -- pcall(filtering_danil_at_kutkevich_org)
   filtering_danil_at_kutkevich_org(danil_at_kutkevich_org)

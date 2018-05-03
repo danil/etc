@@ -211,7 +211,7 @@ function filtering_danil_at_kutkevich_org()
   local mailbox = danil_at_kutkevich_org.INBOX
   local result = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "ror2ru.googlegroups.com")
-  mailbox:move_messages(danil_at_kutkevich_org.list_ror2ru, result)
+  mailbox:move_messages(danil_at_kutkevich_org.ror2ru_list, result)
 
   -- -- Arch Linux Saint Petersburg users group messages filtering
   -- -- <http://groups.google.com/group/spb-archlinux>.
@@ -322,6 +322,12 @@ function filtering_danil_at_kutkevich_org()
     mailbox:contain_from("no-reply@jolla.com") *
     mailbox:contain_subject("together.jolla.com")
   mailbox:move_messages(danil_at_kutkevich_org.jolla_community, result)
+
+  -- Sailfish OS developers group mailing list messages filtering
+  local mailbox = danil_at_kutkevich_org.INBOX
+  local result = mailbox:is_unseen() *
+    mailbox:contain_field("List-Id", "devel.lists.sailfishos.org")
+  mailbox:move_messages(danil_at_kutkevich_org.sailfishos_list, result)
 
   -- -- FIXME: regex are very slow!!!
   -- -- Sailfish OS feeds messages filtering

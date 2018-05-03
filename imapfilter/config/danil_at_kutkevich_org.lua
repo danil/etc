@@ -69,7 +69,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   local result = mailbox:is_unseen() *
     mailbox:contain_from("netdata") *
     mailbox:contain_subject("recovered")
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- twitter emacs related annoying messages filtering
   local mailbox = mail_account._new
@@ -82,7 +82,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
        mailbox:contain_body("clojure") +
        mailbox:contain_body("company") +
        mailbox:contain_body("emacs news"))
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- twitter @andreysitnik annoying messages filtering
   local mailbox = mail_account._new
@@ -127,7 +127,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
        mailbox:contain_body("ussr") +
        mailbox:contain_body("vladisvostok") +
        mailbox:contain_body("webpack"))
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- twitter @somebody32 annoying messages filtering
   local mailbox = mail_account._new
@@ -137,7 +137,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_subject(" @somebody32 ") *
     (mailbox:contain_body("javascript") +
        mailbox:contain_body("react"))
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- twitter golang related annoying retwitts messages filtering
   local mailbox = mail_account._new
@@ -147,7 +147,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     (mailbox:contain_subject(" @golang ") +
        mailbox:contain_subject(" @rob_pike ")) *
     mailbox:contain_body("RT @")
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- twitter minor messages filtering
   local mailbox = mail_account._new
@@ -181,7 +181,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- local result = mailbox:is_unseen() *
   --   mailbox:contain_from("cloud@fruux.com") *
   --   mailbox:contain_subject("No events")
-  -- mailbox:move_messages(mail_account.sieve_trash, result)
+  -- mailbox:move_messages(mail_account._trash, result)
 
   -- noreply@youtube.com messages filtering
   local mailbox = mail_account._new
@@ -354,7 +354,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- local result = mailbox:is_unseen() *
   --   mailbox:contain_from("builds@drone.io") *
   --   mailbox:contain_subject("[SUCCESS]")
-  -- mailbox:move_messages(mail_account.sieve_trash, result)
+  -- mailbox:move_messages(mail_account._trash, result)
 
   -- Travis CI "success" notifications messages filtering
   local mailbox = mail_account._new
@@ -362,7 +362,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_from("builds@travis-ci.org") *
     (mailbox:contain_subject("Passed: ") +
        mailbox:contain_subject("Fixed: "))
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- Gentoo users group mailing list messages filtering
   local mailbox = mail_account._new
@@ -396,7 +396,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_subject("Webzilla - Invoice") *
     mailbox:contain_subject("is paid") *
     mailbox:contain_body("Total due: EUR 0.00")
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- redfoxoutdoor.com annoying messages filtering
   local mailbox = mail_account._new
@@ -445,13 +445,13 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- local mailbox = mail_account._new
   -- local result = mailbox:is_unseen() *
   --   mailbox:contain_from("NoteBookReview@lists.techtarget.com")
-  -- mailbox:move_messages(mail_account.sieve_trash, result)
+  -- mailbox:move_messages(mail_account._trash, result)
 
   -- -- bongacams.com spam messages filtering
   -- local mailbox = mail_account._new
   -- local result = mailbox:is_unseen() *
   --   mailbox:contain_from("newsletter@bongacams.com")
-  -- mailbox:move_messages(mail_account.sieve_trash, result)
+  -- mailbox:move_messages(mail_account._trash, result)
 
   -- -- sazhi.net annoying messages filtering
   -- local mailbox = mail_account._new
@@ -462,7 +462,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   --      mailbox:contain_field("X-Attached", ".docm") +
   --      mailbox:contain_field("X-Attached", ".xls") +
   --      mailbox:contain_field("X-Attached", ".zip"))
-  -- mailbox:move_messages(mail_account.sieve_trash, result)
+  -- mailbox:move_messages(mail_account._trash, result)
 
   -- -- Molinos messages filtering
   -- local mailbox = mail_account._new
@@ -501,7 +501,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   --   (mailbox:contain_field("X-Redmine-Sender", "danil") +
   --      mailbox:contain_subject("(Ready for Deploy)") +
   --      mailbox:contain_subject("(Done)"))
-  -- mailbox:move_messages(mail_account.sieve_trash, result)
+  -- mailbox:move_messages(mail_account._trash, result)
 
   -- armor5games annoying messages filtering
   local mailbox = mail_account._new
@@ -509,7 +509,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     messages_to_armor5games(mailbox) *
     (mailbox:contain_from("unity3d.com") +
        mailbox:contain_from("noreply@gameanalytics.com"))
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- armor5games cyrillic messages filtering
   local mailbox = mail_account._new
@@ -525,7 +525,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
      -- mailbox:contain_body("уважением") +
      -- mailbox:contain_body("резюме") +
      -- mailbox:contain_body("портфолио"))
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- armor5games/bugsnag annoying messages filtering
   local mailbox = mail_account._new
@@ -533,7 +533,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     messages_to_armor5games(mailbox) *
     mailbox:contain_from("support@bugsnag.com") *
     mailbox:contain_subject("Some events are being dropped due to sampling")
-  mailbox:move_messages(mail_account.sieve_trash, result)
+  mailbox:move_messages(mail_account._trash, result)
 
   -- armor5games trello messages filtering
   local mailbox = mail_account._new

@@ -4,4 +4,4 @@ require "config/danil_at_kutkevich_org"
 -- require "config/lera_at_kutkevich_ru"
 
 -- filtering_lera_at_kutkevich_ru()
-filtering_danil_at_kutkevich_org()
+filtering_danil_at_kutkevich_org(danil_at_kutkevich_org)

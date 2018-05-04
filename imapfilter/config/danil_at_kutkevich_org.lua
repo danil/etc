@@ -508,31 +508,30 @@ function filtering_danil_at_kutkevich_org(mail_account)
   local result = mailbox:is_unseen() *
     messages_to_armor5games(mailbox) *
     (mailbox:contain_from("unity3d.com") +
-       mailbox:contain_from("noreply@gameanalytics.com"))
+       mailbox:contain_from("noreply@gameanalytics.com") +
+       (mailbox:contain_from("support@bugsnag.com") *
+          mailbox:contain_subject("Some events are being dropped due to sampling")))
   mailbox:move_messages(mail_account._trash, result)
+
+  -- armor5games important messages filtering
+  local mailbox = mail_account._new
+  local result = mailbox:is_unseen() *
+    messages_to_armor5games(mailbox) *
+    (mailbox:contain_from("notifications@bugsnag.com") +
+       mailbox:contain_from("billing@hetzner.com") +
+       mailbox:contain_from("support@hetzner.com"))
+  mailbox:move_messages(mail_account.INBOX, result)
 
   -- armor5games cyrillic messages filtering
   local mailbox = mail_account._new
   local result = mailbox:is_unseen() *
-    messages_to_armor5games(mailbox) -
-    messages_from_armor5games_hosts(mailbox) -
-    (mailbox:contain_from("notifications@bugsnag.com") +
-       mailbox:contain_from("billing@hetzner.com") +
-       mailbox:contain_from("support@hetzner.com")) *
+    messages_to_armor5games(mailbox) *
     mailbox:contain_body("hh.ru")
      -- FIXME: cyrillic not working!!!
      -- (mailbox:contain_body("здравствуйте") +
      -- mailbox:contain_body("уважением") +
      -- mailbox:contain_body("резюме") +
      -- mailbox:contain_body("портфолио"))
-  mailbox:move_messages(mail_account._trash, result)
-
-  -- armor5games/bugsnag annoying messages filtering
-  local mailbox = mail_account._new
-  local result = mailbox:is_unseen() *
-    messages_to_armor5games(mailbox) *
-    mailbox:contain_from("support@bugsnag.com") *
-    mailbox:contain_subject("Some events are being dropped due to sampling")
   mailbox:move_messages(mail_account._trash, result)
 
   -- armor5games trello messages filtering
@@ -545,11 +544,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- armor5games messages filtering
   local mailbox = mail_account._new
   local result = mailbox:is_unseen() *
-    messages_to_armor5games(mailbox) -
-    messages_from_armor5games_hosts(mailbox) -
-    (mailbox:contain_from("notifications@bugsnag.com") +
-       mailbox:contain_from("billing@hetzner.com") +
-       mailbox:contain_from("support@hetzner.com"))
+    messages_to_armor5games(mailbox)
   mailbox:move_messages(mail_account.armor5games, result)
 
   -- unfiltered messages

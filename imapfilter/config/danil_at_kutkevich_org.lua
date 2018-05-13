@@ -32,14 +32,14 @@ function filtering_danil_at_kutkevich_org(mail_account)
     (mailbox:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
        (mailbox:contain_body("exim4-base") +
           mailbox:contain_body("WARNING: purging the environment")))
-  mailbox:move_messages(mail_account.A5gComAh9, result)
+  mailbox:move_messages(mail_account.EmpoyerA5gComAh9, result)
 
   -- ah9 netdata annoying notification messages filtering
   local mailbox = mail_account._new
   local result = mailbox:is_unseen() *
     mailbox:contain_from("netdata@ah9.armor5games.com") *
     mailbox:contain_subject("recovered - last collected secs - web_log_nginx")
-  mailbox:move_messages(mail_account.A5gComAh9, result)
+  mailbox:move_messages(mail_account.EmpoyerA5gComAh9, result)
 
   -- bh1 cron notification messages filtering
   local mailbox = mail_account._new
@@ -49,14 +49,14 @@ function filtering_danil_at_kutkevich_org(mail_account)
     (mailbox:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
        (mailbox:contain_body("exim4-base") +
           mailbox:contain_body("WARNING: purging the environment")))
-  mailbox:move_messages(mail_account.A5gComBh1, result)
+  mailbox:move_messages(mail_account.EmpoyerA5gComBh1, result)
 
   -- bh1 netdata annoying notification messages filtering
   local mailbox = mail_account._new
   local result = mailbox:is_unseen() *
     mailbox:contain_from("netdata@bh1.armor5games.com") *
     mailbox:contain_subject("recovered - last collected secs - web_log_nginx")
-  mailbox:move_messages(mail_account.A5gComBh1, result)
+  mailbox:move_messages(mail_account.EmpoyerA5gComBh1, result)
 
   -- fail2ban (now on the h2) notifications messages filtering
   local mailbox = mail_account._new
@@ -539,13 +539,13 @@ function filtering_danil_at_kutkevich_org(mail_account)
   local result = mailbox:is_unseen() *
   mailbox:contain_from("do-not-reply@trello.com") *
     mailbox:contain_subject("on Rise of Pirates")
-  mailbox:move_messages(mail_account.Armor5games, result)
+  mailbox:move_messages(mail_account.EmpoyerArmor5games, result)
 
   -- armor5games messages filtering
   local mailbox = mail_account._new
   local result = mailbox:is_unseen() *
     messages_to_armor5games(mailbox)
-  mailbox:move_messages(mail_account.Armor5games, result)
+  mailbox:move_messages(mail_account.EmpoyerArmor5games, result)
 
   -- unfiltered messages
   local mailbox = mail_account._new

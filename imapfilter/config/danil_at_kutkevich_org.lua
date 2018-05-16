@@ -42,8 +42,10 @@ function filtering_danil_at_kutkevich_org(mail_account)
   --   mailbox:contain_body("Test 20180503Z")
   -- results:move_messages(mail_account._test)
 
-  local total_count = 1
-  if should_return(mail_account._new, total_count) then
+  local mailbox = mail_account._new
+  local results = mailbox:is_unseen()
+  local total_count = table.getn(results)
+  if total_count == 0 then
     return
   end
 
@@ -502,15 +504,15 @@ function move_mails(mailbox, mails, count)
 end
 
 function should_return(mailbox, count)
-  if count == 0 then
-    return true
+  if count > 0 then
+    return false
   end
   local results = mailbox:is_unseen()
   count = table.getn(results)
-  if count == 0 then
-    return true
+  if count > 0 then
+    return false
   end
-  return false
+  return true
 end
 
 -- function messages_to_armor5games(mailbox)

@@ -42,6 +42,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
   --   mailbox:contain_body("Test 20180503Z")
   -- results:move_messages(mail_account._test)
 
+  local total_count = 1
+  if should_return(mail_account._new, total_count) then
+    return
+  end
+
   -- kutkevich.org hosts messages filtering
   local mailbox = mail_account._new
   local results0 = mailbox:is_unseen() * mailbox:contain_from("kutkevich.org")
@@ -53,14 +58,18 @@ function filtering_danil_at_kutkevich_org(mail_account)
         (mailbox:contain_body("q: Updating ebuild cache in /usr/portage") +
          mailbox:contain_body("remote: Create pull request for") +
          mailbox:contain_body("remote: To create a merge request for"))
-      results:move_messages(mail_account.KutOrgH2)
+      total_count = move_mails(mail_account.KutOrgH2, results, total_count)
     end
     -- h10 cron notification messages filtering
     local results = results0:contain_from("h10.kutkevich.org")
     if table.getn(results) > 0 then
       results = results:contain_subject("Anacron job 'cron.daily'")
-      results:move_messages(mail_account.KutOrgH10)
+      total_count = move_mails(mail_account.KutOrgH10, results, total_count)
     end
+  end
+
+  if should_return(mail_account._new, total_count) then
+    return
   end
 
   -- armor5games.org hosts messages filtering
@@ -74,16 +83,23 @@ function filtering_danil_at_kutkevich_org(mail_account)
       local results = results1:contain_from("netdata@ah9.armor5games.com")
       if table.getn(results) > 0 then
         results = results:contain_subject("recovered - last collected secs - web_log_nginx")
-        results:move_messages(mail_account.ErA5gComAh9)
+        total_count = move_mails(mail_account.ErA5gComAh9, results, total_count)
+      end
+      if should_return(mail_account._new, total_count) then
+        return
       end
       local results = results1:contain_subject("/usr/sbin/anacron")
       if table.getn(results) > 0 then
         results = results:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
           (mailbox:contain_body("exim4-base") +
              mailbox:contain_body("WARNING: purging the environment"))
-        results:move_messages(mail_account.ErA5gComAh9)
+        total_count = move_mails(mail_account.ErA5gComAh9, results, total_count)
       end
     end
+  end
+
+  if should_return(mail_account._new, total_count) then
+    return
   end
 
   -- bh1 cron notification messages filtering
@@ -94,27 +110,43 @@ function filtering_danil_at_kutkevich_org(mail_account)
     (mailbox:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
        (mailbox:contain_body("exim4-base") +
           mailbox:contain_body("WARNING: purging the environment")))
-  results:move_messages(mail_account.ErA5gComBh1)
+  total_count = move_mails(mail_account.ErA5gComBh1, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- bh1 netdata annoying notification messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("netdata@bh1.armor5games.com") *
     mailbox:contain_subject("recovered - last collected secs - web_log_nginx")
-  results:move_messages(mail_account.ErA5gComBh1)
+  total_count = move_mails(mail_account.ErA5gComBh1, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- fail2ban (now on the h2) notifications messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_subject("[Fail2Ban]")
-  results:move_messages(mail_account.Fail2Ban)
+  total_count = move_mails(mail_account.Fail2Ban, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- netdata "success" notifications messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("netdata") *
     mailbox:contain_subject("recovered")
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- twitter emacs related annoying messages filtering
   local mailbox = mail_account._new
@@ -127,7 +159,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
        mailbox:contain_body("clojure") +
        mailbox:contain_body("company") +
        mailbox:contain_body("emacs news"))
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- twitter @andreysitnik annoying messages filtering
   local mailbox = mail_account._new
@@ -172,7 +208,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
        mailbox:contain_body("ussr") +
        mailbox:contain_body("vladisvostok") +
        mailbox:contain_body("webpack"))
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- twitter @somebody32 annoying messages filtering
   local mailbox = mail_account._new
@@ -182,7 +222,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_subject(" @somebody32 ") *
     (mailbox:contain_body("javascript") +
        mailbox:contain_body("react"))
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- twitter golang related annoying retwitts messages filtering
   local mailbox = mail_account._new
@@ -192,7 +236,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
     (mailbox:contain_subject(" @golang ") +
        mailbox:contain_subject(" @rob_pike ")) *
     mailbox:contain_body("RT @")
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- twitter minor messages filtering
   local mailbox = mail_account._new
@@ -205,64 +253,104 @@ function filtering_danil_at_kutkevich_org(mail_account)
        mailbox:contain_subject(" @andreysitnik ") +
        mailbox:contain_subject(" @lostinwiki ") +
        mailbox:contain_subject(" @somebody32 "))
-  results:move_messages(mail_account.Twitter2)
+  total_count = move_mails(mail_account.Twitter2, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- twitter important messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("noreply@kutkevich.org") *
     mailbox:contain_subject("[twitter]")
-  results:move_messages(mail_account.Twitter)
+  total_count = move_mails(mail_account.Twitter, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- luadns.com messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("contact@luadns.com") *
     mailbox:contain_subject("[LuaDNS]: Build completed")
-  results:move_messages(mail_account.Luadns)
+  total_count = move_mails(mail_account.Luadns, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- noreply@youtube.com messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("noreply@youtube.com")
-  results:move_messages(mail_account.YoutubeFeeds)
+  total_count = move_mails(mail_account.YoutubeFeeds, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- notifications@disqus.net messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("notifications@disqus.net")
-  results:move_messages(mail_account.DisqusFeeds)
+  total_count = move_mails(mail_account.DisqusFeeds, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Go russian users group mailing list filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "golang-ru.googlegroups.com")
-  results:move_messages(mail_account.GolangRuList)
+  total_count = move_mails(mail_account.GolangRuList, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Rust russian users group mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("list-id", "rust-russian.googlegroups.com")
-  results:move_messages(mail_account.RustRussianList)
+  total_count = move_mails(mail_account.RustRussianList, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- forum.rustycrate.ru mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("list-id", "forum.rustycrate.ru")
-  results:move_messages(mail_account.RustyCrateRuList)
+  total_count = move_mails(mail_account.RustyCrateRuList, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- ror2ru mailing list filtering
   -- https://groups.google.com/forum/#!forum/ror2ru
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "ror2ru.googlegroups.com")
-  results:move_messages(mail_account.Ror2ruList)
+  total_count = move_mails(mail_account.Ror2ruList, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- diamondcard.us notification messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("support@diamondcard.us")
-  results:move_messages(mail_account.Lists)
+  total_count = move_mails(mail_account.Lists, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- FSF users group mailing list messages filtering
   local mailbox = mail_account._new
@@ -271,38 +359,62 @@ function filtering_danil_at_kutkevich_org(mail_account)
        mailbox:contain_from("info@defectivebydesign.org") +
        mailbox:contain_from("rms-assist@gnu")+
        mailbox:contain_from("sales@fsf.org"))
-  results:move_messages(mail_account.FsfLists)
+  total_count = move_mails(mail_account.FsfLists, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Exim users group mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "exim-users.mailground.net")
-  results:move_messages(mail_account.EximLists)
+  total_count = move_mails(mail_account.EximLists, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- pgsql-ru-general.postgresql.org mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "pgsql-ru-general.postgresql.org")
-  results:move_messages(mail_account.Lists)
+  total_count = move_mails(mail_account.Lists, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Succless developers group mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "dev.suckless.org")
-  results:move_messages(mail_account.SucklessDevList)
+  total_count = move_mails(mail_account.SucklessDevList, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Jolla users group messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("no-reply@jolla.com") *
     mailbox:contain_subject("together.jolla.com")
-  results:move_messages(mail_account.JollaCommunity)
+  total_count = move_mails(mail_account.JollaCommunity, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Sailfish OS developers group mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("List-Id", "devel.lists.sailfishos.org")
-  results:move_messages(mail_account.SailfishosList)
+  total_count = move_mails(mail_account.SailfishosList, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Travis CI "success" notifications messages filtering
   local mailbox = mail_account._new
@@ -310,20 +422,32 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_from("builds@travis-ci.org") *
     (mailbox:contain_subject("Passed: ") +
        mailbox:contain_subject("Fixed: "))
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Gentoo users group mailing list messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_field("list-id", "gentoo-user.gentoo.org")
-  results:move_messages(mail_account.GentooUsers)
+  total_count = move_mails(mail_account.GentooUsers, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- jamendo.com "new music" notifications messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("no-reply@jamendo.com") *
     mailbox:contain_subject("new music")
-  results:move_messages(mail_account.Jamendo)
+  total_count = move_mails(mail_account.Jamendo, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- webzilla.com annoying notifications messages filtering
   local mailbox = mail_account._new
@@ -332,7 +456,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_subject("Webzilla - Invoice") *
     mailbox:contain_subject("is paid") *
     mailbox:contain_body("Total due: EUR 0.00")
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- redfoxoutdoor.com annoying messages filtering
   local mailbox = mail_account._new
@@ -340,7 +468,11 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_from("red fox") *
     mailbox:contain_from("planetasport@retailrocket.net") *
     mailbox:contain_field("Reply-To", "info@planeta-sport.ru")
-  results:move_messages(mail_account.Redfox)
+  total_count = move_mails(mail_account.Redfox, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- Waveaccess hl7/holiadvice notifications messages filtering
   local mailbox = mail_account._new
@@ -348,12 +480,37 @@ function filtering_danil_at_kutkevich_org(mail_account)
     mailbox:contain_from("notifier@mail.rollbar.com") *
     (mailbox:contain_subject("holiadvice") +
        mailbox:contain_subject("[hl7rus]"))
-  results:move_messages(mail_account._trash)
+  total_count = move_mails(mail_account._trash, results, total_count)
+
+  if should_return(mail_account._new, total_count) then
+    return
+  end
 
   -- unfiltered messages
   local mailbox = mail_account._new
   local results = mailbox:is_unseen()
-  results:move_messages(mail_account.INBOX)
+  _ = move_mails(mail_account.INBOX, results, total_count)
+end
+
+function move_mails(mailbox, mails, count)
+  count = count - table.getn(mails)
+  mails:move_messages(mailbox)
+  if count < 0 then
+    return 0
+  end
+  return count
+end
+
+function should_return(mailbox, count)
+  if count == 0 then
+    return true
+  end
+  local results = mailbox:is_unseen()
+  count = table.getn(results)
+  if count == 0 then
+    return true
+  end
+  return false
 end
 
 -- function messages_to_armor5games(mailbox)

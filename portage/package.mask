@@ -1,1 +1,6 @@
+# Mask some overlays
+# <https://wiki.gentoo.org/wiki/Ebuild_repository#Masking_installed_but_unsafe_ebuild_repositories>,
+# <https://forums.gentoo.org/viewtopic-p-7518568.html?sid=be476180640727f89b870a3945374fae#7518568>.
+*/*::go-overlay
+
 app-emulation/emul-linux-x86-* #mask emul-linux <https://wiki.gentoo.org/wiki/Multilib_System_without_emul-linux_Packages#Remove_emul-linux_and_all_dependencies>

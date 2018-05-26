@@ -1,0 +1,6 @@
+# Compression (archiving)
+# app-arch/lz4
+app-arch/arj
+app-arch/lzip
+app-arch/unrar
+app-arch/unzip

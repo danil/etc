@@ -1,0 +1,2 @@
+# hg (mercurial)
+dev-vcs/hgview -qt4 ncurses

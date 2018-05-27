@@ -24,7 +24,9 @@ set daemon  30              # check services at 30 seconds intervals
 ## Set syslog logging. If you want to log to a standalone log file instead,
 ## specify the full path to the log file
 #
-set log syslog
+# Danil <danil@kutkevich.org>.
+# set log syslog
+set log /var/log/monit.log
 
 #
 #
@@ -157,7 +159,9 @@ set log syslog
 set httpd port 2812 and
     use address localhost  # only accept connection from localhost
     allow localhost        # allow localhost to connect to the server and
-    allow admin:monit      # require user 'admin' with password 'monit'
+    # Danil <danil@kutkevich.org>
+    # allow admin:monit      # require user 'admin' with password 'monit'
+    allow md5 /var/www/localhost/htdocs/monit/htpasswd
     #with ssl {            # enable SSL/TLS and set path to server certificate
     #    pemfile: /etc/ssl/certs/monit.pem
     #}

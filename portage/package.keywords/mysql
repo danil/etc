@@ -1,0 +1,3 @@
+# MySQL
+<dev-db/mysql-5.8::gentoo ~amd64
+=dev-db/mysql-connector-c-6.1.11-r1::gentoo ~amd64 # required by virtual/libmysqlclient-18::gentoo, dev-perl/DBD-mysql-4.44.0::gentoo, dev-db/mysql-5.7.22::gentoo[perl], =dev-db/mysql-5.7.22 (argument)

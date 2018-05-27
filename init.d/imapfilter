@@ -1,0 +1,45 @@
+#!/sbin/openrc-run
+# Copyright 1999-2018 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+description="IMAPFilter daemon, an IMAP mail filtering utility"
+pidfile=${pidfile:-"/run/${RC_SVCNAME}.pid"}
+user=${user:-root}
+group=${group:-root}
+
+CONFIG_FILE="${CONFIG_FILE:-/etc/imapfilter/${RC_SVCNAME#imapfilter.}.lua}"
+LOG_FILE="${LOG_FILE:-/var/log/imapfilter/${RC_SVCNAME#imapfilter.}.log}"
+
+command="/usr/bin/imapfilter"
+command_args="${command_args:--c $CONFIG_FILE -l $LOG_FILE}"
+# procname="imapfilter.*${RC_SVCNAME#imapfilter.}"
+
+depend() {
+	need net
+	after net
+}
+
+start_pre() {
+	checkpath -d -m 0755 -o "${user}":"${group}" "${pidfile%/*}"
+}
+
+start () {
+	ebegin "Starting IMAPFilter"
+	start-stop-daemon --start -u ${user}:${group} --exec ${command} \
+										--pidfile ${pidfile} -- ${command_args}
+	retval=$?
+	if [ "$retval" = 0 ]; then
+		pid="$(pgrep --newest --full imapfilter.*${RC_SVCNAME#imapfilter.})"
+		retval=$?
+		if [ "$retval" = 0 ]; then
+		echo $pid > ${pidfile}
+		fi
+	fi
+	eend $retval
+}
+
+stop() {
+	ebegin "Stopping IMAPFilter"
+	start-stop-daemon --stop --pidfile ${pidfile}
+	eend $?
+}

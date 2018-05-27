@@ -1,0 +1,7 @@
+# /etc/conf.d/imapfilter.danil_at_kutkevich_org
+
+user=danil
+group=danil
+# LOG_FILE="/var/log/path/to/log"
+# LOG_FILE="/var/log/imapfilter/danil_at_kutkevich_org.log"
+CONFIG_FILE="/etc/imapfilter/config_danil_at_kutkevich_org_daemon.lua"

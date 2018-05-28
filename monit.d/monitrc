@@ -1,0 +1,3 @@
+# Danil <danil@kutkevich.org>.
+# Common Monit configuration.
+set alert danil@kutkevich.org # receive all alerts

@@ -1,3 +1,4 @@
 # Danil <danil@kutkevich.org>.
 # Common Monit configuration.
+set mailserver localhost # fallback relay
 set alert danil@kutkevich.org # receive all alerts

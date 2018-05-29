@@ -114,6 +114,16 @@ function filtering_danil_at_kutkevich_org(mail_account)
     return
   end
 
+  -- monit "success" notifications messages filtering
+  local mailbox = mail_account._new
+  local results = mailbox:is_unseen() *
+    mailbox:contain_from("monit") *
+    mailbox:contain_subject("succeeded")
+  total_count = move_mails{box=mail_account._trash, mails=results, count=total_count}
+  if is_should_return{box=mail_account._new, count=total_count} then
+    return
+  end
+
   -- bh1 netdata annoying notification messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *

@@ -156,15 +156,14 @@ set log /var/log/monit.log
 ## commands to a running Monit daemon. See the Monit Wiki if you want to
 ## enable SSL for the HTTP interface.
 #
-set httpd port 2812 and
-    use address localhost  # only accept connection from localhost
-    allow localhost        # allow localhost to connect to the server and
-    # Danil <danil@kutkevich.org>
-    # allow admin:monit      # require user 'admin' with password 'monit'
-    allow md5 /var/www/localhost/htdocs/monit/htpasswd
-    #with ssl {            # enable SSL/TLS and set path to server certificate
-    #    pemfile: /etc/ssl/certs/monit.pem
-    #}
+# Danil <danil@kutkevich.org>.
+# set httpd port 2812 and
+#     use address localhost  # only accept connection from localhost
+#     allow localhost        # allow localhost to connect to the server and
+#     allow admin:monit      # require user 'admin' with password 'monit'
+#     #with ssl {            # enable SSL/TLS and set path to server certificate
+#     #    pemfile: /etc/ssl/certs/monit.pem
+#     #}
 
 ###############################################################################
 ## Services
@@ -308,3 +307,5 @@ set httpd port 2812 and
 #
 #  include /etc/monit.d/*
 #
+# Danil <danil@kutkevich.org>.
+include /etc/monit.d/*

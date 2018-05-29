@@ -5,8 +5,12 @@ check host danil.kutkevich.org with address danil.kutkevich.org
       if failed
          port 443 protocol https
          and request /en/ with content = "Danil Kutkevich"
+         with timeout 30 seconds
+         for 4 times within 5 cycles
       then alert
       if failed
          port 443 protocol https
          and request /ru/ with content = "Данил Куткевич"
+         with timeout 30 seconds
+         for 4 times within 5 cycles
       then alert

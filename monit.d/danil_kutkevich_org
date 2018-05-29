@@ -1,6 +1,7 @@
 # Danil <danil@kutkevich.org>.
 # danil.kutkevich.org homepage.
-# <https://serverfault.com/questions/653256/monit-how-to-optimally-monitor-an-url#654272>.
+# <https://serverfault.com/questions/653256/monit-how-to-optimally-monitor-an-url#654272>,
+# <https://bitbucket.org/tildeslash/monit/issues/530/ssl-read-errors-when-check-https-host-with>.
 check host danil.kutkevich.org with address danil.kutkevich.org
       if failed
          port 443 protocol https

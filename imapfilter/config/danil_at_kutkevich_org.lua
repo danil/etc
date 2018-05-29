@@ -52,6 +52,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     -- h2 cron notification messages filtering
     local results = results0:contain_from("h2.kutkevich.org")
     if table.getn(results) > 0 then
+      -- FIXME: "results" instead of "mailbox".
       results = results:contain_subject("/usr/sbin/run-crons") *
         (mailbox:contain_body("q: Updating ebuild cache in /usr/portage") +
          mailbox:contain_body("remote: Create pull request for") +

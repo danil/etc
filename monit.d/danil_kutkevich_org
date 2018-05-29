@@ -1,0 +1,12 @@
+# Danil <danil@kutkevich.org>.
+# danil.kutkevich.org homepage.
+# <https://serverfault.com/questions/653256/monit-how-to-optimally-monitor-an-url#654272>.
+check host danil.kutkevich.org with address danil.kutkevich.org
+      if failed
+         port 443 protocol https
+         and request /en/ with content = "Danil Kutkevich"
+      then alert
+      if failed
+         port 443 protocol https
+         and request /ru/ with content = "Данил Куткевич"
+      then alert

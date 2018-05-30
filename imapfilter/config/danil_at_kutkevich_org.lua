@@ -122,6 +122,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   if table.getn(results0) > 0 then
     -- monit "success" or "instance changed" messages filtering
     local results = results0:contain_subject("succeeded") +
+      results0:contain_subject("Action done") +
       results0:contain_subject("Monit instance changed")
     total_count = move_mails{box=mail_account._trash, mails=results, count=total_count}
     if is_should_return{box=mail_account._new, count=total_count} then

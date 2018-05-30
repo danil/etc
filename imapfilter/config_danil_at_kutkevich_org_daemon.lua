@@ -1,6 +1,7 @@
 -- https://github.com/lefcha/imapfilter/blob/master/samples/extend.lua
 package.path = package.path .. ";/etc/imapfilter/?.lua"
 require "config/options"
+require "config/credentials"
 require "config/danil_at_kutkevich_org"
 
 -- IMAPFilter can be detached from the controlling terminal and run in

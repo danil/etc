@@ -1,5 +1,6 @@
 package.path = package.path .. ";/etc/imapfilter/?.lua"
 require "config/options"
+require "config/credentials"
 require "config/danil_at_kutkevich_org"
 -- require "config/lera_at_kutkevich_ru"
 

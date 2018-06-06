@@ -404,15 +404,6 @@ function filtering_danil_at_kutkevich_org(mail_account)
     end
   end
 
-  local mailbox = mail_account._new
-  local results = mailbox:is_unseen() *
-    mailbox:contain_from("no-reply@jamendo.com") *
-    mailbox:contain_subject("new music")
-  total_count = move_mails{box=mail_account.Jamendo, mails=results, count=total_count}
-  if is_should_return{box=mail_account._new, count=total_count} then
-    return
-  end
-
   -- webzilla.com annoying notifications messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *

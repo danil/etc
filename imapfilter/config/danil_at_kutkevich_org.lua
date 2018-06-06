@@ -394,6 +394,17 @@ function filtering_danil_at_kutkevich_org(mail_account)
 
   -- jamendo.com "new music" notifications messages filtering
   local mailbox = mail_account._new
+  local results0 = mailbox:is_unseen() * mailbox:contain_from("no-reply@jamendo.com")
+  if table.getn(results0) > 0 then
+    local results = results0:contain_subject("new") *
+      (results0:contain_subject("music") + results0:contain_subject("single"))
+    total_count = move_mails{box=mail_account.Jamendo, mails=results, count=total_count}
+    if is_should_return{box=mail_account._new, count=total_count} then
+      return
+    end
+  end
+
+  local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
     mailbox:contain_from("no-reply@jamendo.com") *
     mailbox:contain_subject("new music")

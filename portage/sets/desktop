@@ -2,11 +2,14 @@
 # app-cdr/simpleburn
 # app-misc/cdctl #<http://superuser.com/questions/71939/disable-cd-dvd-button-on-linux-laptop-ubuntu>
 # app-text/mupdf #pdf viewer recommended by xfce (unfortunately there is no toc) <https://wiki.xfce.org/recommendedapps#mupdf>
+# gnustep-apps/pikopixel #pixelart editor
 # lxqt-base/lxqt-powermanagement #stand alone power manager
 # media-gfx/argyllcms #load icc/icm display color profiles <https://wiki.archlinux.org/index.php/ICC_Profiles#Argyll_CMS>
 # media-libs/hal-flash #drm video support <https://github.com/cshorler/hal-flash>
 # media-tv/popcorntime #torrent video player
+# net-im/signal-desktop-bin::gentoo
 # net-im/skype
+# net-im/slack-bin
 # net-irc/weechat
 # net-misc/aria2 #multi-protocol downloader (BitTorrent)
 # x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark <https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide#Test_3D_acceleration>
@@ -34,12 +37,15 @@ media-sound/alsa-utils
 media-sound/apulse
 media-sound/sox #`play` audio files from cli
 media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
-net-im/slack-bin
+net-im/skypeforlinux
 net-mail/dovecot
 net-misc/cmst #connman wifi tray icon
 net-misc/dropbox
+net-misc/mailru-cloud #mail.ru disk
+net-misc/yandex-disk
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
 net-wireless/rfkill #enabled bluetooth <http://wiki.gentoo.org/wiki/Bluetooth#Software>
+sys-apps/smartmontools
 sys-fs/dosfstools
 sys-fs/ntfs3g
 sys-power/hibernate-script #`hibernate` and `hibernate-ram` s3 aka suspend to ram aka sleep

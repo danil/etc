@@ -2,7 +2,7 @@
 
 su git \
    --shell=/bin/bash \
-   --command "/home/danil/bin/my-git-mirror.sh"
+   --command "$(eval echo '~danil')/bin/my-git-mirror.sh"
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then

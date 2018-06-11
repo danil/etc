@@ -22,6 +22,8 @@
 <media-tv/popcorntime-bin-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
 <net-im/skypeforlinux-9999::gentoo ~amd64
+<net-im/telegram-desktop-bin-9999::gentoo ~amd64
+<net-im/zoom-bin-9999::hamper-overlay ~amd64 # zoom instant messager <https://zoom.us>
 <net-misc/cmst-9999::gentoo ~amd64
 <net-misc/connman-9999::gentoo ~amd64
 <net-misc/mailru-cloud-9999::kutkevich ~amd64

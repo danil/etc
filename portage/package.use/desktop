@@ -11,6 +11,7 @@
 # app-text/docbook-sgml-utils jadetex #docbook2pdf <http://bugs.gentoo.org/61938#c0> used for <http://habrahabr.ru/blogs/Git/80909/>
 # dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 # games-strategy/freeciv sdl -gtk
+# media-fonts/fantasque-sans noloopk
 # x11-wm/compiz gtk hjkl
 */* -minimal #<http://en.gentoo-wiki.com/wiki/X.Org#USE_Flags>, <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Direct_.26_Indirect_Rendering>, <http://en.gentoo-wiki.com/wiki/ALSA#ALSA_Userspace>
 */* acpi apm pmu #power management <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_sect3>
@@ -31,7 +32,6 @@
 */* v4l v4l2 #webcam <http://en.gentoo-wiki.com/wiki/Webcam#Testing>, <http://en.gentoo-wiki.com/wiki/Webcam#Viewing>
 */* wifi bluetooth #wireless network
 */* xorg dri #x.org <http://en.gentoo-wiki.com/wiki/X.Org#USE_Flags>
->=dev-qt/qtcore-5.4.2 icu #required by net-misc/dropbox::gentoo[X] and dev-qt/qtwebkit
 app-crypt/gcr gtk #required by gnome-base/gnome-keyring, gnome-base/libgnome-keyring, app-admin/system-config-printer-gnome[gnome-keyring]
 app-emulation/virtualbox -additions -opengl
 app-text/ghostscript-gpl cups #required by net-print/cups, www-client/google-chrome
@@ -48,7 +48,9 @@ media-libs/mesa gbm #required by x11-libs/glamor, x11-drivers/xf86-video-ati[gla
 net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#comment-127287>, <http://ru.gentoo-wiki.com/wiki/Huawei_E1550_3G_модем#Ppp>
 net-fs/samba client # required by gnome-base/gvfs[samba], app-text/evince
 net-misc/aria2 bittorrent metalink ssh #multi-protocol downloader (BitTorrent)
+net-misc/connman iptables
 net-print/cups gnutls
+sys-apps/smartmontools -daemon
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
 sys-libs/binutils-libs abi_x86_32 #required by x11-libs/cairo-1.14.6::gentoo, x11-themes/gtk-engines-unico-1.0.3_pre20140109::gentoo, x11-themes/flatstudio-1.03::kutkevich[gtk3], @desktop, @selected, @world (argument)
 sys-libs/ntdb python # required by net-fs/samba, gnome-base/gvfs[samba], app-text/evince
@@ -78,10 +80,9 @@ media-video/ffmpeg x264
 media-video/ffmpeg theora
 media-video/ffmpeg vpx #VP8 and VP9 video compression format for WebM video file format video <http://en.wikipedia.org/wiki/VP8>, <http://en.wikipedia.org/wiki/Webm>
 
-# Seafile.
-dev-lang/python sqlite #required by net-misc/seafile-client, net-misc/seafile
-net-libs/ccnet python client #required by net-misc/seafile-client
-net-misc/seafile client
+# Dropbox.
+dev-libs/libpcre2 pcre16 # required by dev-qt/qtcore, dev-qt/qtwidgets, dev-qt/qtwebkit, net-misc/dropbox-45.3.88::gentoo[X]
+dev-qt/qtcore icu #required by net-misc/dropbox::gentoo[X] and dev-qt/qtwebkit
 
 # Xfce.
 media-libs/libopenraw gtk #required by xfce-extra/tumbler[raw]
@@ -89,3 +90,15 @@ xfce-base/thunar exif
 xfce-base/thunar udisks #required by xfce-extra/thunar-volman
 xfce-base/xfce4-session upower
 xfce-extra/tumbler odf raw
+
+# Zoom instant messager <https://zoom.us>.
+dev-qt/qtwebchannel qml # required by dev-qt/qtwebengine-5.9.4::gentoo, net-im/zoom-bin-2.1.103753.0521-r1::hamper-overlay, net-im/zoom-bin (argument)
+media-libs/libvpx svc # required by dev-qt/qtwebengine-5.9.4::gentoo, net-im/zoom-bin-2.1.103753.0521-r1::hamper-overlay, net-im/zoom-bin (argument)
+
+# # https://github.com/wkhtmltopdf/wkhtmltopdf
+# dev-qt/qtwebkit printsupport # required by media-gfx/wkhtmltopdf
+
+# # Seafile.
+# dev-lang/python sqlite #required by net-misc/seafile-client, net-misc/seafile
+# net-libs/ccnet python client #required by net-misc/seafile-client
+# net-misc/seafile client

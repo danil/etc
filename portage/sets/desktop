@@ -38,6 +38,7 @@ media-sound/apulse
 media-sound/sox #`play` audio files from cli
 media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
 net-im/skypeforlinux
+net-im/telegram-desktop-bin
 net-im/zoom-bin # zoom instant messager <https://zoom.us>
 net-mail/dovecot
 net-misc/cmst #connman wifi tray icon

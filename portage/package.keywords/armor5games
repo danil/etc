@@ -1,0 +1,10 @@
+# <dev-db/clickhouse-9999 ~amd64
+
+# # Cockroach.
+# <dev-db/cockroach-9999::gentoo ~amd64
+# =app-crypt/rhash-1.3.4 ~amd64 # required by dev-util/cmake, dev-db/cockroach
+# =dev-util/cmake-3.8.2 ~amd64 # required by dev-db/cockroach
+
+# # mongodb.
+# <app-admin/mongo-tools-3.6::gentoo ~amd64 #mongodb less than 3.4 segfault with "invalid access at address"
+# <dev-db/mongodb-3.6::gentoo ~amd64 #mongodb less than 3.4 segfault with "invalid access at address"

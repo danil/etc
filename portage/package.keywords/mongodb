@@ -1,1 +1,1 @@
-app-admin/mongo-tools ~amd64 # required by dev-db/mongodb::gentoo[tools]
+# app-admin/mongo-tools ~amd64 # required by dev-db/mongodb::gentoo[tools]

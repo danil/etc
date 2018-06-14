@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Monospace:pixelsize=32:antialias=true:hinting=true:autohint=true:style=regular";
 static int borderpx = 2;
 
 /*
@@ -32,7 +32,7 @@ static float chscale = 1.0;
  *
  * More advanced example: " `'\"()[]{}"
  */
-char *worddelimiters = " ";
+char *worddelimiters = " `'\"()[]{}<>";
 
 /* selection timeouts (in milliseconds) */
 static unsigned int doubleclicktimeout = 300;
@@ -118,7 +118,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+/* static unsigned int defaultcs = 256; */
+static unsigned int defaultcs = 9;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -170,14 +171,19 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	/* { TERMMOD,              XK_Prior,       zoom,           {.f = +1} }, */
+	/* { TERMMOD,              XK_Next,        zoom,           {.f = -1} }, */
+	/* { TERMMOD,              XK_Home,        zoomreset,      {.f =  0} }, */
+	{ ControlMask|ShiftMask|Mod1Mask, XK_plus, zoom,        {.f = +1} },
+	{ ControlMask|ShiftMask|Mod1Mask, XK_underscore, zoom,  {.f = -1} },
+	{ ControlMask|ShiftMask|Mod1Mask, XK_parenright, zoomreset, {.f =  0} },
+	/* { TERMMOD,              XK_C,           clipcopy,       {.i =  0} }, */
+	{ Mod4Mask,              XK_c,          clipcopy,       {.i =  0} },
+	{ Mod4Mask,              XK_v,          clippaste,      {.i =  0} },
+	{ MODKEY|ShiftMask,     XK_Insert,      clippaste,      {.i =  0} },
+	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
+	/* { TERMMOD,              XK_I,           iso14755,       {.i =  0} }, */
 };
 
 /*

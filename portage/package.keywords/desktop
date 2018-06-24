@@ -1,6 +1,5 @@
 # Desktop.
 
-
 # */*::kutkevich
 # <app-backup/dvcs-autosync-9999::betagarden ~amd64
 # <app-emulation/playonlinux-9999::gentoo ~amd64
@@ -18,7 +17,8 @@
 <app-emulation/vagrant-bin-9999::kutkevich ~amd64
 <media-fonts/fantasque-sans-9999::kutkevich ~amd64
 <media-fonts/fira-sans-9999::kutkevich ~amd64
-<media-sound/apulse-9999::gentoo ~amd64 #used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
+<media-sound/apulse-9999::gentoo ~amd64 # used by skype for pulseaudio emulation via alsa <http://wiki.gentoo.org/wiki/Skype#apulse>
+<media-sound/pnmixer-9999::gentoo ~amd64 # alsa volume tray icon
 <media-tv/popcorntime-bin-9999::kutkevich ~amd64
 <net-im/skype-9999::gentoo ~amd64
 <net-im/skypeforlinux-9999::gentoo ~amd64
@@ -48,18 +48,17 @@
 games-action/minecraft::kutkevich ~amd64
 
 # Suckless.
-<x11-misc/dmenu-9999::kutkevich ~amd64
+<x11-misc/dmenu-9999 ~amd64
 <x11-misc/slstatus-9999::kutkevich ~amd64
 <x11-misc/tabbed-9999::gentoo ~amd64
-<x11-terms/st-9999::kutkevich ~amd64
+<x11-terms/st-9999 ~amd64
 <x11-wm/dwm-9999::kutkevich ~amd64
 # =x11-terms/st-0.7::gentoo ~amd64
 
 # Maim (screenshot).
-# <media-gfx/maim-9999::gentoo ~amd64
-<media-gfx/maim-9999::kutkevich ~amd64
-<x11-misc/shutter-9999::gentoo ~amd64
-<x11-misc/slop-6.3.46::gentoo ~amd64
+# <x11-misc/shutter-9999::gentoo ~amd64
+<media-gfx/maim-9999::gentoo ~amd64
+<x11-misc/slop-9999::gentoo ~amd64
 
 # GTK themes.
 # <x11-themes/flatstudio-9999::kutkevich ~amd64

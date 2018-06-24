@@ -1,0 +1,11 @@
+diff --git a/components/load_avg.c b/components/load_avg.c
+index 5c2e252..ae2c6e8 100644
+--- a/components/load_avg.c
++++ b/components/load_avg.c
+@@ -14,5 +14,5 @@ load_avg(void)
+ 		return NULL;
+ 	}
+ 
+-	return bprintf("%.2f %.2f %.2f", avgs[0], avgs[1], avgs[2]);
++	return bprintf("%.2f", avgs[0]);
+ }

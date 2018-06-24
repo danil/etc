@@ -1,0 +1,22 @@
+diff --git a/components/battery.c b/components/battery.c
+index 99e09d5..478ca7c 100644
+--- a/components/battery.c
++++ b/components/battery.c
+@@ -75,7 +75,7 @@
+ 				break;
+ 			}
+ 		}
+-		return (i == LEN(map)) ? "?" : map[i].symbol;
++		return (i == LEN(map)) ? "⚡" : map[i].symbol;
+ 	}
+ 
+ 	const char *
+@@ -176,7 +176,7 @@
+ 					break;
+ 				}
+ 			}
+-			return (i == LEN(map)) ? "?" : map[i].symbol;
++			return (i == LEN(map)) ? "⚡" : map[i].symbol;
+ 		}
+ 
+ 		return NULL;

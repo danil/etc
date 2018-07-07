@@ -1,8 +1,5 @@
 127.0.0.1	localhost
-127.0.1.1	h5
-
-# Danil.
-192.168.0.18 medapp2.waveaccess.ru
+127.0.1.1	h17
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
@@ -10,3 +7,46 @@ fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
+
+# Xena exchange
+#127.0.0.1       etcd-svc.default.svc.cluster.local
+172.17.0.1       etcd-svc.default.svc.cluster.local
+172.17.0.1       rabbitmq-svc.default.svc.cluster.local
+172.17.0.1       redis-svc.default.svc.cluster.local
+172.17.0.1       postgres-svc.default.svc.cluster.local
+172.17.0.1       bitcoind-watcher-svc-1.default.svc.cluster.local
+172.17.0.1       bitcoind-watcher-svc-2.default.svc.cluster.local
+172.17.0.1       bcash-watcher-svc-1.default.svc.cluster.local
+172.17.0.1       bcash-watcher-svc-2.default.svc.cluster.local
+172.17.0.1       bcash-keymaker-svc-1.default.svc.cluster.local
+172.17.0.1       bcash-keymaker-svc-2.default.svc.cluster.local
+172.17.0.1       omni-watcher-svc-1.default.svc.cluster.local
+172.17.0.1       omni-watcher-svc-2.default.svc.cluster.local
+172.17.0.1       bitcoind-keymaker-svc-1.default.svc.cluster.local
+172.17.0.1       bitcoind-keymaker-svc-2.default.svc.cluster.local
+172.17.0.1       litecoin-watcher-svc-1.default.svc.cluster.local
+172.17.0.1       litecoin-watcher-svc-2.default.svc.cluster.local
+172.17.0.1       litecoin-keymaker-svc-1.default.svc.cluster.local
+172.17.0.1       litecoin-keymaker-svc-2.default.svc.cluster.local
+172.17.0.1       omni-internal-svc-1.default.svc.cluster.local
+172.17.0.1       omni-internal-svc-2.default.svc.cluster.local
+172.17.0.1       ethereum-watcher-svc-1.default.svc.cluster.local
+172.17.0.1       ethereum-watcher-svc-2.default.svc.cluster.local
+172.17.0.1       ethereum-deposit-svc-1.default.svc.cluster.local
+172.17.0.1       ethereum-deposit-svc-2.default.svc.cluster.local
+172.17.0.1       ethereum-internal-svc-1.default.svc.cluster.local
+172.17.0.1       ethereum-internal-svc-2.default.svc.cluster.local
+172.17.0.1       account-service-svc.default.svc.cluster.local
+172.17.0.1       auth-service-svc.default.svc.cluster.local
+172.17.0.1       balance-service-svc.default.svc.cluster.local
+172.17.0.1       blockchain-bitcoin-svc.default.svc.cluster.local
+172.17.0.1       blockchain-ethereum-svc.default.svc.cluster.local
+172.17.0.1       blockchain-ethereum-classic-svc.default.svc.cluster.local
+172.17.0.1       frontend-svc.default.svc.cluster.local
+172.17.0.1       frontend-api-svc.default.svc.cluster.local
+172.17.0.1       market-data-api-svc.default.svc.cluster.local
+172.17.0.1       market-data-service-svc.default.svc.cluster.local
+172.17.0.1       orders-history-svc.default.svc.cluster.local
+172.17.0.1       trading-api-svc.default.svc.cluster.local
+172.17.0.1       trading-engine-svc.default.svc.cluster.local
+# 35.205.245.184   frontend-svc.default.svc.cluster.local

@@ -10,4 +10,10 @@
 UUID=16e74326-494e-4f85-8d89-690cec0a7436 /boot           ext4    defaults        0       2
 # /boot/efi was on /dev/nvme0n1p1 during installation
 UUID=7D36-1F8C  /boot/efi       vfat    umask=0077      0       1
-/dev/mapper/ubuntu--vg-swap_1 none            swap    sw              0       0
+# Danil <danil@kutkevich.org>.
+# <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect12>,
+# <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap1_sect2>,
+# <https://wiki.gentoo.org/wiki/SSD>,
+# <https://wiki.archlinux.org/index.php/Solid_State_Drives>.
+# /dev/mapper/ubuntu--vg-swap_1 none            swap    sw              0       0
+/swapfile               none            swap            sw              0 0

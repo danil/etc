@@ -1,0 +1,8 @@
+# Rocketbank common.
+net-vpn/vpnc
+
+# Rocketbank go/german
+dev-db/postgresql
+
+# Rocketbank ruby/rails.
+dev-ruby/rmagick

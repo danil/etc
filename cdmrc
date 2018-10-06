@@ -14,7 +14,7 @@
 #   '/usr/bin/fbterm'                # or start a frame buffer console,
 #   '/usr/bin/cdm ~/.submenu.cdmrc'  # or go to a submenu :)
 # )
-# Danil.
+# ~~~~Danil <danil@kutkevich.org>.
 # <https://wiki.archlinux.org/index.php/CDM#Menu_items>,
 # <https://github.com/ghost1227/cdm>.
 binlist=(
@@ -30,7 +30,7 @@ binlist=(
 #
 # (Continued example:)
 # namelist=('X session' Console FBTerm 'Sub menu')
-# Danil.
+# ~~~~Danil <danil@kutkevich.org>.
 namelist=(dwm 'X session' bash reboot shutdown)
 
 # Type of the programs, one-by-one matched with $binlist.
@@ -39,13 +39,13 @@ namelist=(dwm 'X session' bash reboot shutdown)
 #
 # (Continued example:)
 # flaglist=(X C C C)
-# Danil.
+# ~~~~Danil <danil@kutkevich.org>.
 flaglist=(X X C C C)
 
 # Style for the cdm dialog, which is printed with dialog(1).
 # Default to unset, causing dialog(1) to use the system wide default.
 # See /usr/share/doc/cdm/themes for some nice choices.
-# Danil.
+# # ~~~~Danil <danil@kutkevich.org>.
 # dialogrc=/usr/share/cdm/themes/blackandwhite
 dialogrc=
 
@@ -78,3 +78,8 @@ serverargs=(-nolisten tcp)
 # no apparent reason does not start X).
 # Only provided in the hope it may be useful, not a guaranteed fix.
 altstartx=no
+
+# Destination for stdout and stderr output from startx.
+# ~~~~Danil <danil@kutkevich.org>.
+# startxlog=/dev/null
+startxlog=/var/log/cdm_startx.log

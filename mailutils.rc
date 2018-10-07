@@ -2,7 +2,6 @@
 # See info mailutils for details.
 
 # ~~~~Danil <danil@kutkevich.org>
-# <http://mailutils.org/manual/mailutils.html>.
 # # Gentoo default is maildir
 # mailbox {
 #   mailbox-type maildir;

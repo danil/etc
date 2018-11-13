@@ -1,4 +1,5 @@
 # Danil.
 /var/log/jabber/prosody.* {
+  su jabber jabber
   notifempty
 }

@@ -1,3 +1,4 @@
+# dev-util/drone
 # dev-libs/libgit2 # required by github.com/rgburke/grv/cmd/grv
 dev-db/sqlite
 dev-go/go-tools # godoc used by emacs

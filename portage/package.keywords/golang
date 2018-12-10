@@ -1,6 +1,6 @@
 # Golang.
 <dev-go/go-tools-9999::gentoo ~amd64 # required by dev-lang/go-1.7.3
-=dev-lang/go-1.10::gentoo ~amd64
+<dev-lang/go-1.12::gentoo ~amd64
 
 # Go tools (godoc - used by emacs).
 =dev-go/go-crypto-0_pre20160126::gentoo ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)

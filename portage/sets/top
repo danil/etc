@@ -1,7 +1,7 @@
 # Tops.
 net-analyzer/iftop #bandwidth usage on an interface
 net-analyzer/nload #bandwidth usage on an interface
-sys-power/powertop
+sys-power/powertop #fix linux kernel config: CONFIG_CPU_FREQ_STAT: is not set when it should be, CONFIG_TIMER_STATS is not set when it should be
 sys-process/atop #resource-specific view of processes
 sys-process/ftop #open files by processes
 sys-process/htop #classic top replacement

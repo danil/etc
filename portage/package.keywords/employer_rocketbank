@@ -1,3 +1,5 @@
 # Rocketbank
 
+# Rocketbank ruby/rails.
+<app-misc/elasticsearch-6::gentoo ~amd64
 <dev-go/glide-9999::go-overlay ~amd64

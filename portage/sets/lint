@@ -1,7 +1,10 @@
+# Linters.
+app-misc/fslint # find and clean various filesystem problems, for example duplicate files and so on
+
 # Linters for emacs.
-app-text/tidy-html5 #html checker used by flycheck
-app-text/xmlstarlet #used by flycheck
-dev-lang/lua #used by flycheck
-dev-python/pylint #python checker used by flycheck
-dev-util/cppcheck #static analysis of C/C++ code used by flycheck <https://github.com/danmar/cppcheck>
-dev-util/shellcheck #static analysis tool for shell scripts, bash and so on (https://github.com/koalaman/shellcheck, http://www.shellcheck.net)
+# dev-util/cppcheck # emerge conflict # static analysis of C/C++ code used by flycheck <https://github.com/danmar/cppcheck>
+app-text/tidy-html5 # html checker used by flycheck
+app-text/xmlstarlet # used by flycheck
+dev-lang/lua # used by flycheck
+dev-python/pylint # python checker used by flycheck
+dev-util/shellcheck # static analysis tool for shell scripts, bash and so on (https://github.com/koalaman/shellcheck, http://www.shellcheck.net)

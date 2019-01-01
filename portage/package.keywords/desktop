@@ -2,6 +2,7 @@
 
 # */*::kutkevich
 # <app-backup/dvcs-autosync-9999::betagarden ~amd64
+# <app-editors/kakoune-9999::gentoo ~amd64 # lightweight oldschool editor
 # <app-emulation/playonlinux-9999::gentoo ~amd64
 # <app-emulation/winetricks-9999::gentoo ~amd64
 # <app-portage/udept-9999::gentoo ~amd64 #clean out your world file <http://forums.gentoo.org/viewtopic-t-142475.html>

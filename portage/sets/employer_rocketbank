@@ -1,8 +1,16 @@
 # Rocketbank common.
 net-vpn/vpnc
+sys-cluster/kubectl
 
-# Rocketbank go/german
+# Rocketbank go/german.
+app-emulation/docker-compose
 dev-db/postgresql
+dev-go/glide
 
-# Rocketbank ruby/rails.
+# Rocketbank felix ruby/rails.
+app-misc/elasticsearch
 dev-ruby/rmagick
+dev-db/redis
+
+# Valya.
+dev-lang/elixir

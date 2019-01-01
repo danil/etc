@@ -1,6 +1,6 @@
 # scylladb <https://github.com/scylladb/scylla>.
 <app-admin/scylla-jmx-9999::kutkevich ~amd64
 <app-admin/scylla-tools-9999::kutkevich ~amd64 # required by dev-db/scylla
-<dev-db/scylla-9999::kutkevich ~amd64 # required by dev-db/scylla
+<dev-db/scylla-2.0.3::kutkevich ~amd64 # required by dev-db/scylla
 <dev-libs/thrift-9999::kutkevich ~amd64 # required by dev-db/scylla
 =dev-cpp/antlr-cpp-3.5.2-r1 ~amd64 # required by dev-db/scylla

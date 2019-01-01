@@ -1,5 +1,7 @@
 # Used by emacs.
+# dev-util/cppcheck # used by flycheck
 app-admin/emacs-updater
-app-dicts/aspell-en #spell checker
-app-dicts/aspell-ru #spell checker
-dev-util/ctags #projectile <https://github.com/bbatsov/projectile#regenerate-tags>
+app-admin/pass # used by <https://github.com/DamienCassou/auth-password-store>, <http://passwordstore.org>
+app-dicts/aspell-en # spell checker
+app-dicts/aspell-ru # spell checker
+dev-util/ctags # projectile <https://github.com/bbatsov/projectile#regenerate-tags>

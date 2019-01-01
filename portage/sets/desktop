@@ -1,6 +1,8 @@
 # app-admin/system-config-printer-gnome #deprecated
 # app-cdr/simpleburn
+# app-editors/kakoune # lightweight oldschool editor
 # app-misc/cdctl #<http://superuser.com/questions/71939/disable-cd-dvd-button-on-linux-laptop-ubuntu>
+# app-office/libreoffice-bin
 # app-text/mupdf #pdf viewer recommended by xfce (unfortunately there is no toc) <https://wiki.xfce.org/recommendedapps#mupdf>
 # gnustep-apps/pikopixel #pixelart editor
 # lxqt-base/lxqt-powermanagement #stand alone power manager
@@ -12,16 +14,18 @@
 # net-im/slack-bin
 # net-irc/weechat
 # net-misc/aria2 #multi-protocol downloader (BitTorrent)
+# net-misc/mailru-cloud #mail.ru disk #bug: infinite loop revdep-rebuild
+# net-wireless/rfkill # emerge conflict #enabled bluetooth <http://wiki.gentoo.org/wiki/Bluetooth#Software>
 # x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark <https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide#Test_3D_acceleration>
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
+# x11-misc/skippy-xd #ala compiz scale (osx expose) <https://github.com/richardgv/skippy-xd>, <https://code.google.com/p/skippy-xd>
 # x11-plugins/pidgin-window_merge
 # xfce-extra/xfce4-power-manager
 app-arch/xarchiver
 app-editors/mousepad
 app-emulation/virtualbox-bin
-app-office/libreoffice-bin
 app-text/evince
 dev-python/gnome-keyring-python
 media-fonts/dejavu
@@ -35,6 +39,7 @@ media-gfx/maim #maim (make image) takes screenshots of your desktop
 media-gfx/ristretto #xfce image viewer <https://wiki.xfce.org/recommendedapps#ristretto>, <http://www.ohloh.net/p/ristretto>
 media-sound/alsa-utils
 media-sound/apulse
+media-sound/pnmixer #alsa tray sound volum icon
 media-sound/sox #`play` audio files from cli
 media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
 net-im/skypeforlinux
@@ -43,10 +48,8 @@ net-im/zoom-bin # zoom instant messager <https://zoom.us>
 net-mail/dovecot
 net-misc/cmst #connman wifi tray icon
 net-misc/dropbox
-net-misc/mailru-cloud #mail.ru disk
 net-misc/yandex-disk
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
-net-wireless/rfkill #enabled bluetooth <http://wiki.gentoo.org/wiki/Bluetooth#Software>
 sys-apps/smartmontools
 sys-fs/dosfstools
 sys-fs/ntfs3g
@@ -66,7 +69,6 @@ x11-misc/cdm #starting x11 <https://wiki.archlinux.org/index.php/CDM>
 x11-misc/dex #execute commands on window manager startup <http://superuser.com/questions/130242/how-can-i-execute-commands-on-startup-in-awesome#326626>
 x11-misc/dunst #minimalistic notification daemon (notify-osd from canonical replace) <http://knopwob.org/dunst>, <http://github.com/knopwob/dunst>, <https://wiki.archlinux.org/index.php/Desktop_notifications#Standalone>
 x11-misc/i3lock #xscreensaver replacement
-x11-misc/skippy-xd #ala compiz scale (osx expose) <https://github.com/richardgv/skippy-xd>, <https://code.google.com/p/skippy-xd>
 x11-misc/unclutter #hide mouse cursor after while <https://wiki.archlinux.org/index.php/unclutter>
 x11-misc/wmctrl #show desktop and more <http://rox.sourceforge.net/desktop/book/export/html/188.html>
 x11-misc/xautolock #used by i3lock

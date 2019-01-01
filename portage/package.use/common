@@ -2,6 +2,7 @@
 
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
+# www-client/w3m imlib #for the "w3mimgdisplay" program to preview images in ranger vim-inspired filemanager
 */* ffmpeg -libav #ffmpeg/libav conflict management <http://wiki.gentoo.org/wiki/Ffmpeg>, <http://wiki.gentoo.org/wiki/Libav>, <https://www.gentoo.org/support/news-items/2015-04-16-ffmpeg-default.html>, <https://forums.gentoo.org/viewtopic-t-1009988.html>
 */* nls #localization; for message based localization to work in programs that support it <http://gentoo.org/doc/en/guide-localization.xml?style=printable#doc_chap3_pre3>, <http://ru.gentoo-wiki.com/wiki/Полная_поддержка_русского_языка#unicode>
 */* unicode #utf-8 <http://gentoo.org/doc/en/utf-8.xml?style=printable#doc_chap3_sect4>, <http://ru.gentoo-wiki.com/wiki/Полная_поддержка_русского_языка#baselayout>
@@ -10,10 +11,10 @@
 app-editors/emacs -X -alsa -dbus -gif -gtk3 -jpeg -png -svg -tiff -xft -xpm
 app-editors/emacs libxml2 #used by www browser
 app-emulation/docker overlay #use "overlay" fs storage because "device mapper" crashed on my system
+app-misc/jq oniguruma #regexp support
 dev-libs/libxml2 python #required by app-text/gnome-doc-utils, sci-mathematics/genius
 dev-ruby/mruby local-mri
 dev-vcs/git -gnome-keyring
-dev-vcs/hgview -qt4 ncurses
 mail-client/mutt doc imap #`man muttrc`
 net-misc/ntp caps #<http://en.gentoo-wiki.com/wiki/NTP#Installation>
 sys-apps/the_silver_searcher lzma

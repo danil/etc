@@ -4,5 +4,6 @@
 # <virtual/rust-9999 ~amd64 # required by dev-util/cargo, required by dev-lang/rust
 <dev-lang/rust-bin-9999::gentoo ~amd64
 
-# # Rust.
 # <sys-apps/ripgrep-9999::gentoo ~amd64
+
+# x11-terms/alacritty

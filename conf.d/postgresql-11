@@ -45,7 +45,7 @@ FORCE_TIMEOUT=2
 #
 # The following values should not be arbitrarily changed.
 #
-# `emerge --config dev-db/postgresql:9.5' uses these values to
+# `emerge --config dev-db/postgresql:11' uses these values to
 # determine where to create the data directory, where to place the
 # configuration files, and any additional options to pass to initdb.
 #
@@ -55,13 +55,11 @@ FORCE_TIMEOUT=2
 ##############################################################################
 
 # Location of configuration files
-PGDATA="/etc/postgresql-9.5/"
+PGDATA="/etc/postgresql-11/"
 
 # Where the data directory is located/to be created
-DATA_DIR="/var/lib/postgresql/9.5/data"
+DATA_DIR="/var/lib/postgresql/11/data"
 
 # Additional options to pass to initdb.
 # See `man initdb' for available options.
-# Danil <danil@kutkevich.org>.
-# PG_INITDB_OPTS="--encoding=UTF8"
-PG_INITDB_OPTS="--encoding=UTF8 --locale=en_US.UTF-8"
+PG_INITDB_OPTS="--encoding=UTF8"

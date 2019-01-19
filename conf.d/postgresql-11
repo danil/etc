@@ -62,4 +62,6 @@ DATA_DIR="/var/lib/postgresql/11/data"
 
 # Additional options to pass to initdb.
 # See `man initdb' for available options.
-PG_INITDB_OPTS="--encoding=UTF8"
+# Danil <danil@kutkevich.org>.
+# PG_INITDB_OPTS="--encoding=UTF8"
+PG_INITDB_OPTS="--encoding=UTF8 --locale=en_US.UTF-8"

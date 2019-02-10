@@ -167,9 +167,8 @@ static MouseShortcut mshortcuts[] = {
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
-/* Danil <danil@kutkevich.org> */
-/* #define TERMMOD (ControlMask|ShiftMask) */
-#define TERMMOD (ControlMask|ShiftMask|Mod1Mask)
+#define TERMMOD (ControlMask|ShiftMask)
+#define TERMMODZOOM (ControlMask|ShiftMask|Mod1Mask)
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
@@ -181,9 +180,9 @@ static Shortcut shortcuts[] = {
 	/* { TERMMOD,              XK_Prior,       zoom,           {.f = +1} }, */
 	/* { TERMMOD,              XK_Next,        zoom,           {.f = -1} }, */
 	/* { TERMMOD,              XK_Home,        zoomreset,      {.f =  0} }, */
-	{ TERMMOD,              XK_plus,        zoom,           {.f = +1} },
-	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
-	{ TERMMOD,              XK_parenright,  zoomreset,      {.f =  0} },
+	{ TERMMODZOOM,          XK_plus,        zoom,           {.f = +1} },
+	{ TERMMODZOOM,          XK_underscore,  zoom,           {.f = -1} },
+	{ TERMMODZOOM,          XK_parenright,  zoomreset,      {.f =  0} },
   /* Danil <danil@kutkevich.org> */
 	/* { TERMMOD,              XK_C,           clipcopy,       {.i =  0} }, */
 	/* { TERMMOD,              XK_V,           clippaste,      {.i =  0} }, */

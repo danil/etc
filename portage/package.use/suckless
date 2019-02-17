@@ -1,0 +1,8 @@
+# Suckless DWM.
+# x11-misc/polybar # https://github.com/jaagr/polybar
+x11-misc/dmenu savedconfig
+x11-misc/slock savedconfig
+x11-misc/slstatus savedconfig
+x11-misc/tabbed savedconfig
+x11-terms/st savedconfig
+x11-wm/dwm savedconfig

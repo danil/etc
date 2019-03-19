@@ -28,12 +28,3 @@ www-client/elinks bittorrent #cli http and bittorrent client
 www-servers/nginx nginx_modules_http_stub_status #used by Munin
 # www-servers/nginx fastcgi
 # www-servers/nginx nginx_modules_http_passenger
-
-# Suckless.
-www-servers/quark savedconfig
-x11-misc/dmenu savedconfig
-x11-misc/slock savedconfig
-x11-misc/slstatus savedconfig
-x11-misc/tabbed savedconfig
-x11-terms/st savedconfig
-x11-wm/dwm savedconfig

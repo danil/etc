@@ -21,6 +21,7 @@
 # sci-geosciences/gpsbabel # gps track points reduce (garmin etrex 20 supports 250 points per route) <http://gpsbabel.org/htmldoc-development/filter_simplify.html>, <https://support.garmin.com/support/searchSupport/case.faces?caseId=%7B0b02f820-03db-11e0-e050-000000000000%7D>
 # sys-apps/hdparm # SSD TRIM verify <https://wiki.archlinux.org/index.php/Solid_State_Drives#Verify_TRIM_Support>
 # sys-apps/iproute2
+# www-servers/quark # suckless http server for development purposes
 app-admin/makepasswd # password generator
 app-admin/pwgen # password generator
 app-emulation/docker

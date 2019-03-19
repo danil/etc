@@ -12,6 +12,7 @@
 # dev-libs/libxml2 -icu #required by x11-libs/qt-webkit[gstreamer]
 # games-strategy/freeciv sdl -gtk
 # media-fonts/fantasque-sans noloopk
+# www-servers/quark savedconfig # suckless http server for development purposes
 # x11-wm/compiz gtk hjkl
 */* -minimal #<http://en.gentoo-wiki.com/wiki/X.Org#USE_Flags>, <http://en.gentoo-wiki.com/wiki/Graphics_drivers#Direct_.26_Indirect_Rendering>, <http://en.gentoo-wiki.com/wiki/ALSA#ALSA_Userspace>
 */* acpi apm pmu #power management <http://gentoo.org/doc/en/power-management-guide.xml#doc_chap2_sect3>

@@ -23,11 +23,11 @@
 # Note: all /dev/hd*s will appear as /dev/sd*s
 # <http://linuxquestions.org/questions/arch-29/why-sda-and-not-hda-552872/>.
 /dev/sda1               /boot           ext4            noauto,noatime  1 2
-/dev/sda5               /               ext4            noatime         0 1
+/dev/sda2               /               ext4            noatime         0 1
 # /swapfile               none            swap            sw              0 0
 # /mnt/trash/swapfile     none            swap            sw              0 0
 /dev/sda3               none            swap            defaults        0 0
-/dev/sda4               /mnt/trash      ext4            noatime         0 1
+# /dev/sda4               /mnt/trash      ext4            noatime         0 1
 # /dev/cdrom            /mnt/cdrom      auto            noauto,ro       0 0
 # /dev/fd0              /mnt/floppy     auto            noauto          0 0
 

@@ -4,6 +4,7 @@
 # app-misc/cdctl #<http://superuser.com/questions/71939/disable-cd-dvd-button-on-linux-laptop-ubuntu>
 # app-office/libreoffice-bin
 # app-text/mupdf #pdf viewer recommended by xfce (unfortunately there is no toc) <https://wiki.xfce.org/recommendedapps#mupdf>
+# gnome-extra/nm-applet
 # gnustep-apps/pikopixel #pixelart editor
 # lxqt-base/lxqt-powermanagement #stand alone power manager
 # media-gfx/argyllcms #load icc/icm display color profiles <https://wiki.archlinux.org/index.php/ICC_Profiles#Argyll_CMS>
@@ -20,6 +21,7 @@
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
+# x11-misc/polybar # status bar for the tiling manages https://github.com/jaagr/polybar
 # x11-misc/skippy-xd #ala compiz scale (osx expose) <https://github.com/richardgv/skippy-xd>, <https://code.google.com/p/skippy-xd>
 # x11-plugins/pidgin-window_merge
 # xfce-extra/xfce4-power-manager
@@ -37,16 +39,11 @@ media-gfx/feh
 media-gfx/gimp
 media-gfx/maim #maim (make image) takes screenshots of your desktop
 media-gfx/ristretto #xfce image viewer <https://wiki.xfce.org/recommendedapps#ristretto>, <http://www.ohloh.net/p/ristretto>
-media-sound/alsa-utils
-media-sound/apulse
-media-sound/pnmixer #alsa tray sound volum icon
-media-sound/sox #`play` audio files from cli
 media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
 net-im/skypeforlinux
 net-im/telegram-desktop-bin
 net-im/zoom-bin # zoom instant messager <https://zoom.us>
 net-mail/dovecot
-net-misc/cmst #connman wifi tray icon
 net-misc/dropbox
 net-misc/yandex-disk
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
@@ -84,6 +81,19 @@ xfce-base/thunar
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler #thumbnails generator for thunar and ristretto <https://wiki.archlinux.org/index.php/thunar#Plugins_and_addons>, <http://www.ohloh.net/p/tumbler>
+
+# Audio/sound/volum
+# media-sound/pasystray # https://github.com/christophgysin/pasystray
+# media-sound/volumeicon # https://github.com/Maato/volumeicon
+media-sound/alsa-utils
+media-sound/apulse
+media-sound/pnmixer #alsa tray sound volum icon
+media-sound/sox #`play` audio files from cli
+
+# Wifi/wireless
+# gnome-extra/nm-applet
+# net-misc/networkmanager
+net-misc/cmst # connman wifi tray icon
 
 # GTK themes.
 # x11-themes/flatstudio #dark (black) gtk 2/3 theme

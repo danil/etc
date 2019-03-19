@@ -5,9 +5,9 @@
 # in your /etc/inittab file so that you don't get a dead keyboard.
 CHECKVT=7
 
-# What display manager do you use ?  [ xdm | gdm | kdm | gpe | entrance ]
+# What display manager do you use ?  [ xdm | gdm | sddm | gpe | lightdm | entrance ]
 # NOTE: If this is set in /etc/rc.conf, that setting will override this one.
-# Danil
+# Danil <danil@kutkevich.org>.
 # DISPLAYMANAGER="xdm"
 # <http://en.gentoo-wiki.com/wiki/SLiM#Start_on_boot>.
 DISPLAYMANAGER="slim"

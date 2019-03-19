@@ -1,6 +1,5 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/files/grub.default-3,v 1.5 2015/03/25 01:58:00 floppym Exp $
 #
 # To populate all changes in this file you need to regenerate your
 # grub configuration file afterwards:
@@ -29,7 +28,7 @@ GRUB_DISTRIBUTOR="Gentoo"
 # Boot with systemd instead of sysvinit (openrc)
 # GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd"
 
-# # Danil.
+# # Danil <danil@kutkevich.org>.
 # # Disable discrete nvidia (nouveau)
 # # <https://github.com/Bumblebee-Project/Bumblebee/issues/592#issuecomment-49726754>,
 # # <https://github.com/Bumblebee-Project/bbswitch/issues/78#issuecomment-41381548>,
@@ -41,7 +40,7 @@ GRUB_DISTRIBUTOR="Gentoo"
 
 # Append parameters to the linux kernel command line for non-recovery entries
 #GRUB_CMDLINE_LINUX_DEFAULT=""
-# # Danil.
+# # Danil <danil@kutkevich.org>.
 # # Hibernate to swap file (disk)
 # # https://wiki.gentoo.org/wiki/Suspend_and_hibernate#Suspend_to_disk_with_swapfile>.
 # GRUB_CMDLINE_LINUX_DEFAULT="resume=/dev/sda5 resume_offset=offset_of_swapfile"
@@ -53,7 +52,7 @@ GRUB_DISTRIBUTOR="Gentoo"
 # Note that you can use only modes which your graphic card supports via VBE.
 # You can see them in real GRUB with the command `vbeinfo'.
 #GRUB_GFXMODE=640x480
-# # Danil.
+# # Danil <danil@kutkevich.org>.
 # # <http://wiki.gentoo.org/wiki/GRUB2#Using_framebuffer_display>,
 # # <https://wiki.archlinux.org/index.php/GRUB#Setting_the_framebuffer_resolution>.
 # GRUB_GFXMODE=1440x900x16

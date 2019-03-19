@@ -1,2 +1,3 @@
 # github.com/alex2108/syncthing-tray (tray icon for syncthing)
 dev-libs/libdbusmenu gtk3 # required by dev-libs/libappindicator-12.10.0-r301::gentoo
+sys-devel/gcc go

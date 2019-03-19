@@ -10,7 +10,6 @@
 # Modified by:  Robin H. Johnson, <robbat2@gentoo.org>
 # Modified by:  William Hubbs, <williamh@gentoo.org>
 #
-# $Id$
 
 # Default runlevel.
 id:3:initdefault:
@@ -21,13 +20,15 @@ si::sysinit:/sbin/openrc sysinit
 # Further system initialization, brings up the boot runlevel.
 rc::bootwait:/sbin/openrc boot
 
-l0:0:wait:/sbin/openrc shutdown 
+l0u:0:wait:/sbin/telinit u
+l0:0:wait:/sbin/openrc shutdown
 l0s:0:wait:/sbin/halt -dhnp
 l1:1:wait:/sbin/openrc single
 l2:2:wait:/sbin/openrc nonetwork
 l3:3:wait:/sbin/openrc default
 l4:4:wait:/sbin/openrc default
 l5:5:wait:/sbin/openrc default
+l6u:6:wait:/sbin/telinit u
 l6:6:wait:/sbin/openrc reboot
 l6r:6:wait:/sbin/reboot -dkn
 #z6:6:respawn:/sbin/sulogin
@@ -38,7 +39,8 @@ su1:S:wait:/sbin/sulogin
 
 # TERMINALS
 #x1:12345:respawn:/sbin/agetty 38400 console linux
-# Danil <https://forums.gentoo.org/viewtopic-p-7336028.html#7336028>.
+# Danil <danil@kutkevich.org>
+# <https://forums.gentoo.org/viewtopic-p-7336028.html#7336028>.
 # c1:12345:respawn:/sbin/agetty 38400 tty1 linux
 c1:12345:respawn:/sbin/agetty --noclear 38400 tty1 linux
 c2:2345:respawn:/sbin/agetty 38400 tty2 linux

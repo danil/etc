@@ -3,6 +3,12 @@
 # This file describes a number of aliases-to-address mappings for the for 
 # local hosts that share this file.
 #
+# The format of lines in this file is:
+#
+# IP_ADDRESS   canonical_hostname      [aliases...]
+#
+#The fields can be separated by any number of spaces or tabs.
+#
 # In the presence of the domain name service or NIS, this file may not be 
 # consulted at all; see /etc/host.conf for the resolution order.
 #
@@ -15,6 +21,11 @@
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
 # 127.0.0.1 localhost
 127.0.0.1 h10.kutkevich.org h10 localhost
+
+# Rocketbank.
+127.0.0.1 staging.rocketbank.ru
+
+# Waveaccess.
 # 192.168.0.18 aidbox.health-samurai.io
 # 192.168.0.18 danil.aidbox.health-samurai.io
 # 192.168.0.69 fhirterm.coreos.health-samurai.io fhirterm.coreos.health-samurai.ru

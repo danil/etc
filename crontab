@@ -1,9 +1,11 @@
 # for vixie cron
-# $Id$
 
 # Global variables
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
+# Danil <danil@kutkevich.org>
+# FIXME: mail to root and then redirect to danil
+# MAILTO=root
 MAILTO=danil
 HOME=/
 

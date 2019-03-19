@@ -1,8 +1,8 @@
 diff --git a/dwm.c b/dwm.c
-index b2bc9bd..d9a333a 100644
+index 4465af1..218e516 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -417,7 +417,7 @@ attachstack(Client *c)
+@@ -416,7 +416,7 @@ attachstack(Client *c)
  void
  buttonpress(XEvent *e)
  {
@@ -11,7 +11,7 @@ index b2bc9bd..d9a333a 100644
  	Arg arg = {0};
  	Client *c;
  	Monitor *m;
-@@ -432,9 +432,13 @@ buttonpress(XEvent *e)
+@@ -431,9 +431,13 @@ buttonpress(XEvent *e)
  	}
  	if (ev->window == selmon->barwin) {
  		i = x = 0;
@@ -27,9 +27,9 @@ index b2bc9bd..d9a333a 100644
  		if (i < LENGTH(tags)) {
  			click = ClkTagBar;
  			arg.ui = 1 << i;
-@@ -722,19 +726,17 @@ drawbar(Monitor *m)
+@@ -709,19 +713,17 @@ drawbar(Monitor *m)
  	}
-
+ 
  	for (c = m->clients; c; c = c->next) {
 -		occ |= c->tags;
 +		occ |= c->tags == 255 ? 0 : c->tags;
@@ -45,8 +45,8 @@ index b2bc9bd..d9a333a 100644
  		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
 -		if (occ & 1 << i)
 -			drw_rect(drw, x + boxs, boxs, boxw, boxw,
--			         m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
--			         urg & 1 << i);
+-				m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
+-				urg & 1 << i);
  		x += w;
  	}
  	w = blw = TEXTW(m->ltsymbol);

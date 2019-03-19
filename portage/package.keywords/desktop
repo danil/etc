@@ -53,7 +53,7 @@ games-action/minecraft::kutkevich ~amd64
 <x11-misc/slstatus-9999::kutkevich ~amd64
 <x11-misc/tabbed-9999::gentoo ~amd64
 <x11-terms/st-9999 ~amd64
-<x11-wm/dwm-9999::kutkevich ~amd64
+<x11-wm/dwm-9999::gentoo ~amd64
 # =x11-terms/st-0.7::gentoo ~amd64
 
 # Maim (screenshot).

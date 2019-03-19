@@ -1,7 +1,9 @@
---- dwm.c	2016-08-12 12:35:25.000000000 +0000
-+++ dwm.c	2016-08-12 12:35:26.000000000 +0000
-@@ -743,7 +743,7 @@ drawbar(Monitor *m)
-
+diff --git a/dwm.c b/dwm.c
+index cea36e9..d14e848 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -732,7 +732,7 @@ drawbar(Monitor *m)
+ 
  	if ((w = m->ww - sw - x) > bh) {
  		if (m->sel) {
 -			drw_setscheme(drw, scheme[m == selmon ? SchemeSel : SchemeNorm]);

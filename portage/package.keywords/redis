@@ -1,0 +1,3 @@
+# Redis.
+<dev-db/redis-6::gentoo ~amd64
+=dev-libs/jemalloc-5.1.0 ~amd64 # required by dev-db/redis-5.0.3::gentoo[jemalloc]

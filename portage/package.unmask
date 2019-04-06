@@ -1,7 +1,5 @@
 # -abi_x86_32 #unmasking abi_x86_32 flag <https://wiki.gentoo.org/wiki/Multilib_System_without_emul-linux_Packages#Apply_the_abi_x86_32_flag>
 
-# Zoom instant messager <https://zoom.us>.
-<net-im/zoom-bin-9999::lmiphay
-
-# Rocketbank
-<dev-go/glide-9999::go-overlay
+<dev-db/tarantool-9999::tarantool
+<dev-go/glide-9999::go-overlay # rocketbank
+<net-im/zoom-bin-9999::lmiphay # zoom instant messager <https://zoom.us>

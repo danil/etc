@@ -46,6 +46,7 @@ net-im/zoom-bin # zoom instant messager <https://zoom.us>
 net-mail/dovecot
 net-misc/dropbox
 net-misc/yandex-disk
+net-vpn/openconnect
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
 sys-apps/smartmontools
 sys-fs/dosfstools

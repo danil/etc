@@ -51,6 +51,7 @@ net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#commen
 net-fs/samba client # required by gnome-base/gvfs[samba], app-text/evince
 net-misc/aria2 bittorrent metalink ssh #multi-protocol downloader (BitTorrent)
 net-misc/connman iptables
+net-misc/meganz-sdk libuv qt # Mega nz required by net-misc/megasync
 net-print/cups gnutls
 sys-apps/smartmontools -daemon
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts

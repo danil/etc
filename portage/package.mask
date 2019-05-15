@@ -2,6 +2,7 @@
 # <https://wiki.gentoo.org/wiki/Ebuild_repository#Masking_installed_but_unsafe_ebuild_repositories>,
 # <https://forums.gentoo.org/viewtopic-p-7518568.html?sid=be476180640727f89b870a3945374fae#7518568>.
 # */*::tarantool
+*/*::4nykey # net-misc/megasync
 */*::go-overlay
 */*::lmiphay # zoom instant messager <https://zoom.us>
 */*::vmacs

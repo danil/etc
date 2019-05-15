@@ -10,6 +10,7 @@
 # <media-gfx/wkhtmltopdf-9999::gentoo ~amd64
 # <net-im/signal-desktop-bin-9999::gentoo ~amd64
 # <net-misc/aria2-9999::gentoo ~amd64 #multi-protocol downloader (BitTorrent)
+# <net-vpn/vpncwatch-9999::gentoo ~amd64
 # <x11-terms/kitty-9999::gentoo ~amd64
 # =app-emulation/virtualbox-guest-additions-5.1.16::gentoo ~amd64
 # =x11-drivers/xf86-video-virtualbox-5.1.16::gentoo ~amd64
@@ -64,6 +65,10 @@ games-action/minecraft::kutkevich ~amd64
 # GTK themes.
 # <x11-themes/flatstudio-9999::kutkevich ~amd64
 x11-themes/arc-theme::gentoo ~amd64
+
+# Mega nz.
+<net-misc/megasync-9999::4nykey ~amd64
+<net-misc/meganz-sdk-9999::4nykey ~amd64
 
 # # OpenSCAD.
 # <media-gfx/openscad-9999::gentoo ~amd64

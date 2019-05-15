@@ -46,7 +46,6 @@ net-im/zoom-bin # zoom instant messager <https://zoom.us>
 net-mail/dovecot
 net-misc/dropbox
 net-misc/yandex-disk
-net-vpn/openconnect
 net-wireless/bluez #/etc/init.d/bluetooth start <http://wiki.gentoo.org/wiki/Bluetooth#Boot_service>
 sys-apps/smartmontools
 sys-fs/dosfstools
@@ -101,6 +100,10 @@ net-misc/cmst # connman wifi tray icon
 # x11-themes/gtk-chtheme #change/switch gtk2/gtk3 themes
 lxde-base/lxappearance #change/switch gtk2/gtk3 themes
 x11-themes/arc-theme #dark (black) gtk 2/3 theme
+
+# Mega nz.
+# net-misc/megatools
+net-misc/megasync
 
 # # Tor.
 # net-misc/tor

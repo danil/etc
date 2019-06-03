@@ -3,6 +3,7 @@
 <dev-db/tarantool-9999::tarantool
 <dev-go/glide-9999::go-overlay # rocketbank
 <net-im/zoom-bin-9999::lmiphay # zoom instant messager <https://zoom.us>
+<x11-misc/gxkb-9999::miramir #keyboard/language layout indicator (flag) for tray
 
 # Mega nz.
 <net-misc/meganz-sdk-9999::4nykey

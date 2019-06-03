@@ -38,6 +38,7 @@
 <x11-misc/cdm-9999::gentoo ~amd64 #starting x11 <https://wiki.archlinux.org/index.php/CDM>
 <x11-misc/dex-9999::gentoo ~amd64 #execute commands on window manager startup <http://superuser.com/questions/130242/how-can-i-execute-commands-on-startup-in-awesome#326626>
 <x11-misc/dunst-9999::gentoo ~amd64
+<x11-misc/gxkb-9999 ~amd64 #keyboard/language layout indicator (flag) for tray
 <x11-misc/i3lock-9999::gentoo ~amd64
 <x11-misc/skippy-xd-9999::kutkevich ~amd64
 <x11-misc/xcalib-9999::gentoo ~amd64 #icc profiles monitor color calibration <https://wiki.archlinux.org/index.php/ICC_profiles>

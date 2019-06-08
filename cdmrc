@@ -18,8 +18,8 @@
 # <https://wiki.archlinux.org/index.php/CDM#Menu_items>,
 # <https://github.com/ghost1227/cdm>.
 binlist=(
-  '~/.xsession dwm' #<https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
-  '~/.xsession st' #run suckless terminal
+  '~/.xsession dwm' # <https://wiki.archlinux.org/index.php/dwm#Starting_dwm>
+  '~/.xsession st' # run suckless terminal
   '/bin/bash --login'
   'sudo /sbin/reboot'
   'sudo /sbin/shutdown -h now'

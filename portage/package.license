@@ -1,6 +1,15 @@
+app-benchmarks/bonnie bonnie
+app-dicts/myspell-ru myspell-ru_RU-AlexanderLebedev
 app-emulation/virtualbox-bin PUEL
 dev-java/oracle-jre-bin Oracle-BCLA-JavaSE
 net-im/skype skype-4.0.0.7-copyright
+net-im/skypeforlinux Skype-TOS
+net-im/telegram-desktop-bin telegram
+net-im/zoom-bin ZOOM
+net-misc/dropbox CC-BY-ND-3.0 dropbox
+net-misc/megasync EULA
+net-misc/yandex-disk YDSLA
+sys-kernel/linux-firmware linux-firmware no-source-code linux-fw-redistributable
 www-plugins/adobe-flash AdobeFlash-11.x #<http://ewald.tienkamp.nl/2010/06/21/gentoo-blocker-adobeflash-10-1-license>.
 
 # Chrome.

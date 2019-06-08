@@ -1,9 +1,10 @@
 # Common.
 
 # <dev-db/pspg-9999::gentoo ~amd64
+# <sys-cluster/minikube-9999::gentoo ~amd64
 
 # <app-text/msort-9999::kutkevich ~amd64
-# <dev-db/tarantool-9999::tarantool ~amd64 redis competitor
+# <dev-db/tarantool-9999::tarantool ~amd64 # redis competitor
 # <net-misc/tlsdate-0.0.13::gentoo ~amd64
 # <net-p2p/syncthing-9999::gentoo ~amd64
 <app-benchmarks/wrk-9999::gentoo ~amd64

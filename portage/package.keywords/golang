@@ -1,6 +1,6 @@
 # Golang.
-# <dev-lang/go-1.13::gentoo ~amd64
 <dev-go/go-tools-9999::gentoo ~amd64 # required by dev-lang/go-1.7.3
+<dev-lang/go-1.13::gentoo ~amd64
 <sys-cluster/kubectl-2::gentoo ~amd64
 
 # Go tools (godoc - used by emacs).

@@ -45,10 +45,14 @@ net-dns/libidn2 abi_x86_32 # required by net-libs/gnutls[idn], required by net-f
 sys-apps/attr abi_x86_32 # required by dev-libs/glib[xattr], app-text/poppler[cairo], net-print/cups, app-text/ghostscript-gpl[cups], net-print/cups-filters, net-im/skype
 sys-apps/dbus abi_x86_32 # required by dev-qt/qtdbus-4.8.6-r1, net-im/skype-4.3.0.37-r5
 sys-apps/util-linux abi_x86_32 # required by x11-libs/libSM-1.2.2-r1[uuid], dev-qt/qtgui-4.8.6-r2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-devel/flex abi_x86_32 # required by net-im/skypeforlinux-8.34.0.78-r2::gentoo
 sys-devel/llvm abi_x86_32 # required by media-libs/mesa-10.3.7-r1[llvm], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
 sys-fs/udev abi_x86_32 # required by virtual/libudev-215-r1[-systemd], media-libs/mesa-10.3.7-r1[udev], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+sys-libs/cracklib abi_x86_32 # required by net-im/skypeforlinux-8.34.0.78-r2::gentoo
+sys-libs/db abi_x86_32 # required by net-im/skypeforlinux-8.34.0.78-r2::gentoo
 sys-libs/libcap abi_x86_32 # required by net-wireless/bluez::gentoo, sys-apps/hwids::gentoo[udev], sys-fs/udev::gentoo, @desktop, @selected, @world
 sys-libs/ncurses abi_x86_32 # required by sys-libs/readline-6.2_p5-r1, dev-db/sqlite-3.8.7.4[readline], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
+sys-libs/pam abi_x86_32 # required by net-im/skypeforlinux-8.34.0.78-r2::gentoo
 sys-libs/readline abi_x86_32 # required by dev-db/sqlite-3.8.7.4[readline], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 sys-libs/zlib abi_x86_32 # required by media-libs/tiff-4.0.3-r6[zlib], dev-qt/qtgui-4.8.6-r2[tiff], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 virtual/jpeg abi_x86_32 # required by media-libs/tiff-4.0.3-r6[jpeg], dev-qt/qtgui-4.8.6-r2[tiff], dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
@@ -56,6 +60,7 @@ virtual/libffi abi_x86_32 # required by dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.
 virtual/libiconv abi_x86_32 # required by dev-libs/glib-2.42.2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
 virtual/libintl abi_x86_32 # required by dev-libs/glib-2.48.2::gentoo, gnome-base/dconf-0.26.0::gentoo
 virtual/libudev abi_x86_32 # required by media-libs/mesa-10.3.7-r1[udev], x11-libs/cairo-1.12.18-r1[opengl], x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]
+virtual/pam abi_x86_32 # required by net-im/skypeforlinux-8.34.0.78-r2::gentoo
 virtual/pkgconfig abi_x86_32 # required by media-libs/gst-plugins-base-0.10.36-r2, dev-qt/qtwebkit-4.8.6-r1[gstreamer], net-im/skype-4.3.0.37-r5
 x11-base/xcb-proto abi_x86_32 # required by x11-libs/libxcb-1.11-r1, x11-libs/libX11-1.6.2, dev-qt/qtwebkit-4.8.6-r1, net-im/skype-4.3.0.37-r5
 x11-libs/cairo abi_x86_32 # required by x11-libs/pango-1.36.8, media-libs/gst-plugins-base-1.4.5[pango], xfce-extra/tumbler-0.1.30[gstreamer]

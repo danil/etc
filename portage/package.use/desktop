@@ -51,7 +51,6 @@ net-dialup/ppp dhcp #mppe-mppc #Huawei E1550 <http://gentoo.ru/node/17677#commen
 net-fs/samba client # required by gnome-base/gvfs[samba], app-text/evince
 net-misc/aria2 bittorrent metalink ssh #multi-protocol downloader (BitTorrent)
 net-misc/connman iptables
-net-misc/meganz-sdk libuv qt # Mega nz required by net-misc/megasync
 net-print/cups gnutls
 sys-apps/smartmontools -daemon
 sys-fs/udev gudev #required by sys-fs/udev-init-scripts
@@ -93,6 +92,10 @@ xfce-base/thunar exif
 xfce-base/thunar udisks #required by xfce-extra/thunar-volman
 xfce-base/xfce4-session upower
 xfce-extra/tumbler odf raw
+
+# Mega nz.
+net-misc/meganz-sdk libuv qt # Mega nz required by net-misc/megasync
+net-misc/megasync thunar
 
 # Zoom instant messager <https://zoom.us>.
 dev-qt/qtwebchannel qml # required by dev-qt/qtwebengine-5.9.4::gentoo, net-im/zoom-bin-2.1.103753.0521-r1::hamper-overlay, net-im/zoom-bin (argument)

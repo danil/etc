@@ -1,11 +1,14 @@
 # Rocketbank common.
 # net-misc/rabbitmq-server
-net-vpn/vpnc
 sys-cluster/kubectl
 
+# VPN
+net-vpn/openconnect
+net-vpn/vpnc
+
 # Rocketbank go/german.
+# app-emulation/docker-compose # installed via pip
 <dev-db/postgresql-9.7
-app-emulation/docker-compose
 dev-go/glide
 
 # Rocketbank felix ruby/rails.

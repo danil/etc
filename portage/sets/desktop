@@ -20,14 +20,10 @@
 # x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark <https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide#Test_3D_acceleration>
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi
+# x11-misc/gxkb #keyboard/language layout indicator (flag) for tray
 # x11-misc/parcellite #copy and paste between xorg and terminal clipboard
 # x11-misc/polybar # status bar for the tiling manages https://github.com/jaagr/polybar
 # x11-misc/skippy-xd #ala compiz scale (osx expose) <https://github.com/richardgv/skippy-xd>, <https://code.google.com/p/skippy-xd>
-# x11-misc/xxkb #keyboard/language layout indicator (flag) for tray
-
-# Audio/sound/volum.
-# media-sound/pasystray # https://github.com/christophgysin/pasystray
-# media-sound/volumeicon # https://github.com/Maato/volumeicon
 # x11-plugins/pidgin-window_merge
 # xfce-extra/xfce4-power-manager
 app-arch/xarchiver
@@ -44,10 +40,6 @@ media-gfx/feh
 media-gfx/gimp
 media-gfx/maim #maim (make image) takes screenshots of your desktop
 media-gfx/ristretto #xfce image viewer <https://wiki.xfce.org/recommendedapps#ristretto>, <http://www.ohloh.net/p/ristretto>
-media-sound/alsa-utils
-media-sound/apulse
-media-sound/pnmixer #alsa tray sound volum icon
-media-sound/sox #`play` audio files from cli
 media-video/mpv # video player is an `mplayer` replacement <https://github.com/mpv-player/mpv>
 net-im/skypeforlinux
 net-im/telegram-desktop-bin
@@ -62,7 +54,7 @@ sys-fs/ntfs3g
 sys-power/hibernate-script #`hibernate` and `hibernate-ram` s3 aka suspend to ram aka sleep
 sys-process/anacron
 www-client/firefox-bin
-www-client/google-chrome
+# www-client/google-chrome
 www-plugins/adobe-flash
 x11-apps/light #screen backlight <https://github.com/haikarainen/light>, <https://wiki.archlinux.org/index.php/backlight>
 x11-apps/wmutils #get active window `pfw` and kill it `killw` <https://github.com/wmutils/core>
@@ -74,7 +66,6 @@ x11-base/xorg-server
 x11-misc/cdm #starting x11 <https://wiki.archlinux.org/index.php/CDM>
 x11-misc/dex #execute commands on window manager startup <http://superuser.com/questions/130242/how-can-i-execute-commands-on-startup-in-awesome#326626>
 x11-misc/dunst #minimalistic notification daemon (notify-osd from canonical replace) <http://knopwob.org/dunst>, <http://github.com/knopwob/dunst>, <https://wiki.archlinux.org/index.php/Desktop_notifications#Standalone>
-x11-misc/gxkb #keyboard/language layout indicator (flag) for tray
 x11-misc/i3lock #xscreensaver replacement
 x11-misc/unclutter #hide mouse cursor after while <https://wiki.archlinux.org/index.php/unclutter>
 x11-misc/wmctrl #show desktop and more <http://rox.sourceforge.net/desktop/book/export/html/188.html>
@@ -83,6 +74,7 @@ x11-misc/xchainkeys
 x11-misc/xclip #tmux and xorg clipboard integration <https://github.com/tmux-plugins/tmux-yank#linux-requirements>
 x11-misc/xdotool #simulate keyboard input in xchainkeys
 x11-misc/xsel #copy selection in termina to the xorg clipboard (used by emacs and urxvt) <https://wiki.archlinux.org/index.php/rxvt-unicode#Automatic_Script_Management>
+x11-misc/xxkb #keyboard/language layout indicator (flag) for tray
 x11-themes/faenza-icon-theme
 x11-themes/sound-theme-freedesktop #my 'complete' sound
 x11-themes/vanilla-dmz-xcursors
@@ -90,6 +82,14 @@ xfce-base/thunar
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler #thumbnails generator for thunar and ristretto <https://wiki.archlinux.org/index.php/thunar#Plugins_and_addons>, <http://www.ohloh.net/p/tumbler>
+
+# Audio, sound, volum.
+# media-sound/pasystray # https://github.com/christophgysin/pasystray
+# media-sound/volumeicon # https://github.com/Maato/volumeicon
+media-sound/alsa-utils
+media-sound/apulse
+media-sound/pnmixer #alsa tray sound volum icon
+media-sound/sox #`play` audio files from cli
 
 # Wifi/wireless
 # gnome-extra/nm-applet

@@ -1,0 +1,3 @@
+# Golang Glide vendor package management <https://github.com/Masterminds/glide>.
+deb http://ppa.launchpad.net/masterminds/glide/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/masterminds/glide/ubuntu bionic main

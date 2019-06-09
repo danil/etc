@@ -1,0 +1,2 @@
+# <https://kubernetes.io/docs/tasks/tools/install-kubectl>
+deb https://apt.kubernetes.io/ kubernetes-xenial main

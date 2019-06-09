@@ -1,0 +1,3 @@
+# Elasticsearch 5
+# <https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html>
+deb https://artifacts.elastic.co/packages/5.x/apt stable main

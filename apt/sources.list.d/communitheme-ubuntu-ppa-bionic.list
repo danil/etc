@@ -1,0 +1,4 @@
+# Yaru community theme <https://github.com/ubuntu/yaru>,
+# <https://itsfoss.com/ubuntu-community-theme>.
+deb http://ppa.launchpad.net/communitheme/ppa/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/communitheme/ppa/ubuntu bionic main

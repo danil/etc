@@ -1,9 +1,16 @@
 # Suckless DWM.
+# x11-wm/dwm
+
+# DWM requirements.
+media-libs/fontconfig
+x11-libs/libX11
+x11-libs/libXft
+
+# Tools.
 # x11-misc/slock
 # x11-misc/tabbed
 x11-misc/dmenu
 x11-misc/slstatus
 x11-terms/st
-x11-wm/dwm
 
-x11-apps/xsetroot #used by dwm status http://dwm.suckless.org/tutorial, <https://wiki.archlinux.org/index.php/dwm#Statusbar_configuration>, <https://wiki.gentoo.org/wiki/Dwm#Settings_file_.28dwm.rc.29>
+x11-apps/xsetroot # used by dwm status http://dwm.suckless.org/tutorial, <https://wiki.archlinux.org/index.php/dwm#Statusbar_configuration>, <https://wiki.gentoo.org/wiki/Dwm#Settings_file_.28dwm.rc.29>

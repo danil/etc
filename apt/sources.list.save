@@ -14,9 +14,11 @@ deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
 ## team. Also, please note that software in universe WILL NOT receive any
 ## review or updates from the Ubuntu security team.
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic universe
-# deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic universe
+# Danil <danil@kutkevich.org>
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic universe
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates universe
-# deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-updates universe
+# Danil <danil@kutkevich.org>
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-updates universe
 
 ## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
 ## team, and may not be under a free licence. Please satisfy yourself as to 
@@ -24,8 +26,10 @@ deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates universe
 ## multiverse WILL NOT receive any review or updates from the Ubuntu
 ## security team.
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic multiverse
+# # Danil <danil@kutkevich.org>
 # deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic multiverse
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+# # Danil <danil@kutkevich.org>
 # deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
 
 ## N.B. software from this repository may not have been tested as
@@ -34,6 +38,7 @@ deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
 ## Also, please note that software in backports WILL NOT receive any review
 ## or updates from the Ubuntu security team.
 deb http://ru.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+# # Danil <danil@kutkevich.org>
 # deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
 
 ## Uncomment the following two lines to add software from Canonical's
@@ -44,8 +49,11 @@ deb http://ru.archive.ubuntu.com/ubuntu/ bionic-backports main restricted univer
 # deb-src http://archive.canonical.com/ubuntu bionic partner
 
 deb http://security.ubuntu.com/ubuntu bionic-security main restricted
-# deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
+# Danil <danil@kutkevich.org>
+deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
 deb http://security.ubuntu.com/ubuntu bionic-security universe
-# deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+# Danil <danil@kutkevich.org>
+deb-src http://security.ubuntu.com/ubuntu bionic-security universe
 deb http://security.ubuntu.com/ubuntu bionic-security multiverse
-# deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+# Danil <danil@kutkevich.org>
+deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse

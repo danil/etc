@@ -1,0 +1,3 @@
+# Golang <https://github.com/golang/go/wiki/Ubuntu>
+deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu bionic main

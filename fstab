@@ -5,6 +5,8 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-# / was on /dev/sda1 during installation
-UUID=71b5ffea-fac9-47d8-92ce-79b8c63ef47c /               ext4    errors=remount-ro 0       1
+# / was on /dev/nvme0n1p2 during installation
+UUID=b0e49e08-0a85-4313-a054-61fce24abc45 /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/nvme0n1p1 during installation
+UUID=0A55-4BBA  /boot/efi       vfat    umask=0077      0       1
 /swapfile                                 none            swap    sw              0       0

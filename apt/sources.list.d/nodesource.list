@@ -1,0 +1,4 @@
+# Nodejs
+# <danil@kutkevich.org>
+deb https://deb.nodesource.com/node_12.x bionic main
+deb-src https://deb.nodesource.com/node_12.x bionic main

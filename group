@@ -65,6 +65,6 @@ gdm:x:125:
 danil:x:1000:
 sambashare:x:126:danil
 elasticsearch:x:127:
-docker:x:999:
+docker:x:999:danil
 redis:x:129:
 postgres:x:128:

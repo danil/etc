@@ -68,3 +68,4 @@ elasticsearch:x:127:
 docker:x:999:danil
 redis:x:129:
 postgres:x:128:
+mongodb:x:130:mongodb

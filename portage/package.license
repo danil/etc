@@ -1,6 +1,10 @@
-dev-java/oracle-jre-bin Oracle-BCLA-JavaSE
+app-arch/unrar unRAR
+dev-java/oracle-jre-bin Oracle-BCLA-JavaSE # TODO: may be use @BINARY-REDISTRIBUTABLE instead of Oracle-BCLA-JavaSE
 net-im/skype skype-4.0.0.7-copyright
 www-plugins/adobe-flash AdobeFlash-11.x #<http://ewald.tienkamp.nl/2010/06/21/gentoo-blocker-adobeflash-10-1-license>.
+
+# Mongodb.
+dev-db/mongodb SSPL-1
 
 # Chrome.
 www-client/google-chrome google-chrome

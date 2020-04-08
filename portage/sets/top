@@ -1,8 +1,8 @@
 # Tops.
+# sys-process/memwatch #interactive memory viewer
 net-analyzer/iftop #bandwidth usage on an interface
 sys-power/powertop
 sys-process/atop #resource-specific view of processes
 sys-process/ftop #open files by processes
 sys-process/htop #classic top replacement
 sys-process/iotop
-sys-process/memwatch #interactive memory viewer

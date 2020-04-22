@@ -1,0 +1,16 @@
+# Golang.
+<dev-lang/go-1.14::gentoo ~amd64
+
+# Go tools (godoc - used by emacs).
+=dev-go/go-crypto-0_pre20160126 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-net-0_pre20160216 ~amd64 # required by dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-text-0_pre20160211 ~amd64 # required by dev-go/go-net-0_pre20160216::gentoo, dev-go/go-tools-0_pre20160220::gentoo, dev-go/go-tools (argument)
+=dev-go/go-tools-0_pre20160220::gentoo ~amd64
+
+# Drone ci.
+dev-go/go-bindata-assetfs::gentoo ~amd64
+dev-util/drone::gentoo ~amd64
+
+# # gitea (gogs) https://github.com/go-gitea/gitea
+# <www-apps/gitea-9999::kutkevich ~amd64
+# <dev-go/go-bindata-9999::gentoo ~amd64 # required by www-apps/gitea (argument)

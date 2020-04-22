@@ -1,0 +1,2 @@
+<app-admin/monit-9999::gentoo ~amd64
+<net-analyzer/netdata-9999::gentoo ~amd64 #monitoring a-la munin

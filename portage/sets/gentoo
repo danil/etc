@@ -1,4 +1,4 @@
-app-admin/python-updater
+# app-portage/elicense # scans installed packages for licenses that are no longer accepted, and generates a list in the same format as the package.license file
 app-portage/eix
 app-portage/gentoolkit
 app-portage/layman

@@ -1,5 +1,8 @@
 # Common.
 
+# <https://wiki.gentoo.org/wiki/Project:Python/PYTHON_TARGETS>
+# */* PYTHON_TARGETS: -python2_7
+
 # app-portage/layman git subversion #Sunrise <http://overlays.gentoo.org/proj/sunrise>
 # net-misc/openvpn iproute2 #bridging TAP OpenVPN <http://www.gentoo-wiki.info/HOWTO_Road_Warriors_with_OpenVPN#Downloading_and_installing_OpenVPN>.
 */* ffmpeg -libav #ffmpeg/libav conflict management <http://wiki.gentoo.org/wiki/Ffmpeg>, <http://wiki.gentoo.org/wiki/Libav>, <https://www.gentoo.org/support/news-items/2015-04-16-ffmpeg-default.html>, <https://forums.gentoo.org/viewtopic-t-1009988.html>

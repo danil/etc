@@ -6,6 +6,7 @@
 # media-libs/hal-flash #drm video support <https://github.com/cshorler/hal-flash>
 # media-tv/popcorntime #torrent video player
 # net-irc/weechat
+# sys-apps/mdp #markdown presentation tool
 # x11-apps/mesa-progs #`glxgears` opengl frames per second (fps) benchmark <https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide#Test_3D_acceleration>
 # x11-apps/xdm #starting slim display manager <http://wiki.gentoo.org/wiki/SLiM#OpenRC>
 # x11-apps/xdpyinfo #show dpi

@@ -1,10 +1,10 @@
 # dev-db/sqlite #used by feed2email ruby gem
 # net-mail/mlmmj #mailing list management in succless tradition <http://mlmmj.org/>
+# net-analyzer/arping #blocks(
 app-admin/mcelog
 app-admin/monit
 app-admin/sysstat
 app-text/xmlto
-net-analyzer/arping
 net-analyzer/fail2ban
 net-analyzer/mtr
 net-analyzer/netdata #monitoring a-la munin

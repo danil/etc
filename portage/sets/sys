@@ -5,4 +5,4 @@ app-editors/nano
 app-editors/vim
 dev-util/ccache
 net-misc/curl
-sys-process/vixie-cron
+sys-process/cronie

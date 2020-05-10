@@ -362,6 +362,15 @@ function filtering_danil_at_kutkevich_org(mail_account)
     return
   end
 
+  -- redis mailing list messages filtering
+  local mailbox = mail_account._new
+  local results = mailbox:is_unseen() *
+    mailbox:contain_field("List-Id", "redis-db.googlegroups.com")
+  total_count = move_mails{box=mail_account.RedisList, mails=results, count=total_count}
+  if is_should_return{box=mail_account._new, count=total_count} then
+    return
+  end
+
   -- Jolla users group messages filtering
   local mailbox = mail_account._new
   local results = mailbox:is_unseen() *
@@ -443,40 +452,39 @@ function filtering_danil_at_kutkevich_org(mail_account)
   local results = mailbox:is_unseen()
   _ = move_mails{box=mail_account.INBOX, mails=results, count=total_count}
 
-  -- -- fruux.com annoying messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("cloud@fruux.com") * mailbox:contain_subject("No events") results:move_messages(mail_account._trash)
-  -- -- Arch Linux Saint Petersburg users group messages filtering -- -- <http://groups.google.com/group/spb-archlinux>. -- local mailbox = mail_account._new local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "spb-archlinux.googlegroups.com") * mailbox:contain_field("list-post", "<spb-archlinux.googlegroups.com>") results:move_messages(mail_account.Lists)
-  -- -- Bazaar russion users group mailing list messages filtering -- -- <http://groups.google.com/group/ru_bz> -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "ru_bzr.googlegroups.com") * mailbox:contain_field("list-post", "<ru_bzr.googlegroups.com>") results:move_messages(mail_account.Lists)
-  -- -- django-russian.googlegroups.com group list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "django-russian.googlegroups.com") results:move_messages(mail_account.DjangoRussianList)
-  -- -- erlang-russian.googlegroups.com group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "erlang-russian.googlegroups.com") results:move_messages(mail_account.ErlangRussianList)
-  -- -- spbhug.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * results:move_messages(mail_account.Lists)
-  -- -- emacs-on-rails.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "emacs-on-rails.googlegroups.com") results:move_messages(mail_account.EmacsCommunity)
-  -- -- spblinux.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "spblinux.googlegroups.com") results:move_messages(mail_account.SpbLinuxList)
-  -- -- stumpwm-devel.nongnu.org mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "stumpwm-devel.nongnu.org") results:move_messages(mail_account.StumpwmList)
-  -- -- Awesome WM users group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "awesome.naquadah.org") results:move_messages(mail_account.AwesomeList)
-  -- -- Awesome WM developers group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "awesome-devel.naquadah.org") results:move_messages(mail_account.AwesomeDevelList)
-  -- -- thinking-sphinx.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "thinking-sphinx.googlegroups.com") results:move_messages(mail_account.Lists)
-  -- -- Sailfish OS feeds messages filtering -- -- FIXME: regex are very slow!!! -- local results = mailbox:is_unseen() * mailbox:match_from("(^|,)[[:space:]]*\"?Jolla[[:space:]]+Users[[:space:]]+Blog\"?[[:space:]]*<") results:move_messages(mail_account.SailfishosFeeds)
-  -- -- healthintersections.com.au messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Subscribe", "http://www.healthintersections.com.au") results:move_messages(mail_account.FhirPlanet)
-  -- -- drone.io "success" notifications messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("builds@drone.io") * mailbox:contain_subject("[SUCCESS]") results:move_messages(mail_account._trash)
-  -- -- Gentoo russian group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("list-id", "gentoo-user-ru.gentoo.org") results:move_messages(mail_account.GentooCommunity)
-  -- -- humblebundle.com news messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("contact@humblebundle.com") results:move_messages(mail_account.HumblebundleList)
-  -- -- journal.tinkoff.ru notification messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("journal@tinkoff.ru") results:move_messages(mail_account.TinkoffList)
-  -- -- ink361.com notification messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("newsletter@ink361.com") results:move_messages(mail_account.Ink361Feed)
   -- -- -- FIXME: cyrillic not working!!! -- -- auto.ru notification messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("noreply@auto.ru") * mailbox:contain_subject("Найдены новые объявления") results:move_messages(mail_account.AutoRuFeed)
-  -- -- velodrive.ru messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("info@velodrive.ru") * mailbox:contain_field("list-id", "3c63feb6") * mailbox:contain_field("Content-Type", "multipart/alternative") results:move_messages(mail_account.Velodrive)
-  -- -- ivi.ru messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("promo@em.ivi.ru") * mailbox:contain_field("Content-Type", "multipart/alternative") results:move_messages(mail_account.Iviru)
-  -- -- techtarget.com spam messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("NoteBookReview@lists.techtarget.com") results:move_messages(mail_account._trash)
-  -- -- bongacams.com spam messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("newsletter@bongacams.com") results:move_messages(mail_account._trash)
-  -- -- sazhi.net annoying messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_to("postmaster@sazhi.net") * (mailbox:contain_field("Content-Type", "application/zip") + mailbox:contain_field("Content-Type", "application/vnd.ms-word.document.macroEnabled.12") + mailbox:contain_field("X-Attached", ".docm") + mailbox:contain_field("X-Attached", ".xls") + mailbox:contain_field("X-Attached", ".zip")) results:move_messages(mail_account._trash)
+  -- -- Arch Linux Saint Petersburg users group messages filtering -- -- <http://groups.google.com/group/spb-archlinux>. -- local mailbox = mail_account._new local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "spb-archlinux.googlegroups.com") * mailbox:contain_field("list-post", "<spb-archlinux.googlegroups.com>") results:move_messages(mail_account.Lists)
+  -- -- Awesome WM developers group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "awesome-devel.naquadah.org") results:move_messages(mail_account.AwesomeDevelList)
+  -- -- Awesome WM users group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "awesome.naquadah.org") results:move_messages(mail_account.AwesomeList)
+  -- -- Bazaar russion users group mailing list messages filtering -- -- <http://groups.google.com/group/ru_bz> -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "ru_bzr.googlegroups.com") * mailbox:contain_field("list-post", "<ru_bzr.googlegroups.com>") results:move_messages(mail_account.Lists)
+  -- -- Gentoo russian group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("list-id", "gentoo-user-ru.gentoo.org") results:move_messages(mail_account.GentooCommunity)
   -- -- Molinos messages filtering -- local results = mailbox:is_unseen() * (mailbox:contain_to("news@lists.molinos.ru") + mailbox:contain_cc("news@lists.molinos.ru") + mailbox:contain_bcc("news@lists.molinos.ru") + mailbox:contain_field("resent-to", "news@lists.molinos.ru") + mailbox:contain_field("x-delivered-to", "news@lists.molinos.ru")) results:move_messages(mail_account.Molinos)
-  -- -- Waveaccess fhirbase.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("list-id", "fhirbase.googlegroups.com") results:move_messages(mail_account.FhirbaseList)
+  -- -- Sailfish OS feeds messages filtering -- -- FIXME: regex are very slow!!! -- local results = mailbox:is_unseen() * mailbox:match_from("(^|,)[[:space:]]*\"?Jolla[[:space:]]+Users[[:space:]]+Blog\"?[[:space:]]*<") results:move_messages(mail_account.SailfishosFeeds)
   -- -- Waveaccess fhir.org notification messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("chat-noreply@fhir.org") results:move_messages(mail_account.FhirZulip)
+  -- -- Waveaccess fhirbase.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("list-id", "fhirbase.googlegroups.com") results:move_messages(mail_account.FhirbaseList)
   -- -- Waveaccess medapp ci notifications messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("list-id", "medappsupport.hospital-systems.com") * (mailbox:contain_field("X-Redmine-Sender", "danil") + mailbox:contain_subject("(Ready for Deploy)") + mailbox:contain_subject("(Done)")) results:move_messages(mail_account._trash)
   -- -- armor5games annoying messages filtering -- local results = mailbox:is_unseen() * messages_to_armor5games(mailbox) * (mailbox:contain_from("unity3d.com") + mailbox:contain_from("noreply@gameanalytics.com") + (mailbox:contain_from("support@bugsnag.com") * mailbox:contain_subject("Some events are being dropped due to sampling"))) results:move_messages(mail_account._trash)
-  -- -- armor5games important messages filtering -- local results = mailbox:is_unseen() * messages_to_armor5games(mailbox) * (mailbox:contain_from("notifications@bugsnag.com") + mailbox:contain_from("billing@hetzner.com") + mailbox:contain_from("support@hetzner.com")) results:move_messages(mail_account.INBOX)
   -- -- armor5games cyrillic messages filtering -- local results = mailbox:is_unseen() * messages_to_armor5games(mailbox) * mailbox:contain_body("hh.ru") results:move_messages(mail_account._trash) -- FIXME: cyrillic not working!!! -- (mailbox:contain_body("здравствуйте") + -- mailbox:contain_body("уважением") + -- mailbox:contain_body("резюме") + -- mailbox:contain_body("портфолио"))
-  -- -- armor5games trello messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("do-not-reply@trello.com") * mailbox:contain_subject("on Rise of Pirates") results:move_messages(mail_account.ErArmor5games)
+  -- -- armor5games important messages filtering -- local results = mailbox:is_unseen() * messages_to_armor5games(mailbox) * (mailbox:contain_from("notifications@bugsnag.com") + mailbox:contain_from("billing@hetzner.com") + mailbox:contain_from("support@hetzner.com")) results:move_messages(mail_account.INBOX)
   -- -- armor5games messages filtering -- local results = mailbox:is_unseen() * messages_to_armor5games(mailbox) results:move_messages(mail_account.ErArmor5games)
+  -- -- armor5games trello messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("do-not-reply@trello.com") * mailbox:contain_subject("on Rise of Pirates") results:move_messages(mail_account.ErArmor5games)
+  -- -- django-russian.googlegroups.com group list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "django-russian.googlegroups.com") results:move_messages(mail_account.DjangoRussianList)
+  -- -- drone.io "success" notifications messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("builds@drone.io") * mailbox:contain_subject("[SUCCESS]") results:move_messages(mail_account._trash)
+  -- -- emacs-on-rails.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "emacs-on-rails.googlegroups.com") results:move_messages(mail_account.EmacsCommunity)
+  -- -- erlang-russian.googlegroups.com group mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "erlang-russian.googlegroups.com") results:move_messages(mail_account.ErlangRussianList)
+  -- -- fruux.com annoying messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("cloud@fruux.com") * mailbox:contain_subject("No events") results:move_messages(mail_account._trash)
+  -- -- healthintersections.com.au messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Subscribe", "http://www.healthintersections.com.au") results:move_messages(mail_account.FhirPlanet)
+  -- -- humblebundle.com news messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("contact@humblebundle.com") results:move_messages(mail_account.HumblebundleList)
+  -- -- ink361.com notification messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("newsletter@ink361.com") results:move_messages(mail_account.Ink361Feed)
+  -- -- ivi.ru messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("promo@em.ivi.ru") * mailbox:contain_field("Content-Type", "multipart/alternative") results:move_messages(mail_account.Iviru)
+  -- -- journal.tinkoff.ru notification messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("journal@tinkoff.ru") results:move_messages(mail_account.TinkoffList)
+  -- -- sazhi.net annoying messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_to("postmaster@sazhi.net") * (mailbox:contain_field("Content-Type", "application/zip") + mailbox:contain_field("Content-Type", "application/vnd.ms-word.document.macroEnabled.12") + mailbox:contain_field("X-Attached", ".docm") + mailbox:contain_field("X-Attached", ".xls") + mailbox:contain_field("X-Attached", ".zip")) results:move_messages(mail_account._trash)
+  -- -- spbhug.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * results:move_messages(mail_account.Lists)
+  -- -- spblinux.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "spblinux.googlegroups.com") results:move_messages(mail_account.SpbLinuxList)
+  -- -- stumpwm-devel.nongnu.org mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "stumpwm-devel.nongnu.org") results:move_messages(mail_account.StumpwmList)
+  -- -- techtarget.com spam messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("NoteBookReview@lists.techtarget.com") results:move_messages(mail_account._trash)
+  -- -- thinking-sphinx.googlegroups.com mailing list messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_field("List-Id", "thinking-sphinx.googlegroups.com") results:move_messages(mail_account.Lists)
+  -- -- velodrive.ru messages filtering -- local results = mailbox:is_unseen() * mailbox:contain_from("info@velodrive.ru") * mailbox:contain_field("list-id", "3c63feb6") * mailbox:contain_field("Content-Type", "multipart/alternative") results:move_messages(mail_account.Velodrive)
 end
 
 

@@ -26,7 +26,6 @@ set daemon  30              # check services at 30 seconds intervals
 #
 # Danil <danil@kutkevich.org>.
 # set log syslog
-set log /var/log/monit.log
 
 #
 #

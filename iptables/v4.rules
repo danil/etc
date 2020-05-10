@@ -74,10 +74,13 @@
 # -A INPUT -p tcp --dport 5222 -j ACCEPT
 # -A INPUT -p tcp --dport 5269 -j ACCEPT
 
-# #  Allow Syncthing
-# #  <http://docs.syncthing.net/users/firewall.html#local-firewall>.
-# -A INPUT -p tcp --dport 22000 -j ACCEPT
-# -A INPUT -p udp --dport 21025 -j ACCEPT
+#  Allow Syncthing
+#  <http://docs.syncthing.net/users/firewall.html#local-firewall>.
+-A INPUT -p tcp --dport 22000 -j ACCEPT
+-A INPUT -p udp --dport 21027 -j ACCEPT
+
+# #  Allow frp <https://github.com/fatedier/frp>.
+# -A INPUT -p tcp --dport 55000 -j ACCEPT
 
 #  Log iptables denied calls.
 -A INPUT -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7

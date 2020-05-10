@@ -1,12 +1,21 @@
 #!/bin/sh
 
-su git \
+su danil \
    --shell=/bin/bash \
-   --command "$(eval echo '~danil')/bin/my-git-mirror.sh"
+   --command "$(eval echo '~danil')/bin/my-git-mirror-private.sh"
 
 EXITVALUE=$?
 if [ $EXITVALUE != 0 ]; then
-    logger -t git "ALERT git mirroring exited abnormally with [$EXITVALUE]"
+    logger -t git "ALERT git mirroring private exited abnormally with [$EXITVALUE]"
+fi
+
+su git \
+   --shell=/bin/bash \
+   --command "$(eval echo '~danil')/bin/my-git-mirror-public.sh"
+
+EXITVALUE=$?
+if [ $EXITVALUE != 0 ]; then
+    logger -t git "ALERT git mirroring public exited abnormally with [$EXITVALUE]"
 fi
 
 exit 0

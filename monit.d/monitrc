@@ -1,7 +1,8 @@
 # Danil <danil@kutkevich.org>.
 # Common Monit configuration.
+set log /var/log/monit.log
 set mailserver localhost # fallback relay
-set alert danil@kutkevich.org # receive all alerts
+set alert danil@kutkevich.org # Danil Kutkevich <danil@kutkevich.org> # receive all alerts
 set httpd port 2812 and
     use address localhost  # only accept connection from localhost
     allow localhost        # allow localhost to connect to the server and

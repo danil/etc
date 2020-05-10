@@ -16,12 +16,15 @@ postfix:            root
 # Well-known aliases -- these should be filled in!
 # root:
 # operator:
-# Danil <http://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server#Basic_Setup>.
+# Danil <danil@kutkevich.org>.
+# <http://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server#Basic_Setup>.
 # extallusers:        extdanil,extsomeuser
 extallusers:        extdanil
 extdanil:           danil+h2@kutkevich.org
 root:               extallusers
 danil:              extdanil
+noreply:            danil
+monit:              danil
 
 # Standard RFC2142 aliases
 abuse:              postmaster

@@ -3,6 +3,12 @@
 # This file describes a number of aliases-to-address mappings for the for 
 # local hosts that share this file.
 #
+# The format of lines in this file is:
+#
+# IP_ADDRESS	canonical_hostname	[aliases...]
+#
+#The fields can be separated by any number of spaces or tabs.
+#
 # In the presence of the domain name service or NIS, this file may not be 
 # consulted at all; see /etc/host.conf for the resolution order.
 #
@@ -10,7 +16,7 @@
 # IPv4 and IPv6 localhost aliases
 # Danil
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
-# 127.0.0.1 localhost
+# 127.0.0.1	localhost
 127.0.0.1 h2.kutkevich.org h2 localhost
 # 127.0.0.1 h10.kutkevich.org h10 localhost
 # 192.168.0.18 aidbox.health-samurai.io
@@ -61,11 +67,3 @@
 # from your network provider (if any) or from your regional registry (ARIN, 
 # APNIC, LACNIC, RIPE NCC, or AfriNIC.)
 #
-
-# The following lines are desirable for IPv6 capable hosts
-::1 ip6-localhost ip6-loopback localhost
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts

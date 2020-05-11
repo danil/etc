@@ -1,0 +1,2 @@
+app-emulation/flannel # required by flannel (kubernetes) <https://www.redpill-linpro.com/techblog/2019/04/04/kubernetes-setup.html#enable-netbridgebridge-nf-call-iptables>
+sys-cluster/kubernetes

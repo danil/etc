@@ -1,0 +1,2 @@
+<app-emulation/flannel-9999::gentoo ~amd64
+<sys-cluster/kubernetes-9999::gentoo ~amd64

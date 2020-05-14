@@ -25,7 +25,8 @@
 
 /dev/sda                /               ext4            noatime,errors=remount-ro 0 1
 # /dev/sdb               none            swap            sw              0 0
-/swapfile               none            swap            sw              0 0
+# <danil@kutkevich.org> kubernetes with swap on is not supported
+# /swapfile               none            swap            sw              0 0
 # /dev/sdb                /mnt/trash      ext4            noatime,errors=remount-ro 0 1
 # /dev/disk/by-id/scsi-0Linode_Volume_h2_trash   /mnt/home      ext4 noatime,errors=remount-ro 0 1
 /dev/disk/by-id/scsi-0Linode_Volume_h2_home_v1 /mnt/home ext4 noatime,errors=remount-ro 0 1 # defaults,noatime,nofail 0 2

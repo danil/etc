@@ -1,4 +1,6 @@
 ###
 # Kubernetes Kubelet (worker) config
 
-command_args=""
+# command_args=""
+# <danil@kutkevich.org>
+command_args="--cgroup-driver=systemd"

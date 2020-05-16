@@ -6,6 +6,10 @@
 #
 # See the man page for details on how to write a sudoers file.
 #
+
+# <danil@kutkevich.org>.
+Defaults editor=/usr/bin/emacs
+
 Defaults	env_reset
 Defaults	mail_badpass
 Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
@@ -24,6 +28,12 @@ root	ALL=(ALL:ALL) ALL
 
 # Allow members of group sudo to execute any command
 %sudo	ALL=(ALL:ALL) ALL
+
+danil ALL=(ALL) NOPASSWD: /sbin/reboot
+danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
+danil ALL=(ALL) NOPASSWD: /usr/bin/light -A 1
+danil ALL=(ALL) NOPASSWD: /usr/bin/light -U 1
+danil ALL=(ALL) NOPASSWD: /home/danil/bin/deb-packages
 
 # See sudoers(5) for more information on "#include" directives:
 

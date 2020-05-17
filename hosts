@@ -1,20 +1,2 @@
-#
-# /etc/hosts: static lookup table for host names
-#
-
-#<ip-address> <hostname.domain.org> <hostname>
-
-# Danil
-# <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect10>.
-# 127.0.0.1 localhost.localdomain localhost
-127.0.0.1 leela.kutkevich.org leela localhost.localdomain localhost
-# 127.0.0.1 omorphia.local
-# 5.9.104.240 omorfia.ru
-# 195.5.131.242 euroembankment.ru
-# 5.9.104.240 omorfia-production.studio.molinos.ru
-# 93.93.130.185 spik.ru
-# 93.93.130.185 agroreserv.ru
-
-::1 localhost.localdomain localhost
-
-# End of file
+# Static table lookup for hostnames.
+# See hosts(5) for details.

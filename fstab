@@ -1,15 +1,15 @@
-# 
-# /etc/fstab: static file system information
-#
-# <file system> <dir> <type> <options> <dump> <pass>
+# Static information about the filesystems.
+# See fstab(5) for details.
 
-# Danil
+# <danil@kutkevich.org>
 # <https://wiki.archlinux.org/index.php/Installation_Guide#Configure_the_system>,
 # <https://wiki.archlinux.org/index.php/Fstab>,
 # <http://gentoo.org/doc/en/gentoo-x86-quickinstall.xml?style=printable#doc_chap2_sect12>,
 # <http://gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=8&style=printable#doc_chap1_sect2>.
 # <http://linuxquestions.org/questions/arch-29/why-sda-and-not-hda-552872/>.
-# UUID=ecbecf8e-d3e8-48ba-84dc-6533e67df157 LABEL=fs_root
-/dev/sda1               /           ext4        rw,relatime,data=ordered    0 1
-# Danil <https://wiki.archlinux.org/index.php/swap#Swap_partition>.
-/dev/sda2               none        swap        sw                          0 0
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda UUID=5e06b610-8fcc-4a9a-ae78-94f3a468e062
+/dev/sda            	/         	ext4      	rw,relatime	0 1
+
+/dev/sdb		none		swap		defaults			0 0

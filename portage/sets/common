@@ -26,8 +26,10 @@ app-admin/makepasswd #password generator
 app-admin/pwgen #password generator
 app-arch/arj
 app-arch/lzip
+app-arch/pigz #parallel gzip for multi-processor, multi-core
 app-arch/unrar
 app-arch/unzip
+app-arch/zstd #a-la gz/xz compression
 app-emulation/docker
 app-misc/colordiff
 app-misc/jo #json output from a shell <https://github.com/jpmens/jo>
@@ -54,17 +56,17 @@ net-ftp/pure-ftpd #because vsftpd is annoying
 net-mail/mailutils #read local mail from /var/mail
 net-mail/swaks #command line smtp testing, including tls and auth
 net-misc/dhcpcd
-net-misc/mosh
+net-misc/mosh #ssh replacement
 net-misc/ntp
 net-misc/telnet-bsd
 net-misc/whois
 net-p2p/syncthing #dropbox replacement
 sys-apps/lsb-release #release version compliant to Linux Standard Base (LSB)
 sys-apps/mlocate
-sys-apps/pciutils #lspci <https://www.gentoo.org/doc/en/handbook/handbook-amd64.xml?style=printable&part=1&chap=7#doc_chap2>
+# sys-apps/pciutils #systemd blocker because require udev #lspci <https://www.gentoo.org/doc/en/handbook/handbook-amd64.xml?style=printable&part=1&chap=7#doc_chap2>
 sys-apps/the_silver_searcher
-sys-apps/usbutils #lsusb
-sys-devel/bc #used by bash prompt
+# sys-apps/usbutils #systemd blocker because require udev# lsusb
+sys-devel/bc #used by bash prompt, console-based calculator utility
 sys-fs/ncdu #diskspace usage is an baobab and gt5 replacement
 sys-process/lsof
 www-servers/nginx

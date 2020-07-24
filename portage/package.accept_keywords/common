@@ -14,6 +14,7 @@
 <dev-vcs/hgview-9999::gentoo ~amd64
 <media-gfx/mozjpeg-9999::kutkevich ~amd64
 <media-gfx/wkhtmltopdf-9999::kutkevich ~amd64
+<net-analyzer/goaccess-3::gentoo ~amd64 #analyze nginx/apache log in real-time
 <net-misc/tlsdate-0.0.13::gentoo ~amd64
 <net-p2p/syncthing-1.5::gentoo ~amd64
 <sci-mathematics/genius-9999::gentoo ~amd64

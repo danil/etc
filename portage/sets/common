@@ -49,6 +49,7 @@ dev-vcs/tig
 mail-mta/exim #deliver local mail to /var/mail
 media-gfx/jhead #rename jpeg's by exif date `jhead -n%Y%m%d-%H%M%S file.jpg`
 media-gfx/pngcrush #PNG image size optimizing <http://en.wikipedia.org/wiki/Pngcrush>
+net-analyzer/goaccess #analyze nginx/apache log in real-time
 net-analyzer/ngrep
 net-dns/bind-tools #`dig`, `host` and `nslookup`
 net-ftp/lftp

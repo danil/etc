@@ -25,6 +25,7 @@ sys-libs/libseccomp static-libs #required by app-emulation/docker
 # <http://sysoev.ru/nginx/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass>.
 # www-servers/nginx -nginx_modules_http_geo
 www-servers/nginx nginx_modules_http_stub_status #used by Munin
+net-analyzer/goaccess btree tokyocabinet #analyze nginx/apache log in real-time
 # www-servers/nginx fastcgi
 # www-servers/nginx nginx_modules_http_passenger
 

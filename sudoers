@@ -6,13 +6,12 @@
 #
 # See the man page for details on how to write a sudoers file.
 #
-
-# <danil@kutkevich.org>.
-Defaults editor=/usr/bin/emacs
-
 Defaults	env_reset
 Defaults	mail_badpass
 Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# <danil@kutkevich.org>.
+Defaults editor=/usr/bin/emacs
 
 # Host alias specification
 
@@ -34,6 +33,7 @@ danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
 danil ALL=(ALL) NOPASSWD: /usr/bin/light -A 1
 danil ALL=(ALL) NOPASSWD: /usr/bin/light -U 1
 danil ALL=(ALL) NOPASSWD: /home/danil/bin/deb-packages
+danil ALL=(ALL) NOPASSWD: /home/danil/bin/vpnloop --host="*" --user="*"
 
 # See sudoers(5) for more information on "#include" directives:
 

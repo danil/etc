@@ -33,7 +33,8 @@ danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
 danil ALL=(ALL) NOPASSWD: /usr/bin/light -A 1
 danil ALL=(ALL) NOPASSWD: /usr/bin/light -U 1
 danil ALL=(ALL) NOPASSWD: /home/danil/bin/deb-packages
-danil ALL=(ALL) NOPASSWD: /home/danil/bin/vpnloop --host="*" --user="*"
+danil ALL=(ALL) NOPASSWD: /home/danil/bin/vpnloop *
+danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: /home/danil/.emacs.var
 
 # See sudoers(5) for more information on "#include" directives:
 

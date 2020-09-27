@@ -82,6 +82,7 @@ Defaults editor=/usr/bin/emacs
 root ALL=(ALL) ALL
 
 ## Uncomment to allow members of group wheel to execute any command
+# %wheel ALL=(ALL) ALL
 # <danil@kutkevich.org>.
 %wheel ALL=(ALL) ALL
 
@@ -97,5 +98,4 @@ root ALL=(ALL) ALL
 # ALL ALL=(ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
 
 ## Read drop-in files from /etc/sudoers.d
-## (the '#' here does not indicate a comment)
-#includedir /etc/sudoers.d
+@includedir /etc/sudoers.d

@@ -34,6 +34,7 @@ danil ALL=(ALL) NOPASSWD: /usr/bin/updatedb
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start docker
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start postgresql
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start redis-server
+danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: .git/
 danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: /home/danil/.emacs.var
 danil ALL=(ALL) NOPASSWD: /usr/bin/aptitude update
 danil ALL=(ALL) NOPASSWD: /usr/bin/aptitude --prompt safe-upgrade

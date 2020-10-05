@@ -1,4 +1,3 @@
-# Nodejs
-# <danil@kutkevich.org>
-deb https://deb.nodesource.com/node_12.x bionic main
-deb-src https://deb.nodesource.com/node_12.x bionic main
+# <https://deb.nodesource.com/setup>.
+deb https://deb.nodesource.com/node_14.x focal main
+deb-src https://deb.nodesource.com/node_14.x focal main

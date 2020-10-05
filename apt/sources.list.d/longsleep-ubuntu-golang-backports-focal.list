@@ -1,0 +1,3 @@
+# <https://github.com/golang/go/wiki/Ubuntu>.
+deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu focal main
+# deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu focal main

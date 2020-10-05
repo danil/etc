@@ -11,6 +11,11 @@
 
 IMLAUNCH=/usr/bin/im-launch
 
+if [ "$IM_CONFIG_PHASE" = 1 ]; then
+    IM_CONFIG_CHECK_ENV=1
+    export IM_CONFIG_CHECK_ENV
+fi
+
 # If already tweaked, keep hands off :-)
 # If im-config is removed but not purged, keep hands off :-)
 if [ -z "$XMODIFIERS" ] && \

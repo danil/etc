@@ -1,1 +1,2 @@
-deb https://apt.syncthing.net/ syncthing release
+# <https://apt.syncthing.net>.
+deb https://apt.syncthing.net/ syncthing stable

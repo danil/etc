@@ -7,7 +7,7 @@
 ## See the sudoers man page for the details on how to write a sudoers file.
 ##
 
-# <danil@kutkevich.org>.
+# ~~~~<danil@kutkevich.org>.
 Defaults editor=/usr/bin/emacs
 
 ##
@@ -83,7 +83,7 @@ root ALL=(ALL) ALL
 
 ## Uncomment to allow members of group wheel to execute any command
 # %wheel ALL=(ALL) ALL
-# <danil@kutkevich.org>.
+# ~~~~<danil@kutkevich.org>.
 %wheel ALL=(ALL) ALL
 
 ## Same thing without a password
@@ -96,6 +96,19 @@ root ALL=(ALL) ALL
 ## of the user they are running the command as (root by default).
 # Defaults targetpw  # Ask for the password of the target user
 # ALL ALL=(ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
+
+# ~~~~<danil@kutkevich.org>
+danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: .git
+danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: /home/danil/.emacs.var
+danil ALL=(ALL) NOPASSWD: /bin/systemctl start docker
+danil ALL=(ALL) NOPASSWD: /bin/systemctl start postgresql
+danil ALL=(ALL) NOPASSWD: /bin/systemctl start redis-server
+danil ALL=(ALL) NOPASSWD: /home/danil/bin/pacman-packages --install
+danil ALL=(ALL) NOPASSWD: /sbin/reboot
+danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
+danil ALL=(ALL) NOPASSWD: /usr/bin/git status
+danil ALL=(ALL) NOPASSWD: /usr/bin/pacman --sync --refresh --sysupgrade --verbose
+danil ALL=(ALL) NOPASSWD: /usr/bin/updatedb
 
 ## Read drop-in files from /etc/sudoers.d
 @includedir /etc/sudoers.d

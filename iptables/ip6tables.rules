@@ -1,6 +1,81 @@
-# Empty iptables rule file
+# <https://library.linode.com/securing-your-server#sph_creating-a-firewall>,
+# <http://cyberciti.biz/faq/ip6tables-ipv6-firewall-for-linux/>,
+# <http://forums.gentoo.org/viewtopic-p-7168474.html#7168474>.
+
 *filter
-:INPUT ACCEPT [0:0]
-:FORWARD ACCEPT [0:0]
-:OUTPUT ACCEPT [0:0]
+
+#  Allow access to loopback.
+-A INPUT -i lo -j ACCEPT
+
+#  Accept all established inbound connections.
+-A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+#  Allow all outbound traffic - you can modify this to only allow
+#  certain traffic.
+-A OUTPUT -j ACCEPT
+
+#  Allow ICMP ping.
+-A INPUT -p ipv6-icmp -j ACCEPT
+
+#  Allow SSH connections.
+#
+#  The -dport number should be the same port number you set in
+#  sshd_config.
+#
+-A INPUT -p tcp -m conntrack --ctstate NEW --dport 22 -j ACCEPT
+
+#  Allow HTTP and HTTPS connections from anywhere (the normal ports
+#  for websites and SSL).
+-A INPUT -p tcp --dport 80   -j ACCEPT
+-A INPUT -p tcp --dport 8080 -j ACCEPT
+-A INPUT -p tcp --dport 443  -j ACCEPT
+
+# #  Allow FTP
+# # <http://unix.stackexchange.com/questions/93554/iptables-to-allow-incoming-ftp#93555>.
+# -A INPUT -p tcp -m tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A INPUT -p tcp -m tcp --dport 20 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A INPUT -p tcp -m tcp --sport 1024:65535 --dport 20:65535 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A INPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+# -A INPUT -j REJECT --reject-with icmp-port-unreachable
+# -A OUTPUT -p tcp -m tcp --dport 21 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A OUTPUT -p tcp -m tcp --dport 20 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+# -A OUTPUT -p tcp -m tcp --sport 1024:65535 --dport 20:65535 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+
+#  Allow inbound NTP (Network Time Protocol) connections
+#  <http://superuser.com/questions/141772/what-are-the-iptables-rules-to-permit-ntp#141795>.
+-A INPUT -p udp --dport 123 -j ACCEPT
+
+#  Allow Mosh
+#  <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-mosh-on-a-vps#firewall-configuration>,
+#  <https://mosh.mit.edu>.
+-I INPUT 1 -p udp --dport 60000:61000 -j ACCEPT
+
+#  Allow rsync.
+-A INPUT -p tcp --dport 873 -j ACCEPT
+
+#  Allow git-daemon.
+-A INPUT -p tcp --dport 9418 -j ACCEPT
+
+# #  Allow minecraft (error: should use IPv6 IPs).
+# --append INPUT --protocol tcp --dport 25565 --source 188.134.8.88,188.134.8.89 --jump ACCEPT
+
+# #  Jabber XMPP server.
+# -A INPUT -p tcp --dport 5222 -j ACCEPT
+# -A INPUT -p tcp --dport 5269 -j ACCEPT
+
+#  Allow Syncthing
+#  <http://docs.syncthing.net/users/firewall.html#local-firewall>.
+-A INPUT -p tcp --dport 22000 -j ACCEPT
+-A INPUT -p udp --dport 21027 -j ACCEPT
+
+# #  Allow frp <https://github.com/fatedier/frp>.
+# -A INPUT -p tcp --dport 55000 -j ACCEPT
+
+#  Log iptables denied calls.
+-A INPUT -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
+
+#  Drop all other inbound - default deny unless explicitly allowed policy.
+-A INPUT -j DROP
+-A FORWARD -j DROP
+
 COMMIT

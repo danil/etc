@@ -46,3 +46,4 @@ git:x:977:
 docker:x:976:
 ntp:x:87:
 locate:x:21:
+arch:x:1001:

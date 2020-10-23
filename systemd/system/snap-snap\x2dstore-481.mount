@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount unit for snap-store, revision 481
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/snap-store_481.snap
+Where=/snap/snap-store/481
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

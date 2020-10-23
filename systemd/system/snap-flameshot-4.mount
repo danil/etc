@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount unit for flameshot, revision 4
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/flameshot_4.snap
+Where=/snap/flameshot/4
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount unit for telegram-desktop, revision 2131
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/telegram-desktop_2131.snap
+Where=/snap/telegram-desktop/2131
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

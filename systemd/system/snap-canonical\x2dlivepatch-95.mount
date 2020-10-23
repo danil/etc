@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount unit for canonical-livepatch, revision 95
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/canonical-livepatch_95.snap
+Where=/snap/canonical-livepatch/95
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

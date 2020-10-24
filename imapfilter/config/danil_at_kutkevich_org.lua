@@ -4,7 +4,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
 
   local mailbox = mail_account._new
   local results = mailbox:is_unseen()
-  local total_count = table.getn(results)
+  local total_count = #results
   if total_count == 0 then
     return
   end
@@ -48,10 +48,10 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- kutkevich.org hosts messages filtering
   local mailbox = mail_account._new
   local results0 = mailbox:is_unseen() * mailbox:contain_from("kutkevich.org")
-  if table.getn(results0) > 0 then
+  if #results0 > 0 then
     -- h2 cron notification messages filtering
     local results = results0:contain_from("h2.kutkevich.org")
-    if table.getn(results) > 0 then
+    if #results > 0 then
       -- FIXME: "results" instead of "mailbox".
       results = results:contain_subject("/usr/sbin/run-crons") *
         (mailbox:contain_body("q: Updating ebuild cache in /usr/portage") +
@@ -64,7 +64,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
     end
     -- h10 cron notification messages filtering
     local results = results0:contain_from("h10.kutkevich.org")
-    if table.getn(results) > 0 then
+    if #results > 0 then
       results = results:contain_subject("Anacron job 'cron.daily'")
       total_count = move_mails{box=mail_account.KutOrgH10, mails=results, count=total_count}
       if is_should_return{box=mail_account._new, count=total_count} then
@@ -76,13 +76,13 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- armor5games.org hosts messages filtering
   local mailbox = mail_account._new
   local results0 = mailbox:is_unseen() * mailbox:contain_from("armor5games.com")
-  if table.getn(results0) > 0 then
+  if #results0 > 0 then
     -- ah9 host messages filtering
     local results1 = results0:contain_from("ah9.armor5games.com")
-    if table.getn(results1) > 0 then
+    if #results1 > 0 then
       -- ah9 netdata annoying notification messages filtering
       local results = results1:contain_from("netdata@ah9.armor5games.com")
-      if table.getn(results) > 0 then
+      if #results > 0 then
         results = results:contain_subject("recovered - last collected secs - web_log_nginx")
         total_count = move_mails{box=mail_account.ErA5gComAh9, mails=results, count=total_count}
         if is_should_return{box=mail_account._new, count=total_count} then
@@ -90,7 +90,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
         end
       end
       local results = results1:contain_subject("/usr/sbin/anacron")
-      if table.getn(results) > 0 then
+      if #results > 0 then
         results = results:contain_body("run-parts: /etc/cron.monthly/ieee-data exited with return code 1") +
           (mailbox:contain_body("exim4-base") +
              mailbox:contain_body("WARNING: purging the environment"))
@@ -119,7 +119,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   local mailbox = mail_account._new
   local results0 = mailbox:is_unseen() *
     mailbox:contain_from("monit")
-  if table.getn(results0) > 0 then
+  if #results0 > 0 then
     -- monit "success" or "instance changed" messages filtering
     local results = results0:contain_subject("succeeded") +
       results0:contain_subject("Exists") +
@@ -404,7 +404,7 @@ function filtering_danil_at_kutkevich_org(mail_account)
   -- jamendo.com "new music" notifications messages filtering
   local mailbox = mail_account._new
   local results0 = mailbox:is_unseen() * mailbox:contain_from("no-reply@jamendo.com")
-  if table.getn(results0) > 0 then
+  if #results0 > 0 then
     local results = results0:contain_subject("new") *
       (results0:contain_subject("music") + results0:contain_subject("single"))
     total_count = move_mails{box=mail_account.Jamendo, mails=results, count=total_count}
@@ -514,7 +514,7 @@ function move_mails(t)
   elseif type(t.count) ~= "number" then
     error("no count")
   end
-  t.count = t.count - table.getn(t.mails)
+  t.count = t.count - #t.mails
   t.mails:move_messages(t.box)
   if t.count < 0 then
     return 0
@@ -532,7 +532,7 @@ function is_should_return(t)
     return false
   end
   local results = t.box:is_unseen()
-  t.count = table.getn(results)
+  t.count = #results
   if t.count > 0 then
     return false
   end

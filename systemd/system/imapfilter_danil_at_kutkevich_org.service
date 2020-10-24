@@ -1,5 +1,5 @@
 [Unit]
-Description="Filter the danil at kutkevich org messages via IMAP"
+Description="Filter IMAP messages of the danil at kutkevich org"
 After=network.target network-online.target nss-lookup.target
 
 [Service]

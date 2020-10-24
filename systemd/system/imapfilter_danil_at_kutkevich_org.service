@@ -4,6 +4,8 @@ After=network.target network-online.target nss-lookup.target
 
 [Service]
 Type=simple
+User=danil
+Group=danil
 ExecStart=/usr/bin/imapfilter -v -c /etc/imapfilter/config_danil_at_kutkevich_org_daemon.lua -l /var/log/imapfilter/danil_at_kutkevich_org.log
 
 [Install]

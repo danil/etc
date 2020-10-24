@@ -3,6 +3,6 @@ Description="Git mirror of the private repositories"
 
 [Service]
 Type=oneshot
-ExecStart=/home/danil/bin/git-private-mirror
 User=danil
 Group=danil
+ExecStart=/home/danil/bin/git-private-mirror

@@ -108,6 +108,8 @@ danil ALL=(ALL) NOPASSWD: /sbin/reboot
 danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
 danil ALL=(ALL) NOPASSWD: /usr/bin/git status
 danil ALL=(ALL) NOPASSWD: /usr/bin/pacman --sync --refresh --sysupgrade --verbose
+danil ALL=(ALL) NOPASSWD: /usr/bin/pacman --sync --refresh --verbose
+danil ALL=(ALL) NOPASSWD: /usr/bin/pacman --sync --sysupgrade --verbose
 danil ALL=(ALL) NOPASSWD: /usr/bin/updatedb
 
 ## Read drop-in files from /etc/sudoers.d

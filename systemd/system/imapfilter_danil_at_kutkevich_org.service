@@ -1,0 +1,7 @@
+[Unit]
+Description="Filter the danil at kutkevich org messages via IMAP"
+After=network.target network-online.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/imapfilter -v -c /etc/imapfilter/config_danil_at_kutkevich_org_daemon.lua -l /var/log/imapfilter/danil_at_kutkevich_org.log

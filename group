@@ -42,7 +42,7 @@ systemd-timesync:x:979:
 systemd-coredump:x:978:
 uuidd:x:68:
 danil:x:1000:
-git:x:977:
+git:x:977:danil
 docker:x:976:
 ntp:x:87:
 locate:x:21:

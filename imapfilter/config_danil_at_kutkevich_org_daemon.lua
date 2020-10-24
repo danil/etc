@@ -14,8 +14,8 @@ require "config/danil_at_kutkevich_org"
 function forever()
   local mailbox = danil_at_kutkevich_org._new
   repeat
-  -- pcall(filtering_danil_at_kutkevich_org)
-  filtering_danil_at_kutkevich_org(danil_at_kutkevich_org)
+    -- pcall(filtering_danil_at_kutkevich_org)
+    filtering_danil_at_kutkevich_org(danil_at_kutkevich_org)
   until not mailbox:enter_idle()
 end
 become_daemon(1, forever)

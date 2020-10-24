@@ -10,7 +10,7 @@ require "config/danil_at_kutkevich_org"
 -- The auxiliary function daemon_mode() is supplied for conveniency.
 -- The following example puts imapfilter in the background and runs
 -- endlessly, executing the commands in the forever() function and
--- sleeping for 600 seconds between intervals:
+-- sleeping for 1 second between intervals:
 function forever()
   local mailbox = danil_at_kutkevich_org._new
   repeat

@@ -7,6 +7,9 @@
 ## See the sudoers man page for the details on how to write a sudoers file.
 ##
 
+# <danil@kutkevich.org>.
+Defaults editor=/usr/bin/emacs
+
 ##
 ## Host alias specification
 ##
@@ -110,5 +113,4 @@ danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate
 danil ALL=(ALL) NOPASSWD: /usr/sbin/hibernate-ram
 
 ## Read drop-in files from /etc/sudoers.d
-## (the '#' here does not indicate a comment)
-#includedir /etc/sudoers.d
+@includedir /etc/sudoers.d

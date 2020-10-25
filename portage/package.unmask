@@ -1,1 +1,6 @@
 # -abi_x86_32 #unmasking abi_x86_32 flag <https://wiki.gentoo.org/wiki/Multilib_System_without_emul-linux_Packages#Apply_the_abi_x86_32_flag>
+
+# Golang dependency.
+<dev-python/configparser-3.5.1::gentoo
+<dev-python/enum34-1.1.7::gentoo
+<dev-python/ipaddress-1.0.24::gentoo

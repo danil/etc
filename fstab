@@ -13,4 +13,4 @@
 # ~~~~<danil@kutkevich.org> kubernetes with swap on is not supported.
 /dev/sda																		/					ext4	rw,relatime							0	1
 /dev/sdb																		none			swap	defaults								0	0
-/dev/disk/by-id/scsi-0Linode_Volume_sync_v3	/mnt/sync	ext4	defaults,noatime,nofail	0	2
+/dev/disk/by-id/scsi-0Linode_Volume_sync_v4	/mnt/sync	ext4	defaults,noatime,nofail	0	2

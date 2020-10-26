@@ -1,0 +1,10 @@
+[Unit]
+Description="Hourly mirrors private git repositories"
+
+[Timer]
+OnCalendar=0/1:00:00
+RandomizedDelaySec=15m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

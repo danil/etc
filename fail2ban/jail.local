@@ -26,7 +26,7 @@ sender = fail2ban@h20.kutkevich.org
 # interpolation to the chosen action shortcut (e.g.  action_mw,
 # action_mwl, etc) in jail.local globally (section [DEFAULT]) or per
 # specific section
-# Danil
+# ~~~~<danil@kutkevich.org>
 # <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04#configure-fail2ban-with-your-service-settings>.
 action = %(action_mw)s
 
@@ -47,13 +47,13 @@ enabled  = true
 # HTTP servers
 #
 
-# Danil
+# ~~~~<danil@kutkevich.org>
 # <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
 [nginx-noscript]
 
 enabled  = false
 
-# Danil
+# ~~~~<danil@kutkevich.org>
 # <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
 [nginx-proxy]
 
@@ -63,7 +63,7 @@ enabled  = false
 # FTP servers
 #
 
-# Danil.
-[vsftpd]
+# ~~~~<danil@kutkevich.org>.
+[pure-ftpd]
 
 enabled  = true

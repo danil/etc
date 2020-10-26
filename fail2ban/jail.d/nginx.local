@@ -1,0 +1,9 @@
+# ~~~~<danil@kutkevich.org>
+# <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
+[nginx-noscript]
+enabled  = false
+
+# ~~~~<danil@kutkevich.org>
+# <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
+[nginx-proxy]
+enabled  = false

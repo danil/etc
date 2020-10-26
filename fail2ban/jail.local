@@ -33,37 +33,3 @@ action = %(action_mw)s
 #
 # JAILS
 #
-
-#
-# SSH servers
-#
-
-# Danil <https://wiki.archlinux.org/index.php/Fail2ban#SSH_jail>.
-[sshd]
-
-enabled  = true
-
-#
-# HTTP servers
-#
-
-# ~~~~<danil@kutkevich.org>
-# <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
-[nginx-noscript]
-
-enabled  = false
-
-# ~~~~<danil@kutkevich.org>
-# <http://snippets.aktagon.com/snippets/554-How-to-Secure-an-nginx-Server-with-Fail2Ban>.
-[nginx-proxy]
-
-enabled  = false
-
-#
-# FTP servers
-#
-
-# ~~~~<danil@kutkevich.org>.
-[pure-ftpd]
-
-enabled  = true

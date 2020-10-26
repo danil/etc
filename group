@@ -48,3 +48,4 @@ ntp:x:87:
 locate:x:21:
 arch:x:1001:danil
 named:x:40:
+exim:x:79:

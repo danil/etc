@@ -1,0 +1,4 @@
+# Danil <https://wiki.archlinux.org/index.php/Fail2ban#SSH_jail>.
+[sshd]
+enabled  = true
+ignoreip = 127.0.0.1/8

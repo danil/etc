@@ -1,2 +1,5 @@
 # Static table lookup for hostnames.
 # See hosts(5) for details.
+
+# ~~~~<danil@kutkeivch.org>.
+127.0.0.1 h20.kutkevich.org h20 localhost

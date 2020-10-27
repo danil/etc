@@ -29,6 +29,15 @@ dumper:		root
 operator:	root
 abuse:		root
 
+# # ~~~~<danil@kutkevich.org>.
+# # <http://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server#Basic_Setup>.
+# # extallusers:	extdanil,extsomeuser
+# extallusers:	extdanil
+# extdanil:			danil+h20@kutkevich.org
+# root:					extallusers
+# danil:				extdanil
+# noreply:			danil
+
 # trap decode to catch security attacks
 decode:		root
 

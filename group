@@ -1,4 +1,4 @@
-root:x:0:root
+root:x:0:root,smtpd
 sys:x:3:bin
 mem:x:8:
 ftp:x:11:
@@ -49,3 +49,5 @@ locate:x:21:
 arch:x:1001:danil
 named:x:40:
 exim:x:79:
+smtpd:x:91:
+smtpq:x:92:

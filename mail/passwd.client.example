@@ -1,0 +1,9 @@
+# password file used when the local exim is authenticating to a remote
+# host as a client.
+#
+# see exim4_passwd_client(5) for more documentation
+# ~~~~<danil@kutkevich.org>
+danil@h20.kutkevich.org: auth_name=your.name@your.tld auth_pass=your_pass auth_plain=^your.name@your.tld^your_pass
+danil+h20@kutkevich.org: auth_name=your.name@your.tld auth_pass=your_pass auth_plain=^your.name@your.tld^your_pass
+root@h20.kutkevich.org: auth_name=your.name@your.tld auth_pass=your_pass auth_plain=^your.name@your.tld^your_pass
+root+h20@kutkevich.org: auth_name=your.name@your.tld auth_pass=your_pass auth_plain=^your.name@your.tld^your_pass

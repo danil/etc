@@ -20,7 +20,7 @@ maxretry = 20
 destemail = danil@kutkevich.org
 
 # Sender email address used solely for some actions
-sender = danil+fail2ban+h20@kutkevich.org
+sender = fail2ban@h20.kutkevich.org
 
 # Choose default action.  To change, just override value of 'action' with the
 # interpolation to the chosen action shortcut (e.g.  action_mw,

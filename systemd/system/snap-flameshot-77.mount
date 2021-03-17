@@ -1,10 +1,10 @@
 [Unit]
-Description=Mount unit for core, revision 10126
+Description=Mount unit for flameshot, revision 77
 Before=snapd.service
 
 [Mount]
-What=/var/lib/snapd/snaps/core_10126.snap
-Where=/snap/core/10126
+What=/var/lib/snapd/snaps/flameshot_77.snap
+Where=/snap/flameshot/77
 Type=squashfs
 Options=nodev,ro,x-gdu.hide
 LazyUnmount=yes

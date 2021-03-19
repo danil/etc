@@ -1,2 +1,2 @@
 # <https://apt.syncthing.net>.
-deb https://apt.syncthing.net/ syncthing stable
+deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable

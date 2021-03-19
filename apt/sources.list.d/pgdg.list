@@ -1,2 +1,2 @@
-# PostgreSQL <https://www.postgresql.org/download/linux/ubuntu>
+# PostgreSQL <https://www.postgresql.org/download/linux/ubuntu>.
 deb http://apt.postgresql.org/pub/repos/apt focal-pgdg main

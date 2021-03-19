@@ -1,2 +1,2 @@
-# <https://yarnpkg.com/lang/en/docs/install/#debian-stable>.
-deb https://dl.yarnpkg.com/debian/ stable main
+# # <https://yarnpkg.com/lang/en/docs/install/#debian-stable>.
+# deb https://dl.yarnpkg.com/debian/ stable main

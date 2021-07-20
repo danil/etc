@@ -1,3 +1,2 @@
-# # <https://deb.nodesource.com/setup>.
-# deb https://deb.nodesource.com/node_14.x focal main
-# deb-src https://deb.nodesource.com/node_14.x focal main
+deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x focal main
+deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x focal main

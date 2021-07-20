@@ -76,6 +76,8 @@ opensmtpq:x:134:
 mlocate:x:135:
 redis:x:136:
 elasticsearch:x:137:
-docker:x:998:
+docker:x:998:danil
 postgres:x:138:
 mongodb:x:139:mongodb
+aerospike:x:997:
+vault:x:996:

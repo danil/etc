@@ -1,9 +1,9 @@
 [Unit]
 # Auto-generated, DO NOT EDIT
 Description=Service for snap application canonical-livepatch.canonical-livepatchd
-Requires=snap-canonical\x2dlivepatch-95.mount
+Requires=snap-canonical\x2dlivepatch-99.mount
 Wants=network.target
-After=snap-canonical\x2dlivepatch-95.mount network.target snapd.apparmor.service
+After=snap-canonical\x2dlivepatch-99.mount network.target snapd.apparmor.service
 X-Snappy=yes
 
 [Service]
@@ -11,7 +11,7 @@ EnvironmentFile=-/etc/environment
 ExecStart=/usr/bin/snap run canonical-livepatch.canonical-livepatchd
 SyslogIdentifier=canonical-livepatch.canonical-livepatchd
 Restart=on-failure
-WorkingDirectory=/var/snap/canonical-livepatch/95
+WorkingDirectory=/var/snap/canonical-livepatch/99
 TimeoutStopSec=30
 Type=simple
 

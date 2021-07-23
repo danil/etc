@@ -1,0 +1,6 @@
+# Hashicorp
+# curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+# sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+# <https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository#curl-fssl-https-apt-releases-hashicorp-com-gpg-sudo-apt-key-add>.
+deb [arch=amd64] https://apt.releases.hashicorp.com focal main
+# deb-src [arch=amd64] https://apt.releases.hashicorp.com focal main

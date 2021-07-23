@@ -1,2 +1,8 @@
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-deb [arch=amd64] http://linux.dropbox.com/ubuntu disco main
+# # Dropbox
+# # sudo apt-add-repository -r "deb http://linux.dropbox.com/ubuntu disco main"
+# # echo "deb [arch=amd64] http://linux.dropbox.com/ubuntu disco main" | sudo tee /etc/apt/sources.list.d/dropbox.list
+# # or
+# # sudo apt-add-repository -r "deb http://linux.dropbox.com/ubuntu trusty main"
+# # echo "deb [arch=amd64] http://linux.dropbox.com/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/dropbox.list
+# # outdated link <https://help.dropbox.com/installs-integrations/desktop/linux-repository>.
+# deb [arch=amd64] http://linux.dropbox.com/ubuntu disco main

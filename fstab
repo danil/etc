@@ -6,7 +6,7 @@
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/nvme0n1p2 during installation
-UUID=e1b622f0-2360-4da0-9ac8-0cb8f59e3572 /               ext4    errors=remount-ro 0       1
+UUID=28aa2346-620d-4de4-9c93-a335dc925d43 /               ext4    errors=remount-ro 0       1
 # /boot/efi was on /dev/nvme0n1p1 during installation
-UUID=1683-94B3  /boot/efi       vfat    umask=0077      0       1
+UUID=4139-D5A5  /boot/efi       vfat    umask=0077      0       1
 /swapfile                                 none            swap    sw              0       0

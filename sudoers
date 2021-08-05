@@ -46,6 +46,6 @@ danil ALL=(ALL) NOPASSWD: /usr/bin/ls
 danil ALL=(ALL) NOPASSWD: /usr/bin/ls -lah
 danil ALL=(ALL) NOPASSWD: /usr/bin/updatedb
 
-# See sudoers(5) for more information on "#include" directives:
+# See sudoers(5) for more information on "@include" directives:
 
-#includedir /etc/sudoers.d
+@includedir /etc/sudoers.d

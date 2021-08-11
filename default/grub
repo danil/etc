@@ -10,8 +10,11 @@ GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
 # Fixing screen flickering
 # <https://wiki.archlinux.org/title/intel_graphics#Screen_flickering>
 # ~~~~<danil@kutkevich.org>
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.enable_psr=0"
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.modeset=0"
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.fastboot=1"
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.enable_psr=0 i915.enable_fbc=0"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 GRUB_CMDLINE_LINUX=""
 
 # Uncomment to enable BadRAM filtering, modify to suit your needs

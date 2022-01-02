@@ -35,7 +35,6 @@ danil ALL=(ALL) NOPASSWD: /bin/systemctl start postgresql
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start redis-server
 danil ALL=(ALL) NOPASSWD: /home/danil/bin/deb-packages
 danil ALL=(ALL) NOPASSWD: /home/danil/bin/openconnectrecon *
-danil ALL=(ALL) NOPASSWD: /sbin/reboot
 danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
 danil ALL=(ALL) NOPASSWD: /usr/bin/aptitude --prompt safe-upgrade
 danil ALL=(ALL) NOPASSWD: /usr/bin/aptitude update

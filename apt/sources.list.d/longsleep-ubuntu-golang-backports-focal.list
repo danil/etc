@@ -1,5 +1,3 @@
-# Go programming language
-# sudo add-apt-repository ppa:longsleep/golang-backports
-# <https://github.com/golang/go/wiki/Ubuntu>.
-deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu focal main
-# deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu focal main
+# # <https://github.com/golang/go/wiki/Ubuntu>.
+# deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu impish main
+# # deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu impish main

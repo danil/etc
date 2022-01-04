@@ -1,5 +1,11 @@
-# Node.js
-# wget -q -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/nodesource.gpg >/dev/null
-# <https://github.com/nodesource/distributions>.
-deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x focal main
-deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x focal main
+# Node.js <???>:
+# sudo apt-get install apt-transport-https
+# curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/nodesource.gpg --import
+# sudo chmod 644 /etc/apt/trusted.gpg.d/nodesource.gpg
+# and then:
+# sudo aptitude update
+# sudo aptitude install nodejs
+# and then <https://unix.stackexchange.com/questions/627635/upgrading-nodejs-on-ubuntu-how-to-fix-broken-pipe-error#627723>:
+# sudo dpkg -i --force-overwrite /var/cache/apt/archives/nodejs_17.3.0-deb-1nodesource1_amd64.deb
+deb https://deb.nodesource.com/node_17.x impish main
+deb-src https://deb.nodesource.com/node_17.x impish main

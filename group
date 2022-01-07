@@ -51,3 +51,6 @@ named:x:40:
 exim:x:79:
 smtpd:x:91:
 smtpq:x:92:
+knot:x:975:
+sgx:x:974:
+systemd-oom:x:973:

@@ -12,5 +12,8 @@
 # /dev/sda UUID=5e06b610-8fcc-4a9a-ae78-94f3a468e062
 # ~~~~<danil@kutkevich.org> kubernetes with swap on is not supported.
 /dev/sda																		/					ext4	rw,relatime							0	1
-/dev/sdb																		none			swap	defaults								0	0
-/dev/disk/by-id/scsi-0Linode_Volume_sync_v4	/mnt/sync	ext4	defaults,noatime,nofail	0	2
+# /dev/sdb																		none			swap	defaults								0	0
+/swapfile																		none			swap	sw											0	0
+# ~~~~<danil@kutkevich.org> storage:
+# /dev/disk/by-id/scsi-0Linode_Volume_sync_v4	/mnt/sync_v4	ext4	defaults,noatime,nofail	0	2
+/dev/disk/by-id/scsi-0Linode_Volume_sync_v6 /mnt/sync	ext4	defaults,noatime,nofail 0 2

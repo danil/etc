@@ -1,9 +1,6 @@
 # # Elasticsearch 5 <https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html>:
-# # sudo aptitude install apt-transport-https
 # # curl -s https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/elasticsearch.gpg --import
 # # sudo chmod 644 /etc/apt/trusted.gpg.d/elasticsearch.gpg
-# # or
-# # sudo sh -c 'wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -'
 # # and then:
 # # sudo aptitude update
 # # sudo aptitude install elasticsearch

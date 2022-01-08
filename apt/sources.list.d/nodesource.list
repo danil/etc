@@ -1,5 +1,4 @@
 # Node.js <???>:
-# sudo apt-get install apt-transport-https
 # curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/nodesource.gpg --import
 # sudo chmod 644 /etc/apt/trusted.gpg.d/nodesource.gpg
 # and then:

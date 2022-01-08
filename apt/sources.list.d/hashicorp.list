@@ -1,9 +1,6 @@
 # Hashicorp <https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository>, <https://vaultproject.io/downloads>:
-# sudo apt-get install apt-transport-https
 # curl -s https://apt.releases.hashicorp.com/gpg | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/hashicorp.gpg --import
 # sudo chmod 644 /etc/apt/trusted.gpg.d/hashicorp.gpg
-# or
-# sudo sh -c 'curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -'
 # and then:
 # sudo aptitude update
 # sudo aptitude install vault

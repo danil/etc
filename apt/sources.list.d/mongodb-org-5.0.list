@@ -1,8 +1,6 @@
 # <https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu>.
 # curl -s https://www.mongodb.org/static/pgp/server-5.0.asc | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/mongodb.gpg --import
 # sudo chmod 644 /etc/apt/trusted.gpg.d/mongodb.gpg
-# or
-# sudo sh -c 'wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -'
 # and then:
 # sudo aptitude update
 # sudo aptitude install dart

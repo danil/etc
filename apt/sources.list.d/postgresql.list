@@ -1,8 +1,6 @@
 # PostgreSQL <https://www.postgresql.org/download/linux/ubuntu>:
 # curl -s https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/postgresql.gpg --import
 # sudo chmod 644 /etc/apt/trusted.gpg.d/postgresql.gpg
-# or
-# wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 # and then:
 # sudo aptitude update
 # sudo aptitude install postgresql-14

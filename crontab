@@ -7,7 +7,7 @@
 SHELL=/bin/sh
 # You can also override PATH, but by default, newer versions inherit it from the environment
 #PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-# ~~~~<danil@kutkeivch.org>
+# ~~~~<danil@kutkeivch.org>.
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # Example of job definition:

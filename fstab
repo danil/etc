@@ -7,9 +7,9 @@
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 /dev/mapper/vgubuntu-root /               ext4    errors=remount-ro 0       1
 # /boot was on /dev/nvme0n1p2 during installation
-UUID=3af2981e-a194-4bb2-9829-d82c6e1b3f93 /boot           ext4    defaults        0       2
+UUID=f8212220-d3be-42cc-8c85-89f705f71045 /boot           ext4    defaults        0       2
 # /boot/efi was on /dev/nvme0n1p1 during installation
-UUID=4139-D5A5  /boot/efi       vfat    umask=0077      0       1
+UUID=7D53-E382  /boot/efi       vfat    umask=0077      0       1
 /dev/mapper/vgubuntu-swap_1 none            swap    sw              0       0
-# # ~~~~<danil@kutkevich.org>
+# # ~~~~<danil@kutkevich.org>.
 # /swapfile                                 none            swap    sw              0       0

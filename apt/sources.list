@@ -1,4 +1,4 @@
-# deb cdrom:[Ubuntu 21.10 _Impish Indri_ - Release amd64 (20211012)]/ impish main restricted
+#deb cdrom:[Ubuntu 21.10 _Impish Indri_ - Release amd64 (20211012)]/ impish main restricted
 
 # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
 # newer versions of the distribution.
@@ -40,6 +40,8 @@ deb http://ru.archive.ubuntu.com/ubuntu/ impish-backports main restricted univer
 ## 'partner' repository.
 ## This software is not part of Ubuntu, but is offered by Canonical and the
 ## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu impish partner
+# ~~~~<danil@kutkevich.org>.
 deb http://archive.canonical.com/ubuntu impish partner
 # deb-src http://archive.canonical.com/ubuntu impish partner
 

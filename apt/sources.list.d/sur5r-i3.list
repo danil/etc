@@ -1,8 +1,8 @@
-# i3 <https://i3wm.org/docs/repositories.html>:
-# /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2021.02.02_all.deb keyring.deb SHA256:cccfb1dd7d6b1b6a137bb96ea5b5eef18a0a4a6df1d6c0c37832025d2edaa710
-# sudo dpkg -i ./keyring.deb
-# or
-# and then:
-# sudo aptitude update
-# sudo aptitude install i3-wm
-deb https://debian.sur5r.net/i3/ impish universe
+# # i3 <https://i3wm.org/docs/repositories.html>:
+# # /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2021.02.02_all.deb keyring.deb SHA256:cccfb1dd7d6b1b6a137bb96ea5b5eef18a0a4a6df1d6c0c37832025d2edaa710
+# # sudo dpkg -i ./keyring.deb
+# # or
+# # and then:
+# # sudo aptitude update
+# # sudo aptitude install i3-wm
+# deb https://debian.sur5r.net/i3/ impish universe

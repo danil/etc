@@ -81,3 +81,4 @@ mlocate:x:138:
 docker:x:997:
 redis:x:139:
 postgres:x:140:
+kutkevich:x:1001:danil

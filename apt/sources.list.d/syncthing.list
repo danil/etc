@@ -3,4 +3,5 @@
 # and then:
 # sudo aptitude update
 # sudo aptitude install syncthing
-deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable
+# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
+# deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable

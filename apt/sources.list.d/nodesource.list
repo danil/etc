@@ -6,5 +6,6 @@
 # sudo aptitude install nodejs
 # and then <https://unix.stackexchange.com/questions/627635/upgrading-nodejs-on-ubuntu-how-to-fix-broken-pipe-error#627723>:
 # sudo dpkg -i --force-overwrite /var/cache/apt/archives/nodejs_17.3.0-deb-1nodesource1_amd64.deb
-deb https://deb.nodesource.com/node_17.x impish main
-deb-src https://deb.nodesource.com/node_17.x impish main
+# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
+# deb https://deb.nodesource.com/node_17.x impish main
+# deb-src https://deb.nodesource.com/node_17.x impish main

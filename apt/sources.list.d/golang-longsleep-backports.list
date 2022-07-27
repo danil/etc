@@ -1,3 +1,4 @@
-# # Go backports <https://github.com/golang/go/wiki/Ubuntu>:
+# Go backports <https://github.com/golang/go/wiki/Ubuntu>:
+# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
 # deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu impish main
-# # deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu impish main
+# deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu impish main

@@ -3,4 +3,5 @@
 # and then:
 # sudo aptitude update
 # sudo aptitude install kubectl
-deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main
+# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
+# deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main

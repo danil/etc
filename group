@@ -77,5 +77,6 @@ plocate:x:136:
 postgres:x:137:
 opensmtpd:x:138:
 opensmtpq:x:139:
-docker:x:999:
+docker:x:999:danil
 kutkevich:x:1001:danil
+vboxusers:x:140:

@@ -1,9 +1,0 @@
-# Hashicorp <https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository>, <https://vaultproject.io/downloads>:
-# curl -s https://apt.releases.hashicorp.com/gpg | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/hashicorp.gpg --import
-# sudo chmod 644 /etc/apt/trusted.gpg.d/hashicorp.gpg
-# and then:
-# sudo aptitude update
-# sudo aptitude install vault
-# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
-# deb [arch=amd64] https://apt.releases.hashicorp.com impish main
-# deb-src [arch=amd64] https://apt.releases.hashicorp.com impish main

@@ -80,3 +80,4 @@ opensmtpq:x:139:
 docker:x:999:danil
 kutkevich:x:1001:danil
 vboxusers:x:140:
+_flatpak:x:141:

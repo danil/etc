@@ -1,0 +1,1 @@
+deb [arch=amd64 signed-by=/usr/share/keyrings/seafile-keyring.asc] https://linux-clients.seafile.com/seadrive-deb/jammy/ stable main

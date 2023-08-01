@@ -5,7 +5,7 @@
 XKBMODEL="pc105"
 #~~~~<danil@kutkevich.org>.
 XKBLAYOUT="us,ru"
-XKBVARIANT=""
+XKBVARIANT=","
 XKBOPTIONS="grp:shifts_toggle"
 
 BACKSPACE="guess"

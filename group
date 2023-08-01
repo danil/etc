@@ -81,3 +81,10 @@ docker:x:999:danil
 kutkevich:x:1001:danil
 vboxusers:x:140:
 _flatpak:x:141:
+snapd-range-524288-root:x:524288:
+snap_daemon:x:584788:
+fwupd-refresh:x:142:
+rdma:x:143:
+pipewire:x:144:
+gamemode:x:998:
+gnome-initial-setup:x:997:

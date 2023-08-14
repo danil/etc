@@ -1,2 +1,0 @@
-# <https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu>.
-deb [arch=amd64,arm64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse

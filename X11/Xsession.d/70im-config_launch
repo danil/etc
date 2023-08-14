@@ -21,8 +21,8 @@ fi
 if [ -z "$XMODIFIERS" ] && \
    [ -z "$GTK_IM_MODULE" ] && \
    [ -z "$QT_IM_MODULE" ] && \
-   [ -z "$QT4_IM_MODULE" ] && \
    [ -z "$CLUTTER_IM_MODULE" ] && \
+   [ -z "$SDL_IM_MODULE" ] && \
    [ -r /usr/share/im-config/xinputrc.common ]; then
     IM_CONFIG_PHASE=1
     export IM_CONFIG_PHASE
@@ -40,12 +40,12 @@ if [ -z "$XMODIFIERS" ] && \
     export XMODIFIERS
     export GTK_IM_MODULE
     export QT_IM_MODULE
-    export QT4_IM_MODULE
     export CLUTTER_IM_MODULE
+    export SDL_IM_MODULE
 fi
 
 # Change $STARTUP string to im-launch while keeping the old $STARTUP string
 # as its arguments
-if [ -x "$IMLAUNCH" ]; then
+if [ "$XDG_SESSION_TYPE" != "wayland" ] && [ -x "$IMLAUNCH" ]; then
     STARTUP="$IMLAUNCH $STARTUP"
 fi

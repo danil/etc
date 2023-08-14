@@ -1,2 +1,8 @@
-# https://dart.dev/get-dart
-deb [arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main
+# Dart <https://dart.dev/get-dart#install-using-apt-get>:
+# curl -s https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/google.gpg --import
+# sudo chmod 644 /etc/apt/trusted.gpg.d/google.gpg
+# and then:
+# sudo aptitude update
+# sudo aptitude install dart
+# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
+# deb [arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main

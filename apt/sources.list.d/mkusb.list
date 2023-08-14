@@ -1,0 +1,9 @@
+# mkusb <https://help.ubuntu.com/community/mkusb#Quick_start_manual_and_mkusb_PPA>, <https://unix.stackexchange.com/questions/679495/now-that-apt-key-is-deprecated-how-do-you-add-an-ubuntu-ppa-as-a-debian-apt-sou#679498>:
+# export GNUPGHOME="$(mktemp -d)" # optional (skipping this means keys will be imported to your GPG keyring)
+# gpg --recv-keys --keyserver keyserver.ubuntu.com 54B8C8AC
+# gpg --export 54B8C8AC | sudo tee /usr/share/keyrings/mkusb-archive-keyring.gpg
+# and then:
+# sudo aptitude update
+# sudo aptitude install mkusb
+deb [signed-by=/usr/share/keyrings/mkusb-archive-keyring.gpg] http://ppa.launchpad.net/mkusb/ppa/ubuntu impish main
+# deb-src http://ppa.launchpad.net/mkusb/ppa/ubuntu impish main

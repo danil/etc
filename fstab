@@ -5,8 +5,11 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-# / was on /dev/nvme0n1p2 during installation
-UUID=3391d503-aec5-41ae-9155-a84b27c24d1a /               ext4    errors=remount-ro 0       1
+/dev/mapper/vgubuntu-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/nvme0n1p2 during installation
+UUID=f2e538c9-c41b-4d5d-b27c-eb941b968df1 /boot           ext4    defaults        0       2
 # /boot/efi was on /dev/nvme0n1p1 during installation
-UUID=0A55-4BBA  /boot/efi       vfat    umask=0077      0       1
+UUID=9771-3011  /boot/efi       vfat    umask=0077      0       1
+# ~~~~<danil@kutkevich.org>.
+# /dev/mapper/vgubuntu-swap_1 none            swap    sw              0       0
 /swapfile                                 none            swap    sw              0       0

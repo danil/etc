@@ -1,0 +1,11 @@
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+#~~~~<danil@kutkevich.org>.
+XKBLAYOUT="us,ru"
+XKBVARIANT=","
+XKBOPTIONS="grp:shifts_toggle"
+
+BACKSPACE="guess"

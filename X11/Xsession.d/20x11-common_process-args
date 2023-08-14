@@ -2,18 +2,6 @@
 
 # This file is sourced by Xsession(5), not executed.
 
-# read OPTIONFILE
-OPTIONS=$(cat "$OPTIONFILE") || true
-
-has_option() {
-  if [ "${OPTIONS#*
-$1}" != "$OPTIONS" ]; then
-    return 0
-  else
-    return 1
-  fi
-}
-
 # Determine how many arguments were provided.
 case $# in
   0)
@@ -45,7 +33,7 @@ case $# in
         ;;
       *)
         # Specific program was requested.
-        STARTUP_FULL_PATH=$(/usr/bin/which "${1%% *}" || true)
+        STARTUP_FULL_PATH=$(command -v "${1%% *}" || true)
         if [ -n "$STARTUP_FULL_PATH" ] && [ -e "$STARTUP_FULL_PATH" ]; then
           if [ -x "$STARTUP_FULL_PATH" ]; then
             STARTUP="$1"

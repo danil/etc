@@ -1,2 +1,7 @@
-# <https://apt.syncthing.net>.
-deb https://apt.syncthing.net/ syncthing stable
+# Syncthing <https://apt.syncthing.net>:
+# sudo curl -s -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+# and then:
+# sudo aptitude update
+# sudo aptitude install syncthing
+# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
+# deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable

@@ -1,0 +1,7 @@
+# # <https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu>.
+# # curl -s https://www.mongodb.org/static/pgp/server-5.0.asc | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/mongodb.gpg --import
+# # sudo chmod 644 /etc/apt/trusted.gpg.d/mongodb.gpg
+# # and then:
+# # sudo aptitude update
+# # sudo aptitude install dart
+# deb [arch=amd64,arm64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse

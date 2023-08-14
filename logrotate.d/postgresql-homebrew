@@ -1,0 +1,10 @@
+/home/linuxbrew/.linuxbrew/var/log/postgres*.log {
+       weekly
+       rotate 10
+       copytruncate
+       delaycompress
+       compress
+       notifempty
+       missingok
+       su root root
+}

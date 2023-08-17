@@ -5,11 +5,10 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-/dev/mapper/vgubuntu-root /               ext4    errors=remount-ro 0       1
-# /boot was on /dev/nvme0n1p2 during installation
-UUID=f2e538c9-c41b-4d5d-b27c-eb941b968df1 /boot           ext4    defaults        0       2
-# /boot/efi was on /dev/nvme0n1p1 during installation
-UUID=9771-3011  /boot/efi       vfat    umask=0077      0       1
-# ~~~~<danil@kutkevich.org>.
-# /dev/mapper/vgubuntu-swap_1 none            swap    sw              0       0
-/swapfile                                 none            swap    sw              0       0
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-jiZbKNX22hJAGYbEv3M1b8yN3OR41Na2rpU4ZaquYD0r8uVrSXELsrEeFQCXwzd0 / ext4 defaults 0 1
+# /boot was on /dev/nvme0n1p2 during curtin installation
+/dev/disk/by-uuid/792f2e21-5b39-4d1a-9135-2229326e7412 /boot ext4 defaults 0 1
+# /boot/efi was on /dev/nvme0n1p1 during curtin installation
+/dev/disk/by-uuid/77F5-9AB0 /boot/efi vfat defaults 0 1
+/swap.img	none	swap	sw	0	0

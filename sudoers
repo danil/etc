@@ -15,7 +15,7 @@ Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 Defaults	use_pty
 
 # ~~~~<danil@kutkevich.org>.
-Defaults editor=/usr/bin/emacs
+Defaults editor="/usr/bin/emacs -nw"
 
 # This preserves proxy settings from user environments of root
 # equivalent users (group sudo)

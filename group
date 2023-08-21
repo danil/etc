@@ -75,8 +75,8 @@ gnome-initial-setup:x:993:
 danil:x:1000:
 lightdm:x:130:
 nopasswdlogin:x:131:
-kutkevich:x:1001:danil
 plocate:x:132:
-_flatpak:x:133:
-opensmtpd:x:134:
-opensmtpq:x:135:
+kutkevich:x:1001:danil
+opensmtpd:x:133:
+opensmtpq:x:134:
+_flatpak:x:135:

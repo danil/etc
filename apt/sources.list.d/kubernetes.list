@@ -1,7 +1,0 @@
-# Kubernetes k8s <https://kubernetes.io/docs/tasks/tools/install-kubectl>, <https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-native-package-management>:
-# sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-# and then:
-# sudo aptitude update
-# sudo aptitude install kubectl
-# NOTE: User homebrew instead.~~~~<danil@kutkevich.org>.
-# deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main

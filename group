@@ -80,3 +80,4 @@ kutkevich:x:1001:danil
 opensmtpd:x:133:
 opensmtpq:x:134:
 _flatpak:x:135:
+i2c:x:136:

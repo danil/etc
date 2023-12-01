@@ -1,0 +1,2 @@
+# ~~~~<danil@kutkevich.org>.
+deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian lunar main

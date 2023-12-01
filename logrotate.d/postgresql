@@ -1,3 +1,4 @@
+# ~~~~<danil@kutkevich.org>.
 /var/log/postgresql/*.log
 /home/linuxbrew/.linuxbrew/var/log/postgres*.log
 {

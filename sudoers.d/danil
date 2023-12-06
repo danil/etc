@@ -15,3 +15,6 @@ danil ALL=(ALL) NOPASSWD: /usr/bin/light -U 1
 danil ALL=(ALL) NOPASSWD: /usr/bin/ls
 danil ALL=(ALL) NOPASSWD: /usr/bin/ls -lah
 danil ALL=(ALL) NOPASSWD: /usr/bin/updatedb
+danil ALL=(ALL) NOPASSWD: /usr/bin/nmcli connection up WB --ask
+danil ALL=(ALL) NOPASSWD: /usr/bin/nmcli connection up WB passwd-file /root/openvpn/wbr/password
+danil ALL=(ALL) NOPASSWD: /usr/bin/nmcli connection down WB

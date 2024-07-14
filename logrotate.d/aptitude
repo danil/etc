@@ -1,4 +1,5 @@
-/var/log/aptitude {
+/var/log/aptitude
+{
   rotate 6
   monthly
   compress

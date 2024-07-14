@@ -1,4 +1,6 @@
-/var/log/nginx/*.log {
+/var/log/nginx/*.log
+/home/linuxbrew/.linuxbrew/var/log/nginx/*.log
+{
 	daily
 	missingok
 	rotate 14

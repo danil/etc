@@ -1,4 +1,5 @@
-/var/log/cups/*log {
+/var/log/cups/*log
+{
 	daily
 	missingok
 	rotate 7

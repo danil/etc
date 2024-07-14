@@ -1,4 +1,5 @@
-/var/log/speech-dispatcher/speech-dispatcher.log /var/log/speech-dispatcher/speech-dispatcher-protocol.log {
+/var/log/speech-dispatcher/speech-dispatcher.log /var/log/speech-dispatcher/speech-dispatcher-protocol.log
+{
   daily
   compress
   missingok
@@ -9,7 +10,8 @@
   endscript
 }
 
-/var/log/speech-dispatcher/debug-epos-generic /var/log/speech-dispatcher/debug-festival /var/log/speech-dispatcher/debug-flite {
+/var/log/speech-dispatcher/debug-epos-generic /var/log/speech-dispatcher/debug-festival /var/log/speech-dispatcher/debug-flite
+{
   daily
   compress
   missingok

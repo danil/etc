@@ -1,4 +1,5 @@
-/var/log/dpkg.log {
+/var/log/dpkg.log
+{
 	monthly
 	rotate 12
 	compress

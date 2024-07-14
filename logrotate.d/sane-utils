@@ -1,4 +1,5 @@
-/var/log/saned.log {
+/var/log/saned.log
+{
     daily
     missingok
     rotate 7

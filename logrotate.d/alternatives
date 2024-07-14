@@ -1,4 +1,5 @@
-/var/log/alternatives.log {
+/var/log/alternatives.log
+{
 	monthly
 	rotate 12
 	compress

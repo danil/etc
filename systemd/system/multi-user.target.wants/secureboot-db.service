@@ -1,1 +1,1 @@
-/lib/systemd/system/secureboot-db.service
+/usr/lib/systemd/system/secureboot-db.service

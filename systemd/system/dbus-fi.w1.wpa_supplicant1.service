@@ -1,1 +1,1 @@
-/lib/systemd/system/wpa_supplicant.service
+/usr/lib/systemd/system/wpa_supplicant.service

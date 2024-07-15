@@ -1,1 +1,1 @@
-/lib/systemd/system/lm-sensors.service
+/usr/lib/systemd/system/lm-sensors.service

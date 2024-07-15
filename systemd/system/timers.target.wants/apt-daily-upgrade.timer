@@ -1,1 +1,1 @@
-/lib/systemd/system/apt-daily-upgrade.timer
+/usr/lib/systemd/system/apt-daily-upgrade.timer

@@ -1,1 +1,1 @@
-/lib/systemd/system/console-setup.service
+/usr/lib/systemd/system/console-setup.service

@@ -1,1 +1,1 @@
-/lib/systemd/system/apport-forward.socket
+/usr/lib/systemd/system/apport-forward.socket

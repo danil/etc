@@ -1,1 +1,1 @@
-/lib/systemd/system/snapd.apparmor.service
+/usr/lib/systemd/system/snapd.apparmor.service

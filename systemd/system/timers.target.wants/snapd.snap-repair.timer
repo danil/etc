@@ -1,1 +1,1 @@
-/lib/systemd/system/snapd.snap-repair.timer
+/usr/lib/systemd/system/snapd.snap-repair.timer

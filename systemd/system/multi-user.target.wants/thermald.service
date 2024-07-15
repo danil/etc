@@ -1,1 +1,1 @@
-/lib/systemd/system/thermald.service
+/usr/lib/systemd/system/thermald.service

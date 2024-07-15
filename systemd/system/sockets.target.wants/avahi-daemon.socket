@@ -1,1 +1,1 @@
-/lib/systemd/system/avahi-daemon.socket
+/usr/lib/systemd/system/avahi-daemon.socket

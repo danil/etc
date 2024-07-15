@@ -1,1 +1,1 @@
-/lib/systemd/system/keyboard-setup.service
+/usr/lib/systemd/system/keyboard-setup.service

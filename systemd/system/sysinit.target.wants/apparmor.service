@@ -1,1 +1,1 @@
-/lib/systemd/system/apparmor.service
+/usr/lib/systemd/system/apparmor.service

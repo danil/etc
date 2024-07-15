@@ -1,1 +1,1 @@
-/lib/systemd/system/snapd.system-shutdown.service
+/usr/lib/systemd/system/snapd.system-shutdown.service

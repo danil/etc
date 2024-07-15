@@ -1,1 +1,1 @@
-/lib/systemd/system/opensmtpd.service
+/usr/lib/systemd/system/opensmtpd.service

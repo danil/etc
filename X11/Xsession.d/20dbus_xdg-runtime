@@ -20,5 +20,9 @@ if [ -x "/usr/bin/dbus-update-activation-environment" ]; then
   # to put a minimal subset of the Xsession's environment in activated
   # services' environments
   dbus-update-activation-environment --verbose --systemd \
-    DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+    DBUS_SESSION_BUS_ADDRESS \
+    DISPLAY \
+    XAUTHORITY \
+    XDG_CURRENT_DESKTOP \
+    ${NULL+}
 fi

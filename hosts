@@ -1,5 +1,5 @@
 127.0.0.1 localhost
-127.0.1.1 h19
+127.0.1.1 h36
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
@@ -8,11 +8,17 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
-# Wbr Er HTTP Media Basket 1.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http1
+# Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
+127.0.0.1 media-basket-http-8080
+127.0.0.1 media-basket-http-8082
+127.0.0.1 media-basket-http-8083
+127.0.0.1 media-basket-http-8084
+127.0.0.1 media-basket-http-8085
+127.0.0.1 media-basket-http-8086
 
-# Wbr Er HTTP Media Basket 2.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http2
+# FIXME: Remove me! Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
+127.0.0.1 basket-stage-static-private-01a.mediabasket.vm.prod-4.cloud.datapro
+127.0.0.1 static-basket-stage-01.wb.ru
 
 # Wbr Er HTTP Media Cache.~~~~<danil@kutkevich.org>
 127.0.0.1 media-basket-http-cache

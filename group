@@ -85,3 +85,4 @@ plocate:x:129:
 openvpn:x:130:
 vboxusers:x:131:
 systemd-coredump:x:984:
+docker:x:983:danil

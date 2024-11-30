@@ -22,3 +22,11 @@ ff02::2 ip6-allrouters
 
 # Wbr Er HTTP Media Cache.~~~~<danil@kutkevich.org>
 127.0.0.1 media-basket-http-cache
+
+# Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
+127.0.0.1 manager1
+127.0.0.1 manager2
+
+# Wbr Er NutsBasket Store.~~~~<danil@kutkevich.org>
+127.0.0.1 store-8000
+127.0.0.1 store-8001

@@ -9,13 +9,6 @@ GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu`
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 GRUB_CMDLINE_LINUX=""
-# ~~~~<danil@kutkevich.org>.
-# Fixing screen flickering
-# <https://wiki.archlinux.org/title/intel_graphics#Screen_flickering>.
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.modeset=0"
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.fastboot=1"
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.enable_psr=0 i915.enable_fbc=0"
 
 # If your computer has multiple operating systems installed, then you
 # probably want to run os-prober. However, if your computer is a host

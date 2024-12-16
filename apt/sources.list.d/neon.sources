@@ -1,7 +1,0 @@
-# ~~~~<danil@kutkveich.org>.
-X-Repolib-Name: KDE neon noble user
-Types: deb deb-src
-URIs: http://archive.neon.kde.org/user
-Suites: noble
-Components: main
-Signed-By: /etc/apt/keyrings/neon-archive-keyring.asc

@@ -1,5 +1,0 @@
-# # <https://askubuntu.com/questions/351085/how-to-remove-recommended-and-suggested-dependencies-of-uninstalled-packages#399078>
-# # ~~~~<danil@kutkevich.org>
-# APT::Install-Recommends "false";
-# APT::AutoRemove::RecommendsImportant "false";
-# APT::AutoRemove::SuggestsImportant "false";

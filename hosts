@@ -1,5 +1,7 @@
+10.20.191.209 server.foreman-test.vm.prod-5.cloud.dataline server
+127.0.1.1 pw0cpw3y.foreman-test.vm.prod-5.cloud.dataline pw0cpw3y
 127.0.0.1 localhost
-127.0.1.1 h36
+127.0.1.1 PW0CPW3Y
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
@@ -7,26 +9,3 @@ fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-
-# Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http-8080
-127.0.0.1 media-basket-http-8082
-127.0.0.1 media-basket-http-8083
-127.0.0.1 media-basket-http-8084
-127.0.0.1 media-basket-http-8085
-127.0.0.1 media-basket-http-8086
-
-# FIXME: Remove me! Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
-127.0.0.1 basket-stage-static-private-01a.mediabasket.vm.prod-4.cloud.datapro
-127.0.0.1 static-basket-stage-01.wb.ru
-
-# Wbr Er HTTP Media Cache.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http-cache
-
-# Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
-127.0.0.1 manager1
-127.0.0.1 manager2
-
-# Wbr Er NutsBasket Store.~~~~<danil@kutkevich.org>
-127.0.0.1 store-8000
-127.0.0.1 store-8001

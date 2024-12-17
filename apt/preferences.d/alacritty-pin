@@ -1,0 +1,3 @@
+Package: alacritty alacritty
+Pin: version *
+Pin-Priority: -1

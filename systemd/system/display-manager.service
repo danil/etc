@@ -1,1 +1,1 @@
-/lib/systemd/system/gdm3.service
+/lib/systemd/system/sddm.service

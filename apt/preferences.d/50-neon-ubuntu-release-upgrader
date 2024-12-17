@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+# SPDX-FileCopyrightText: 2020 Harald Sitter <sitter@kde.org>
+
+# Pin ubuntu-release-upgrader. There's no reason we'd ever want to use the
+# upgrader from ubuntu since it's not adjusted to neon. So, same as with
+# base-files we'll want to stick to our version even when there's a new
+# version from ubuntu available. The new version will be merged in due time.
+
+Package: python3-distupgrade
+Pin: origin "archive.neon.kde.org"
+Pin-Priority: 1100
+
+Package: ubuntu-release-upgrader-core
+Pin: origin "archive.neon.kde.org"
+Pin-Priority: 1100
+
+Package: ubuntu-release-upgrader-gtk
+Pin: origin "archive.neon.kde.org"
+Pin-Priority: 1100
+
+Package: ubuntu-release-upgrader-qt
+Pin: origin "archive.neon.kde.org"
+Pin-Priority: 1100

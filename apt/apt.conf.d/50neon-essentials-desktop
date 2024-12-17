@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+
+# This marks certain packages as essential to the neon experience. Effectively
+# removing any of these makes the system no longer neon.
+# Removing any of these also breaks the UI to varying degrees, so we'll want
+# to make it really hard to do this by accident, hence we mark them essential.
+# This is implemented as a client-side marking because marking the actual
+# packages essential means apt will automatically install them REGARDLESS of
+# device type! e.g. mobile suddenly gets plasma-desktop installed.
+# Doing it this way allows us to install different essentials profiles based
+# on the intended form factor.
+pkgCacheGen::ForceEssential {
+    "sddm";
+    "plasma-desktop";
+
+    "neon-desktop";
+    "neon-settings-2";
+    "neon-essentials-desktop";
+};
+
+# I could only think of one "core" package and that's plasma-workspace. The other core bits are
+# required by one of these anyway, so I've opted not to make a "core" essentials file with stuff
+# that every formfactor needs. Should we find ourselves with wanting many core packages (besides
+# plasma-workspace) then this should get refactored into a 49neon-essentials-core that is dependend
+# on by all other files (also needs testing that the list merges correctly).

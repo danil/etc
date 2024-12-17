@@ -14,6 +14,9 @@ Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 # (#1011624, https://bugs.kde.org/show_bug.cgi?id=452532)
 Defaults	use_pty
 
+# ~~~~<danil@kutkevich.org>.
+Defaults editor="/usr/bin/emacs -nw"
+
 # This preserves proxy settings from user environments of root
 # equivalent users (group sudo)
 #Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"

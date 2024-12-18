@@ -1,0 +1,3 @@
+Package: ventoy ventoy
+Pin: version *
+Pin-Priority: -1

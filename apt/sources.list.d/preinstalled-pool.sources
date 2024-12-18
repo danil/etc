@@ -1,0 +1,5 @@
+Enabled: no
+Types: deb
+URIs: file:/var/lib/preinstalled-pool/
+Suites: noble
+Components: main restricted universe multiverse

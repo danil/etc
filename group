@@ -74,6 +74,7 @@ nm-openvpn:x:122:
 lxd:x:123:
 gamemode:x:986:
 gnome-initial-setup:x:985:
+kutkevich:x:1001:kutkevich.danil
 administrator-wb:x:1000:
 _chrony:x:124:
 _flatpak:x:125:

@@ -27,6 +27,18 @@ Package: print-manager
 Pin: version 6.*
 Pin-Priority: 1100
 
+Package: xdg-desktop-portal
+Pin: version 1.18.*
+Pin-Priority: 1100
+
+Package: xdg-desktop-portal-dev
+Pin: version 1.18.*
+Pin-Priority: 1100
+
+Package: xdg-desktop-portal-tests
+Pin: version 1.18.*
+Pin-Priority: 1100
+
 ##### list of the noble pins
 ## the following are listed by alphabetical source package
 ## then packages in alphabetical order within each source

@@ -1,1 +1,0 @@
-deb [signed-by=/usr/share/keyrings/teleport-archive-keyring.asc]  https://apt.releases.teleport.dev/ubuntu debian noble stable/v12

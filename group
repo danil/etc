@@ -86,3 +86,4 @@ openvpn:x:130:
 vboxusers:x:131:
 systemd-coredump:x:984:
 docker:x:983:kutkevich.danil
+avahi-autoipd:x:132:

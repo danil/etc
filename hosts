@@ -12,6 +12,7 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
 # Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
+127.0.0.1 media-basket-http
 127.0.0.1 media-basket-http-8080
 127.0.0.1 media-basket-http-8082
 127.0.0.1 media-basket-http-8083

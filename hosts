@@ -14,11 +14,14 @@ ff02::2 ip6-allrouters
 # Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
 127.0.0.1 media-basket-http
 127.0.0.1 media-basket-http-8080
+127.0.0.1 media-basket-http-8081
 127.0.0.1 media-basket-http-8082
 127.0.0.1 media-basket-http-8083
 127.0.0.1 media-basket-http-8084
 127.0.0.1 media-basket-http-8085
 127.0.0.1 media-basket-http-8086
+127.0.0.1 media-basket-http-50000
+127.0.0.1 media-basket-http-50100
 
 # FIXME: Remove me! Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
 127.0.0.1 basket-stage-static-private-01a.mediabasket.vm.prod-4.cloud.datapro

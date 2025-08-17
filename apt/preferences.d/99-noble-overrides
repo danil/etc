@@ -39,82 +39,21 @@ Package: xdg-desktop-portal-tests
 Pin: version 1.18.*
 Pin-Priority: 1100
 
+Package: spacebar
+Pin: version 1:6.*
+Pin-Priority: 1100
+
+Package: plasma-dialer
+Pin: version 1:6.*
+Pin-Priority: 1100
+
+Package: plasma-mobile
+Pin: version 1:6.*
+Pin-Priority: 1100
+
 ##### list of the noble pins
 ## the following are listed by alphabetical source package
 ## then packages in alphabetical order within each source
-
-##appstream
-Package: appstream
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: appstream-compose
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: appstream-doc
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: apt-config-icons-hidpi
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: apt-config-icons-large-hidpi
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: apt-config-icons-large
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: apt-config-icons
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: gir1.2-appstream-1.0
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: gir1.2-appstreamcompose
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstream-compose-dev
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstream-compose0
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstream-dev
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstream5
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstreamqt-3
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstreamqt3
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstreamqt-dev
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstreamqt5-3
-Pin: release o=Ubuntu
-Pin-Priority: 1100
-
-Package: libappstreamqt5-dev
-Pin: release o=Ubuntu
-Pin-Priority: 1100
 
 ##booth
 Package: booth

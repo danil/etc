@@ -1,3 +1,7 @@
-Package: ventoy ventoy
-Pin: version *
+Package: ventoy
+Pin: release o=*
 Pin-Priority: -1
+
+Package: ventoy
+Pin: version 1.1.04-pacstall1
+Pin-Priority: 100

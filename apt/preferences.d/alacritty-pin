@@ -1,3 +1,7 @@
-Package: alacritty alacritty
-Pin: version *
+Package: alacritty
+Pin: release o=*
 Pin-Priority: -1
+
+Package: alacritty
+Pin: version 0.15.1-pacstall1
+Pin-Priority: 100

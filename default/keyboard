@@ -9,6 +9,6 @@ XKBMODEL="pc105"
 # XKBOPTIONS=""
 XKBLAYOUT="us,ru"
 XKBVARIANT=","
-XKBOPTIONS="grp:shifts_toggle"
+XKBOPTIONS="grp:ctrls_toggle"
 
 BACKSPACE="guess"

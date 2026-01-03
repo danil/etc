@@ -27,6 +27,13 @@ ff02::2 ip6-allrouters
 # Wbr Er HTTP Media Cache.~~~~<danil@kutkevich.org>
 127.0.0.1 media-basket-http-cache
 
+# Wbr Er HTTP Media Backup.~~~~<danil@kutkevich.org>
+127.0.0.1 media-basket-http-backup-8088
+
+# Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
+127.0.0.1 etcd1
+127.0.0.1 etcd2
+
 # Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
 127.0.0.1 manager1
 127.0.0.1 manager2
@@ -34,3 +41,9 @@ ff02::2 ip6-allrouters
 # Wbr Er NutsBasket Store.~~~~<danil@kutkevich.org>
 127.0.0.1 store-8000
 127.0.0.1 store-8001
+
+# Wbr Er NutsBasket API.~~~~<danil@kutkevich.org>
+127.0.0.1 api1
+127.0.0.1 api2
+127.0.0.1 api-4000
+127.0.0.1 api-4002

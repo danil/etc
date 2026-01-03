@@ -87,3 +87,4 @@ vboxusers:x:131:
 systemd-coredump:x:984:
 docker:x:983:danil
 i2c:x:132:
+roman:x:1002:

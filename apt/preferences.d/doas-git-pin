@@ -1,0 +1,7 @@
+Package: doas
+Pin: release o=*
+Pin-Priority: -1
+
+Package: doas
+Pin: version 6.3p9-pacstall1~git7b1c3cfa
+Pin-Priority: 100

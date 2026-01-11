@@ -1,0 +1,20 @@
+##
+## This file may contain packages which will trigger the reboot-needed hint.
+## So the user gets informed that the system should be rebooted after
+## one of these packages was updated.
+##
+## This config file is for the systems administartor.
+## Additional configuration files can be placed in /etc/zypp/needreboot.d
+##
+## For packages the intended way would be to provide 'installhint(reboot-needed)'
+## if the package wants to trigger the needreboot hint. If the hint should be
+## shown for packages not providing 'installhint(reboot-needed)', list them here.
+##
+## Format: Each line must contain either a 'PACKAGENAME' or 'provides:CAPABILITY'
+##         to include all packages providing a dependency match for 'CAPABILITY'.
+##         Lines starting with '#' and empty lines are ignored.
+##
+## Example:
+##         provides:kernel
+##         kernel-firmware
+##

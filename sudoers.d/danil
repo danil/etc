@@ -1,0 +1,15 @@
+# ~~~~<danil@kutkevich.org>
+danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: .git
+danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: /home/danil/.emacs.var
+danil ALL=(ALL) NOPASSWD: /bin/systemctl start docker
+danil ALL=(ALL) NOPASSWD: /bin/systemctl start postgresql
+danil ALL=(ALL) NOPASSWD: /bin/systemctl start redis-server
+danil ALL=(ALL) NOPASSWD: /home/danil/bin/zypp-packages --install
+danil ALL=(ALL) NOPASSWD: /sbin/reboot
+danil ALL=(ALL) NOPASSWD: /sbin/shutdown -h now
+danil ALL=(ALL) NOPASSWD: /usr/bin/git status
+danil ALL=(ALL) NOPASSWD: /usr/bin/updatedb
+danil ALL=(ALL) NOPASSWD: /usr/bin/zypper ref
+danil ALL=(ALL) NOPASSWD: /usr/bin/zypper refresh
+danil ALL=(ALL) NOPASSWD: /usr/bin/zypper up --no-recommends
+danil ALL=(ALL) NOPASSWD: /usr/bin/zypper update --no-recommends

@@ -1,8 +1,0 @@
-[Unit]
-Description="Git mirror of the public repositories"
-
-[Service]
-Type=oneshot
-User=git
-Group=git
-ExecStart=/home/danil/bin/git-public-mirror

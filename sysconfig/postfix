@@ -184,7 +184,7 @@ POSTFIX_UPDATE_MAPS="yes"
 POSTFIX_MAP_LIST="virtual transport access canonical sender_canonical relocated sasl_passwd:600 relay_ccerts helo_access relay"
 
 ## Type:        string
-## Default:     hash:/etc/postfix/transport
+## Default:     lmdb:/etc/postfix/transport
 #
 # The list of transport_maps postfix should look for
 #
@@ -270,7 +270,7 @@ POSTFIX_SMTPD_CLIENT_RESTRICTIONS=""
 POSTFIX_SMTPD_HELO_RESTRICTIONS=""
 
 ## Type:        string
-## Default:     "hash:/etc/postfix/access, reject_unknown_sender_domain"
+## Default:     "lmdb:/etc/postfix/access, reject_unknown_sender_domain"
 ## Config:      postfix
 #
 # Fill "POSTFIX_SMTPD_SENDER_RESTRICTIONS" for completion of this RESTRICTION
@@ -520,3 +520,13 @@ POSTFIX_REGISTER_SLP="yes"
 # will be set to "host" by /usr/sbin/config.postfix.
 #
 POSTFIX_ADD_MYNETWORKS_STYLE="subnet"
+
+## Type:        string
+## Default:     ""
+# Defaults by config.postfix:
+# without MySQL: $mydestination lmdb:/etc/postfix/relay
+# with    MySQL: $mydestination lmdb:/etc/postfix/relay mysql:/etc/postfix/mysql_relay_domains_maps.cf
+#
+# Here you can add further *maps.cf files if needed
+#
+POSTFIX_RELAY_DOMAINS=""

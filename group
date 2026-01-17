@@ -39,9 +39,13 @@ render:x:475:
 audit:x:474:
 systemd-resolve:x:472:
 danil:!:1000:git
-git:!:1001:
 named:x:44:
 ftp:!:471:
 nginx:!:470:
 knot:x:469:
 ntp:x:473:
+kutkevich:x:1001:danil,git
+git:x:1002:danil
+svn:x:468:
+sgx:x:467:
+srvGeoClue:!:466:

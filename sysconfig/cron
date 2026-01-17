@@ -90,3 +90,17 @@ ENFORCE_ROOT_OWNER_GROUP_DIR="yes"
 # at most the listed permissions
 #
 SECURE_DIR_PERMISSIONS="755"
+
+## Type:	string
+## Default:	"info"
+#
+# The logger target for jobs that succeeded
+# 
+LOGGER_PRIORITY_INFO="info"
+
+## Type:	string
+## Default:	"warn"
+#
+# The logger target for jobs that succeeded
+# 
+LOGGER_PRIORITY_WARN="warn"

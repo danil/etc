@@ -1,7 +1,0 @@
-/var/log/pureftpd.log
-{
-        monthly
-        missingok
-        notifempty
-        compress
-}

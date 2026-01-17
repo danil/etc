@@ -1,14 +1,13 @@
-#
-# Gentoo:
-# http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/net-analyzer/fail2ban/files/fail2ban-logrotate?view=markup
-#
-# Debian:
-# https://github.com/fail2ban/fail2ban/blob/debian/debian/fail2ban.logrotate
-
 /var/log/fail2ban.log {
-    missingok
+    compress
+    dateext
+    maxage 365
+    rotate 99
+    size=+4096k
     notifempty
+    missingok
+    create 644 root root
     postrotate
-      /usr/bin/fail2ban-client flushlogs >/dev/null || true
+      fail2ban-client flushlogs  1>/dev/null || true
     endscript
 }

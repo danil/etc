@@ -19,7 +19,7 @@ cdrom:x:24:danil
 floppy:x:25:
 tape:x:26:
 sudo:x:27:danil
-audio:x:29:
+audio:x:29:pulse
 dip:x:30:danil
 www-data:x:33:
 backup:x:34:
@@ -64,7 +64,6 @@ fwupd-refresh:x:989:
 scanner:x:115:saned
 saned:x:116:
 geoclue:x:117:
-pipewire:x:118:
 polkitd:x:988:
 rtkit:x:119:
 colord:x:120:
@@ -88,3 +87,8 @@ systemd-coredump:x:984:
 docker:x:983:danil
 i2c:x:132:
 roman:x:1002:
+pulse:x:133:
+pulse-access:x:134:
+pipewire:x:118:
+lightdm:x:135:
+nopasswdlogin:x:136:

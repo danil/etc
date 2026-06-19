@@ -14,7 +14,9 @@
 # pam-auth-update(8) for details.
 
 # here are the per-package modules (the "Primary" block)
-auth	[success=3 default=ignore]	pam_fprintd.so max-tries=100 timeout=10000 # debug
+# ~~~~<danil@kutkevich.org>
+# auth	[success=3 default=ignore]	pam_fprintd.so # debug max-tries=100 timeout=10000
+auth	[success=3 default=ignore]	pam_fprintd.so max-tries=1000 timeout=10000 # debug
 auth	[success=2 default=ignore]	pam_unix.so nullok try_first_pass
 auth	[success=1 default=ignore]	pam_sss.so use_first_pass
 # here's the fallback if no module succeeds

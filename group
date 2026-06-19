@@ -92,3 +92,4 @@ pulse-access:x:134:
 pipewire:x:118:
 lightdm:x:135:
 nopasswdlogin:x:136:
+_openvpn:x:982:

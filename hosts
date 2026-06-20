@@ -8,42 +8,48 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
-# Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http
-127.0.0.1 media-basket-http-8080
-127.0.0.1 media-basket-http-8081
-127.0.0.1 media-basket-http-8082
-127.0.0.1 media-basket-http-8083
-127.0.0.1 media-basket-http-8084
-127.0.0.1 media-basket-http-8085
-127.0.0.1 media-basket-http-8086
-127.0.0.1 media-basket-http-50000
-127.0.0.1 media-basket-http-50100
+# Docker <https://github.com/docker>, <https://github.com/moby/moby> ~~~~<danil@kutkevich.org>.
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1	kubernetes.docker.internal
+# End of section
 
-# FIXME: Remove me! Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
-127.0.0.1 basket-stage-static-private-01a.mediabasket.vm.prod-4.cloud.datapro
-127.0.0.1 static-basket-stage-01.wb.ru
-
-# Wbr Er HTTP Media Cache.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http-cache
-
-# Wbr Er HTTP Media Backup.~~~~<danil@kutkevich.org>
-127.0.0.1 media-basket-http-backup-8088
-
-# Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
-127.0.0.1 etcd1
-127.0.0.1 etcd2
-
-# Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
-127.0.0.1 manager1
-127.0.0.1 manager2
-
-# Wbr Er NutsBasket Store.~~~~<danil@kutkevich.org>
-127.0.0.1 store-8000
-127.0.0.1 store-8001
-
-# Wbr Er NutsBasket API.~~~~<danil@kutkevich.org>
-127.0.0.1 api1
-127.0.0.1 api2
-127.0.0.1 api-4000
-127.0.0.1 api-4002
+# # # Wbr Er CDN-Clietn-Balance.~~~~<danil@kutkevich.org>
+# # 127.0.0.1 kafka
+# # Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
+# 127.0.0.1 media-basket-http
+# 127.0.0.1 media-basket-http-8080
+# 127.0.0.1 media-basket-http-8081
+# 127.0.0.1 media-basket-http-8082
+# 127.0.0.1 media-basket-http-8083
+# 127.0.0.1 media-basket-http-8084
+# 127.0.0.1 media-basket-http-8085
+# 127.0.0.1 media-basket-http-8086
+# 127.0.0.1 media-basket-http-50000
+# 127.0.0.1 media-basket-http-50100
+# # FIXME: Remove me! Wbr Er HTTP Media Basket's servers.~~~~<danil@kutkevich.org>
+# 127.0.0.1 basket-stage-static-private-01a.mediabasket.vm.prod-4.cloud.datapro
+# 127.0.0.1 static-basket-stage-01.wb.ru
+# # Wbr Er HTTP Media Cache.~~~~<danil@kutkevich.org>
+# 127.0.0.1 media-basket-http-cache
+# # Wbr Er HTTP Media Backup.~~~~<danil@kutkevich.org>
+# 127.0.0.1 media-basket-http-backup-8088
+# # Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
+# 127.0.0.1 etcd1
+# 127.0.0.1 etcd2
+# # Wbr Er NutsBasket api.~~~~<danil@kutkevich.org>
+# 127.0.0.1 postgres_primary
+# 127.0.0.1 postgres_replica
+# # Wbr Er NutsBasket Manager.~~~~<danil@kutkevich.org>
+# 127.0.0.1 manager1
+# 127.0.0.1 manager2
+# # Wbr Er NutsBasket Store.~~~~<danil@kutkevich.org>
+# 127.0.0.1 store-8000
+# 127.0.0.1 store-8001
+# # Wbr Er NutsBasket API.~~~~<danil@kutkevich.org>
+# 127.0.0.1 api1
+# 127.0.0.1 api2
+# 127.0.0.1 api-4000
+# 127.0.0.1 api-4400
+# 127.0.0.1 api-4002
+# 127.0.0.1 api-4402

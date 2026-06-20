@@ -1,0 +1,14 @@
+[Unit]
+Description=Homebrew generated unit for caddy
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Type=simple
+ExecStart="/home/linuxbrew/.linuxbrew/opt/caddy/bin/caddy" "run" "--config" "/home/linuxbrew/.linuxbrew/etc/Caddyfile"
+Restart=on-failure
+StandardOutput=append:/home/linuxbrew/.linuxbrew/var/log/caddy.log
+StandardError=append:/home/linuxbrew/.linuxbrew/var/log/caddy.log
+Environment="XDG_DATA_HOME=/home/linuxbrew/.linuxbrew/var/lib"
+Environment="HOME=/home/linuxbrew/.linuxbrew/var/lib"

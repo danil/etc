@@ -1,7 +1,0 @@
-Package: alacritty-dummy-builddeps
-Pin: release o=*
-Pin-Priority: -1
-
-Package: alacritty-dummy-builddeps
-Pin: version 0.16.0-pacstall1
-Pin-Priority: 100

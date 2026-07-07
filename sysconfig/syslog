@@ -15,8 +15,8 @@
 RSYSLOGD_PARAMS=""
 ## Type: string
 ## Default: "/var/lib/named/dev/log"
-## Config: syslog-ng
 ## ServiceRestart: syslog
+## Config: syslog-ng
 #
 # The filename mentioned here will be added with the "-a ..." option as
 # additional socket via SYSLOGD_PARAMS when syslogd is started.

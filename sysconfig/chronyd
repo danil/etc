@@ -23,12 +23,3 @@ CHRONY_IPV6="yes"
 # Lock the chrony daemon process into RAM, preventing it from swapping out
 #
 CHRONY_LOCK_IN_RAM="no"
-## Path:	Network/Chrony
-## Description:	Chrony time synchronization settings
-## Type:	string
-## Default:	""
-## ServiceRestart: chronyd
-#
-# Command line options for chronyd
-#
-OPTIONS=""

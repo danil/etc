@@ -1,9 +1,9 @@
 ## Path:        System/File systems/Mdadm
 ## Description: Additional options for the mdadm daemon (see man mdadm(8)).
-## Type:        integer
-## Default:     60
 ## ServiceRestart:      mdadm
 ##
+## Type:        integer
+## Default:     60
 #
 # A delay in seconds between polling the md arrays.
 #

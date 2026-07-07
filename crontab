@@ -3,7 +3,7 @@ PATH=/usr/bin:/usr/sbin:/sbin:/bin:/usr/lib/news/bin
 MAILTO=root
 #
 # check scripts in cron.hourly, cron.daily, cron.weekly, and cron.monthly
-
+#
 # Example of job definition:
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)

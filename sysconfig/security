@@ -17,7 +17,8 @@ PERMISSION_SECURITY="easy local"
 #
 PERMISSION_FSCAPS=""
 ## Path:        System/Security/PolicyKit
-## Description: Configuration of default Polkit privileges
+## Description: Configuration of default PolicyKit privileges
+
 ## Type:        list(set,warn,no)
 ## Default:     set
 ## Config:      set_polkit_default_privs

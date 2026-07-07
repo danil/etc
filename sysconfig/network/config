@@ -193,7 +193,6 @@ NETCONFIG_DNS_STATIC_SEARCHLIST=""
 # machine (the forwarder). See also netconfig(8) manual page.
 #
 NETCONFIG_DNS_STATIC_SERVERS="192.168.10.125"
-
 ## Type:        string
 ## Default:     "auto"
 #

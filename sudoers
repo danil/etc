@@ -8,7 +8,7 @@
 ##
 
 # ~~~~<danil@kutkevich.org>.
-Defaults editor=/usr/bin/emacs
+Defaults editor=/usr/local/bin/emacs
 
 ##
 ## Host alias specification

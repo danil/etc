@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Mosh</short>
+  <description>Mosh (Mobile Shell) allows roaming and supports intermittent connectivity.</description>
+  <port protocol="udp" port="60000-61000"/>
+</service>

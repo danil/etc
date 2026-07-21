@@ -6,9 +6,9 @@
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
-/dev/disk/by-id/dm-uuid-LVM-yk1vL6KKkqpPhtXd9kXsE353cF265GpBYel2KtjKpMzIS1kFEnMhrfPLGIzyUHTI / ext4 defaults 0 1
+/dev/disk/by-id/dm-uuid-LVM-uDRnAe1gWaO2EzW3HIcWMr4Oe044d7e06axA15cbnnnp57HEm2l9Rzm274S9ORPO / ext4 defaults 0 1
 # /boot was on /dev/nvme0n1p2 during curtin installation
-/dev/disk/by-uuid/33a4dd7f-6010-4be1-9e44-fc57be374699 /boot ext4 defaults 0 1
+/dev/disk/by-uuid/ebfc717a-17eb-44c8-ab40-a1e2c923d1b0 /boot ext4 defaults 0 1
 # /boot/efi was on /dev/nvme0n1p1 during curtin installation
-/dev/disk/by-uuid/421D-C8BE /boot/efi vfat defaults 0 1
+/dev/disk/by-uuid/A589-A99A /boot/efi vfat defaults 0 1
 /swap.img	none	swap	sw	0	0

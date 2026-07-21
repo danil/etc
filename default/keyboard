@@ -3,12 +3,13 @@
 # Consult the keyboard(5) manual page.
 
 XKBMODEL="pc105"
-# ~~~~<danil@kutkevich.org>.
-# XKBLAYOUT="us"
-# XKBVARIANT=""
-# XKBOPTIONS=""
+# # ~~~~<danil@kutkevich.org>.
+# # XKBLAYOUT="us"
+# # XKBVARIANT=""
+# # XKBOPTIONS=""
+# XKBOPTIONS="grp:shifts_toggle"
 XKBLAYOUT="us,ru"
 XKBVARIANT=","
-XKBOPTIONS="grp:shifts_toggle"
+XKBOPTIONS="grp_led:scroll"
 
 BACKSPACE="guess"

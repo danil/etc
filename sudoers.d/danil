@@ -3,6 +3,7 @@ danil ALL=(ALL) NOPASSWD: /bin/chown -R danil\: /home/danil/.emacs.var
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start docker
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start postgresql
 danil ALL=(ALL) NOPASSWD: /bin/systemctl start redis-server
+danil ALL=(ALL) NOPASSWD: /bin/systemctl suspend
 danil ALL=(ALL) NOPASSWD: /home/danil/bin/deb-packages
 danil ALL=(ALL) NOPASSWD: /home/danil/bin/openconnectrecon *
 danil ALL=(ALL) NOPASSWD: /sbin/reboot

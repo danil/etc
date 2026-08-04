@@ -1,0 +1,2 @@
+# Running xremap without sudo <https://github.com/xremap/xremap/blob/master/doc/running_without_sudo.md#output-permission> ~~~~<danil@kutkevich.org>.
+KERNEL=="uinput", GROUP="input", TAG+="uaccess", MODE:="0660", OPTIONS+="static_node=uinput"

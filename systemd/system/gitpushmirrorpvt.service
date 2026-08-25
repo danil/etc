@@ -1,0 +1,17 @@
+[Unit]
+Description=Git Push Mirror Pvt Script
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=danil
+Environment=HOME=/home/danil
+Environment=PATH=/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/danil/bin
+
+ExecStart=/home/danil/bin/gitpushmirror --user=danil
+
+StandardOutput=journal
+StandardError=journal
+
+TimeoutStartSec=5min

@@ -9,7 +9,7 @@ User=danil
 Environment=HOME=/home/danil
 Environment=PATH=/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/danil/bin
 
-ExecStart=/home/danil/bin/gitpushmirror --user=danil
+ExecStart=/home/danil/bin/gitpushmir --cron --user=danil
 
 StandardOutput=journal
 StandardError=journal

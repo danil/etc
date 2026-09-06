@@ -1,5 +1,5 @@
 [Unit]
-Description=Run Git Push Mirror Pvt Script every minute
+Description=Run Git Push Mirror Pub Script every minute
 
 [Timer]
 OnBootSec=5min
@@ -7,7 +7,7 @@ OnUnitActiveSec=3min
 
 Persistent=true
 
-Unit=gitpushmirrorpvt.service
+Unit=gitpushmirpub.service
 
 [Install]
 WantedBy=timers.target

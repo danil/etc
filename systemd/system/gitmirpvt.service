@@ -1,5 +1,5 @@
 [Unit]
-Description=Git Push Mirror Pvt Script
+Description=GitMir (Git Mirror) Pvt Script
 After=network-online.target
 Wants=network-online.target
 
@@ -9,7 +9,7 @@ User=danil
 Environment=HOME=/home/danil
 Environment=PATH=/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/danil/bin
 
-ExecStart=/home/danil/bin/gitpushmir --cron --user=danil
+ExecStart=/home/danil/bin/gitmir --cron --user=danil
 
 StandardOutput=journal
 StandardError=journal

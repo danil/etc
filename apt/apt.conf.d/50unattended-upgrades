@@ -51,7 +51,7 @@ Unattended-Upgrade::DevRelease "auto";
 
 // Split the upgrade into the smallest possible chunks so that
 // they can be interrupted with SIGTERM. This makes the upgrade
-// a bit slower but it has the benefit that shutdown while a upgrade
+// a bit slower but it has the benefit that shutdown while an upgrade
 // is running is possible (with a small delay)
 //Unattended-Upgrade::MinimalSteps "true";
 
@@ -141,3 +141,13 @@ Unattended-Upgrade::DevRelease "auto";
 // uninstallable packages at the expense of rarely keeping back packages which
 // could be upgraded or installed.
 // Unattended-Upgrade::Allow-APT-Mark-Fallback "true";
+
+// Allow postponing an upgrade by up to this number of days.
+// The feature is disabled if the number of days is 0.
+// Unattended-Upgrade::Postpone-For-Days "0";
+
+// How long should unattended-upgrade wait for a postpone request
+// before proceding with the update.
+// If the postponing feature is disabled, this option has no effect
+// as unattended-upgrade will not be waiting.
+// Unattended-Upgrade::Postpone-Wait-Time "300";

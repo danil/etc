@@ -13,10 +13,11 @@
 # variables to be set in order to find the agent, so we will set those
 # here.
 
-agent_sock=$(gpgconf --list-dirs agent-socket)
-export GPG_AGENT_INFO=${agent_sock}:0:1
+# gnupg2 doesn't use the GPG_AGENT_INFO environment variable since
+# v2.1.0, but gnupg1 still does so set it in case gnupg1 is installed.
+export GPG_AGENT_INFO="$(gpgconf --list-dirs agent-socket):0:1"
+
 if [ -n "$(gpgconf --list-options gpg-agent | \
       awk -F: '/^enable-ssh-support:/{ print $10 }')" ]; then
-    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+    export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
-

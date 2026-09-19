@@ -12,3 +12,4 @@ LOGNAME=root
 1	5	cron.daily	run-parts --report /etc/cron.daily
 7	10	cron.weekly	run-parts --report /etc/cron.weekly
 @monthly	15	cron.monthly	run-parts --report /etc/cron.monthly
+@yearly	20	cron.yearly	run-parts --report /etc/cron.yearly
